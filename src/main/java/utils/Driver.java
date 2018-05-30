@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
-
+import cucumber.api.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -25,11 +25,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
-import org.testng.ITestResult;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.DataProvider;
+
 
 import cucumber.api.Scenario;
 import pages.HomePage;
@@ -81,7 +77,7 @@ public class Driver {
 	 * loginAsExpected � false afin de valider que l'on n'est pas connect� par
 	 * d�faut avec un autre utilisateur
 	 */
-	@BeforeClass
+//	@BeforeClass
 	public static void beforeTestClass() {
 		driver = instanciateDriver();
 		loginAsExpected = false;
@@ -212,7 +208,7 @@ public class Driver {
 	 *          sont pass�s en param�tre des tests automatiquement dans une methode
 	 *          login via dataProvider="getUserCredentials"
 	 */
-	@DataProvider
+	//@DataProvider
 	public static Object[] getUserCredentials() {
 		// Cr�ation de la variable username contenant la valeur username.system.admin
 		// r�cup�r�e dans user.dev.properties
@@ -621,7 +617,7 @@ public class Driver {
 	 * quitter compl�tement la page test� apr�s l'ex�cution de tous les tests de la
 	 * classe
 	 */
-	@AfterClass
+//	@AfterClass
 	public static void afterTest() {
 		driver.close();
 		driver.quit();
@@ -703,24 +699,6 @@ public class Driver {
 		}
 	}
 
-	/**
-	 * LOGIN_AS testLoginAs M�thode qui v�rifie qu'on est bien logu� en tant que
-	 * s'effectue � TOUS les tests
-	 */
-	// @BeforeMethod
-	public void testLoginAs(ITestResult result) {
-		// On r�cup�re le nom de la methode de test execut�e
-		String testName = result.getMethod().getMethodName();
-		// Si son nom contient "logoutAs", on effectue le logout As
-		if (testName.contains("logoutAs")) {
-			System.out.println("Driver: Performing \"Logout as\"");
-			loginAsExpected = false;
-			logoutAs(loginAsUserName);
-		}
-		Assert.assertEquals(loginAsExpected, isLoggedAs(loginAsUserName));
-		// Attend que la page soit charg�e avant d'�xecuter chaque test
-		waitPageLoaded();
-	}
 
 	public void waitPageLoaded() {
 		// On attend l'affichage de la page, au maximum le temps param�tr� dans
