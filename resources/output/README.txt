@@ -1,0 +1,1 @@
+Place here the screenshots to publish in VSTS
