@@ -2,6 +2,8 @@ package account;
 
 import org.openqa.selenium.support.PageFactory;
 
+import cucumber.api.Scenario;
+import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -37,6 +39,12 @@ public class LoginStep {
 	public void checkHomepage() {
 		loginPage.waitLogin(Driver.driver);
 		loginPage.assertLogin(Driver.driver);
+	}
+	
+	@After
+	public static void testFailure(Scenario result) {	
+		
+		Driver.testFailure(result);		
 	}
 
 }

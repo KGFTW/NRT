@@ -4,6 +4,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 import org.openqa.selenium.support.PageFactory;
 
+import cucumber.api.Scenario;
+import cucumber.api.java.After;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -16,7 +18,7 @@ public class AccountStep {
 	private static final String ACCOUNT_NAME = "Non Regression - " + Driver.getTimeStamp();
 
 	@Given("^je suis sur la page d'acceuil$")
-	public void initHomepage() {		
+	public void initHomepage() {
 		homePage = PageFactory.initElements(Driver.driver, HomePage.class);
 	}
 
@@ -36,9 +38,8 @@ public class AccountStep {
 	@Then("^je verifie la presence du label (.*) de la section (.*) et son type (.*)$")
 	public void checkNewAccountVisibleFields(String labelName, String sectionName, String elementType) {
 		if (sectionName.equals("")) {
-			assertThat(Driver.isLabelPresent(labelName, "", elementType)).isTrue();			
-		}
-		else
+			assertThat(Driver.isLabelPresent(labelName, "", elementType)).isTrue();
+		} else
 			assertThat(Driver.isLabelPresent(labelName, sectionName, elementType)).isTrue();
 	}
 
@@ -77,10 +78,15 @@ public class AccountStep {
 
 		homePage = PageFactory.initElements(Driver.driver, HomePage.class);
 	}
+
 	@Then("^je verifie que dans le champ (.*) contient la valeur (.*)$")
 	public void validateNewAccount(String elementName, String value) {
-		
-		assertThat(Driver.getValueView(elementName).contains(value));		
+
+		assertThat(Driver.getValueView(elementName).contains(value)).isTrue();
 	}
+
+	
+
+	
 
 }
