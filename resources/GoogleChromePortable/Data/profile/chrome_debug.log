@@ -1,3 +1,1 @@
-[9224:6736:0530/152700.236:WARNING:discovery_network_list_win.cc(195)] Failed to open Wlan client handle: 1062
-[9224:14976:0530/152704.008:INFO:CONSOLE(0)] "The SSL certificate used to load resources from https://c1.sfdcstatic.com will be distrusted in M70. Once distrusted, users will be prevented from loading these resources. See https://g.co/chrome/symantecpkicerts for more information.", source: https://c.salesforce.com/login-messages/promos.html (0)
-[9224:14976:0530/152704.102:INFO:CONSOLE(0)] "The SSL certificate used to load resources from https://c.salesforce.com will be distrusted in M70. Once distrusted, users will be prevented from loading these resources. See https://g.co/chrome/symantecpkicerts for more information.", source: https://c.salesforce.com/login-messages/promos.html (0)
+[17404:1176:0530/161021.098:WARNING:discovery_network_list_win.cc(195)] Failed to open Wlan client handle: 1062

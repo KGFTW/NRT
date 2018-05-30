@@ -1,4 +1,4 @@
-package Steps;
+package steps;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

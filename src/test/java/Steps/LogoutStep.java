@@ -1,4 +1,4 @@
-package Steps;
+package steps;
 
 import org.openqa.selenium.support.PageFactory;
 
