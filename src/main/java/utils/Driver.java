@@ -25,7 +25,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
+import org.testng.annotations.BeforeClass;
 
 import cucumber.api.Scenario;
 import pages.HomePage;
@@ -77,7 +77,7 @@ public class Driver {
 	 * loginAsExpected � false afin de valider que l'on n'est pas connect� par
 	 * d�faut avec un autre utilisateur
 	 */
-//	@BeforeClass
+	//@BeforeClass
 	public static void beforeTestClass() {
 		driver = instanciateDriver();
 		loginAsExpected = false;
