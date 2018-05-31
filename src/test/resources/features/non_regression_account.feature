@@ -11,6 +11,7 @@ Test NRT with cucumber
     When je remplis le login et le password
     Then jarrive sur la page d'accueil de Salesforce  	
 	
+	@CheckHomePage
 	Scenario: Clic sur Account
 		Given je suis sur la page d'acceuil
 		When je verifie que l'onglet Account est present
@@ -172,7 +173,7 @@ Test NRT with cucumber
  			|Upsell Opportunity						|Additional Information					|select					|false		|Yes													| 			
  			|Description									|Description Information				|textArea				|false		|OK														|
  			
- 			
+ 		@CheckHomePage	
  		Scenario Outline: Enregistrer l'Account
  			When je clique sur le bouton "Save"
  			Given je reviens sur la HomePage il faut preciser le bon Parent Account 

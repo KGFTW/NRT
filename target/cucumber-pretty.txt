@@ -3,3 +3,829 @@
 Feature: Test Non regression account
   
   Test NRT with cucumber
+
+  @Login
+  Scenario: Test login                                 [90m# non_regression_account.feature:9[0m
+    [32mGiven [0m[32mje suis sur la page de connection Salesforce[0m [90m# LoginStep.InitLoginPage()[0m
+    [32mWhen [0m[32mje remplis le login et le password[0m            [90m# LoginStep.putNameAndPassword()[0m
+    [32mThen [0m[32mjarrive sur la page d'accueil de Salesforce[0m   [90m# LoginStep.checkHomepage()[0m
+
+  @CheckHomePage
+  Scenario: Clic sur Account                         [90m# non_regression_account.feature:15[0m
+    [32mGiven [0m[32mje suis sur la page d'acceuil[0m              [90m# AccountStep.initHomepage()[0m
+    [32mWhen [0m[32mje verifie que l'onglet Account est present[0m [90m# AccountStep.verifAccountButton()[0m
+    [32mThen [0m[32mje clique sur l'onglet Account[0m              [90m# AccountStep.clicNewAccountBtn()[0m
+
+  Scenario Outline: Verification de la presence des champs                                                 [90m# non_regression_account.feature:21[0m
+    [36mThen [0m[36mje verifie la presence du label <labelName> de la section <sectionName> et son type <elementType>[0m
+
+    Examples: 
+
+  @tag
+  Scenario Outline: Verification de la presence des champs                                                     [90m# non_regression_account.feature:26[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mAccount Name[0m[32m de la section [0m[32m[1mAccount Information[0m[32m et son type [0m[32m[1mLabel Edit[0m [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs                                                       [90m# non_regression_account.feature:27[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mParent Account[0m[32m de la section [0m[32m[1mAccount Information[0m[32m et son type [0m[32m[1mLabel Edit[0m [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs                                                       [90m# non_regression_account.feature:28[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mAccount Number[0m[32m de la section [0m[32m[1mAccount Information[0m[32m et son type [0m[32m[1mLabel Edit[0m [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs                                                     [90m# non_regression_account.feature:29[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mAccount Site[0m[32m de la section [0m[32m[1mAccount Information[0m[32m et son type [0m[32m[1mLabel Edit[0m [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs                                             [90m# non_regression_account.feature:30[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mType[0m[32m de la section [0m[32m[1mAccount Information[0m[32m et son type [0m[32m[1mLabel Edit[0m [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs                                                 [90m# non_regression_account.feature:31[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mIndustry[0m[32m de la section [0m[32m[1mAccount Information[0m[32m et son type [0m[32m[1mLabel Edit[0m [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs                                                       [90m# non_regression_account.feature:32[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mAnnual Revenue[0m[32m de la section [0m[32m[1mAccount Information[0m[32m et son type [0m[32m[1mLabel Edit[0m [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs                                               [90m# non_regression_account.feature:33[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mRating[0m[32m de la section [0m[32m[1mAccount Information[0m[32m et son type [0m[32m[1mLabel Edit[0m [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs                                              [90m# non_regression_account.feature:34[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mPhone[0m[32m de la section [0m[32m[1mAccount Information[0m[32m et son type [0m[32m[1mLabel Edit[0m [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs                                            [90m# non_regression_account.feature:35[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mFax[0m[32m de la section [0m[32m[1mAccount Information[0m[32m et son type [0m[32m[1mLabel Edit[0m [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs                                                [90m# non_regression_account.feature:36[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mWebsite[0m[32m de la section [0m[32m[1mAccount Information[0m[32m et son type [0m[32m[1mLabel Edit[0m [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs                                                      [90m# non_regression_account.feature:37[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mTicker Symbol[0m[32m de la section [0m[32m[1mAccount Information[0m[32m et son type [0m[32m[1mLabel Edit[0m [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs                                                  [90m# non_regression_account.feature:38[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mOwnership[0m[32m de la section [0m[32m[1mAccount Information[0m[32m et son type [0m[32m[1mLabel Edit[0m [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs                                                  [90m# non_regression_account.feature:39[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mEmployees[0m[32m de la section [0m[32m[1mAccount Information[0m[32m et son type [0m[32m[1mLabel Edit[0m [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs                                                 [90m# non_regression_account.feature:40[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mSIC Code[0m[32m de la section [0m[32m[1mAccount Information[0m[32m et son type [0m[32m[1mLabel Edit[0m [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs                                                       [90m# non_regression_account.feature:41[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mBilling Street[0m[32m de la section [0m[32m[1mAddress Information[0m[32m et son type [0m[32m[1mLabel Edit[0m [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs                                                                [90m# non_regression_account.feature:42[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mBilling Zip/Postal Code[0m[32m de la section [0m[32m[1mAddress Information[0m[32m et son type [0m[32m[1mLabel Edit[0m [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs                                                     [90m# non_regression_account.feature:43[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mBilling City[0m[32m de la section [0m[32m[1mAddress Information[0m[32m et son type [0m[32m[1mLabel Edit[0m [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs                                                               [90m# non_regression_account.feature:44[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mBilling State/Province[0m[32m de la section [0m[32m[1mAddress Information[0m[32m et son type [0m[32m[1mLabel Edit[0m [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs                                                        [90m# non_regression_account.feature:45[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mBilling Country[0m[32m de la section [0m[32m[1mAddress Information[0m[32m et son type [0m[32m[1mLabel Edit[0m [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs                                                        [90m# non_regression_account.feature:46[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mShipping Street[0m[32m de la section [0m[32m[1mAddress Information[0m[32m et son type [0m[32m[1mLabel Edit[0m [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs                                                                 [90m# non_regression_account.feature:47[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mShipping Zip/Postal Code[0m[32m de la section [0m[32m[1mAddress Information[0m[32m et son type [0m[32m[1mLabel Edit[0m [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs                                                      [90m# non_regression_account.feature:48[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mShipping City[0m[32m de la section [0m[32m[1mAddress Information[0m[32m et son type [0m[32m[1mLabel Edit[0m [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs                                                                [90m# non_regression_account.feature:49[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mShipping State/Province[0m[32m de la section [0m[32m[1mAddress Information[0m[32m et son type [0m[32m[1mLabel Edit[0m [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs                                                         [90m# non_regression_account.feature:50[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mShipping Country[0m[32m de la section [0m[32m[1mAddress Information[0m[32m et son type [0m[32m[1mLabel Edit[0m [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs                                                             [90m# non_regression_account.feature:51[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mCustomer Priority[0m[32m de la section [0m[32m[1mAdditional Information[0m[32m et son type [0m[32m[1mLabel Edit[0m [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs                                                               [90m# non_regression_account.feature:52[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mSLA Expiration Date[0m[32m de la section [0m[32m[1mAdditional Information[0m[32m et son type [0m[32m[1mLabel Edit[0m [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs                                                               [90m# non_regression_account.feature:53[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mNumber of Locations[0m[32m de la section [0m[32m[1mAdditional Information[0m[32m et son type [0m[32m[1mLabel Edit[0m [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs                                                  [90m# non_regression_account.feature:54[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mActive[0m[32m de la section [0m[32m[1mAdditional Information[0m[32m et son type [0m[32m[1mLabel Edit[0m [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs                                               [90m# non_regression_account.feature:55[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mSLA[0m[32m de la section [0m[32m[1mAdditional Information[0m[32m et son type [0m[32m[1mLabel Edit[0m [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs                                                             [90m# non_regression_account.feature:56[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mSLA Serial Number[0m[32m de la section [0m[32m[1mAdditional Information[0m[32m et son type [0m[32m[1mLabel Edit[0m [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs                                                              [90m# non_regression_account.feature:57[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mUpsell Opportunity[0m[32m de la section [0m[32m[1mAdditional Information[0m[32m et son type [0m[32m[1mLabel Edit[0m [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs                                                        [90m# non_regression_account.feature:58[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mDescription[0m[32m de la section [0m[32m[1mDescription Information[0m[32m et son type [0m[32m[1mLabel Edit[0m [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  Scenario Outline: Verification de la possibilite d'edition des champs d'Account (Affichage d'edition)             [90m# non_regression_account.feature:61[0m
+    [36mThen [0m[36mje verifie que le champ qui suit le label <labelName> de la section <sectionName> et de type <elementType>[0m
+
+    Examples: 
+
+  @tag
+  Scenario Outline: Verification de la possibilite d'edition des champs d'Account (Affichage d'edition)            [90m# non_regression_account.feature:66[0m
+    [32mThen [0m[32mje verifie que le champ qui suit le label [0m[32m[1mAccount Name[0m[32m de la section [0m[32m[1mAccount Information[0m[32m et de type [0m[32m[1mInput[0m [90m# AccountStep.checkNewAccountEditableFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la possibilite d'edition des champs d'Account (Affichage d'edition)              [90m# non_regression_account.feature:67[0m
+    [32mThen [0m[32mje verifie que le champ qui suit le label [0m[32m[1mParent Account[0m[32m de la section [0m[32m[1mAccount Information[0m[32m et de type [0m[32m[1mInput[0m [90m# AccountStep.checkNewAccountEditableFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la possibilite d'edition des champs d'Account (Affichage d'edition)              [90m# non_regression_account.feature:68[0m
+    [32mThen [0m[32mje verifie que le champ qui suit le label [0m[32m[1mAccount Number[0m[32m de la section [0m[32m[1mAccount Information[0m[32m et de type [0m[32m[1mInput[0m [90m# AccountStep.checkNewAccountEditableFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la possibilite d'edition des champs d'Account (Affichage d'edition)            [90m# non_regression_account.feature:69[0m
+    [32mThen [0m[32mje verifie que le champ qui suit le label [0m[32m[1mAccount Site[0m[32m de la section [0m[32m[1mAccount Information[0m[32m et de type [0m[32m[1mInput[0m [90m# AccountStep.checkNewAccountEditableFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la possibilite d'edition des champs d'Account (Affichage d'edition)     [90m# non_regression_account.feature:70[0m
+    [32mThen [0m[32mje verifie que le champ qui suit le label [0m[32m[1mType[0m[32m de la section [0m[32m[1mAccount Information[0m[32m et de type [0m[32m[1mselect[0m [90m# AccountStep.checkNewAccountEditableFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la possibilite d'edition des champs d'Account (Affichage d'edition)         [90m# non_regression_account.feature:71[0m
+    [32mThen [0m[32mje verifie que le champ qui suit le label [0m[32m[1mIndustry[0m[32m de la section [0m[32m[1mAccount Information[0m[32m et de type [0m[32m[1mselect[0m [90m# AccountStep.checkNewAccountEditableFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la possibilite d'edition des champs d'Account (Affichage d'edition)              [90m# non_regression_account.feature:72[0m
+    [32mThen [0m[32mje verifie que le champ qui suit le label [0m[32m[1mAnnual Revenue[0m[32m de la section [0m[32m[1mAccount Information[0m[32m et de type [0m[32m[1mInput[0m [90m# AccountStep.checkNewAccountEditableFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la possibilite d'edition des champs d'Account (Affichage d'edition)       [90m# non_regression_account.feature:73[0m
+    [32mThen [0m[32mje verifie que le champ qui suit le label [0m[32m[1mRating[0m[32m de la section [0m[32m[1mAccount Information[0m[32m et de type [0m[32m[1mselect[0m [90m# AccountStep.checkNewAccountEditableFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la possibilite d'edition des champs d'Account (Affichage d'edition)     [90m# non_regression_account.feature:74[0m
+    [32mThen [0m[32mje verifie que le champ qui suit le label [0m[32m[1mPhone[0m[32m de la section [0m[32m[1mAccount Information[0m[32m et de type [0m[32m[1mInput[0m [90m# AccountStep.checkNewAccountEditableFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la possibilite d'edition des champs d'Account (Affichage d'edition)   [90m# non_regression_account.feature:75[0m
+    [32mThen [0m[32mje verifie que le champ qui suit le label [0m[32m[1mFax[0m[32m de la section [0m[32m[1mAccount Information[0m[32m et de type [0m[32m[1mInput[0m [90m# AccountStep.checkNewAccountEditableFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la possibilite d'edition des champs d'Account (Affichage d'edition)       [90m# non_regression_account.feature:76[0m
+    [32mThen [0m[32mje verifie que le champ qui suit le label [0m[32m[1mWebsite[0m[32m de la section [0m[32m[1mAccount Information[0m[32m et de type [0m[32m[1mInput[0m [90m# AccountStep.checkNewAccountEditableFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la possibilite d'edition des champs d'Account (Affichage d'edition)             [90m# non_regression_account.feature:77[0m
+    [32mThen [0m[32mje verifie que le champ qui suit le label [0m[32m[1mTicker Symbol[0m[32m de la section [0m[32m[1mAccount Information[0m[32m et de type [0m[32m[1mInput[0m [90m# AccountStep.checkNewAccountEditableFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la possibilite d'edition des champs d'Account (Affichage d'edition)          [90m# non_regression_account.feature:78[0m
+    [32mThen [0m[32mje verifie que le champ qui suit le label [0m[32m[1mOwnership[0m[32m de la section [0m[32m[1mAccount Information[0m[32m et de type [0m[32m[1mselect[0m [90m# AccountStep.checkNewAccountEditableFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la possibilite d'edition des champs d'Account (Affichage d'edition)         [90m# non_regression_account.feature:79[0m
+    [32mThen [0m[32mje verifie que le champ qui suit le label [0m[32m[1mEmployees[0m[32m de la section [0m[32m[1mAccount Information[0m[32m et de type [0m[32m[1mInput[0m [90m# AccountStep.checkNewAccountEditableFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la possibilite d'edition des champs d'Account (Affichage d'edition)        [90m# non_regression_account.feature:80[0m
+    [32mThen [0m[32mje verifie que le champ qui suit le label [0m[32m[1mSIC Code[0m[32m de la section [0m[32m[1mAccount Information[0m[32m et de type [0m[32m[1mInput[0m [90m# AccountStep.checkNewAccountEditableFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la possibilite d'edition des champs d'Account (Affichage d'edition)                 [90m# non_regression_account.feature:81[0m
+    [32mThen [0m[32mje verifie que le champ qui suit le label [0m[32m[1mBilling Street[0m[32m de la section [0m[32m[1mAddress Information[0m[32m et de type [0m[32m[1mtextArea[0m [90m# AccountStep.checkNewAccountEditableFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la possibilite d'edition des champs d'Account (Affichage d'edition)                       [90m# non_regression_account.feature:82[0m
+    [32mThen [0m[32mje verifie que le champ qui suit le label [0m[32m[1mBilling Zip/Postal Code[0m[32m de la section [0m[32m[1mAddress Information[0m[32m et de type [0m[32m[1mInput[0m [90m# AccountStep.checkNewAccountEditableFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la possibilite d'edition des champs d'Account (Affichage d'edition)            [90m# non_regression_account.feature:83[0m
+    [32mThen [0m[32mje verifie que le champ qui suit le label [0m[32m[1mBilling City[0m[32m de la section [0m[32m[1mAddress Information[0m[32m et de type [0m[32m[1mInput[0m [90m# AccountStep.checkNewAccountEditableFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la possibilite d'edition des champs d'Account (Affichage d'edition)                      [90m# non_regression_account.feature:84[0m
+    [32mThen [0m[32mje verifie que le champ qui suit le label [0m[32m[1mBilling State/Province[0m[32m de la section [0m[32m[1mAddress Information[0m[32m et de type [0m[32m[1mInput[0m [90m# AccountStep.checkNewAccountEditableFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la possibilite d'edition des champs d'Account (Affichage d'edition)               [90m# non_regression_account.feature:85[0m
+    [32mThen [0m[32mje verifie que le champ qui suit le label [0m[32m[1mBilling Country[0m[32m de la section [0m[32m[1mAddress Information[0m[32m et de type [0m[32m[1mInput[0m [90m# AccountStep.checkNewAccountEditableFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la possibilite d'edition des champs d'Account (Affichage d'edition)                  [90m# non_regression_account.feature:86[0m
+    [32mThen [0m[32mje verifie que le champ qui suit le label [0m[32m[1mShipping Street[0m[32m de la section [0m[32m[1mAddress Information[0m[32m et de type [0m[32m[1mtextArea[0m [90m# AccountStep.checkNewAccountEditableFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la possibilite d'edition des champs d'Account (Affichage d'edition)                        [90m# non_regression_account.feature:87[0m
+    [32mThen [0m[32mje verifie que le champ qui suit le label [0m[32m[1mShipping Zip/Postal Code[0m[32m de la section [0m[32m[1mAddress Information[0m[32m et de type [0m[32m[1mInput[0m [90m# AccountStep.checkNewAccountEditableFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la possibilite d'edition des champs d'Account (Affichage d'edition)             [90m# non_regression_account.feature:88[0m
+    [32mThen [0m[32mje verifie que le champ qui suit le label [0m[32m[1mShipping City[0m[32m de la section [0m[32m[1mAddress Information[0m[32m et de type [0m[32m[1mInput[0m [90m# AccountStep.checkNewAccountEditableFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la possibilite d'edition des champs d'Account (Affichage d'edition)                       [90m# non_regression_account.feature:89[0m
+    [32mThen [0m[32mje verifie que le champ qui suit le label [0m[32m[1mShipping State/Province[0m[32m de la section [0m[32m[1mAddress Information[0m[32m et de type [0m[32m[1mInput[0m [90m# AccountStep.checkNewAccountEditableFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la possibilite d'edition des champs d'Account (Affichage d'edition)                [90m# non_regression_account.feature:90[0m
+    [32mThen [0m[32mje verifie que le champ qui suit le label [0m[32m[1mShipping Country[0m[32m de la section [0m[32m[1mAddress Information[0m[32m et de type [0m[32m[1mInput[0m [90m# AccountStep.checkNewAccountEditableFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la possibilite d'edition des champs d'Account (Affichage d'edition)                     [90m# non_regression_account.feature:91[0m
+    [32mThen [0m[32mje verifie que le champ qui suit le label [0m[32m[1mCustomer Priority[0m[32m de la section [0m[32m[1mAdditional Information[0m[32m et de type [0m[32m[1mselect[0m [90m# AccountStep.checkNewAccountEditableFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la possibilite d'edition des champs d'Account (Affichage d'edition)                      [90m# non_regression_account.feature:92[0m
+    [32mThen [0m[32mje verifie que le champ qui suit le label [0m[32m[1mSLA Expiration Date[0m[32m de la section [0m[32m[1mAdditional Information[0m[32m et de type [0m[32m[1mInput[0m [90m# AccountStep.checkNewAccountEditableFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la possibilite d'edition des champs d'Account (Affichage d'edition)                      [90m# non_regression_account.feature:93[0m
+    [32mThen [0m[32mje verifie que le champ qui suit le label [0m[32m[1mNumber of Locations[0m[32m de la section [0m[32m[1mAdditional Information[0m[32m et de type [0m[32m[1mInput[0m [90m# AccountStep.checkNewAccountEditableFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la possibilite d'edition des champs d'Account (Affichage d'edition)          [90m# non_regression_account.feature:94[0m
+    [32mThen [0m[32mje verifie que le champ qui suit le label [0m[32m[1mActive[0m[32m de la section [0m[32m[1mAdditional Information[0m[32m et de type [0m[32m[1mselect[0m [90m# AccountStep.checkNewAccountEditableFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la possibilite d'edition des champs d'Account (Affichage d'edition)       [90m# non_regression_account.feature:95[0m
+    [32mThen [0m[32mje verifie que le champ qui suit le label [0m[32m[1mSLA[0m[32m de la section [0m[32m[1mAdditional Information[0m[32m et de type [0m[32m[1mselect[0m [90m# AccountStep.checkNewAccountEditableFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la possibilite d'edition des champs d'Account (Affichage d'edition)                    [90m# non_regression_account.feature:96[0m
+    [32mThen [0m[32mje verifie que le champ qui suit le label [0m[32m[1mSLA Serial Number[0m[32m de la section [0m[32m[1mAdditional Information[0m[32m et de type [0m[32m[1mInput[0m [90m# AccountStep.checkNewAccountEditableFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la possibilite d'edition des champs d'Account (Affichage d'edition)                      [90m# non_regression_account.feature:97[0m
+    [32mThen [0m[32mje verifie que le champ qui suit le label [0m[32m[1mUpsell Opportunity[0m[32m de la section [0m[32m[1mAdditional Information[0m[32m et de type [0m[32m[1mselect[0m [90m# AccountStep.checkNewAccountEditableFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la possibilite d'edition des champs d'Account (Affichage d'edition)                  [90m# non_regression_account.feature:98[0m
+    [32mThen [0m[32mje verifie que le champ qui suit le label [0m[32m[1mDescription[0m[32m de la section [0m[32m[1mDescription Information[0m[32m et de type [0m[32m[1mtextArea[0m [90m# AccountStep.checkNewAccountEditableFields(String,String,String)[0m
+
+  Scenario Outline: Verification de la presence des boutons "Save" / "Save & New" / "Cancel" en haut et bas de page (Affichage d'edition) [90m# non_regression_account.feature:101[0m
+    [36mThen [0m[36mje verifie la presence du bouton <buttonName> situe en <position>[0m
+
+    Examples: 
+
+  @tag
+  Scenario Outline: Verification de la presence des boutons "Save" / "Save & New" / "Cancel" en haut et bas de page (Affichage d'edition) [90m# non_regression_account.feature:106[0m
+    [32mThen [0m[32mje verifie la presence du bouton [0m[32m[1msave[0m[32m situe en [0m[32m[1mtop[0m                                                                               [90m# AccountStep.checkEditPageButtons(String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des boutons "Save" / "Save & New" / "Cancel" en haut et bas de page (Affichage d'edition) [90m# non_regression_account.feature:107[0m
+    [32mThen [0m[32mje verifie la presence du bouton [0m[32m[1msave_new[0m[32m situe en [0m[32m[1mtop[0m                                                                           [90m# AccountStep.checkEditPageButtons(String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des boutons "Save" / "Save & New" / "Cancel" en haut et bas de page (Affichage d'edition) [90m# non_regression_account.feature:108[0m
+    [32mThen [0m[32mje verifie la presence du bouton [0m[32m[1mcancel[0m[32m situe en [0m[32m[1mtop[0m                                                                             [90m# AccountStep.checkEditPageButtons(String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des boutons "Save" / "Save & New" / "Cancel" en haut et bas de page (Affichage d'edition) [90m# non_regression_account.feature:109[0m
+    [32mThen [0m[32mje verifie la presence du bouton [0m[32m[1msave[0m[32m situe en [0m[32m[1mbottom[0m                                                                            [90m# AccountStep.checkEditPageButtons(String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des boutons "Save" / "Save & New" / "Cancel" en haut et bas de page (Affichage d'edition) [90m# non_regression_account.feature:110[0m
+    [32mThen [0m[32mje verifie la presence du bouton [0m[32m[1msave_new[0m[32m situe en [0m[32m[1mbottom[0m                                                                        [90m# AccountStep.checkEditPageButtons(String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des boutons "Save" / "Save & New" / "Cancel" en haut et bas de page (Affichage d'edition) [90m# non_regression_account.feature:111[0m
+    [32mThen [0m[32mje verifie la presence du bouton [0m[32m[1mcancel[0m[32m situe en [0m[32m[1mbottom[0m                                                                          [90m# AccountStep.checkEditPageButtons(String,String)[0m
+
+  Scenario Outline: Remplissage des champs de l'Account                                                                                [90m# non_regression_account.feature:114[0m
+    [36mThen [0m[36mje remplis le champ <elementName> de la section <sectionName> de type <elementType> requis <required> avec la valeur <values>[0m
+
+    Examples: 
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                               [90m# non_regression_account.feature:119[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mAccount Name[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mInput[0m[32m requis [0m[32m[1mtrue[0m[32m avec la valeur [0m[32m[1m[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                           [90m# non_regression_account.feature:120[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mParent Account[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mInput[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mAccenture[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                            [90m# non_regression_account.feature:121[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mAccount Number[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mInput[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1m2121212121[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                              [90m# non_regression_account.feature:122[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mType[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mOther[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                 [90m# non_regression_account.feature:123[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mType[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mProspect[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                          [90m# non_regression_account.feature:124[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mType[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mCustomer - Direct[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                           [90m# non_regression_account.feature:125[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mType[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mCustomer - Channel[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                                   [90m# non_regression_account.feature:126[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mType[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mChannel Partner / Reseller[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                             [90m# non_regression_account.feature:127[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mType[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mInstallation Partner[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                           [90m# non_regression_account.feature:128[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mType[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mTechnology Partner[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                 [90m# non_regression_account.feature:129[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mType[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mProspect[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                        [90m# non_regression_account.feature:130[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mIndustry[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mAgriculture[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                       [90m# non_regression_account.feature:131[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mIndustry[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mConsulting[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                   [90m# non_regression_account.feature:132[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mIndustry[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mEnergy[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                    [90m# non_regression_account.feature:133[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mIndustry[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mFinance[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                  [90m# non_regression_account.feature:134[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mIndustry[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mMedia[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                               [90m# non_regression_account.feature:135[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mIndustry[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mTelecommunications[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                        [90m# non_regression_account.feature:136[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mAnnual Revenue[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mInput[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1m50 000[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                              [90m# non_regression_account.feature:137[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mRating[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mHot[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                               [90m# non_regression_account.feature:138[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mRating[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mWarm[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                               [90m# non_regression_account.feature:139[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mRating[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mCold[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                               [90m# non_regression_account.feature:140[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mRating[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mWarm[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                   [90m# non_regression_account.feature:141[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mPhone[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mInput[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1m0202020202[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                 [90m# non_regression_account.feature:142[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mFax[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mInput[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1m0202020202[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                                    [90m# non_regression_account.feature:143[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mWebsite[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mInput[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mhttps://www.accenture.com[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                    [90m# non_regression_account.feature:144[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mOwnership[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mPublic[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                     [90m# non_regression_account.feature:145[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mOwnership[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mPrivate[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                        [90m# non_regression_account.feature:146[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mOwnership[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mSubsidiary[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                     [90m# non_regression_account.feature:147[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mOwnership[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mPrivate[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                                         [90m# non_regression_account.feature:148[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mBilling Street[0m[32m de la section [0m[32m[1mAddress Information[0m[32m de type [0m[32m[1mtextArea[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1m500, route de Vannes[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                                [90m# non_regression_account.feature:149[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mBilling Zip/Postal Code[0m[32m de la section [0m[32m[1mAddress Information[0m[32m de type [0m[32m[1mInput[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1m44000[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                      [90m# non_regression_account.feature:150[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mBilling City[0m[32m de la section [0m[32m[1mAddress Information[0m[32m de type [0m[32m[1mInput[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mNantes[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                                          [90m# non_regression_account.feature:151[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mBilling State/Province[0m[32m de la section [0m[32m[1mAddress Information[0m[32m de type [0m[32m[1mInput[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mLoire Atlantique[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                         [90m# non_regression_account.feature:152[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mBilling Country[0m[32m de la section [0m[32m[1mAddress Information[0m[32m de type [0m[32m[1mInput[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mFrance[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                                          [90m# non_regression_account.feature:153[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mShipping Street[0m[32m de la section [0m[32m[1mAddress Information[0m[32m de type [0m[32m[1mtextArea[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1m500, route de Vannes[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                                 [90m# non_regression_account.feature:154[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mShipping Zip/Postal Code[0m[32m de la section [0m[32m[1mAddress Information[0m[32m de type [0m[32m[1mInput[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1m44000[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                       [90m# non_regression_account.feature:155[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mShipping City[0m[32m de la section [0m[32m[1mAddress Information[0m[32m de type [0m[32m[1mInput[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mNantes[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                                           [90m# non_regression_account.feature:156[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mShipping State/Province[0m[32m de la section [0m[32m[1mAddress Information[0m[32m de type [0m[32m[1mInput[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mLoire Atlantique[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                          [90m# non_regression_account.feature:157[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mShipping Country[0m[32m de la section [0m[32m[1mAddress Information[0m[32m de type [0m[32m[1mInput[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mFrance[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                             [90m# non_regression_account.feature:158[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mCustomer Priority[0m[32m de la section [0m[32m[1mAdditional Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mHigh[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                            [90m# non_regression_account.feature:159[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mCustomer Priority[0m[32m de la section [0m[32m[1mAdditional Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mLow[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                               [90m# non_regression_account.feature:160[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mCustomer Priority[0m[32m de la section [0m[32m[1mAdditional Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mMedium[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                             [90m# non_regression_account.feature:161[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mCustomer Priority[0m[32m de la section [0m[32m[1mAdditional Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mHigh[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                             [90m# non_regression_account.feature:162[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mNumber of Locations[0m[32m de la section [0m[32m[1mAdditional Information[0m[32m de type [0m[32m[1mInput[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1m123[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                 [90m# non_regression_account.feature:163[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mActive[0m[32m de la section [0m[32m[1mAdditional Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mYes[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                [90m# non_regression_account.feature:164[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mActive[0m[32m de la section [0m[32m[1mAdditional Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mNo[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                 [90m# non_regression_account.feature:165[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mActive[0m[32m de la section [0m[32m[1mAdditional Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mYes[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                               [90m# non_regression_account.feature:166[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mSLA[0m[32m de la section [0m[32m[1mAdditional Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mGold[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                 [90m# non_regression_account.feature:167[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mSLA[0m[32m de la section [0m[32m[1mAdditional Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mSilver[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                   [90m# non_regression_account.feature:168[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mSLA[0m[32m de la section [0m[32m[1mAdditional Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mPlatinum[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                 [90m# non_regression_account.feature:169[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mSLA[0m[32m de la section [0m[32m[1mAdditional Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mBronze[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                 [90m# non_regression_account.feature:170[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mSLA[0m[32m de la section [0m[32m[1mAdditional Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mSilver[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                               [90m# non_regression_account.feature:171[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mUpsell Opportunity[0m[32m de la section [0m[32m[1mAdditional Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mMaybe[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                            [90m# non_regression_account.feature:172[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mUpsell Opportunity[0m[32m de la section [0m[32m[1mAdditional Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mNo[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                             [90m# non_regression_account.feature:173[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mUpsell Opportunity[0m[32m de la section [0m[32m[1mAdditional Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mYes[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                                        [90m# non_regression_account.feature:174[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mDescription[0m[32m de la section [0m[32m[1mDescription Information[0m[32m de type [0m[32m[1mtextArea[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mOK[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @CheckHomePage
+  Scenario Outline: Enregistrer l'Account                                                                                              [90m# non_regression_account.feature:177[0m
+    [36mWhen [0m[36mje clique sur le bouton "Save"[0m
+    [36mGiven [0m[36mje reviens sur la HomePage il faut preciser le bon Parent Account[0m
+    [36mThen [0m[36mje remplis le champ <elementName> de la section <sectionName> de type <elementType> requis <required> avec la valeur <values>[0m
+    [36mWhen [0m[36mje clique sur le bouton "Save"[0m
+
+    Examples: 
+
+  @tag @CheckHomePage
+  Scenario Outline: Enregistrer l'Account                                                                                                 [90m# non_regression_account.feature:185[0m
+    [32mWhen [0m[32mje clique sur le bouton "Save"[0m                                                                                                   [90m# AccountStep.clickSaveButton()[0m
+    [32mGiven [0m[32mje reviens sur la HomePage il faut preciser le bon Parent Account[0m                                                               [90m# AccountStep.saveMultipleAccounts()[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mParent Account[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mAccenture Nantes[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+    [32mWhen [0m[32mje clique sur le bouton "Save"[0m                                                                                                   [90m# AccountStep.clickSaveButton()[0m
+
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record)    [90m# non_regression_account.feature:188[0m
+    [36mThen [0m[36mje verifie la presence du label <labelName> de la section <sectionName> et son type <elementType>[0m
+
+    Examples: 
+
+  @tag
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# non_regression_account.feature:193[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mAccount Owner[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m            [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# non_regression_account.feature:194[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mAccount Name[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m             [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# non_regression_account.feature:195[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mParent Account[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m           [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# non_regression_account.feature:196[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mAccount Number[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m           [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# non_regression_account.feature:197[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mAccount Site[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m             [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# non_regression_account.feature:198[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mType[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m                     [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# non_regression_account.feature:199[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mIndustry[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m                 [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# non_regression_account.feature:200[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mAnnual Revenue[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m           [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# non_regression_account.feature:201[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mRating[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m                   [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# non_regression_account.feature:202[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mPhone[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m                    [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# non_regression_account.feature:203[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mFax[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m                      [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# non_regression_account.feature:204[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mWebsite[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m                  [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# non_regression_account.feature:205[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mTicker Symbol[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m            [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# non_regression_account.feature:206[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mOwnership[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m                [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# non_regression_account.feature:207[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mEmployees[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m                [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# non_regression_account.feature:208[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mSIC Code[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m                 [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# non_regression_account.feature:209[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mBilling Address[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m          [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# non_regression_account.feature:210[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mShipping Address[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m         [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# non_regression_account.feature:211[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mCustomer Priority[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m        [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# non_regression_account.feature:212[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mSLA Expiration Date[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m      [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# non_regression_account.feature:213[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mNumber of Locations[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m      [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# non_regression_account.feature:214[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mActive[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m                   [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# non_regression_account.feature:215[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mSLA[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m                      [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# non_regression_account.feature:216[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mSLA Serial Number[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m        [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# non_regression_account.feature:217[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mUpsell Opportunity[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m       [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# non_regression_account.feature:218[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mDescription[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m              [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# non_regression_account.feature:221[0m
+    [36mThen [0m[36mje verifie que dans le champ <labelName> contient la valeur <value>[0m
+
+    Examples: 
+
+  @tag
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# non_regression_account.feature:226[0m
+    [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mAccount Name[0m[32m contient la valeur [0m[32m[1mNon Regression -[0m                               [90m# AccountStep.validateNewAccount(String,String)[0m
+
+  @tag
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# non_regression_account.feature:227[0m
+    [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mParent Account[0m[32m contient la valeur [0m[32m[1mAccenture Nantes[0m                             [90m# AccountStep.validateNewAccount(String,String)[0m
+
+  @tag
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# non_regression_account.feature:228[0m
+    [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mAccount Number[0m[32m contient la valeur [0m[32m[1m2121212121[0m                                   [90m# AccountStep.validateNewAccount(String,String)[0m
+
+  @tag
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# non_regression_account.feature:229[0m
+    [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mType[0m[32m contient la valeur [0m[32m[1mProspect[0m                                               [90m# AccountStep.validateNewAccount(String,String)[0m
+
+  @tag
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# non_regression_account.feature:230[0m
+    [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mIndustry[0m[32m contient la valeur [0m[32m[1mTelecommunications[0m                                 [90m# AccountStep.validateNewAccount(String,String)[0m
+
+  @tag
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# non_regression_account.feature:231[0m
+    [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mAnnual Revenue[0m[32m contient la valeur [0m[32m[1m50 000 €[0m                                     [90m# AccountStep.validateNewAccount(String,String)[0m
+
+  @tag
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# non_regression_account.feature:232[0m
+    [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mBilling Address[0m[32m contient la valeur [0m[32m[1m500, route de Vannes[0m                        [90m# AccountStep.validateNewAccount(String,String)[0m
+
+  @tag
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# non_regression_account.feature:233[0m
+    [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mBilling Address[0m[32m contient la valeur [0m[32m[1m44000 Nantes[0m                                [90m# AccountStep.validateNewAccount(String,String)[0m
+
+  @tag
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# non_regression_account.feature:234[0m
+    [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mBilling Address[0m[32m contient la valeur [0m[32m[1mLoire Atlantique France[0m                     [90m# AccountStep.validateNewAccount(String,String)[0m
+
+  @tag
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# non_regression_account.feature:235[0m
+    [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mCustomer Priority[0m[32m contient la valeur [0m[32m[1mHigh[0m                                      [90m# AccountStep.validateNewAccount(String,String)[0m
+
+  @tag
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# non_regression_account.feature:236[0m
+    [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mNumber of Locations[0m[32m contient la valeur [0m[32m[1m123[0m                                     [90m# AccountStep.validateNewAccount(String,String)[0m
+
+  @tag
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# non_regression_account.feature:237[0m
+    [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mActive[0m[32m contient la valeur [0m[32m[1mYes[0m                                                  [90m# AccountStep.validateNewAccount(String,String)[0m
+
+  @tag
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# non_regression_account.feature:238[0m
+    [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mDescription[0m[32m contient la valeur [0m[32m[1mOK[0m                                              [90m# AccountStep.validateNewAccount(String,String)[0m
+
+  @tag
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# non_regression_account.feature:239[0m
+    [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mRating[0m[32m contient la valeur [0m[32m[1mWarm[0m                                                 [90m# AccountStep.validateNewAccount(String,String)[0m
+
+  @tag
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# non_regression_account.feature:240[0m
+    [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mPhone[0m[32m contient la valeur [0m[32m[1m0202020202[0m                                            [90m# AccountStep.validateNewAccount(String,String)[0m
+
+  @tag
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# non_regression_account.feature:241[0m
+    [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mFax[0m[32m contient la valeur [0m[32m[1m0202020202[0m                                              [90m# AccountStep.validateNewAccount(String,String)[0m
+
+  @tag
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# non_regression_account.feature:242[0m
+    [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mWebsite[0m[32m contient la valeur [0m[32m[1mhttps://www.accenture.com[0m                           [90m# AccountStep.validateNewAccount(String,String)[0m
+
+  @tag
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# non_regression_account.feature:243[0m
+    [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mOwnership[0m[32m contient la valeur [0m[32m[1mPrivate[0m                                           [90m# AccountStep.validateNewAccount(String,String)[0m
+
+  @tag
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# non_regression_account.feature:244[0m
+    [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mShipping Address[0m[32m contient la valeur [0m[32m[1m500, route de Vannes[0m                       [90m# AccountStep.validateNewAccount(String,String)[0m
+
+  @tag
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# non_regression_account.feature:245[0m
+    [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mShipping Address[0m[32m contient la valeur [0m[32m[1m44000 Nantes[0m                               [90m# AccountStep.validateNewAccount(String,String)[0m
+
+  @tag
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# non_regression_account.feature:246[0m
+    [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mShipping Address[0m[32m contient la valeur [0m[32m[1mLoire Atlantique France[0m                    [90m# AccountStep.validateNewAccount(String,String)[0m
+
+  @tag
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# non_regression_account.feature:247[0m
+    [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mSLA[0m[32m contient la valeur [0m[32m[1mSilver[0m                                                  [90m# AccountStep.validateNewAccount(String,String)[0m
+
+  @tag
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# non_regression_account.feature:248[0m
+    [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mUpsell Opportunity[0m[32m contient la valeur [0m[32m[1mYes[0m                                      [90m# AccountStep.validateNewAccount(String,String)[0m
+
+  Scenario Outline: Verificiation de la presence des boutons "Edit" et "Delete" en haut et bas de page (Affichage du record) [90m# non_regression_account.feature:251[0m
+    [36mThen [0m[36mje verifie la presence du bouton <buttonName> situe en <position>[0m
+
+    Examples: 
+
+  @tag
+  Scenario Outline: Verificiation de la presence des boutons "Edit" et "Delete" en haut et bas de page (Affichage du record) [90m# non_regression_account.feature:256[0m
+    [32mThen [0m[32mje verifie la presence du bouton [0m[32m[1medit[0m[32m situe en [0m[32m[1mtop[0m                                                                  [90m# AccountStep.checkEditPageButtons(String,String)[0m
+
+  @tag
+  Scenario Outline: Verificiation de la presence des boutons "Edit" et "Delete" en haut et bas de page (Affichage du record) [90m# non_regression_account.feature:257[0m
+    [32mThen [0m[32mje verifie la presence du bouton [0m[32m[1mdelete[0m[32m situe en [0m[32m[1mtop[0m                                                                [90m# AccountStep.checkEditPageButtons(String,String)[0m
+
+  @tag
+  Scenario Outline: Verificiation de la presence des boutons "Edit" et "Delete" en haut et bas de page (Affichage du record) [90m# non_regression_account.feature:258[0m
+    [32mThen [0m[32mje verifie la presence du bouton [0m[32m[1medit[0m[32m situe en [0m[32m[1mbottom[0m                                                               [90m# AccountStep.checkEditPageButtons(String,String)[0m
+
+  @tag
+  Scenario Outline: Verificiation de la presence des boutons "Edit" et "Delete" en haut et bas de page (Affichage du record) [90m# non_regression_account.feature:259[0m
+    [32mThen [0m[32mje verifie la presence du bouton [0m[32m[1mdelete[0m[32m situe en [0m[32m[1mbottom[0m                                                             [90m# AccountStep.checkEditPageButtons(String,String)[0m
+
+  Scenario Outline: Verification de la presence des Related Lists                                          [90m# non_regression_account.feature:262[0m
+    [36mThen [0m[36mje verifie la presence du label <labelName> de la section <sectionName> et son type <elementType>[0m
+
+    Examples: 
+
+  @tag
+  Scenario Outline: Verification de la presence des Related Lists                         [90m# non_regression_account.feature:267[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mContacts[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mRelated List[0m [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des Related Lists                              [90m# non_regression_account.feature:268[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mOpportunities[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mRelated List[0m [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des Related Lists                      [90m# non_regression_account.feature:269[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mCases[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mRelated List[0m [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des Related Lists                                [90m# non_regression_account.feature:270[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mOpen Activities[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mRelated List[0m [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des Related Lists                                 [90m# non_regression_account.feature:271[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mActivity History[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mRelated List[0m [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des Related Lists                                    [90m# non_regression_account.feature:272[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mNotes & Attachments[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mRelated List[0m [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @tag
+  Scenario Outline: Verification de la presence des Related Lists                         [90m# non_regression_account.feature:273[0m
+    [32mThen [0m[32mje verifie la presence du label [0m[32m[1mPartners[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mRelated List[0m [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
+
+  @Logout
+  Scenario: Logout                            [90m# non_regression_account.feature:276[0m
+    [32mGiven [0m[32mje recupere les elements de la page[0m [90m# LogoutStep.checkHomePage()[0m
+    [32mThen [0m[32mje verifie les options du menu[0m       [90m# LogoutStep.checkOptions()[0m
+    [32mThen [0m[32mje me deconnecte[0m                     [90m# LogoutStep.logout()[0m

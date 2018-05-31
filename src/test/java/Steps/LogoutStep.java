@@ -4,17 +4,17 @@ import org.openqa.selenium.support.PageFactory;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
-import pages.HomePage;
+import pages.HomePageClassic;
 import utils.Driver;
 
 public class LogoutStep {
 
-	HomePage homePage;
+	HomePageClassic homePage;
 
 	@Given("^je recupere les elements de la page$")
 	public void checkHomePage() {
 
-		homePage = PageFactory.initElements(Driver.driver, HomePage.class);
+		homePage = PageFactory.initElements(Driver.driver, HomePageClassic.class);
 	}
 
 	@Then("^je verifie les options du menu$")
@@ -27,7 +27,7 @@ public class LogoutStep {
 	public void logout() {
 		
 		homePage.clickLogout();
-		Driver.driver.close ();
-		Driver.driver.quit ();
+		Driver.afterTest();
+		
 	}
 }
