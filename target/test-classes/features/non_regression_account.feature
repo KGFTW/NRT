@@ -61,7 +61,7 @@ Test NRT with cucumber
  		
  		Examples:
  		|labelName									|sectionName						|elementType|
- 		|Account Name								|Account Information		|Input			|
+ 		|Account Nameffff								|Account Information		|Input			|
  		|Parent Account							|Account Information		|Input 			|
  		|Account Number							|Account Information		|Input 			|
  		|Account Site								|Account Information		|Input 			|
@@ -226,7 +226,7 @@ Test NRT with cucumber
  				|Account Number				|2121212121											|
  				|Type									|Prospect												|
  				|Industry							|Telecommunications							|
- 				|Annual Revenue				|50 000 €												|
+ 				|Annual Revenue				|30 000 €												|
  				|Billing Address			|500, route de Vannes 					|
  				|Billing Address			|44000 Nantes 									|
  				|Billing Address			|Loire Atlantique France 				| 				
