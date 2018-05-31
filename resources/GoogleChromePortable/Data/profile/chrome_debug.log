@@ -1,1 +1,5 @@
-[1384:7540:0531/104901.357:WARNING:discovery_network_list_win.cc(195)] Failed to open Wlan client handle: 1062
+[3140:1448:0531/112846.799:WARNING:discovery_network_list_win.cc(195)] Failed to open Wlan client handle: 1062
+[6512:8904:0531/112850.776:ERROR:cache_util_win.cc(20)] Unable to move the cache: 5
+[6512:8904:0531/112850.776:ERROR:cache_util.cc(134)] Unable to move cache folder C:\Users\sylvain.tropee\eclipse-workspace\NRT_Starter_Pack\resources\GoogleChromePortable\Data\profile\ShaderCache\GPUCache to C:\Users\sylvain.tropee\eclipse-workspace\NRT_Starter_Pack\resources\GoogleChromePortable\Data\profile\ShaderCache\old_GPUCache_000
+[6512:8904:0531/112850.776:ERROR:disk_cache.cc(169)] Unable to create cache
+[6512:8904:0531/112850.776:ERROR:shader_disk_cache.cc(601)] Shader Cache Creation failed: -2
