@@ -15,9 +15,9 @@ public class LoginStep {
 
 	private LoginPage loginPage;
 
-	@Before
+	@Before("@Login")
 	public static void beforeTestClass() {
-		if (Driver.driver == null)
+		
 			Driver.driver = Driver.instanciateDriver();
 	}
 

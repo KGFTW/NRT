@@ -4,7 +4,8 @@
 Feature: Test Non regression account
 
 Test NRT with cucumber
-
+	
+	@Login
   Scenario: Test login
     Given je suis sur la page de connection Salesforce   
     When je remplis le login et le password
@@ -61,7 +62,7 @@ Test NRT with cucumber
  		
  		Examples:
  		|labelName									|sectionName						|elementType|
- 		|Account Nameffff								|Account Information		|Input			|
+ 		|Account Name								|Account Information		|Input			|
  		|Parent Account							|Account Information		|Input 			|
  		|Account Number							|Account Information		|Input 			|
  		|Account Site								|Account Information		|Input 			|
@@ -226,7 +227,7 @@ Test NRT with cucumber
  				|Account Number				|2121212121											|
  				|Type									|Prospect												|
  				|Industry							|Telecommunications							|
- 				|Annual Revenue				|30 000 â‚¬												|
+ 				|Annual Revenue				|50 000 €												|
  				|Billing Address			|500, route de Vannes 					|
  				|Billing Address			|44000 Nantes 									|
  				|Billing Address			|Loire Atlantique France 				| 				
