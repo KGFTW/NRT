@@ -158,15 +158,8 @@ Feature: Test Non regression account
     Examples: 
 
   @tag
-  Scenario Outline: Verification de la possibilite d'edition des champs d'Account (Affichage d'edition)                [90m# non_regression_account.feature:65[0m
-    [31mThen [0m[31mje verifie que le champ qui suit le label [0m[31m[1mAccount Nameffff[0m[31m de la section [0m[31m[1mAccount Information[0m[31m et de type [0m[31m[1mInput[0m [90m# AccountStep.checkNewAccountEditableFields(String,String,String)[0m
-      [31morg.junit.ComparisonFailure: expected:<[tru]e> but was:<[fals]e>
-      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-      	at steps.AccountStep.checkNewAccountEditableFields(AccountStep.java:47)
-      	at ✽.Then je verifie que le champ qui suit le label Account Nameffff de la section Account Information et de type Input(non_regression_account.feature:61)
-      [0m
+  Scenario Outline: Verification de la possibilite d'edition des champs d'Account (Affichage d'edition)            [90m# non_regression_account.feature:65[0m
+    [32mThen [0m[32mje verifie que le champ qui suit le label [0m[32m[1mAccount Name[0m[32m de la section [0m[32m[1mAccount Information[0m[32m et de type [0m[32m[1mInput[0m [90m# AccountStep.checkNewAccountEditableFields(String,String,String)[0m
 
   @tag
   Scenario Outline: Verification de la possibilite d'edition des champs d'Account (Affichage d'edition)              [90m# non_regression_account.feature:66[0m
@@ -705,14 +698,7 @@ Feature: Test Non regression account
 
   @tag
   Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# non_regression_account.feature:230[0m
-    [31mThen [0m[31mje verifie que dans le champ [0m[31m[1mAnnual Revenue[0m[31m contient la valeur [0m[31m[1m30 000 €[0m                                     [90m# AccountStep.validateNewAccount(String,String)[0m
-      [31morg.junit.ComparisonFailure: expected:<[tru]e> but was:<[fals]e>
-      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-      	at steps.AccountStep.validateNewAccount(AccountStep.java:83)
-      	at ✽.Then je verifie que dans le champ Annual Revenue contient la valeur 30 000 €(non_regression_account.feature:221)
-      [0m
+    [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mAnnual Revenue[0m[32m contient la valeur [0m[32m[1m50 000 €[0m                                     [90m# AccountStep.validateNewAccount(String,String)[0m
 
   @tag
   Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# non_regression_account.feature:231[0m

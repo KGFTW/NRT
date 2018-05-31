@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="86272" started-at="2018-05-31T11:39:33Z" finished-at="2018-05-31T11:41:00Z">
+  <suite name="Surefire suite" duration-ms="47291" started-at="2018-05-31T11:49:29Z" finished-at="2018-05-31T11:50:16Z">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.RunnerTest@66d2e7d9]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Surefire test" duration-ms="86272" started-at="2018-05-31T11:39:33Z" finished-at="2018-05-31T11:41:00Z">
+    <test name="Surefire test" duration-ms="47291" started-at="2018-05-31T11:49:29Z" finished-at="2018-05-31T11:50:16Z">
       <class name="runner.RunnerTest">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.RunnerTest@66d2e7d9]" name="setUpClass" is-config="true" duration-ms="284" started-at="2018-05-31T11:39:33Z" finished-at="2018-05-31T11:39:34Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.RunnerTest@66d2e7d9]" name="setUpClass" is-config="true" duration-ms="268" started-at="2018-05-31T11:49:29Z" finished-at="2018-05-31T11:49:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.RunnerTest@66d2e7d9]" name="feature" duration-ms="85809" started-at="2018-05-31T11:39:34Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-05-31T11:41:00Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.RunnerTest@66d2e7d9]" name="feature" duration-ms="46835" started-at="2018-05-31T11:49:29Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-05-31T11:50:16Z">
           <params>
             <param index="0">
               <value>
@@ -64,15 +64,15 @@ Caused by: org.junit.ComparisonFailure: expected:<[tru]e> but was:<[fals]e>
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at steps.AccountStep.checkNewAccountEditableFields(AccountStep.java:47)
-at ✽.Then je verifie que le champ qui suit le label Account Nameffff de la section Account Information et de type Input(non_regression_account.feature:60)
+at steps.AccountStep.validateNewAccount(AccountStep.java:83)
+at ✽.Then je verifie que dans le champ Annual Revenue contient la valeur 50 000 �(non_regression_account.feature:221)
 ]]>
             </full-stacktrace>
           </exception> <!-- cucumber.runtime.CucumberException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.RunnerTest@66d2e7d9]" name="tearDownClass" is-config="true" duration-ms="37" started-at="2018-05-31T11:41:00Z" finished-at="2018-05-31T11:41:00Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.RunnerTest@66d2e7d9]" name="tearDownClass" is-config="true" duration-ms="40" started-at="2018-05-31T11:50:16Z" finished-at="2018-05-31T11:50:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

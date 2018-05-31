@@ -133,8 +133,8 @@
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
 Caused by: org.junit.ComparisonFailure: expected:&lt;[tru]e&gt; but was:&lt;[fals]e&gt;
-	at steps.AccountStep.checkNewAccountEditableFields(AccountStep.java:47)
-	at ✽.Then je verifie que le champ qui suit le label Account Nameffff de la section Account Information et de type Input(non_regression_account.feature:60)
+	at steps.AccountStep.validateNewAccount(AccountStep.java:83)
+	at ✽.Then je verifie que dans le champ Annual Revenue contient la valeur 50 000 �(non_regression_account.feature:221)
 ... Removed 33 stack frames
 </div> <!-- stack-trace -->
                   <em>
@@ -206,12 +206,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'feature')
 data.setCell(0, 2, 'runner.RunnerTest')
-data.setCell(0, 3, 85809);
+data.setCell(0, 3, 46835);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 46 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -246,11 +246,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">feature(Test Non regression account)</span>
-                <span class="method-start">403 ms</span>
+                <span class="method-start">385 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">86228 ms</span>
+                <span class="method-start">47242 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

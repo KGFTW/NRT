@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu May 31 13:39:33 CEST 2018</td>
+<td>Started on:</td><td>Thu May 31 13:49:29 CEST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>86 seconds (86272 ms)</td>
+<tr><td>Total time:</td><td>47 seconds (47291 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -80,10 +80,10 @@ function toggleAllBoxes() {
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
 Caused by: org.junit.ComparisonFailure: expected:&lt;[tru]e&gt; but was:&lt;[fals]e&gt;
-	at steps.AccountStep.checkNewAccountEditableFields(AccountStep.java:47)
-	at ?.Then je verifie que le champ qui suit le label Account Nameffff de la section Account Information et de type Input(non_regression_account.feature:60)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1365197105", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1365197105'><pre>cucumber.runtime.CucumberException: org.junit.ComparisonFailure: expected:&lt;[tru]e&gt; but was:&lt;[fals]e&gt;
+	at steps.AccountStep.validateNewAccount(AccountStep.java:83)
+	at ?.Then je verifie que dans le champ Annual Revenue contient la valeur 50 000 ?(non_regression_account.feature:221)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1316001196", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1316001196'><pre>cucumber.runtime.CucumberException: org.junit.ComparisonFailure: expected:&lt;[tru]e&gt; but was:&lt;[fals]e&gt;
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -120,10 +120,10 @@ Caused by: org.junit.ComparisonFailure: expected:&lt;[tru]e&gt; but was:&lt;[fal
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at steps.AccountStep.checkNewAccountEditableFields(AccountStep.java:47)
-	at ?.Then je verifie que le champ qui suit le label Account Nameffff de la section Account Information et de type Input(non_regression_account.feature:60)
+	at steps.AccountStep.validateNewAccount(AccountStep.java:83)
+	at ?.Then je verifie que dans le champ Annual Revenue contient la valeur 50 000 ?(non_regression_account.feature:221)
 </pre></div></td>
-<td>85</td>
+<td>46</td>
 <td>runner.RunnerTest@66d2e7d9</td></tr>
 </table><p>
 </body>

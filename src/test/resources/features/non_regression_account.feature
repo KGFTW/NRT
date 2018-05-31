@@ -227,7 +227,7 @@ Test NRT with cucumber
  				|Account Number				|2121212121											|
  				|Type									|Prospect												|
  				|Industry							|Telecommunications							|
- 				|Annual Revenue				|50 000 €												|
+ 				|Annual Revenue				|50 000 â‚¬												|
  				|Billing Address			|500, route de Vannes 					|
  				|Billing Address			|44000 Nantes 									|
  				|Billing Address			|Loire Atlantique France 				| 				
