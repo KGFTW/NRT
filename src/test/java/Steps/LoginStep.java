@@ -16,9 +16,9 @@ public class LoginStep {
 	private LoginPage loginPage;
 
 	@Before("@Login")
-	public static void beforeTestClass() {
+	public static void beforeLoginScenario() {
 		
-			Driver.driver = Driver.instanciateDriver();
+			Driver.beforeTestClass();
 	}
 
 	@Given("je suis sur la page de connection Salesforce")

@@ -17,7 +17,7 @@ Test NRT with cucumber
 		Then je clique sur l'onglet Account
 		
  
-  Scenario Outline: Verification de la pr�sence des champs
+  Scenario Outline: Verification de la presence des champs
   	Then je verifie la presence du label <labelName> de la section <sectionName> et son type <elementType>    	 		
 		
   	Examples:
@@ -247,7 +247,7 @@ Test NRT with cucumber
  				|Upsell Opportunity		|Yes														|
  				
  	
- 		Scenario Outline: Verificiation de la pr�sence des boutons "Edit" et "Delete" en haut et bas de page (Affichage du record)
+ 		Scenario Outline: Verificiation de la presence des boutons "Edit" et "Delete" en haut et bas de page (Affichage du record)
  			Then je verifie la presence du bouton <buttonName> situe en <position>
  	 		
  	 			Examples:
@@ -258,7 +258,7 @@ Test NRT with cucumber
  				|delete							|bottom		|
  				
  				
- 			Scenario Outline: Verification de la pr�sence des Related Lists	
+ 			Scenario Outline: Verification de la presence des Related Lists	
  				Then je verifie la presence du label <labelName> de la section <sectionName> et son type <elementType>
  			
  			Examples:
@@ -271,6 +271,7 @@ Test NRT with cucumber
  		|Notes & Attachments				|									|Related List		|
  		|Partners										|									|Related List		|
  	
+ 		@Logout
  		Scenario: Logout
  			Given je recupere les elements de la page
  			Then je verifie les options du menu

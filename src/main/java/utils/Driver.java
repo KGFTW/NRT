@@ -77,7 +77,6 @@ public class Driver {
 	 * loginAsExpected � false afin de valider que l'on n'est pas connect� par
 	 * d�faut avec un autre utilisateur
 	 */
-	//@BeforeClass
 	public static void beforeTestClass() {
 		driver = instanciateDriver();
 		loginAsExpected = false;
@@ -208,7 +207,7 @@ public class Driver {
 	 *          sont pass�s en param�tre des tests automatiquement dans une methode
 	 *          login via dataProvider="getUserCredentials"
 	 */
-	//@DataProvider
+	// @DataProvider
 	public static Object[] getUserCredentials() {
 		// Cr�ation de la variable username contenant la valeur username.system.admin
 		// r�cup�r�e dans user.dev.properties
@@ -242,7 +241,7 @@ public class Driver {
 			cssSelector += "input[name=\"" + button + "\"]";
 			WebElement element = driver.findElement(By.cssSelector(cssSelector));
 		} catch (Exception e) {
-			System.err.println("Button " + button + " not found.");			
+			System.err.println("Button " + button + " not found.");
 			btnPresent = false;
 		}
 		return btnPresent;
@@ -260,7 +259,7 @@ public class Driver {
 		try {
 			WebElement element = driver.findElement(By.name(btnName));
 		} catch (Exception e) {
-			System.err.println("Button " + btnName + " not found.");			
+			System.err.println("Button " + btnName + " not found.");
 			btnPresent = false;
 		}
 		return btnPresent;
@@ -277,7 +276,7 @@ public class Driver {
 			element.click();
 			waitMs(4000);
 		} catch (Exception e) {
-			System.err.println("Button " + btnName + " not found.");			
+			System.err.println("Button " + btnName + " not found.");
 		}
 	}
 
@@ -339,7 +338,7 @@ public class Driver {
 			}
 		} catch (Exception e) {
 			// Si le label n'est pas pr�sent on affiche le message d'erreur
-			System.err.println("Label " + label + " not found.");			
+			System.err.println("Label " + label + " not found.");
 			labelPresent = false;
 		}
 		// On retourne le booleen, pour effectuer un assert en fonction
@@ -403,7 +402,7 @@ public class Driver {
 				break;
 			}
 		} catch (WebDriverException e) {
-			System.err.println("Element " + eltName + " not editable.");			
+			System.err.println("Element " + eltName + " not editable.");
 			return false;
 		}
 		return element.isEnabled();
@@ -617,7 +616,7 @@ public class Driver {
 	 * quitter compl�tement la page test� apr�s l'ex�cution de tous les tests de la
 	 * classe
 	 */
-//	@AfterClass
+	// @AfterClass
 	public static void afterTest() {
 		driver.close();
 		driver.quit();
@@ -698,7 +697,6 @@ public class Driver {
 			menuPage.clickLogout();
 		}
 	}
-
 
 	public void waitPageLoaded() {
 		// On attend l'affichage de la page, au maximum le temps param�tr� dans
