@@ -1,4 +1,4 @@
-steps\AccountStep.class
 steps\LoginStep.class
 steps\LogoutStep.class
+steps\AccountStepClassic.class
 runner\RunnerTest.class

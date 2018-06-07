@@ -1,6 +1,8 @@
-utils\Driver.class
 pages\HomePageLightning.class
+utils\DriverClassic.class
 utils\Selectors.class
 pages\LoginPage.class
-pages\HomePage.class
+utils\Driver.class
+utils\FactoryDriver.class
+utils\DriverLightning.class
 pages\HomePageClassic.class

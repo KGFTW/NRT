@@ -6,11 +6,12 @@ import java.util.stream.Collectors;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class DriverLightning extends Driver {
 
-
-
+	
 	/**
 	 * isRecordPageButtonVisible Methodes pour verifier que les boutons sont bien
 	 * visibles Boutons specifiques aux "pages de record" dans Salesforce
@@ -25,7 +26,7 @@ public class DriverLightning extends Driver {
 			btnPresent = false;
 		}
 		return btnPresent;
-	}
+	} 
 
 	/**
 	 * clickButton Methode permettant de cliquer sur un bouton
@@ -222,16 +223,17 @@ public class DriverLightning extends Driver {
 				element = block.findElement(By.xpath(Selectors.SEARCH_PATH));
 				element.clear();
 				element.sendKeys(values[0]);
-				waitMs(3000);				
+				waitMs(2000);				
 				break;
 			case SELECT_SEARCHFIELD:
 				element = block.findElement(By.xpath(Selectors.SEARCH_PATH));
 				element.clear();
-				element.sendKeys(values[0]);
-				waitMs(3000);
-				WebElement parentAccount = driver.findElement(By.xpath(Selectors.PARENT_ACCOUNT_SELECT));
+				element.sendKeys(values[0]);	
+				waitMs(2000);
+				WebElement parentAccount = driver.findElement(By.xpath(Selectors.PARENT_ACCOUNT_SELECT));						
 				parentAccount.click();
 				break;
+				// cases non utilisées pour account
 				// case MULTISELECT:
 				// element = block.findElement(By.xpath(preXpath + Selectors.MULTISELECT));
 				// WebElement addBtn = block.findElement(By.xpath(preXpath +
@@ -274,15 +276,13 @@ public class DriverLightning extends Driver {
 	 */
 	public void selectElementInSelect(WebElement elementSelect, String stringToSelect) {
 		// On clique sur la picklist
-		elementSelect.click();
-		waitMs(1000);
+		elementSelect.click();	
 		// On recupere la liste d'options html (<option>) correspondant e notre valeur
-		// "stringToSelect" dans le WebElement "elementSelect"
-		WebElement listeOptions = driver.findElement(By.className("positioned"));
-		waitMs(1000);
+		// "stringToSelect" dans le WebElement "elementSelect"		
+		WebElement listeOptions = wait.until(ExpectedConditions.presenceOfElementLocated(By.className("positioned")));
 		List<WebElement> options = listeOptions.findElements(By.className("uiMenuItem")).stream()
 				.filter(option -> option.getText().equals(stringToSelect)).collect(Collectors.toList());
-		waitMs(1000);
+		//waitMs(1000);
 		// S'il n'y a aucune option, la valeur n'existe pas, on renvoie une exception
 		if (null == options || options.isEmpty()) {
 			throw new WebDriverException("Not found: " + stringToSelect);

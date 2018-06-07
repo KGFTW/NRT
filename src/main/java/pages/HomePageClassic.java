@@ -70,7 +70,8 @@ public class HomePageClassic {
 
 	public void switchToLightning() {
 
-		switchLightning.click();
+		switchLightning.click();	
+		FactoryDriver.getInstance().waitPageLoaded();
 
 	}
 
@@ -80,7 +81,7 @@ public class HomePageClassic {
 			return true;
 		} catch (Exception e) {
 			return false;
-		}
+		} 
 
 	}
 

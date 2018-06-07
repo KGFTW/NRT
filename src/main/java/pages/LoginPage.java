@@ -28,6 +28,7 @@ public class LoginPage extends DriverClassic {
 	private String entrepriseEditionPageTitleClassicOther = "Salesforce - Developer Edition";
 	private String enterpriseEditionPageTitleClassic = "Home Page ~ Salesforce - Developer Edition";
 	private String enterpriseEditionPageTitleLightning = "Home | Salesforce";
+	private String enterpriseEditionPageTitleLightningOther = "Lightning Experience";
 
 	private String loginPageTitle = "Login | Salesforce";
 
@@ -37,14 +38,21 @@ public class LoginPage extends DriverClassic {
 	public void assertLogin(WebDriver driver) {
 		boolean title = false;
 		if (onSalesClassic) {
-			if (driver.getTitle().equals(entrepriseEditionPageTitleClassicOther)
-					|| driver.getTitle().equals(enterpriseEditionPageTitleClassic)) {
+
+			if (entrepriseEditionPageTitleClassicOther.equals(driver.getTitle())
+					|| enterpriseEditionPageTitleClassic.equals(driver.getTitle()))
 				title = true;
-			}
 
 			Assert.assertEquals(title, true);
-		} else
-			Assert.assertEquals(enterpriseEditionPageTitleLightning, driver.getTitle());
+
+		} else {
+			if (enterpriseEditionPageTitleLightning.equals(driver.getTitle())
+					|| enterpriseEditionPageTitleLightningOther.equals(driver.getTitle()))
+				title = true;
+
+			Assert.assertEquals(title, true);
+		}
+
 	}
 
 	/**
@@ -69,15 +77,7 @@ public class LoginPage extends DriverClassic {
 	 */
 	public void waitLogin(WebDriver driver) {
 
-		FactoryDriver.getInstance().waitMs(5000);
-
-		// if (Driver.onSalesClassic)
-		// new WebDriverWait(driver, getTimeout())
-		// .until(ExpectedConditions.titleIs(enterpriseEditionPageTitleClassic));
-		// else
-		// new WebDriverWait(driver, getTimeout())
-		// .until(ExpectedConditions.titleIs(enterpriseEditionPageTitleLightning));
-
+		FactoryDriver.getInstance().waitPageLoaded();
 	}
 
 	/**

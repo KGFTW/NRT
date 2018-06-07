@@ -124,4 +124,16 @@ public class Selectors {
 	// Target element to put value in (to verify value)
 	public static final String TARGET = "//td[3]//select";
 	
+	
+	//Constantes pour le NRT
+	public static final String CLASSIC = "classic";
+	public static final String LIGHTNING = "lightning";
+	
+	public static final String BROWSER = "browser";
+	public static final String URL = "url";
+	public static final String USERNAME = "username";
+	public static final String PASSWORD = "password";
+	public static final String VIEW = "view";
+	
+	
 }

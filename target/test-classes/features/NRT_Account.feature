@@ -15,7 +15,7 @@ Test NRT with cucumber
 	@CheckHomePageClassic
 	Scenario: Clic sur Account
 		Given je suis sur la page d'accueil
-		Then je vais sur la page principal de Salesforce Light
+		Then je vais sur la page principal de Salesforce
 		When je verifie que l'onglet Account est present
 		Then je clique sur l'onglet Account
 		

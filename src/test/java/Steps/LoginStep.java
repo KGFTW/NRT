@@ -12,6 +12,7 @@ import pages.HomePageClassic;
 import pages.HomePageLightning;
 import pages.LoginPage;
 import utils.FactoryDriver;
+import utils.Selectors;
 
 public class LoginStep {
 
@@ -35,7 +36,7 @@ public class LoginStep {
 	@When("^je remplis le login et le password$")
 	public void putNameAndPassword() {
 
-		loginPage.login(System.getProperty("username"), System.getProperty("password"));
+		loginPage.login(System.getProperty(Selectors.USERNAME), System.getProperty(Selectors.PASSWORD));
 
 	}
 
@@ -49,17 +50,16 @@ public class LoginStep {
 	public void switchView() {
 
 		if (homePageClassic.checkPage() && !FactoryDriver.getInstance().onSalesClassic) {
-			homePageClassic.switchToLightning();
-			FactoryDriver.getInstance().waitMs(3000);
+			
+			homePageClassic.switchToLightning();			
 
 		} else if (!homePageClassic.checkPage()) {
 
 			homePageLightning = PageFactory.initElements(FactoryDriver.getInstance().driver, HomePageLightning.class);
-			FactoryDriver.getInstance().waitMs(3000);
+			FactoryDriver.getInstance().waitPageLoaded();
 
 			if (FactoryDriver.getInstance().onSalesClassic) {
-				homePageLightning.switchToClassic();
-				FactoryDriver.getInstance().waitMs(3000);
+				homePageLightning.switchToClassic();				
 			}
 		}
 

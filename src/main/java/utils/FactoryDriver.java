@@ -8,7 +8,7 @@ public class FactoryDriver {
 
 		if (driver == null) {
 
-			if (System.getProperty("view").equals("classic"))
+			if (Selectors.CLASSIC.equals(System.getProperty(Selectors.VIEW)))
 				driver = new DriverClassic();
 			else
 				driver = new DriverLightning();

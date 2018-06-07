@@ -17,6 +17,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import cucumber.api.Scenario;
 
@@ -40,27 +41,31 @@ public abstract class Driver {
 	public 	final String SELECT_SEARCHFIELD = "select_searchField";
 	public  final String DATE = "Date";
 
-	public  final String LOGINURL = System.getProperty("url");
+	public  final String LOGINURL = System.getProperty(Selectors.URL);
 
 	public  final String TOP = "top";
 	public  final String BOTTOM = "bottom";
+	
+	
 
 	/**
 	 * Declaration des variables
 	 */
 	public  boolean onSalesClassic = false;
 	public  Properties configProperties;
-	private  String browser = System.getProperty("browser");
+	private  String browser = System.getProperty(Selectors.BROWSER);
 	public  Boolean loginAsExpected = false;
 	public  String loginAsUserName = "";
 	public  WebDriver driver;
+	public WebDriverWait wait;
 
 	 {
-		// On charge les properties de config (paths des web drivers)
+		// On charge les properties de config (paths des web drivers)		 
 		loadConfigProperties();
-		if (System.getProperty("view").equals("classic")) {
+		if (Selectors.CLASSIC.equals(System.getProperty(Selectors.VIEW))) {
 			onSalesClassic = true;
 		}
+		
 	}
 
 	/**
@@ -73,6 +78,7 @@ public abstract class Driver {
 	public  void beforeTestClass() {
 		driver = instanciateDriver();
 		loginAsExpected = false;
+		wait = new WebDriverWait(FactoryDriver.getInstance().driver, FactoryDriver.getInstance().getTimeout());
 	}
 
 	/**
@@ -176,7 +182,7 @@ public abstract class Driver {
 	public  void waitPageLoaded() {
 		// On attend l'affichage de la page, au maximum le temps paramétré dans
 		// config.properties -> 30secondes
-		driver.manage().timeouts().pageLoadTimeout(getTimeout(), TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(getTimeout(), TimeUnit.SECONDS);
 	}
 
 	/**
@@ -222,7 +228,7 @@ public abstract class Driver {
 			String testName = result.getName();
 			// Affichage de la methode contenant l'erreur
 			System.err.println("!!!!!!!!!!!!!!!!!! Error on method : " + testName + " !!!!!!!!!!!!!!!!!!");
-			// takeScreenshot(testName);
+			 takeScreenshot(testName);
 		}
 	}
 
@@ -255,7 +261,7 @@ public abstract class Driver {
 	
 	
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-					//Methodes abstraites à outrepasser dans les classes filles
+					//Methodes abstraites à surcharger dans les classes filles
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	
 	
