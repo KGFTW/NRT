@@ -8,10 +8,12 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-public class HomePageClassic extends HomePage {
+import utils.FactoryDriver;
+
+public class HomePageClassic {
 
 	/**
-	 *  Search input
+	 * Search input
 	 */
 	@FindBy(xpath = "//div[@class='searchBoxClearContainer']//input")
 	private WebElement searchInput;
@@ -19,10 +21,10 @@ public class HomePageClassic extends HomePage {
 	@FindBy(id = "phSearchButton")
 	private WebElement searchButton;
 
-	@FindBy(xpath="//a[@title='Developer Console (New Window)']")
+	@FindBy(xpath = "//a[@title='Developer Console (New Window)']")
 	public WebElement devConsoleBtn;
 
-	/** 
+	/**
 	 * Tabs
 	 */
 	@FindBy(linkText = "Console")
@@ -52,263 +54,256 @@ public class HomePageClassic extends HomePage {
 
 	@FindBy(xpath = "//div[@id='userNavMenu']//a[@title='Logout']")
 	private WebElement logoutLink;
-	
+
 	@FindBy(linkText = "Switch to Lightning Experience")
-	private WebElement SwitchLightning;
+	private WebElement switchLightning;
 
 	/**
 	 * SideBar
 	 */
-	@FindBy(xpath="//span[@id='pinIndicator']")
+	@FindBy(xpath = "//span[@id='pinIndicator']")
 	private WebElement openSideBar;
-	
+
 	// Page Title bloc
 	@FindBy(className = "bPageTitle")
-    private WebElement titleBloc;
-	
-	
+	private WebElement titleBloc;
+
+	public void switchToLightning() {
+
+		switchLightning.click();
+
+	}
+
+	public boolean checkPage() {
+		try {
+			switchLightning = FactoryDriver.getInstance().driver.findElement(By.linkText("Switch to Lightning Experience"));
+			return true;
+		} catch (Exception e) {
+			return false;
+		}
+
+	}
+
+	public void assertSwitchToLightning() {
+
+		Assert.assertNotNull(switchLightning);
+	}
 
 	/**
-	 * assertConsoleMenu
-	 * M�thode permettant v�rifier la pr�sence de l'�l�ment consoleTab
+	 * assertConsoleMenu M�thode permettant v�rifier la pr�sence de l'�l�ment
+	 * consoleTab
 	 */
 	public void assertConsoleMenu() {
 		Assert.assertNotNull(consoleTab);
 	}
 
 	/**
-	 * assertContactTab
-	 * M�thode permettant v�rifier la pr�sence de l'�l�ment contactTab
+	 * assertContactTab M�thode permettant v�rifier la pr�sence de l'�l�ment
+	 * contactTab
 	 */
 	public void assertContactTab() {
 		Assert.assertNotNull(contactTab);
 	}
 
-	
 	/**
-	 * assertAccountTab
-	 * M�thode permettant v�rifier la pr�sence de l'�l�ment accountTab
+	 * assertAccountTab M�thode permettant v�rifier la pr�sence de l'�l�ment
+	 * accountTab
 	 */
 	public void assertAccountTab() {
 		Assert.assertNotNull(accountTab);
 	}
 
-	
 	/**
-	 * assertLeadTab
-	 * M�thode permettant v�rifier la pr�sence de l'�l�ment leadTab
+	 * assertLeadTab M�thode permettant v�rifier la pr�sence de l'�l�ment leadTab
 	 */
 	public void assertLeadTab() {
 		Assert.assertNotNull(leadTab);
 	}
 
-	
 	/**
-	 * assertCaseTab
-	 * M�thode permettant v�rifier la pr�sence de l'�l�ment caseTab
+	 * assertCaseTab M�thode permettant v�rifier la pr�sence de l'�l�ment caseTab
 	 */
 	public void assertCaseTab() {
 		Assert.assertNotNull(caseTab);
 	}
 
-	
 	/**
-	 * assertOpportunityTab
-	 * M�thode permettant v�rifier la pr�sence de l'�l�ment opportunityTab
+	 * assertOpportunityTab M�thode permettant v�rifier la pr�sence de l'�l�ment
+	 * opportunityTab
 	 */
 	public void assertOpportunityTab() {
 		Assert.assertNotNull(opportunityTab);
 	}
 
-	
 	/**
-	 * assertLogoutMenu
-	 * M�thode permettant v�rifier la pr�sence des �l�ments userNavBtn et logoutLink
+	 * assertLogoutMenu M�thode permettant v�rifier la pr�sence des �l�ments
+	 * userNavBtn et logoutLink
 	 */
 	public void assertLogoutMenu() {
 		Assert.assertNotNull(userNavBtn);
 		Assert.assertNotNull(logoutLink);
 	}
 
-
 	/**
-	 * accessConsoleTab
-	 * M�thode permettant de cliquer sur consoleTab
+	 * accessConsoleTab M�thode permettant de cliquer sur consoleTab
 	 */
 	public void accessConsoleTab() {
 		consoleTab.click();
 	}
 
-	
 	/**
-	 * accessAccountTab
-	 * M�thode permettant de cliquer sur accountTab
+	 * accessAccountTab M�thode permettant de cliquer sur accountTab
 	 */
 	public void accessAccountTab() {
 		accountTab.click();
 	}
 
-	
 	/**
-	 * accessContactTab
-	 * M�thode permettant de cliquer sur contactTab
+	 * accessContactTab M�thode permettant de cliquer sur contactTab
 	 */
 	public void accessContactTab() {
 		contactTab.click();
 	}
 
-	
 	/**
-	 * accessLeadTab
-	 * M�thode permettant de cliquer sur leadTab
+	 * accessLeadTab M�thode permettant de cliquer sur leadTab
 	 */
 	public void accessLeadTab() {
 		leadTab.click();
 	}
 
-	
 	/**
-	 * accessCaseTab
-	 * M�thode permettant de cliquer sur caseTab
+	 * accessCaseTab M�thode permettant de cliquer sur caseTab
 	 */
 	public void accessCaseTab() {
 		caseTab.click();
 	}
 
-	
 	/**
-	 * accessOpportunityTab
-	 * M�thode permettant de cliquer sur le bouton opportunityTab
+	 * accessOpportunityTab M�thode permettant de cliquer sur le bouton
+	 * opportunityTab
 	 */
 	public void accessOpportunityTab() {
 		opportunityTab.click();
 	}
 
-	
 	/**
-	 * clickLogout
-	 * M�thode permettant de cliquer sur d�connexion
+	 * clickLogout M�thode permettant de cliquer sur d�connexion
 	 */
 	public void clickLogout() {
 		userNavBtn.click();
 		logoutLink.click();
 	}
 
-
 	/**
 	 * 
 	 * M�thode permettant d'attendre l'affichage de l'�l�ment consoleTab
 	 */
 	public void waitConsoleMenu(WebDriver driver) {
-		new WebDriverWait(driver, getTimeout()).until(ExpectedConditions.elementToBeClickable(consoleTab));
+		new WebDriverWait(driver, FactoryDriver.getInstance().getTimeout())
+				.until(ExpectedConditions.elementToBeClickable(consoleTab));
 	}
 
-	
 	/**
-	 * waitAccountMenu
-	 * M�thode permettant d'attendre l'affichage de l'�l�ment accountTab
+	 * waitAccountMenu M�thode permettant d'attendre l'affichage de l'�l�ment
+	 * accountTab
 	 */
 	public void waitAccountMenu(WebDriver driver) {
-		new WebDriverWait(driver, getTimeout()).until(ExpectedConditions.elementToBeClickable(accountTab));
+		new WebDriverWait(driver, FactoryDriver.getInstance().getTimeout())
+				.until(ExpectedConditions.elementToBeClickable(accountTab));
 	}
 
-	
 	/**
-	 * waitContactMenu
-	 * M�thode permettant d'attendre l'affichage de l'�l�ment contactTab
+	 * waitContactMenu M�thode permettant d'attendre l'affichage de l'�l�ment
+	 * contactTab
 	 */
 	public void waitContactMenu(WebDriver driver) {
-		new WebDriverWait(driver, getTimeout()).until(ExpectedConditions.elementToBeClickable(contactTab));
+		new WebDriverWait(driver, FactoryDriver.getInstance().getTimeout())
+				.until(ExpectedConditions.elementToBeClickable(contactTab));
 	}
 
-	
 	/**
-	 * waitLeadMenu
-	 * M�thode permettant d'attendre l'affichage de l'�l�ment leadTab
+	 * waitLeadMenu M�thode permettant d'attendre l'affichage de l'�l�ment leadTab
 	 */
 	public void waitLeadMenu(WebDriver driver) {
-		new WebDriverWait(driver, getTimeout()).until(ExpectedConditions.elementToBeClickable(leadTab));
+		new WebDriverWait(driver, FactoryDriver.getInstance().getTimeout()).until(ExpectedConditions.elementToBeClickable(leadTab));
 	}
 
-	
 	/**
-	 * waitCaseMenu
-	 * M�thode permettant d'attendre l'affichage de l'�l�ment caseTab
+	 * waitCaseMenu M�thode permettant d'attendre l'affichage de l'�l�ment caseTab
 	 */
 	public void waitCaseMenu(WebDriver driver) {
-		new WebDriverWait(driver, getTimeout()).until(ExpectedConditions.elementToBeClickable(caseTab));
+		new WebDriverWait(driver, FactoryDriver.getInstance().getTimeout()).until(ExpectedConditions.elementToBeClickable(caseTab));
 	}
 
-	
 	/**
-	 * waitOpportunityMenu
-	 * M�thode permettant d'attendre l'affichage de l'�l�ment opportunityTab
+	 * waitOpportunityMenu M�thode permettant d'attendre l'affichage de l'�l�ment
+	 * opportunityTab
 	 */
 	public void waitOpportunityMenu(WebDriver driver) {
-		new WebDriverWait(driver, getTimeout()).until(ExpectedConditions.elementToBeClickable(opportunityTab));
+		new WebDriverWait(driver, FactoryDriver.getInstance().getTimeout())
+				.until(ExpectedConditions.elementToBeClickable(opportunityTab));
 	}
 
-	
 	/**
-	 * waitLogoutMenu
-	 * M�thode permettant d'attendre l'affichage de l'�l�ment userNavBtn
+	 * waitLogoutMenu M�thode permettant d'attendre l'affichage de l'�l�ment
+	 * userNavBtn
 	 */
 	public void waitLogoutMenu(WebDriver driver) {
-		new WebDriverWait(driver, getTimeout()).until(ExpectedConditions.elementToBeClickable(userNavBtn));
+		new WebDriverWait(driver, FactoryDriver.getInstance().getTimeout())
+				.until(ExpectedConditions.elementToBeClickable(userNavBtn));
 	}
 
-	
-	
 	/**
-	 * setSearch
-	 * M�thode permettant d'ins�rer des donn�es dans le champ search
+	 * setSearch M�thode permettant d'ins�rer des donn�es dans le champ search
+	 * 
 	 * @param search
 	 */
 	public void setSearch(String search) {
 		searchInput.sendKeys(search);
 	}
 
-	
 	/**
-	 * clickSearch
-	 * M�thode permettant de cliquer sur le bouton search
+	 * clickSearch M�thode permettant de cliquer sur le bouton search
 	 */
 	public void clickSearch() {
 		searchButton.click();
 	}
 
-	
 	/**
-	 * accessDeveloperConsole
-	 * M�thode permettant de cliquer sur le bouton userNavBtn puis sur devConsoleBtn
+	 * accessDeveloperConsole M�thode permettant de cliquer sur le bouton userNavBtn
+	 * puis sur devConsoleBtn
 	 */
 	public String accessDeveloperConsole(String baseWindow) {
 		userNavBtn.click();
 		devConsoleBtn.click();
-		return driver.getWindowHandle();
+		return FactoryDriver.getInstance().driver.getWindowHandle();
 	}
 
-	
 	/**
-	 * getIdPopUp
-	 * M�thode qui permet d'acc�der � la page de la devconsole une fois celle-ci ouverte
-	 * Requiert que la m�thode accessDeveloperConsole ait �t� appel� au pr�alable
+	 * getIdPopUp M�thode qui permet d'acc�der � la page de la devconsole une fois
+	 * celle-ci ouverte Requiert que la m�thode accessDeveloperConsole ait �t�
+	 * appel� au pr�alable
+	 * 
 	 * @return
 	 */
-	 public String getIdPopUp() {
-		String devConsoleWindow = driver.getWindowHandle();
-		String idPopup = driver.getWindowHandles().stream().filter(s -> !s.equals(devConsoleWindow)).findFirst().get();
-		driver.switchTo().window(idPopup);
+	public String getIdPopUp() {
+		String devConsoleWindow = FactoryDriver.getInstance().driver.getWindowHandle();
+		String idPopup = FactoryDriver.getInstance().driver.getWindowHandles().stream().filter(s -> !s.equals(devConsoleWindow))
+				.findFirst().get();
+		FactoryDriver.getInstance().driver.switchTo().window(idPopup);
 		return idPopup;
-	 } 
-	 
-	 /**
-	  * Method getTitleType()
-	  * Cette methode r�cup�re le titre de la page afin de l'utiliser dans des v�rifications
-	  * @return: retourne le titre de la page
-	  */
-	 public String getTitleType() {
-        new WebDriverWait(driver, getTimeout()).until(d -> titleBloc.findElement(By.className("pageType")).isDisplayed());
-        return titleBloc.findElement(By.className("pageType")).getText();
-    }
-} 
+	}
+
+	/**
+	 * Method getTitleType() Cette methode r�cup�re le titre de la page afin de
+	 * l'utiliser dans des v�rifications
+	 * 
+	 * @return: retourne le titre de la page
+	 */
+	public String getTitleType() {
+		new WebDriverWait(FactoryDriver.getInstance().driver, FactoryDriver.getInstance().getTimeout())
+				.until(d -> titleBloc.findElement(By.className("pageType")).isDisplayed());
+		return titleBloc.findElement(By.className("pageType")).getText();
+	}
+}

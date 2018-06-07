@@ -5,29 +5,42 @@ import org.openqa.selenium.support.PageFactory;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import pages.HomePageClassic;
-import utils.Driver;
+import pages.HomePageLightning;
+import utils.FactoryDriver;
 
 public class LogoutStep {
 
-	HomePageClassic homePage;
-
+	HomePageClassic homePageClassic;
+	HomePageLightning homePageLight;
+	
+	
 	@Given("^je recupere les elements de la page$")
 	public void checkHomePage() {
-
-		homePage = PageFactory.initElements(Driver.driver, HomePageClassic.class);
+		if (FactoryDriver.getInstance().onSalesClassic)
+			homePageClassic = PageFactory.initElements(FactoryDriver.getInstance().driver, HomePageClassic.class);
+		else
+			homePageLight = PageFactory.initElements(FactoryDriver.getInstance().driver, HomePageLightning.class);
 	}
 
 	@Then("^je verifie les options du menu$")
 	public void checkOptions() {
 
-		homePage.assertLogoutMenu();
+		if (FactoryDriver.getInstance().onSalesClassic)
+			homePageClassic.assertLogoutMenu();
+		else
+			homePageLight.assertLogoutMenu();
+
 	}
 
 	@Then("^je me deconnecte$")
 	public void logout() {
-		
-		homePage.clickLogout();
-		Driver.afterTest();
-		
+
+		if (FactoryDriver.getInstance().onSalesClassic)
+			homePageClassic.clickLogout();
+		else
+			homePageLight.clickLogout();
+
+		FactoryDriver.getInstance().afterTest();
+
 	}
 }

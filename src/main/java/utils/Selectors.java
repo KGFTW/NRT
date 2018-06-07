@@ -3,12 +3,17 @@ package utils;
 public class Selectors {
 	/** Global Xpath Selectors **/
 	
+	public static final String THE_SELECTOR = "//span[not(contains(@style,'display:none'))]//span[text()='Prospect']";
 	// Ctn and Eq ending tags
 	public static final String CTN_END = "')]";
 	public static final String EQ_END = "']";
-		
+	
+	//select an item in parentAccount search
+	public static final String PARENT_ACCOUNT_SELECT = "//mark[1]";
+	
 	// List view list table selector
 	public static final String LIST_VIEW_TABLE = "//div[@id='main-panel']//div[@class='listBody']//table[@class='x-grid3-row-table']";
+	public static final String RECORD_BUTTON ="//div[@class='modal-footer slds-modal__footer']//span[text()='";
 	
 	// Main div of a page layout
 	public static final String MAIN_BODY = "//div[@id='ep']//div[@class='pbBody']";
@@ -23,6 +28,8 @@ public class Selectors {
 	
 	// Next div, used to find a section content in page layouts
 	public static final String NEXT_DIV = "/ancestor::div[1]/following-sibling::div[1]";
+	public static final String NEXT_DIV_ANC_SPAN = "/ancestor::span[1]/following-sibling::div[1]";
+	public static final String NEXT_INPUT_ANC_LABEL = "/ancestor::label[1]/following-sibling::div[1]//input[@type='text']";
 	
 	// Related list of a page layout
 	public static final String RELATED_LIST = "//div[contains(@class, 'bRelatedList')]//div[@class='pbHeader']";
@@ -34,6 +41,18 @@ public class Selectors {
 	// h3 title of a related list (equals)
 	public static final String H_3_EQ_START  = "//h3[text()='";
 	public static final String H_3_EQ_END = EQ_END;
+	
+	//related list lightning
+	public static final String RELATED_LIGHT_START = "//article//header//span[text()='";
+	public static final String RELATED_LIGHT_END =  EQ_END;
+	
+	// span title of a section (equals)
+	public static final String SPAN_EQ_START = "//div[not(contains(@style,'display:none'))]//span[text()='";
+	public static final String SPAN_EQ_END = EQ_END;
+	
+	//span contains
+	public static final String SPAN_CTN_START = "//div[not(contains(@style,'display:none'))]//span[contains(text(), '";
+	public static final String SPAN_CTN_END = CTN_END;
 	
 	// h3 title of a related list (contains)
 	public static final String H_3_CTN_START = "//h3[contains(text(), '";
@@ -64,6 +83,9 @@ public class Selectors {
 	public static final String EL_CTN_END = CTN_END;
 	
 	// Next td used to find the next td 
+	public static final String NEXT_TEXT_AREA = "/ancestor::label[1]/following-sibling::textarea";
+	public static final String NEXT_SEARCH_INPUT ="/ancestor::label[1]//input";
+	public static final String NEXT_INPUT = "/ancestor::label[1]/following-sibling::input[1]";
 	public static final String NEXT_TD = "/ancestor::td[1]/following-sibling::td[1]";
 	public static final String VFP_NEXT_TD = "/ancestor::th[1]/following-sibling::td[1]";
 	// Following td used to find the direct following td
@@ -86,6 +108,9 @@ public class Selectors {
 	// Page View fields definiton
 	public static final String LOOKUP_LINK = "//a";
 	
+	//for searchfield Lightning
+	public static final String SEARCH_PATH = "//div[@class='autocompleteWrapper slds-grow']//input";
+	
 	// Following field used to find the direct following field value in View page layouts
 	public static final String FOLLOWING_FIELD = FOLLOWING_TD + "//div";
 	
@@ -98,4 +123,5 @@ public class Selectors {
 	public static final String ADD_BTN = "//a[1]";	
 	// Target element to put value in (to verify value)
 	public static final String TARGET = "//td[3]//select";
+	
 }

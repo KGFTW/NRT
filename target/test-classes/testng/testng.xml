@@ -2,7 +2,7 @@
 <suite name="Test runner" parallel="none">
 	<test name="Run All Tests">
 		<classes>
-			<class name="runner.RunnerTest"></class>			
+			<class name="runner.RunnerTest"></class>				
 		</classes>
 	</test>
 </suite>

@@ -7,48 +7,56 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-import utils.Driver;
+import utils.DriverClassic;
+import utils.FactoryDriver;
 
-public class LoginPage extends Driver {
+public class LoginPage extends DriverClassic {
 	// The element is now looked up using the name attribute,
 	// and we never look it up once it has been used the first time
-	@FindBy(id="username")
-	// déclaration de la variable username
+	@FindBy(id = "username")
+	// dï¿½claration de la variable username
 	private WebElement usernameInput;
 
-	@FindBy(id="password")
-	// déclaration de la variable password
+	@FindBy(id = "password")
+	// dï¿½claration de la variable password
 	private WebElement passwordInput;
 
-	@FindBy(id="Login")
-	// déclaration de la variable loginBtn
+	@FindBy(id = "Login")
+	// dï¿½claration de la variable loginBtn
 	private WebElement loginBtn;
 
-	String enterpriseEditionPageTitle = "Home Page ~ Salesforce - Developer Edition";
-	String loginPageTitle = "Login | Salesforce";
+	private String entrepriseEditionPageTitleClassicOther = "Salesforce - Developer Edition";
+	private String enterpriseEditionPageTitleClassic = "Home Page ~ Salesforce - Developer Edition";
+	private String enterpriseEditionPageTitleLightning = "Home | Salesforce";
 
+	private String loginPageTitle = "Login | Salesforce";
 
 	/**
-	 * assertLogin
-	 * Méthode permettant de vérifier si l'élément est visible
+	 * assertLogin Mï¿½thode permettant de vï¿½rifier si l'ï¿½lï¿½ment est visible
 	 */
 	public void assertLogin(WebDriver driver) {
-		Assert.assertEquals(enterpriseEditionPageTitle, driver.getTitle());
+		boolean title = false;
+		if (onSalesClassic) {
+			if (driver.getTitle().equals(entrepriseEditionPageTitleClassicOther)
+					|| driver.getTitle().equals(enterpriseEditionPageTitleClassic)) {
+				title = true;
+			}
+
+			Assert.assertEquals(title, true);
+		} else
+			Assert.assertEquals(enterpriseEditionPageTitleLightning, driver.getTitle());
 	}
 
-
 	/**
-	 * assertLoggedOut
-	 * Méthode permettant de vérifier si l'élément est visible
-	 */	
+	 * assertLoggedOut Mï¿½thode permettant de vï¿½rifier si l'ï¿½lï¿½ment est visible
+	 */
 	public void assertLoggedOut(WebDriver driver) {
 		Assert.assertTrue(driver.getTitle().equals(loginPageTitle));
 	}
 
-
 	/**
-	 * login
-	 * création de la méthode login contenant 2 paramètres (usernameParam et passwordParam)
+	 * login crï¿½ation de la mï¿½thode login contenant 2 paramï¿½tres (usernameParam et
+	 * passwordParam)
 	 */
 	public void login(String usernameParam, String passwordParam) {
 		usernameInput.sendKeys(usernameParam);
@@ -56,21 +64,26 @@ public class LoginPage extends Driver {
 		loginBtn.click();
 	}
 
-
 	/**
-	 * waitLogin
-	 * Méthode permettant d'attendre que l'autentification se fasse
+	 * waitLogin Mï¿½thode permettant d'attendre que l'autentification se fasse
 	 */
 	public void waitLogin(WebDriver driver) {
-		new WebDriverWait(driver, getTimeout()).until(ExpectedConditions.titleIs((enterpriseEditionPageTitle)));
+
+		FactoryDriver.getInstance().waitMs(5000);
+
+		// if (Driver.onSalesClassic)
+		// new WebDriverWait(driver, getTimeout())
+		// .until(ExpectedConditions.titleIs(enterpriseEditionPageTitleClassic));
+		// else
+		// new WebDriverWait(driver, getTimeout())
+		// .until(ExpectedConditions.titleIs(enterpriseEditionPageTitleLightning));
+
 	}
 
-
 	/**
-	 * waitLoggedOut
-	 * Méthode permettant d'attendre que la déconnexion se fasse
+	 * waitLoggedOut Mï¿½thode permettant d'attendre que la dï¿½connexion se fasse
 	 */
 	public void waitLoggedOut(WebDriver driver) {
 		new WebDriverWait(driver, getTimeout()).until(ExpectedConditions.titleIs((loginPageTitle)));
 	}
-} 
+}

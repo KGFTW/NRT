@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("non_regression_account.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("non_regression_account_classic.feature");
 formatter.feature({
   "comments": [
     {
@@ -19,7 +19,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 5051490747,
+  "duration": 6020857208,
   "status": "passed"
 });
 formatter.scenario({
@@ -51,37 +51,45 @@ formatter.step({
   "name": "jarrive sur la page d\u0027accueil de Salesforce",
   "keyword": "Then "
 });
+formatter.step({
+  "line": 13,
+  "name": "je change de vue si necessaire",
+  "keyword": "Then "
+});
 formatter.match({
   "location": "LoginStep.InitLoginPage()"
 });
 formatter.result({
-  "duration": 198072297,
+  "duration": 355977884,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStep.putNameAndPassword()"
 });
 formatter.result({
-  "duration": 1120926041,
+  "duration": 1187902903,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStep.checkHomepage()"
 });
 formatter.result({
-  "duration": 2015074929,
+  "duration": 5003698408,
+  "status": "passed"
+});
+formatter.match({
+  "location": "LoginStep.switchView()"
+});
+formatter.result({
+  "duration": 3846530614,
   "status": "passed"
 });
 formatter.after({
-  "duration": 59658,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 200496,
+  "duration": 92508,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 15,
+  "line": 16,
   "name": "Clic sur Account",
   "description": "",
   "id": "test-non-regression-account;clic-sur-account",
@@ -89,53 +97,65 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 14,
-      "name": "@CheckHomePage"
+      "line": 15,
+      "name": "@CheckHomePageClassic"
     }
   ]
 });
 formatter.step({
-  "line": 16,
-  "name": "je suis sur la page d\u0027acceuil",
+  "line": 17,
+  "name": "je suis sur la page d\u0027accueil",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 17,
+  "line": 18,
+  "name": "je vais sur la page principal de Salesforce Light",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 19,
   "name": "je verifie que l\u0027onglet Account est present",
   "keyword": "When "
 });
 formatter.step({
-  "line": 18,
+  "line": 20,
   "name": "je clique sur l\u0027onglet Account",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "AccountStep.initHomepage()"
+  "location": "AccountStepClassic.initHomepage()"
 });
 formatter.result({
-  "duration": 5884225,
+  "duration": 404389,
   "status": "passed"
 });
 formatter.match({
-  "location": "AccountStep.verifAccountButton()"
+  "location": "AccountStepClassic.accesHome()"
 });
 formatter.result({
-  "duration": 24921,
+  "duration": 6337526624,
   "status": "passed"
 });
 formatter.match({
-  "location": "AccountStep.clicNewAccountBtn()"
+  "location": "AccountStepClassic.verifAccountButton()"
 });
 formatter.result({
-  "duration": 4806016152,
+  "duration": 51258534,
+  "status": "passed"
+});
+formatter.match({
+  "location": "AccountStepClassic.clicNewAccountBtn()"
+});
+formatter.result({
+  "duration": 8252931069,
   "status": "passed"
 });
 formatter.after({
-  "duration": 64566,
+  "duration": 53239,
   "status": "passed"
 });
 formatter.scenarioOutline({
-  "line": 21,
+  "line": 23,
   "name": "Verification de la presence des champs",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-champs",
@@ -143,12 +163,12 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 22,
+  "line": 24,
   "name": "je verifie la presence du label \u003clabelName\u003e de la section \u003csectionName\u003e et son type \u003celementType\u003e",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 24,
+  "line": 26,
   "name": "",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-champs;",
@@ -159,7 +179,7 @@ formatter.examples({
         "sectionName",
         "elementType"
       ],
-      "line": 25,
+      "line": 27,
       "id": "test-non-regression-account;verification-de-la-presence-des-champs;;1"
     },
     {
@@ -168,7 +188,7 @@ formatter.examples({
         "Account Information",
         "Label Edit"
       ],
-      "line": 26,
+      "line": 28,
       "id": "test-non-regression-account;verification-de-la-presence-des-champs;;2"
     },
     {
@@ -177,7 +197,7 @@ formatter.examples({
         "Account Information",
         "Label Edit"
       ],
-      "line": 27,
+      "line": 29,
       "id": "test-non-regression-account;verification-de-la-presence-des-champs;;3"
     },
     {
@@ -186,7 +206,7 @@ formatter.examples({
         "Account Information",
         "Label Edit"
       ],
-      "line": 28,
+      "line": 30,
       "id": "test-non-regression-account;verification-de-la-presence-des-champs;;4"
     },
     {
@@ -195,7 +215,7 @@ formatter.examples({
         "Account Information",
         "Label Edit"
       ],
-      "line": 29,
+      "line": 31,
       "id": "test-non-regression-account;verification-de-la-presence-des-champs;;5"
     },
     {
@@ -204,7 +224,7 @@ formatter.examples({
         "Account Information",
         "Label Edit"
       ],
-      "line": 30,
+      "line": 32,
       "id": "test-non-regression-account;verification-de-la-presence-des-champs;;6"
     },
     {
@@ -213,7 +233,7 @@ formatter.examples({
         "Account Information",
         "Label Edit"
       ],
-      "line": 31,
+      "line": 33,
       "id": "test-non-regression-account;verification-de-la-presence-des-champs;;7"
     },
     {
@@ -222,7 +242,7 @@ formatter.examples({
         "Account Information",
         "Label Edit"
       ],
-      "line": 32,
+      "line": 34,
       "id": "test-non-regression-account;verification-de-la-presence-des-champs;;8"
     },
     {
@@ -231,7 +251,7 @@ formatter.examples({
         "Account Information",
         "Label Edit"
       ],
-      "line": 33,
+      "line": 35,
       "id": "test-non-regression-account;verification-de-la-presence-des-champs;;9"
     },
     {
@@ -240,7 +260,7 @@ formatter.examples({
         "Account Information",
         "Label Edit"
       ],
-      "line": 34,
+      "line": 36,
       "id": "test-non-regression-account;verification-de-la-presence-des-champs;;10"
     },
     {
@@ -249,7 +269,7 @@ formatter.examples({
         "Account Information",
         "Label Edit"
       ],
-      "line": 35,
+      "line": 37,
       "id": "test-non-regression-account;verification-de-la-presence-des-champs;;11"
     },
     {
@@ -258,7 +278,7 @@ formatter.examples({
         "Account Information",
         "Label Edit"
       ],
-      "line": 36,
+      "line": 38,
       "id": "test-non-regression-account;verification-de-la-presence-des-champs;;12"
     },
     {
@@ -267,7 +287,7 @@ formatter.examples({
         "Account Information",
         "Label Edit"
       ],
-      "line": 37,
+      "line": 39,
       "id": "test-non-regression-account;verification-de-la-presence-des-champs;;13"
     },
     {
@@ -276,7 +296,7 @@ formatter.examples({
         "Account Information",
         "Label Edit"
       ],
-      "line": 38,
+      "line": 40,
       "id": "test-non-regression-account;verification-de-la-presence-des-champs;;14"
     },
     {
@@ -285,7 +305,7 @@ formatter.examples({
         "Account Information",
         "Label Edit"
       ],
-      "line": 39,
+      "line": 41,
       "id": "test-non-regression-account;verification-de-la-presence-des-champs;;15"
     },
     {
@@ -294,7 +314,7 @@ formatter.examples({
         "Account Information",
         "Label Edit"
       ],
-      "line": 40,
+      "line": 42,
       "id": "test-non-regression-account;verification-de-la-presence-des-champs;;16"
     },
     {
@@ -303,7 +323,7 @@ formatter.examples({
         "Address Information",
         "Label Edit"
       ],
-      "line": 41,
+      "line": 43,
       "id": "test-non-regression-account;verification-de-la-presence-des-champs;;17"
     },
     {
@@ -312,7 +332,7 @@ formatter.examples({
         "Address Information",
         "Label Edit"
       ],
-      "line": 42,
+      "line": 44,
       "id": "test-non-regression-account;verification-de-la-presence-des-champs;;18"
     },
     {
@@ -321,7 +341,7 @@ formatter.examples({
         "Address Information",
         "Label Edit"
       ],
-      "line": 43,
+      "line": 45,
       "id": "test-non-regression-account;verification-de-la-presence-des-champs;;19"
     },
     {
@@ -330,7 +350,7 @@ formatter.examples({
         "Address Information",
         "Label Edit"
       ],
-      "line": 44,
+      "line": 46,
       "id": "test-non-regression-account;verification-de-la-presence-des-champs;;20"
     },
     {
@@ -339,7 +359,7 @@ formatter.examples({
         "Address Information",
         "Label Edit"
       ],
-      "line": 45,
+      "line": 47,
       "id": "test-non-regression-account;verification-de-la-presence-des-champs;;21"
     },
     {
@@ -348,7 +368,7 @@ formatter.examples({
         "Address Information",
         "Label Edit"
       ],
-      "line": 46,
+      "line": 48,
       "id": "test-non-regression-account;verification-de-la-presence-des-champs;;22"
     },
     {
@@ -357,7 +377,7 @@ formatter.examples({
         "Address Information",
         "Label Edit"
       ],
-      "line": 47,
+      "line": 49,
       "id": "test-non-regression-account;verification-de-la-presence-des-champs;;23"
     },
     {
@@ -366,7 +386,7 @@ formatter.examples({
         "Address Information",
         "Label Edit"
       ],
-      "line": 48,
+      "line": 50,
       "id": "test-non-regression-account;verification-de-la-presence-des-champs;;24"
     },
     {
@@ -375,7 +395,7 @@ formatter.examples({
         "Address Information",
         "Label Edit"
       ],
-      "line": 49,
+      "line": 51,
       "id": "test-non-regression-account;verification-de-la-presence-des-champs;;25"
     },
     {
@@ -384,7 +404,7 @@ formatter.examples({
         "Address Information",
         "Label Edit"
       ],
-      "line": 50,
+      "line": 52,
       "id": "test-non-regression-account;verification-de-la-presence-des-champs;;26"
     },
     {
@@ -393,7 +413,7 @@ formatter.examples({
         "Additional Information",
         "Label Edit"
       ],
-      "line": 51,
+      "line": 53,
       "id": "test-non-regression-account;verification-de-la-presence-des-champs;;27"
     },
     {
@@ -402,7 +422,7 @@ formatter.examples({
         "Additional Information",
         "Label Edit"
       ],
-      "line": 52,
+      "line": 54,
       "id": "test-non-regression-account;verification-de-la-presence-des-champs;;28"
     },
     {
@@ -411,7 +431,7 @@ formatter.examples({
         "Additional Information",
         "Label Edit"
       ],
-      "line": 53,
+      "line": 55,
       "id": "test-non-regression-account;verification-de-la-presence-des-champs;;29"
     },
     {
@@ -420,7 +440,7 @@ formatter.examples({
         "Additional Information",
         "Label Edit"
       ],
-      "line": 54,
+      "line": 56,
       "id": "test-non-regression-account;verification-de-la-presence-des-champs;;30"
     },
     {
@@ -429,7 +449,7 @@ formatter.examples({
         "Additional Information",
         "Label Edit"
       ],
-      "line": 55,
+      "line": 57,
       "id": "test-non-regression-account;verification-de-la-presence-des-champs;;31"
     },
     {
@@ -438,7 +458,7 @@ formatter.examples({
         "Additional Information",
         "Label Edit"
       ],
-      "line": 56,
+      "line": 58,
       "id": "test-non-regression-account;verification-de-la-presence-des-champs;;32"
     },
     {
@@ -447,7 +467,7 @@ formatter.examples({
         "Additional Information",
         "Label Edit"
       ],
-      "line": 57,
+      "line": 59,
       "id": "test-non-regression-account;verification-de-la-presence-des-champs;;33"
     },
     {
@@ -456,14 +476,14 @@ formatter.examples({
         "Description Information",
         "Label Edit"
       ],
-      "line": 58,
+      "line": 60,
       "id": "test-non-regression-account;verification-de-la-presence-des-champs;;34"
     }
   ],
   "keyword": "Examples"
 });
 formatter.scenario({
-  "line": 26,
+  "line": 28,
   "name": "Verification de la presence des champs",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-champs;;2",
@@ -477,7 +497,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 22,
+  "line": 24,
   "name": "je verifie la presence du label Account Name de la section Account Information et son type Label Edit",
   "matchedColumns": [
     0,
@@ -501,18 +521,18 @@ formatter.match({
       "offset": 91
     }
   ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 121217533,
+  "duration": 166509530,
   "status": "passed"
 });
 formatter.after({
-  "duration": 23410,
+  "duration": 24920,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 27,
+  "line": 29,
   "name": "Verification de la presence des champs",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-champs;;3",
@@ -526,7 +546,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 22,
+  "line": 24,
   "name": "je verifie la presence du label Parent Account de la section Account Information et son type Label Edit",
   "matchedColumns": [
     0,
@@ -550,18 +570,18 @@ formatter.match({
       "offset": 93
     }
   ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 24677952,
+  "duration": 46171384,
   "status": "passed"
 });
 formatter.after({
-  "duration": 21522,
+  "duration": 27564,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 28,
+  "line": 30,
   "name": "Verification de la presence des champs",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-champs;;4",
@@ -575,7 +595,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 22,
+  "line": 24,
   "name": "je verifie la presence du label Account Number de la section Account Information et son type Label Edit",
   "matchedColumns": [
     0,
@@ -599,10 +619,10 @@ formatter.match({
       "offset": 93
     }
   ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 25275662,
+  "duration": 46595029,
   "status": "passed"
 });
 formatter.after({
@@ -610,7 +630,7 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "line": 29,
+  "line": 31,
   "name": "Verification de la presence des champs",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-champs;;5",
@@ -624,7 +644,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 22,
+  "line": 24,
   "name": "je verifie la presence du label Account Site de la section Account Information et son type Label Edit",
   "matchedColumns": [
     0,
@@ -648,18 +668,18 @@ formatter.match({
       "offset": 91
     }
   ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 24995497,
+  "duration": 39162721,
   "status": "passed"
 });
 formatter.after({
-  "duration": 23033,
+  "duration": 39646,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 30,
+  "line": 32,
   "name": "Verification de la presence des champs",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-champs;;6",
@@ -673,7 +693,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 22,
+  "line": 24,
   "name": "je verifie la presence du label Type de la section Account Information et son type Label Edit",
   "matchedColumns": [
     0,
@@ -697,18 +717,18 @@ formatter.match({
       "offset": 83
     }
   ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 26781833,
+  "duration": 49183348,
   "status": "passed"
 });
 formatter.after({
-  "duration": 23787,
+  "duration": 40778,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 31,
+  "line": 33,
   "name": "Verification de la presence des champs",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-champs;;7",
@@ -722,7 +742,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 22,
+  "line": 24,
   "name": "je verifie la presence du label Industry de la section Account Information et son type Label Edit",
   "matchedColumns": [
     0,
@@ -746,18 +766,18 @@ formatter.match({
       "offset": 87
     }
   ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 26127486,
+  "duration": 40561282,
   "status": "passed"
 });
 formatter.after({
-  "duration": 24543,
+  "duration": 30961,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 32,
+  "line": 34,
   "name": "Verification de la presence des champs",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-champs;;8",
@@ -771,7 +791,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 22,
+  "line": 24,
   "name": "je verifie la presence du label Annual Revenue de la section Account Information et son type Label Edit",
   "matchedColumns": [
     0,
@@ -795,18 +815,18 @@ formatter.match({
       "offset": 93
     }
   ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 24827096,
+  "duration": 44553448,
   "status": "passed"
 });
 formatter.after({
-  "duration": 24920,
+  "duration": 22655,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 33,
+  "line": 35,
   "name": "Verification de la presence des champs",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-champs;;9",
@@ -820,7 +840,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 22,
+  "line": 24,
   "name": "je verifie la presence du label Rating de la section Account Information et son type Label Edit",
   "matchedColumns": [
     0,
@@ -844,18 +864,18 @@ formatter.match({
       "offset": 85
     }
   ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 25272642,
+  "duration": 46695089,
   "status": "passed"
 });
 formatter.after({
-  "duration": 23788,
+  "duration": 22655,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 34,
+  "line": 36,
   "name": "Verification de la presence des champs",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-champs;;10",
@@ -869,7 +889,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 22,
+  "line": 24,
   "name": "je verifie la presence du label Phone de la section Account Information et son type Label Edit",
   "matchedColumns": [
     0,
@@ -893,18 +913,18 @@ formatter.match({
       "offset": 84
     }
   ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 26152784,
+  "duration": 42307595,
   "status": "passed"
 });
 formatter.after({
-  "duration": 23032,
+  "duration": 24920,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 35,
+  "line": 37,
   "name": "Verification de la presence des champs",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-champs;;11",
@@ -918,7 +938,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 22,
+  "line": 24,
   "name": "je verifie la presence du label Fax de la section Account Information et son type Label Edit",
   "matchedColumns": [
     0,
@@ -942,18 +962,18 @@ formatter.match({
       "offset": 82
     }
   ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 38075287,
+  "duration": 47224080,
   "status": "passed"
 });
 formatter.after({
-  "duration": 30584,
+  "duration": 45688,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 36,
+  "line": 38,
   "name": "Verification de la presence des champs",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-champs;;12",
@@ -967,7 +987,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 22,
+  "line": 24,
   "name": "je verifie la presence du label Website de la section Account Information et son type Label Edit",
   "matchedColumns": [
     0,
@@ -991,18 +1011,18 @@ formatter.match({
       "offset": 86
     }
   ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 32975676,
+  "duration": 44262711,
   "status": "passed"
 });
 formatter.after({
-  "duration": 22655,
+  "duration": 21522,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 37,
+  "line": 39,
   "name": "Verification de la presence des champs",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-champs;;13",
@@ -1016,7 +1036,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 22,
+  "line": 24,
   "name": "je verifie la presence du label Ticker Symbol de la section Account Information et son type Label Edit",
   "matchedColumns": [
     0,
@@ -1040,18 +1060,18 @@ formatter.match({
       "offset": 92
     }
   ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 24338506,
+  "duration": 41227713,
   "status": "passed"
 });
 formatter.after({
-  "duration": 21144,
+  "duration": 21522,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 38,
+  "line": 40,
   "name": "Verification de la presence des champs",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-champs;;14",
@@ -1065,7 +1085,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 22,
+  "line": 24,
   "name": "je verifie la presence du label Ownership de la section Account Information et son type Label Edit",
   "matchedColumns": [
     0,
@@ -1089,18 +1109,18 @@ formatter.match({
       "offset": 88
     }
   ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 24404583,
+  "duration": 50216411,
   "status": "passed"
 });
 formatter.after({
-  "duration": 21144,
+  "duration": 21899,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 39,
+  "line": 41,
   "name": "Verification de la presence des champs",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-champs;;15",
@@ -1114,7 +1134,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 22,
+  "line": 24,
   "name": "je verifie la presence du label Employees de la section Account Information et son type Label Edit",
   "matchedColumns": [
     0,
@@ -1138,18 +1158,18 @@ formatter.match({
       "offset": 88
     }
   ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 24696076,
+  "duration": 44807560,
   "status": "passed"
 });
 formatter.after({
-  "duration": 430065,
+  "duration": 355682,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 40,
+  "line": 42,
   "name": "Verification de la presence des champs",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-champs;;16",
@@ -1163,7 +1183,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 22,
+  "line": 24,
   "name": "je verifie la presence du label SIC Code de la section Account Information et son type Label Edit",
   "matchedColumns": [
     0,
@@ -1187,18 +1207,18 @@ formatter.match({
       "offset": 87
     }
   ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 23621479,
+  "duration": 41161258,
   "status": "passed"
 });
 formatter.after({
-  "duration": 49085,
+  "duration": 37758,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 41,
+  "line": 43,
   "name": "Verification de la presence des champs",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-champs;;17",
@@ -1212,7 +1232,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 22,
+  "line": 24,
   "name": "je verifie la presence du label Billing Street de la section Address Information et son type Label Edit",
   "matchedColumns": [
     0,
@@ -1236,18 +1256,18 @@ formatter.match({
       "offset": 93
     }
   ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 30794767,
+  "duration": 50468257,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14348,
+  "duration": 26054,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 42,
+  "line": 44,
   "name": "Verification de la presence des champs",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-champs;;18",
@@ -1261,7 +1281,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 22,
+  "line": 24,
   "name": "je verifie la presence du label Billing Zip/Postal Code de la section Address Information et son type Label Edit",
   "matchedColumns": [
     0,
@@ -1285,18 +1305,18 @@ formatter.match({
       "offset": 102
     }
   ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 37085647,
+  "duration": 47459313,
   "status": "passed"
 });
 formatter.after({
-  "duration": 13970,
+  "duration": 15859,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 43,
+  "line": 45,
   "name": "Verification de la presence des champs",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-champs;;19",
@@ -1310,7 +1330,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 22,
+  "line": 24,
   "name": "je verifie la presence du label Billing City de la section Address Information et son type Label Edit",
   "matchedColumns": [
     0,
@@ -1334,18 +1354,18 @@ formatter.match({
       "offset": 91
     }
   ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 25896406,
+  "duration": 46292587,
   "status": "passed"
 });
 formatter.after({
-  "duration": 13592,
+  "duration": 38891,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 44,
+  "line": 46,
   "name": "Verification de la presence des champs",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-champs;;20",
@@ -1359,7 +1379,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 22,
+  "line": 24,
   "name": "je verifie la presence du label Billing State/Province de la section Address Information et son type Label Edit",
   "matchedColumns": [
     0,
@@ -1383,18 +1403,18 @@ formatter.match({
       "offset": 101
     }
   ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 23668299,
+  "duration": 41963241,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14348,
+  "duration": 18879,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 45,
+  "line": 47,
   "name": "Verification de la presence des champs",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-champs;;21",
@@ -1408,7 +1428,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 22,
+  "line": 24,
   "name": "je verifie la presence du label Billing Country de la section Address Information et son type Label Edit",
   "matchedColumns": [
     0,
@@ -1432,18 +1452,18 @@ formatter.match({
       "offset": 94
     }
   ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 25547899,
+  "duration": 44581011,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15104,
+  "duration": 14726,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 46,
+  "line": 48,
   "name": "Verification de la presence des champs",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-champs;;22",
@@ -1457,7 +1477,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 22,
+  "line": 24,
   "name": "je verifie la presence du label Shipping Street de la section Address Information et son type Label Edit",
   "matchedColumns": [
     0,
@@ -1481,18 +1501,18 @@ formatter.match({
       "offset": 94
     }
   ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 26009303,
+  "duration": 46747950,
   "status": "passed"
 });
 formatter.after({
-  "duration": 13970,
+  "duration": 19256,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 47,
+  "line": 49,
   "name": "Verification de la presence des champs",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-champs;;23",
@@ -1506,7 +1526,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 22,
+  "line": 24,
   "name": "je verifie la presence du label Shipping Zip/Postal Code de la section Address Information et son type Label Edit",
   "matchedColumns": [
     0,
@@ -1530,18 +1550,18 @@ formatter.match({
       "offset": 103
     }
   ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 24179545,
+  "duration": 38054898,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14348,
+  "duration": 37380,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 48,
+  "line": 50,
   "name": "Verification de la presence des champs",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-champs;;24",
@@ -1555,7 +1575,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 22,
+  "line": 24,
   "name": "je verifie la presence du label Shipping City de la section Address Information et son type Label Edit",
   "matchedColumns": [
     0,
@@ -1579,18 +1599,18 @@ formatter.match({
       "offset": 92
     }
   ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 25607179,
+  "duration": 44131312,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14348,
+  "duration": 51351,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 49,
+  "line": 51,
   "name": "Verification de la presence des champs",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-champs;;25",
@@ -1604,7 +1624,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 22,
+  "line": 24,
   "name": "je verifie la presence du label Shipping State/Province de la section Address Information et son type Label Edit",
   "matchedColumns": [
     0,
@@ -1628,18 +1648,18 @@ formatter.match({
       "offset": 102
     }
   ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 26029692,
+  "duration": 66517346,
   "status": "passed"
 });
 formatter.after({
-  "duration": 77026,
+  "duration": 19634,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 50,
+  "line": 52,
   "name": "Verification de la presence des champs",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-champs;;26",
@@ -1653,7 +1673,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 22,
+  "line": 24,
   "name": "je verifie la presence du label Shipping Country de la section Address Information et son type Label Edit",
   "matchedColumns": [
     0,
@@ -1677,18 +1697,18 @@ formatter.match({
       "offset": 95
     }
   ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 24992099,
+  "duration": 61702053,
   "status": "passed"
 });
 formatter.after({
-  "duration": 29829,
+  "duration": 15481,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 51,
+  "line": 53,
   "name": "Verification de la presence des champs",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-champs;;27",
@@ -1702,7 +1722,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 22,
+  "line": 24,
   "name": "je verifie la presence du label Customer Priority de la section Additional Information et son type Label Edit",
   "matchedColumns": [
     0,
@@ -1726,18 +1746,18 @@ formatter.match({
       "offset": 99
     }
   ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 29080548,
+  "duration": 51239278,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14726,
+  "duration": 33227,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 52,
+  "line": 54,
   "name": "Verification de la presence des champs",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-champs;;28",
@@ -1751,7 +1771,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 22,
+  "line": 24,
   "name": "je verifie la presence du label SLA Expiration Date de la section Additional Information et son type Label Edit",
   "matchedColumns": [
     0,
@@ -1775,18 +1795,18 @@ formatter.match({
       "offset": 101
     }
   ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 22892748,
+  "duration": 52088459,
   "status": "passed"
 });
 formatter.after({
-  "duration": 13970,
+  "duration": 33982,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 53,
+  "line": 55,
   "name": "Verification de la presence des champs",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-champs;;29",
@@ -1800,7 +1820,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 22,
+  "line": 24,
   "name": "je verifie la presence du label Number of Locations de la section Additional Information et son type Label Edit",
   "matchedColumns": [
     0,
@@ -1824,18 +1844,18 @@ formatter.match({
       "offset": 101
     }
   ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 46614663,
+  "duration": 43151111,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15481,
+  "duration": 17368,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 54,
+  "line": 56,
   "name": "Verification de la presence des champs",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-champs;;30",
@@ -1849,7 +1869,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 22,
+  "line": 24,
   "name": "je verifie la presence du label Active de la section Additional Information et son type Label Edit",
   "matchedColumns": [
     0,
@@ -1873,18 +1893,18 @@ formatter.match({
       "offset": 88
     }
   ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 24241468,
+  "duration": 48257519,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14348,
+  "duration": 15858,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 55,
+  "line": 57,
   "name": "Verification de la presence des champs",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-champs;;31",
@@ -1898,7 +1918,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 22,
+  "line": 24,
   "name": "je verifie la presence du label SLA de la section Additional Information et son type Label Edit",
   "matchedColumns": [
     0,
@@ -1922,18 +1942,18 @@ formatter.match({
       "offset": 85
     }
   ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 26158447,
+  "duration": 40558261,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15103,
+  "duration": 16613,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 56,
+  "line": 58,
   "name": "Verification de la presence des champs",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-champs;;32",
@@ -1947,7 +1967,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 22,
+  "line": 24,
   "name": "je verifie la presence du label SLA Serial Number de la section Additional Information et son type Label Edit",
   "matchedColumns": [
     0,
@@ -1971,18 +1991,18 @@ formatter.match({
       "offset": 99
     }
   ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 23227285,
+  "duration": 46514227,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14726,
+  "duration": 15481,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 57,
+  "line": 59,
   "name": "Verification de la presence des champs",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-champs;;33",
@@ -1996,7 +2016,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 22,
+  "line": 24,
   "name": "je verifie la presence du label Upsell Opportunity de la section Additional Information et son type Label Edit",
   "matchedColumns": [
     0,
@@ -2020,18 +2040,18 @@ formatter.match({
       "offset": 100
     }
   ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 24161042,
+  "duration": 46043005,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15104,
+  "duration": 31716,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 58,
+  "line": 60,
   "name": "Verification de la presence des champs",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-champs;;34",
@@ -2045,7 +2065,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 22,
+  "line": 24,
   "name": "je verifie la presence du label Description de la section Description Information et son type Label Edit",
   "matchedColumns": [
     0,
@@ -2069,18 +2089,18 @@ formatter.match({
       "offset": 94
     }
   ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 29940678,
+  "duration": 43314604,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14726,
+  "duration": 18501,
   "status": "passed"
 });
 formatter.scenarioOutline({
-  "line": 61,
+  "line": 63,
   "name": "Verification de la possibilite d\u0027edition des champs d\u0027Account (Affichage d\u0027edition)",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition)",
@@ -2088,12 +2108,12 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 62,
+  "line": 64,
   "name": "je verifie que le champ qui suit le label \u003clabelName\u003e de la section \u003csectionName\u003e et de type \u003celementType\u003e",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 64,
+  "line": 66,
   "name": "",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);",
@@ -2104,7 +2124,7 @@ formatter.examples({
         "sectionName",
         "elementType"
       ],
-      "line": 65,
+      "line": 67,
       "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;1"
     },
     {
@@ -2113,16 +2133,16 @@ formatter.examples({
         "Account Information",
         "Input"
       ],
-      "line": 66,
+      "line": 68,
       "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;2"
     },
     {
       "cells": [
         "Parent Account",
         "Account Information",
-        "Input"
+        "searchField"
       ],
-      "line": 67,
+      "line": 69,
       "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;3"
     },
     {
@@ -2131,7 +2151,7 @@ formatter.examples({
         "Account Information",
         "Input"
       ],
-      "line": 68,
+      "line": 70,
       "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;4"
     },
     {
@@ -2140,7 +2160,7 @@ formatter.examples({
         "Account Information",
         "Input"
       ],
-      "line": 69,
+      "line": 71,
       "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;5"
     },
     {
@@ -2149,7 +2169,7 @@ formatter.examples({
         "Account Information",
         "select"
       ],
-      "line": 70,
+      "line": 72,
       "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;6"
     },
     {
@@ -2158,7 +2178,7 @@ formatter.examples({
         "Account Information",
         "select"
       ],
-      "line": 71,
+      "line": 73,
       "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;7"
     },
     {
@@ -2167,7 +2187,7 @@ formatter.examples({
         "Account Information",
         "Input"
       ],
-      "line": 72,
+      "line": 74,
       "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;8"
     },
     {
@@ -2176,7 +2196,7 @@ formatter.examples({
         "Account Information",
         "select"
       ],
-      "line": 73,
+      "line": 75,
       "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;9"
     },
     {
@@ -2185,7 +2205,7 @@ formatter.examples({
         "Account Information",
         "Input"
       ],
-      "line": 74,
+      "line": 76,
       "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;10"
     },
     {
@@ -2194,7 +2214,7 @@ formatter.examples({
         "Account Information",
         "Input"
       ],
-      "line": 75,
+      "line": 77,
       "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;11"
     },
     {
@@ -2203,7 +2223,7 @@ formatter.examples({
         "Account Information",
         "Input"
       ],
-      "line": 76,
+      "line": 78,
       "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;12"
     },
     {
@@ -2212,7 +2232,7 @@ formatter.examples({
         "Account Information",
         "Input"
       ],
-      "line": 77,
+      "line": 79,
       "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;13"
     },
     {
@@ -2221,7 +2241,7 @@ formatter.examples({
         "Account Information",
         "select"
       ],
-      "line": 78,
+      "line": 80,
       "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;14"
     },
     {
@@ -2230,7 +2250,7 @@ formatter.examples({
         "Account Information",
         "Input"
       ],
-      "line": 79,
+      "line": 81,
       "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;15"
     },
     {
@@ -2239,7 +2259,7 @@ formatter.examples({
         "Account Information",
         "Input"
       ],
-      "line": 80,
+      "line": 82,
       "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;16"
     },
     {
@@ -2248,7 +2268,7 @@ formatter.examples({
         "Address Information",
         "textArea"
       ],
-      "line": 81,
+      "line": 83,
       "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;17"
     },
     {
@@ -2257,7 +2277,7 @@ formatter.examples({
         "Address Information",
         "Input"
       ],
-      "line": 82,
+      "line": 84,
       "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;18"
     },
     {
@@ -2266,7 +2286,7 @@ formatter.examples({
         "Address Information",
         "Input"
       ],
-      "line": 83,
+      "line": 85,
       "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;19"
     },
     {
@@ -2275,7 +2295,7 @@ formatter.examples({
         "Address Information",
         "Input"
       ],
-      "line": 84,
+      "line": 86,
       "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;20"
     },
     {
@@ -2284,7 +2304,7 @@ formatter.examples({
         "Address Information",
         "Input"
       ],
-      "line": 85,
+      "line": 87,
       "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;21"
     },
     {
@@ -2293,7 +2313,7 @@ formatter.examples({
         "Address Information",
         "textArea"
       ],
-      "line": 86,
+      "line": 88,
       "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;22"
     },
     {
@@ -2302,7 +2322,7 @@ formatter.examples({
         "Address Information",
         "Input"
       ],
-      "line": 87,
+      "line": 89,
       "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;23"
     },
     {
@@ -2311,7 +2331,7 @@ formatter.examples({
         "Address Information",
         "Input"
       ],
-      "line": 88,
+      "line": 90,
       "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;24"
     },
     {
@@ -2320,7 +2340,7 @@ formatter.examples({
         "Address Information",
         "Input"
       ],
-      "line": 89,
+      "line": 91,
       "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;25"
     },
     {
@@ -2329,7 +2349,7 @@ formatter.examples({
         "Address Information",
         "Input"
       ],
-      "line": 90,
+      "line": 92,
       "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;26"
     },
     {
@@ -2338,16 +2358,16 @@ formatter.examples({
         "Additional Information",
         "select"
       ],
-      "line": 91,
+      "line": 93,
       "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;27"
     },
     {
       "cells": [
         "SLA Expiration Date",
         "Additional Information",
-        "Input"
+        "Date"
       ],
-      "line": 92,
+      "line": 94,
       "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;28"
     },
     {
@@ -2356,7 +2376,7 @@ formatter.examples({
         "Additional Information",
         "Input"
       ],
-      "line": 93,
+      "line": 95,
       "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;29"
     },
     {
@@ -2365,7 +2385,7 @@ formatter.examples({
         "Additional Information",
         "select"
       ],
-      "line": 94,
+      "line": 96,
       "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;30"
     },
     {
@@ -2374,7 +2394,7 @@ formatter.examples({
         "Additional Information",
         "select"
       ],
-      "line": 95,
+      "line": 97,
       "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;31"
     },
     {
@@ -2383,7 +2403,7 @@ formatter.examples({
         "Additional Information",
         "Input"
       ],
-      "line": 96,
+      "line": 98,
       "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;32"
     },
     {
@@ -2392,7 +2412,7 @@ formatter.examples({
         "Additional Information",
         "select"
       ],
-      "line": 97,
+      "line": 99,
       "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;33"
     },
     {
@@ -2401,14 +2421,14 @@ formatter.examples({
         "Description Information",
         "textArea"
       ],
-      "line": 98,
+      "line": 100,
       "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;34"
     }
   ],
   "keyword": "Examples"
 });
 formatter.scenario({
-  "line": 66,
+  "line": 68,
   "name": "Verification de la possibilite d\u0027edition des champs d\u0027Account (Affichage d\u0027edition)",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;2",
@@ -2422,7 +2442,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 62,
+  "line": 64,
   "name": "je verifie que le champ qui suit le label Account Name de la section Account Information et de type Input",
   "matchedColumns": [
     0,
@@ -2446,18 +2466,18 @@ formatter.match({
       "offset": 100
     }
   ],
-  "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 37467760,
+  "duration": 58084447,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15481,
+  "duration": 78537,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 67,
+  "line": 69,
   "name": "Verification de la possibilite d\u0027edition des champs d\u0027Account (Affichage d\u0027edition)",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;3",
@@ -2471,8 +2491,8 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 62,
-  "name": "je verifie que le champ qui suit le label Parent Account de la section Account Information et de type Input",
+  "line": 64,
+  "name": "je verifie que le champ qui suit le label Parent Account de la section Account Information et de type searchField",
   "matchedColumns": [
     0,
     1,
@@ -2491,22 +2511,22 @@ formatter.match({
       "offset": 71
     },
     {
-      "val": "Input",
+      "val": "searchField",
       "offset": 102
     }
   ],
-  "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 33496738,
+  "duration": 43535866,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14726,
+  "duration": 14348,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 68,
+  "line": 70,
   "name": "Verification de la possibilite d\u0027edition des champs d\u0027Account (Affichage d\u0027edition)",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;4",
@@ -2520,7 +2540,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 62,
+  "line": 64,
   "name": "je verifie que le champ qui suit le label Account Number de la section Account Information et de type Input",
   "matchedColumns": [
     0,
@@ -2544,18 +2564,18 @@ formatter.match({
       "offset": 102
     }
   ],
-  "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 34621930,
+  "duration": 51854358,
   "status": "passed"
 });
 formatter.after({
-  "duration": 17747,
+  "duration": 15481,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 69,
+  "line": 71,
   "name": "Verification de la possibilite d\u0027edition des champs d\u0027Account (Affichage d\u0027edition)",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;5",
@@ -2569,7 +2589,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 62,
+  "line": 64,
   "name": "je verifie que le champ qui suit le label Account Site de la section Account Information et de type Input",
   "matchedColumns": [
     0,
@@ -2593,18 +2613,18 @@ formatter.match({
       "offset": 100
     }
   ],
-  "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 33482390,
+  "duration": 51428069,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15103,
+  "duration": 14725,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 70,
+  "line": 72,
   "name": "Verification de la possibilite d\u0027edition des champs d\u0027Account (Affichage d\u0027edition)",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;6",
@@ -2618,7 +2638,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 62,
+  "line": 64,
   "name": "je verifie que le champ qui suit le label Type de la section Account Information et de type select",
   "matchedColumns": [
     0,
@@ -2642,18 +2662,18 @@ formatter.match({
       "offset": 92
     }
   ],
-  "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 34267759,
+  "duration": 54607302,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15103,
+  "duration": 39269,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 71,
+  "line": 73,
   "name": "Verification de la possibilite d\u0027edition des champs d\u0027Account (Affichage d\u0027edition)",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;7",
@@ -2667,7 +2687,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 62,
+  "line": 64,
   "name": "je verifie que le champ qui suit le label Industry de la section Account Information et de type select",
   "matchedColumns": [
     0,
@@ -2691,18 +2711,18 @@ formatter.match({
       "offset": 96
     }
   ],
-  "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 36316892,
+  "duration": 63015658,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14725,
+  "duration": 20390,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 72,
+  "line": 74,
   "name": "Verification de la possibilite d\u0027edition des champs d\u0027Account (Affichage d\u0027edition)",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;8",
@@ -2716,7 +2736,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 62,
+  "line": 64,
   "name": "je verifie que le champ qui suit le label Annual Revenue de la section Account Information et de type Input",
   "matchedColumns": [
     0,
@@ -2740,18 +2760,18 @@ formatter.match({
       "offset": 102
     }
   ],
-  "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 37567441,
+  "duration": 47608457,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14348,
+  "duration": 15103,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 73,
+  "line": 75,
   "name": "Verification de la possibilite d\u0027edition des champs d\u0027Account (Affichage d\u0027edition)",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;9",
@@ -2765,7 +2785,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 62,
+  "line": 64,
   "name": "je verifie que le champ qui suit le label Rating de la section Account Information et de type select",
   "matchedColumns": [
     0,
@@ -2789,18 +2809,18 @@ formatter.match({
       "offset": 94
     }
   ],
-  "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 38288621,
+  "duration": 55620353,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14725,
+  "duration": 23410,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 74,
+  "line": 76,
   "name": "Verification de la possibilite d\u0027edition des champs d\u0027Account (Affichage d\u0027edition)",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;10",
@@ -2814,7 +2834,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 62,
+  "line": 64,
   "name": "je verifie que le champ qui suit le label Phone de la section Account Information et de type Input",
   "matchedColumns": [
     0,
@@ -2838,18 +2858,18 @@ formatter.match({
       "offset": 93
     }
   ],
-  "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 35324986,
+  "duration": 47008103,
   "status": "passed"
 });
 formatter.after({
-  "duration": 13971,
+  "duration": 15481,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 75,
+  "line": 77,
   "name": "Verification de la possibilite d\u0027edition des champs d\u0027Account (Affichage d\u0027edition)",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;11",
@@ -2863,7 +2883,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 62,
+  "line": 64,
   "name": "je verifie que le champ qui suit le label Fax de la section Account Information et de type Input",
   "matchedColumns": [
     0,
@@ -2887,18 +2907,18 @@ formatter.match({
       "offset": 91
     }
   ],
-  "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 34105022,
+  "duration": 59641593,
   "status": "passed"
 });
 formatter.after({
-  "duration": 18123,
+  "duration": 16236,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 76,
+  "line": 78,
   "name": "Verification de la possibilite d\u0027edition des champs d\u0027Account (Affichage d\u0027edition)",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;12",
@@ -2912,7 +2932,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 62,
+  "line": 64,
   "name": "je verifie que le champ qui suit le label Website de la section Account Information et de type Input",
   "matchedColumns": [
     0,
@@ -2936,18 +2956,18 @@ formatter.match({
       "offset": 95
     }
   ],
-  "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 34823936,
+  "duration": 63981134,
   "status": "passed"
 });
 formatter.after({
-  "duration": 13970,
+  "duration": 20012,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 77,
+  "line": 79,
   "name": "Verification de la possibilite d\u0027edition des champs d\u0027Account (Affichage d\u0027edition)",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;13",
@@ -2961,7 +2981,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 62,
+  "line": 64,
   "name": "je verifie que le champ qui suit le label Ticker Symbol de la section Account Information et de type Input",
   "matchedColumns": [
     0,
@@ -2985,18 +3005,18 @@ formatter.match({
       "offset": 101
     }
   ],
-  "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 35297045,
+  "duration": 54934665,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15103,
+  "duration": 16613,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 78,
+  "line": 80,
   "name": "Verification de la possibilite d\u0027edition des champs d\u0027Account (Affichage d\u0027edition)",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;14",
@@ -3010,7 +3030,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 62,
+  "line": 64,
   "name": "je verifie que le champ qui suit le label Ownership de la section Account Information et de type select",
   "matchedColumns": [
     0,
@@ -3034,18 +3054,18 @@ formatter.match({
       "offset": 97
     }
   ],
-  "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 35254001,
+  "duration": 51141107,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14348,
+  "duration": 16236,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 79,
+  "line": 81,
   "name": "Verification de la possibilite d\u0027edition des champs d\u0027Account (Affichage d\u0027edition)",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;15",
@@ -3059,7 +3079,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 62,
+  "line": 64,
   "name": "je verifie que le champ qui suit le label Employees de la section Account Information et de type Input",
   "matchedColumns": [
     0,
@@ -3083,18 +3103,18 @@ formatter.match({
       "offset": 97
     }
   ],
-  "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 34006095,
+  "duration": 58519421,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14348,
+  "duration": 13970,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 80,
+  "line": 82,
   "name": "Verification de la possibilite d\u0027edition des champs d\u0027Account (Affichage d\u0027edition)",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;16",
@@ -3108,7 +3128,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 62,
+  "line": 64,
   "name": "je verifie que le champ qui suit le label SIC Code de la section Account Information et de type Input",
   "matchedColumns": [
     0,
@@ -3132,18 +3152,18 @@ formatter.match({
       "offset": 96
     }
   ],
-  "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 36608384,
+  "duration": 61180236,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14348,
+  "duration": 15103,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 81,
+  "line": 83,
   "name": "Verification de la possibilite d\u0027edition des champs d\u0027Account (Affichage d\u0027edition)",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;17",
@@ -3157,7 +3177,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 62,
+  "line": 64,
   "name": "je verifie que le champ qui suit le label Billing Street de la section Address Information et de type textArea",
   "matchedColumns": [
     0,
@@ -3181,18 +3201,18 @@ formatter.match({
       "offset": 102
     }
   ],
-  "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 33883381,
+  "duration": 52267809,
   "status": "passed"
 });
 formatter.after({
-  "duration": 13970,
+  "duration": 15103,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 82,
+  "line": 84,
   "name": "Verification de la possibilite d\u0027edition des champs d\u0027Account (Affichage d\u0027edition)",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;18",
@@ -3206,7 +3226,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 62,
+  "line": 64,
   "name": "je verifie que le champ qui suit le label Billing Zip/Postal Code de la section Address Information et de type Input",
   "matchedColumns": [
     0,
@@ -3230,18 +3250,18 @@ formatter.match({
       "offset": 111
     }
   ],
-  "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 35726733,
+  "duration": 54475149,
   "status": "passed"
 });
 formatter.after({
-  "duration": 17369,
+  "duration": 14348,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 83,
+  "line": 85,
   "name": "Verification de la possibilite d\u0027edition des champs d\u0027Account (Affichage d\u0027edition)",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;19",
@@ -3255,7 +3275,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 62,
+  "line": 64,
   "name": "je verifie que le champ qui suit le label Billing City de la section Address Information et de type Input",
   "matchedColumns": [
     0,
@@ -3279,18 +3299,18 @@ formatter.match({
       "offset": 100
     }
   ],
-  "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 36534756,
+  "duration": 56790099,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15859,
+  "duration": 26431,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 84,
+  "line": 86,
   "name": "Verification de la possibilite d\u0027edition des champs d\u0027Account (Affichage d\u0027edition)",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;20",
@@ -3304,7 +3324,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 62,
+  "line": 64,
   "name": "je verifie que le champ qui suit le label Billing State/Province de la section Address Information et de type Input",
   "matchedColumns": [
     0,
@@ -3328,18 +3348,18 @@ formatter.match({
       "offset": 110
     }
   ],
-  "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 36958780,
+  "duration": 51154323,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14725,
+  "duration": 13593,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 85,
+  "line": 87,
   "name": "Verification de la possibilite d\u0027edition des champs d\u0027Account (Affichage d\u0027edition)",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;21",
@@ -3353,7 +3373,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 62,
+  "line": 64,
   "name": "je verifie que le champ qui suit le label Billing Country de la section Address Information et de type Input",
   "matchedColumns": [
     0,
@@ -3377,18 +3397,18 @@ formatter.match({
       "offset": 103
     }
   ],
-  "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 43345188,
+  "duration": 56287539,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14348,
+  "duration": 14726,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 86,
+  "line": 88,
   "name": "Verification de la possibilite d\u0027edition des champs d\u0027Account (Affichage d\u0027edition)",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;22",
@@ -3402,7 +3422,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 62,
+  "line": 64,
   "name": "je verifie que le champ qui suit le label Shipping Street de la section Address Information et de type textArea",
   "matchedColumns": [
     0,
@@ -3426,18 +3446,18 @@ formatter.match({
       "offset": 103
     }
   ],
-  "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 33159936,
+  "duration": 54230099,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14726,
+  "duration": 19635,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 87,
+  "line": 89,
   "name": "Verification de la possibilite d\u0027edition des champs d\u0027Account (Affichage d\u0027edition)",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;23",
@@ -3451,7 +3471,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 62,
+  "line": 64,
   "name": "je verifie que le champ qui suit le label Shipping Zip/Postal Code de la section Address Information et de type Input",
   "matchedColumns": [
     0,
@@ -3475,18 +3495,18 @@ formatter.match({
       "offset": 112
     }
   ],
-  "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 37420185,
+  "duration": 49970228,
   "status": "passed"
 });
 formatter.after({
-  "duration": 18879,
+  "duration": 14725,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 88,
+  "line": 90,
   "name": "Verification de la possibilite d\u0027edition des champs d\u0027Account (Affichage d\u0027edition)",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;24",
@@ -3500,7 +3520,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 62,
+  "line": 64,
   "name": "je verifie que le champ qui suit le label Shipping City de la section Address Information et de type Input",
   "matchedColumns": [
     0,
@@ -3524,18 +3544,18 @@ formatter.match({
       "offset": 101
     }
   ],
-  "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 36339169,
+  "duration": 52183609,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14348,
+  "duration": 15104,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 89,
+  "line": 91,
   "name": "Verification de la possibilite d\u0027edition des champs d\u0027Account (Affichage d\u0027edition)",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;25",
@@ -3549,7 +3569,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 62,
+  "line": 64,
   "name": "je verifie que le champ qui suit le label Shipping State/Province de la section Address Information et de type Input",
   "matchedColumns": [
     0,
@@ -3573,18 +3593,18 @@ formatter.match({
       "offset": 111
     }
   ],
-  "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 34237175,
+  "duration": 92153221,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14348,
+  "duration": 15858,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 90,
+  "line": 92,
   "name": "Verification de la possibilite d\u0027edition des champs d\u0027Account (Affichage d\u0027edition)",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;26",
@@ -3598,7 +3618,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 62,
+  "line": 64,
   "name": "je verifie que le champ qui suit le label Shipping Country de la section Address Information et de type Input",
   "matchedColumns": [
     0,
@@ -3622,18 +3642,18 @@ formatter.match({
       "offset": 104
     }
   ],
-  "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 35341977,
+  "duration": 54839515,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14348,
+  "duration": 18124,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 91,
+  "line": 93,
   "name": "Verification de la possibilite d\u0027edition des champs d\u0027Account (Affichage d\u0027edition)",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;27",
@@ -3647,7 +3667,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 62,
+  "line": 64,
   "name": "je verifie que le champ qui suit le label Customer Priority de la section Additional Information et de type select",
   "matchedColumns": [
     0,
@@ -3671,18 +3691,18 @@ formatter.match({
       "offset": 108
     }
   ],
-  "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 34933812,
+  "duration": 54806665,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15858,
+  "duration": 14726,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 92,
+  "line": 94,
   "name": "Verification de la possibilite d\u0027edition des champs d\u0027Account (Affichage d\u0027edition)",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;28",
@@ -3696,8 +3716,8 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 62,
-  "name": "je verifie que le champ qui suit le label SLA Expiration Date de la section Additional Information et de type Input",
+  "line": 64,
+  "name": "je verifie que le champ qui suit le label SLA Expiration Date de la section Additional Information et de type Date",
   "matchedColumns": [
     0,
     1,
@@ -3716,22 +3736,22 @@ formatter.match({
       "offset": 76
     },
     {
-      "val": "Input",
+      "val": "Date",
       "offset": 110
     }
   ],
-  "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 35084089,
+  "duration": 58565864,
   "status": "passed"
 });
 formatter.after({
-  "duration": 13970,
+  "duration": 13592,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 93,
+  "line": 95,
   "name": "Verification de la possibilite d\u0027edition des champs d\u0027Account (Affichage d\u0027edition)",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;29",
@@ -3745,7 +3765,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 62,
+  "line": 64,
   "name": "je verifie que le champ qui suit le label Number of Locations de la section Additional Information et de type Input",
   "matchedColumns": [
     0,
@@ -3769,18 +3789,18 @@ formatter.match({
       "offset": 110
     }
   ],
-  "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 34735582,
+  "duration": 48355691,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14348,
+  "duration": 15858,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 94,
+  "line": 96,
   "name": "Verification de la possibilite d\u0027edition des champs d\u0027Account (Affichage d\u0027edition)",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;30",
@@ -3794,7 +3814,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 62,
+  "line": 64,
   "name": "je verifie que le champ qui suit le label Active de la section Additional Information et de type select",
   "matchedColumns": [
     0,
@@ -3818,18 +3838,18 @@ formatter.match({
       "offset": 97
     }
   ],
-  "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 36092608,
+  "duration": 57697427,
   "status": "passed"
 });
 formatter.after({
-  "duration": 13971,
+  "duration": 13970,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 95,
+  "line": 97,
   "name": "Verification de la possibilite d\u0027edition des champs d\u0027Account (Affichage d\u0027edition)",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;31",
@@ -3843,7 +3863,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 62,
+  "line": 64,
   "name": "je verifie que le champ qui suit le label SLA de la section Additional Information et de type select",
   "matchedColumns": [
     0,
@@ -3867,18 +3887,18 @@ formatter.match({
       "offset": 94
     }
   ],
-  "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 36025400,
+  "duration": 71907318,
   "status": "passed"
 });
 formatter.after({
-  "duration": 13593,
+  "duration": 14348,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 96,
+  "line": 98,
   "name": "Verification de la possibilite d\u0027edition des champs d\u0027Account (Affichage d\u0027edition)",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;32",
@@ -3892,7 +3912,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 62,
+  "line": 64,
   "name": "je verifie que le champ qui suit le label SLA Serial Number de la section Additional Information et de type Input",
   "matchedColumns": [
     0,
@@ -3916,18 +3936,18 @@ formatter.match({
       "offset": 108
     }
   ],
-  "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 36372019,
+  "duration": 51238523,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14348,
+  "duration": 18501,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 97,
+  "line": 99,
   "name": "Verification de la possibilite d\u0027edition des champs d\u0027Account (Affichage d\u0027edition)",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;33",
@@ -3941,7 +3961,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 62,
+  "line": 64,
   "name": "je verifie que le champ qui suit le label Upsell Opportunity de la section Additional Information et de type select",
   "matchedColumns": [
     0,
@@ -3965,18 +3985,18 @@ formatter.match({
       "offset": 109
     }
   ],
-  "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 36273470,
+  "duration": 56206359,
   "status": "passed"
 });
 formatter.after({
-  "duration": 13216,
+  "duration": 18124,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 98,
+  "line": 100,
   "name": "Verification de la possibilite d\u0027edition des champs d\u0027Account (Affichage d\u0027edition)",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-possibilite-d\u0027edition-des-champs-d\u0027account-(affichage-d\u0027edition);;34",
@@ -3990,7 +4010,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 62,
+  "line": 64,
   "name": "je verifie que le champ qui suit le label Description de la section Description Information et de type textArea",
   "matchedColumns": [
     0,
@@ -4014,18 +4034,18 @@ formatter.match({
       "offset": 103
     }
   ],
-  "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 34180915,
+  "duration": 53055066,
   "status": "passed"
 });
 formatter.after({
-  "duration": 13971,
+  "duration": 16614,
   "status": "passed"
 });
 formatter.scenarioOutline({
-  "line": 101,
+  "line": 103,
   "name": "Verification de la presence des boutons \"Save\" / \"Save \u0026 New\" / \"Cancel\" en haut et bas de page (Affichage d\u0027edition)",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-boutons-\"save\"-/-\"save-\u0026-new\"-/-\"cancel\"-en-haut-et-bas-de-page-(affichage-d\u0027edition)",
@@ -4033,12 +4053,12 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 102,
+  "line": 104,
   "name": "je verifie la presence du bouton \u003cbuttonName\u003e situe en \u003cposition\u003e",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 104,
+  "line": 106,
   "name": "",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-boutons-\"save\"-/-\"save-\u0026-new\"-/-\"cancel\"-en-haut-et-bas-de-page-(affichage-d\u0027edition);",
@@ -4048,7 +4068,7 @@ formatter.examples({
         "buttonName",
         "position"
       ],
-      "line": 105,
+      "line": 107,
       "id": "test-non-regression-account;verification-de-la-presence-des-boutons-\"save\"-/-\"save-\u0026-new\"-/-\"cancel\"-en-haut-et-bas-de-page-(affichage-d\u0027edition);;1"
     },
     {
@@ -4056,7 +4076,7 @@ formatter.examples({
         "save",
         "top"
       ],
-      "line": 106,
+      "line": 108,
       "id": "test-non-regression-account;verification-de-la-presence-des-boutons-\"save\"-/-\"save-\u0026-new\"-/-\"cancel\"-en-haut-et-bas-de-page-(affichage-d\u0027edition);;2"
     },
     {
@@ -4064,7 +4084,7 @@ formatter.examples({
         "save_new",
         "top"
       ],
-      "line": 107,
+      "line": 109,
       "id": "test-non-regression-account;verification-de-la-presence-des-boutons-\"save\"-/-\"save-\u0026-new\"-/-\"cancel\"-en-haut-et-bas-de-page-(affichage-d\u0027edition);;3"
     },
     {
@@ -4072,7 +4092,7 @@ formatter.examples({
         "cancel",
         "top"
       ],
-      "line": 108,
+      "line": 110,
       "id": "test-non-regression-account;verification-de-la-presence-des-boutons-\"save\"-/-\"save-\u0026-new\"-/-\"cancel\"-en-haut-et-bas-de-page-(affichage-d\u0027edition);;4"
     },
     {
@@ -4080,7 +4100,7 @@ formatter.examples({
         "save",
         "bottom"
       ],
-      "line": 109,
+      "line": 111,
       "id": "test-non-regression-account;verification-de-la-presence-des-boutons-\"save\"-/-\"save-\u0026-new\"-/-\"cancel\"-en-haut-et-bas-de-page-(affichage-d\u0027edition);;5"
     },
     {
@@ -4088,7 +4108,7 @@ formatter.examples({
         "save_new",
         "bottom"
       ],
-      "line": 110,
+      "line": 112,
       "id": "test-non-regression-account;verification-de-la-presence-des-boutons-\"save\"-/-\"save-\u0026-new\"-/-\"cancel\"-en-haut-et-bas-de-page-(affichage-d\u0027edition);;6"
     },
     {
@@ -4096,14 +4116,14 @@ formatter.examples({
         "cancel",
         "bottom"
       ],
-      "line": 111,
+      "line": 113,
       "id": "test-non-regression-account;verification-de-la-presence-des-boutons-\"save\"-/-\"save-\u0026-new\"-/-\"cancel\"-en-haut-et-bas-de-page-(affichage-d\u0027edition);;7"
     }
   ],
   "keyword": "Examples"
 });
 formatter.scenario({
-  "line": 106,
+  "line": 108,
   "name": "Verification de la presence des boutons \"Save\" / \"Save \u0026 New\" / \"Cancel\" en haut et bas de page (Affichage d\u0027edition)",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-boutons-\"save\"-/-\"save-\u0026-new\"-/-\"cancel\"-en-haut-et-bas-de-page-(affichage-d\u0027edition);;2",
@@ -4117,7 +4137,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 102,
+  "line": 104,
   "name": "je verifie la presence du bouton save situe en top",
   "matchedColumns": [
     0,
@@ -4136,18 +4156,18 @@ formatter.match({
       "offset": 47
     }
   ],
-  "location": "AccountStep.checkEditPageButtons(String,String)"
+  "location": "AccountStepClassic.checkEditPageButtons(String,String)"
 });
 formatter.result({
-  "duration": 13801725,
+  "duration": 60791,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14348,
+  "duration": 10194,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 107,
+  "line": 109,
   "name": "Verification de la presence des boutons \"Save\" / \"Save \u0026 New\" / \"Cancel\" en haut et bas de page (Affichage d\u0027edition)",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-boutons-\"save\"-/-\"save-\u0026-new\"-/-\"cancel\"-en-haut-et-bas-de-page-(affichage-d\u0027edition);;3",
@@ -4161,7 +4181,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 102,
+  "line": 104,
   "name": "je verifie la presence du bouton save_new situe en top",
   "matchedColumns": [
     0,
@@ -4180,18 +4200,18 @@ formatter.match({
       "offset": 51
     }
   ],
-  "location": "AccountStep.checkEditPageButtons(String,String)"
+  "location": "AccountStepClassic.checkEditPageButtons(String,String)"
 });
 formatter.result({
-  "duration": 14400569,
+  "duration": 56260,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15103,
+  "duration": 8685,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 108,
+  "line": 110,
   "name": "Verification de la presence des boutons \"Save\" / \"Save \u0026 New\" / \"Cancel\" en haut et bas de page (Affichage d\u0027edition)",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-boutons-\"save\"-/-\"save-\u0026-new\"-/-\"cancel\"-en-haut-et-bas-de-page-(affichage-d\u0027edition);;4",
@@ -4205,7 +4225,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 102,
+  "line": 104,
   "name": "je verifie la presence du bouton cancel situe en top",
   "matchedColumns": [
     0,
@@ -4224,18 +4244,18 @@ formatter.match({
       "offset": 49
     }
   ],
-  "location": "AccountStep.checkEditPageButtons(String,String)"
+  "location": "AccountStepClassic.checkEditPageButtons(String,String)"
 });
 formatter.result({
-  "duration": 14761914,
+  "duration": 36248,
   "status": "passed"
 });
 formatter.after({
-  "duration": 13215,
+  "duration": 19257,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 109,
+  "line": 111,
   "name": "Verification de la presence des boutons \"Save\" / \"Save \u0026 New\" / \"Cancel\" en haut et bas de page (Affichage d\u0027edition)",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-boutons-\"save\"-/-\"save-\u0026-new\"-/-\"cancel\"-en-haut-et-bas-de-page-(affichage-d\u0027edition);;5",
@@ -4249,7 +4269,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 102,
+  "line": 104,
   "name": "je verifie la presence du bouton save situe en bottom",
   "matchedColumns": [
     0,
@@ -4268,18 +4288,18 @@ formatter.match({
       "offset": 47
     }
   ],
-  "location": "AccountStep.checkEditPageButtons(String,String)"
+  "location": "AccountStepClassic.checkEditPageButtons(String,String)"
 });
 formatter.result({
-  "duration": 15441938,
+  "duration": 54371,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15481,
+  "duration": 9817,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 110,
+  "line": 112,
   "name": "Verification de la presence des boutons \"Save\" / \"Save \u0026 New\" / \"Cancel\" en haut et bas de page (Affichage d\u0027edition)",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-boutons-\"save\"-/-\"save-\u0026-new\"-/-\"cancel\"-en-haut-et-bas-de-page-(affichage-d\u0027edition);;6",
@@ -4293,7 +4313,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 102,
+  "line": 104,
   "name": "je verifie la presence du bouton save_new situe en bottom",
   "matchedColumns": [
     0,
@@ -4312,18 +4332,18 @@ formatter.match({
       "offset": 51
     }
   ],
-  "location": "AccountStep.checkEditPageButtons(String,String)"
+  "location": "AccountStepClassic.checkEditPageButtons(String,String)"
 });
 formatter.result({
-  "duration": 14379425,
+  "duration": 49463,
   "status": "passed"
 });
 formatter.after({
-  "duration": 13593,
+  "duration": 10195,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 111,
+  "line": 113,
   "name": "Verification de la presence des boutons \"Save\" / \"Save \u0026 New\" / \"Cancel\" en haut et bas de page (Affichage d\u0027edition)",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-boutons-\"save\"-/-\"save-\u0026-new\"-/-\"cancel\"-en-haut-et-bas-de-page-(affichage-d\u0027edition);;7",
@@ -4337,7 +4357,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 102,
+  "line": 104,
   "name": "je verifie la presence du bouton cancel situe en bottom",
   "matchedColumns": [
     0,
@@ -4356,18 +4376,185 @@ formatter.match({
       "offset": 49
     }
   ],
-  "location": "AccountStep.checkEditPageButtons(String,String)"
+  "location": "AccountStepClassic.checkEditPageButtons(String,String)"
 });
 formatter.result({
-  "duration": 14468912,
+  "duration": 42667,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15103,
+  "duration": 12083,
   "status": "passed"
 });
 formatter.scenarioOutline({
-  "line": 114,
+  "line": 115,
+  "name": "Verification de la presence des boutons \"Save\" / \"Save \u0026 New\" / \"Cancel\" en bas de page (Affichage d\u0027edition)",
+  "description": "",
+  "id": "test-non-regression-account;verification-de-la-presence-des-boutons-\"save\"-/-\"save-\u0026-new\"-/-\"cancel\"-en-bas-de-page-(affichage-d\u0027edition)",
+  "type": "scenario_outline",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "line": 116,
+  "name": "verification de  la presence du bouton \u003cbuttonName\u003e",
+  "keyword": "Then "
+});
+formatter.examples({
+  "line": 118,
+  "name": "",
+  "description": "",
+  "id": "test-non-regression-account;verification-de-la-presence-des-boutons-\"save\"-/-\"save-\u0026-new\"-/-\"cancel\"-en-bas-de-page-(affichage-d\u0027edition);",
+  "rows": [
+    {
+      "cells": [
+        "buttonName"
+      ],
+      "line": 119,
+      "id": "test-non-regression-account;verification-de-la-presence-des-boutons-\"save\"-/-\"save-\u0026-new\"-/-\"cancel\"-en-bas-de-page-(affichage-d\u0027edition);;1"
+    },
+    {
+      "cells": [
+        "Save"
+      ],
+      "line": 120,
+      "id": "test-non-regression-account;verification-de-la-presence-des-boutons-\"save\"-/-\"save-\u0026-new\"-/-\"cancel\"-en-bas-de-page-(affichage-d\u0027edition);;2"
+    },
+    {
+      "cells": [
+        "Save \u0026 New"
+      ],
+      "line": 121,
+      "id": "test-non-regression-account;verification-de-la-presence-des-boutons-\"save\"-/-\"save-\u0026-new\"-/-\"cancel\"-en-bas-de-page-(affichage-d\u0027edition);;3"
+    },
+    {
+      "cells": [
+        "Cancel"
+      ],
+      "line": 122,
+      "id": "test-non-regression-account;verification-de-la-presence-des-boutons-\"save\"-/-\"save-\u0026-new\"-/-\"cancel\"-en-bas-de-page-(affichage-d\u0027edition);;4"
+    }
+  ],
+  "keyword": "Examples"
+});
+formatter.scenario({
+  "line": 120,
+  "name": "Verification de la presence des boutons \"Save\" / \"Save \u0026 New\" / \"Cancel\" en bas de page (Affichage d\u0027edition)",
+  "description": "",
+  "id": "test-non-regression-account;verification-de-la-presence-des-boutons-\"save\"-/-\"save-\u0026-new\"-/-\"cancel\"-en-bas-de-page-(affichage-d\u0027edition);;2",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 116,
+  "name": "verification de  la presence du bouton Save",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Save",
+      "offset": 39
+    }
+  ],
+  "location": "AccountStepClassic.checkEditPageButtons(String)"
+});
+formatter.result({
+  "duration": 18935697,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 14348,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 121,
+  "name": "Verification de la presence des boutons \"Save\" / \"Save \u0026 New\" / \"Cancel\" en bas de page (Affichage d\u0027edition)",
+  "description": "",
+  "id": "test-non-regression-account;verification-de-la-presence-des-boutons-\"save\"-/-\"save-\u0026-new\"-/-\"cancel\"-en-bas-de-page-(affichage-d\u0027edition);;3",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 116,
+  "name": "verification de  la presence du bouton Save \u0026 New",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Save \u0026 New",
+      "offset": 39
+    }
+  ],
+  "location": "AccountStepClassic.checkEditPageButtons(String)"
+});
+formatter.result({
+  "duration": 20524180,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 30584,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 122,
+  "name": "Verification de la presence des boutons \"Save\" / \"Save \u0026 New\" / \"Cancel\" en bas de page (Affichage d\u0027edition)",
+  "description": "",
+  "id": "test-non-regression-account;verification-de-la-presence-des-boutons-\"save\"-/-\"save-\u0026-new\"-/-\"cancel\"-en-bas-de-page-(affichage-d\u0027edition);;4",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 116,
+  "name": "verification de  la presence du bouton Cancel",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Cancel",
+      "offset": 39
+    }
+  ],
+  "location": "AccountStepClassic.checkEditPageButtons(String)"
+});
+formatter.result({
+  "duration": 16746481,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 14726,
+  "status": "passed"
+});
+formatter.scenarioOutline({
+  "line": 124,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
   "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account",
@@ -4375,12 +4562,12 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ \u003celementName\u003e de la section \u003csectionName\u003e de type \u003celementType\u003e requis \u003crequired\u003e avec la valeur \u003cvalues\u003e",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 117,
+  "line": 127,
   "name": "",
   "description": "",
   "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;",
@@ -4393,7 +4580,7 @@ formatter.examples({
         "required",
         "values"
       ],
-      "line": 118,
+      "line": 128,
       "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;1"
     },
     {
@@ -4404,19 +4591,8 @@ formatter.examples({
         "true",
         ""
       ],
-      "line": 119,
+      "line": 129,
       "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;2"
-    },
-    {
-      "cells": [
-        "Parent Account",
-        "Account Information",
-        "Input",
-        "false",
-        "Accenture"
-      ],
-      "line": 120,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;3"
     },
     {
       "cells": [
@@ -4426,8 +4602,8 @@ formatter.examples({
         "false",
         "2121212121"
       ],
-      "line": 121,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;4"
+      "line": 130,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;3"
     },
     {
       "cells": [
@@ -4437,8 +4613,8 @@ formatter.examples({
         "false",
         "Other"
       ],
-      "line": 122,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;5"
+      "line": 131,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;4"
     },
     {
       "cells": [
@@ -4448,8 +4624,8 @@ formatter.examples({
         "false",
         "Prospect"
       ],
-      "line": 123,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;6"
+      "line": 132,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;5"
     },
     {
       "cells": [
@@ -4459,8 +4635,8 @@ formatter.examples({
         "false",
         "Customer - Direct"
       ],
-      "line": 124,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;7"
+      "line": 133,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;6"
     },
     {
       "cells": [
@@ -4470,8 +4646,8 @@ formatter.examples({
         "false",
         "Customer - Channel"
       ],
-      "line": 125,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;8"
+      "line": 134,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;7"
     },
     {
       "cells": [
@@ -4481,8 +4657,8 @@ formatter.examples({
         "false",
         "Channel Partner / Reseller"
       ],
-      "line": 126,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;9"
+      "line": 135,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;8"
     },
     {
       "cells": [
@@ -4492,8 +4668,8 @@ formatter.examples({
         "false",
         "Installation Partner"
       ],
-      "line": 127,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;10"
+      "line": 136,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;9"
     },
     {
       "cells": [
@@ -4503,8 +4679,8 @@ formatter.examples({
         "false",
         "Technology Partner"
       ],
-      "line": 128,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;11"
+      "line": 137,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;10"
     },
     {
       "cells": [
@@ -4514,8 +4690,8 @@ formatter.examples({
         "false",
         "Prospect"
       ],
-      "line": 129,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;12"
+      "line": 138,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;11"
     },
     {
       "cells": [
@@ -4525,8 +4701,8 @@ formatter.examples({
         "false",
         "Agriculture"
       ],
-      "line": 130,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;13"
+      "line": 139,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;12"
     },
     {
       "cells": [
@@ -4536,8 +4712,8 @@ formatter.examples({
         "false",
         "Consulting"
       ],
-      "line": 131,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;14"
+      "line": 140,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;13"
     },
     {
       "cells": [
@@ -4547,8 +4723,8 @@ formatter.examples({
         "false",
         "Energy"
       ],
-      "line": 132,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;15"
+      "line": 141,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;14"
     },
     {
       "cells": [
@@ -4558,8 +4734,8 @@ formatter.examples({
         "false",
         "Finance"
       ],
-      "line": 133,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;16"
+      "line": 142,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;15"
     },
     {
       "cells": [
@@ -4569,8 +4745,8 @@ formatter.examples({
         "false",
         "Media"
       ],
-      "line": 134,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;17"
+      "line": 143,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;16"
     },
     {
       "cells": [
@@ -4580,8 +4756,8 @@ formatter.examples({
         "false",
         "Telecommunications"
       ],
-      "line": 135,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;18"
+      "line": 144,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;17"
     },
     {
       "cells": [
@@ -4591,8 +4767,8 @@ formatter.examples({
         "false",
         "50 000"
       ],
-      "line": 136,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;19"
+      "line": 145,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;18"
     },
     {
       "cells": [
@@ -4602,8 +4778,8 @@ formatter.examples({
         "false",
         "Hot"
       ],
-      "line": 137,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;20"
+      "line": 146,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;19"
     },
     {
       "cells": [
@@ -4613,8 +4789,8 @@ formatter.examples({
         "false",
         "Warm"
       ],
-      "line": 138,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;21"
+      "line": 147,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;20"
     },
     {
       "cells": [
@@ -4624,8 +4800,8 @@ formatter.examples({
         "false",
         "Cold"
       ],
-      "line": 139,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;22"
+      "line": 148,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;21"
     },
     {
       "cells": [
@@ -4635,8 +4811,8 @@ formatter.examples({
         "false",
         "Warm"
       ],
-      "line": 140,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;23"
+      "line": 149,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;22"
     },
     {
       "cells": [
@@ -4646,8 +4822,8 @@ formatter.examples({
         "false",
         "0202020202"
       ],
-      "line": 141,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;24"
+      "line": 150,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;23"
     },
     {
       "cells": [
@@ -4655,10 +4831,10 @@ formatter.examples({
         "Account Information",
         "Input",
         "false",
-        "0202020202"
+        "0404040404"
       ],
-      "line": 142,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;25"
+      "line": 151,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;24"
     },
     {
       "cells": [
@@ -4668,8 +4844,8 @@ formatter.examples({
         "false",
         "https://www.accenture.com"
       ],
-      "line": 143,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;26"
+      "line": 152,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;25"
     },
     {
       "cells": [
@@ -4679,8 +4855,8 @@ formatter.examples({
         "false",
         "Public"
       ],
-      "line": 144,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;27"
+      "line": 153,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;26"
     },
     {
       "cells": [
@@ -4690,8 +4866,8 @@ formatter.examples({
         "false",
         "Private"
       ],
-      "line": 145,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;28"
+      "line": 154,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;27"
     },
     {
       "cells": [
@@ -4701,8 +4877,8 @@ formatter.examples({
         "false",
         "Subsidiary"
       ],
-      "line": 146,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;29"
+      "line": 155,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;28"
     },
     {
       "cells": [
@@ -4712,8 +4888,8 @@ formatter.examples({
         "false",
         "Private"
       ],
-      "line": 147,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;30"
+      "line": 156,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;29"
     },
     {
       "cells": [
@@ -4723,8 +4899,8 @@ formatter.examples({
         "false",
         "500, route de Vannes"
       ],
-      "line": 148,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;31"
+      "line": 157,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;30"
     },
     {
       "cells": [
@@ -4734,8 +4910,8 @@ formatter.examples({
         "false",
         "44000"
       ],
-      "line": 149,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;32"
+      "line": 158,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;31"
     },
     {
       "cells": [
@@ -4745,8 +4921,8 @@ formatter.examples({
         "false",
         "Nantes"
       ],
-      "line": 150,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;33"
+      "line": 159,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;32"
     },
     {
       "cells": [
@@ -4756,8 +4932,8 @@ formatter.examples({
         "false",
         "Loire Atlantique"
       ],
-      "line": 151,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;34"
+      "line": 160,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;33"
     },
     {
       "cells": [
@@ -4767,8 +4943,8 @@ formatter.examples({
         "false",
         "France"
       ],
-      "line": 152,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;35"
+      "line": 161,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;34"
     },
     {
       "cells": [
@@ -4778,8 +4954,8 @@ formatter.examples({
         "false",
         "500, route de Vannes"
       ],
-      "line": 153,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;36"
+      "line": 162,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;35"
     },
     {
       "cells": [
@@ -4789,8 +4965,8 @@ formatter.examples({
         "false",
         "44000"
       ],
-      "line": 154,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;37"
+      "line": 163,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;36"
     },
     {
       "cells": [
@@ -4800,8 +4976,8 @@ formatter.examples({
         "false",
         "Nantes"
       ],
-      "line": 155,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;38"
+      "line": 164,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;37"
     },
     {
       "cells": [
@@ -4811,8 +4987,8 @@ formatter.examples({
         "false",
         "Loire Atlantique"
       ],
-      "line": 156,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;39"
+      "line": 165,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;38"
     },
     {
       "cells": [
@@ -4822,8 +4998,8 @@ formatter.examples({
         "false",
         "France"
       ],
-      "line": 157,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;40"
+      "line": 166,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;39"
     },
     {
       "cells": [
@@ -4833,8 +5009,8 @@ formatter.examples({
         "false",
         "High"
       ],
-      "line": 158,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;41"
+      "line": 167,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;40"
     },
     {
       "cells": [
@@ -4844,8 +5020,8 @@ formatter.examples({
         "false",
         "Low"
       ],
-      "line": 159,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;42"
+      "line": 168,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;41"
     },
     {
       "cells": [
@@ -4855,8 +5031,8 @@ formatter.examples({
         "false",
         "Medium"
       ],
-      "line": 160,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;43"
+      "line": 169,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;42"
     },
     {
       "cells": [
@@ -4866,8 +5042,8 @@ formatter.examples({
         "false",
         "High"
       ],
-      "line": 161,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;44"
+      "line": 170,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;43"
     },
     {
       "cells": [
@@ -4877,8 +5053,8 @@ formatter.examples({
         "false",
         "123"
       ],
-      "line": 162,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;45"
+      "line": 171,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;44"
     },
     {
       "cells": [
@@ -4888,8 +5064,8 @@ formatter.examples({
         "false",
         "Yes"
       ],
-      "line": 163,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;46"
+      "line": 172,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;45"
     },
     {
       "cells": [
@@ -4899,8 +5075,8 @@ formatter.examples({
         "false",
         "No"
       ],
-      "line": 164,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;47"
+      "line": 173,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;46"
     },
     {
       "cells": [
@@ -4910,8 +5086,8 @@ formatter.examples({
         "false",
         "Yes"
       ],
-      "line": 165,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;48"
+      "line": 174,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;47"
     },
     {
       "cells": [
@@ -4921,8 +5097,8 @@ formatter.examples({
         "false",
         "Gold"
       ],
-      "line": 166,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;49"
+      "line": 175,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;48"
     },
     {
       "cells": [
@@ -4932,8 +5108,8 @@ formatter.examples({
         "false",
         "Silver"
       ],
-      "line": 167,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;50"
+      "line": 176,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;49"
     },
     {
       "cells": [
@@ -4943,8 +5119,8 @@ formatter.examples({
         "false",
         "Platinum"
       ],
-      "line": 168,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;51"
+      "line": 177,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;50"
     },
     {
       "cells": [
@@ -4954,8 +5130,8 @@ formatter.examples({
         "false",
         "Bronze"
       ],
-      "line": 169,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;52"
+      "line": 178,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;51"
     },
     {
       "cells": [
@@ -4965,8 +5141,8 @@ formatter.examples({
         "false",
         "Silver"
       ],
-      "line": 170,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;53"
+      "line": 179,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;52"
     },
     {
       "cells": [
@@ -4976,8 +5152,8 @@ formatter.examples({
         "false",
         "Maybe"
       ],
-      "line": 171,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;54"
+      "line": 180,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;53"
     },
     {
       "cells": [
@@ -4987,8 +5163,8 @@ formatter.examples({
         "false",
         "No"
       ],
-      "line": 172,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;55"
+      "line": 181,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;54"
     },
     {
       "cells": [
@@ -4998,8 +5174,8 @@ formatter.examples({
         "false",
         "Yes"
       ],
-      "line": 173,
-      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;56"
+      "line": 182,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;55"
     },
     {
       "cells": [
@@ -5009,14 +5185,25 @@ formatter.examples({
         "false",
         "OK"
       ],
-      "line": 174,
+      "line": 183,
+      "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;56"
+    },
+    {
+      "cells": [
+        "Parent Account",
+        "Account Information",
+        "searchField",
+        "false",
+        "Accenture"
+      ],
+      "line": 184,
       "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;57"
     }
   ],
   "keyword": "Examples"
 });
 formatter.scenario({
-  "line": 119,
+  "line": 129,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
   "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;2",
@@ -5030,7 +5217,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Account Name de la section Account Information de type Input requis true avec la valeur ",
   "matchedColumns": [
     0,
@@ -5064,18 +5251,18 @@ formatter.match({
       "offset": 108
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 387159294,
+  "duration": 629238302,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15104,
+  "duration": 15480,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 120,
+  "line": 130,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
   "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;3",
@@ -5089,66 +5276,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
-  "name": "je remplis le champ Parent Account de la section Account Information de type Input requis false avec la valeur Accenture",
-  "matchedColumns": [
-    0,
-    1,
-    2,
-    3,
-    4
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Parent Account",
-      "offset": 20
-    },
-    {
-      "val": "Account Information",
-      "offset": 49
-    },
-    {
-      "val": "Input",
-      "offset": 77
-    },
-    {
-      "val": "false",
-      "offset": 90
-    },
-    {
-      "val": "Accenture",
-      "offset": 111
-    }
-  ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
-});
-formatter.result({
-  "duration": 130443730,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 14348,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 121,
-  "name": "Remplissage des champs de l\u0027Account",
-  "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;4",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Account Number de la section Account Information de type Input requis false avec la valeur 2121212121",
   "matchedColumns": [
     0,
@@ -5182,21 +5310,21 @@ formatter.match({
       "offset": 111
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 170602132,
+  "duration": 224726509,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15104,
+  "duration": 23410,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 122,
+  "line": 131,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;5",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;4",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -5207,7 +5335,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Type de la section Account Information de type select requis false avec la valeur Other",
   "matchedColumns": [
     0,
@@ -5241,21 +5369,21 @@ formatter.match({
       "offset": 102
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 304039325,
+  "duration": 3515656970,
   "status": "passed"
 });
 formatter.after({
-  "duration": 27941,
+  "duration": 30962,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 123,
+  "line": 132,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;6",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;5",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -5266,7 +5394,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Type de la section Account Information de type select requis false avec la valeur Prospect",
   "matchedColumns": [
     0,
@@ -5300,21 +5428,21 @@ formatter.match({
       "offset": 102
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 204241218,
+  "duration": 3460413444,
   "status": "passed"
 });
 formatter.after({
-  "duration": 30961,
+  "duration": 24543,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 124,
+  "line": 133,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;7",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;6",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -5325,7 +5453,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Type de la section Account Information de type select requis false avec la valeur Customer - Direct",
   "matchedColumns": [
     0,
@@ -5359,21 +5487,21 @@ formatter.match({
       "offset": 102
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 191501629,
+  "duration": 3555612990,
   "status": "passed"
 });
 formatter.after({
-  "duration": 18879,
+  "duration": 16236,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 125,
+  "line": 134,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;8",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;7",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -5384,7 +5512,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Type de la section Account Information de type select requis false avec la valeur Customer - Channel",
   "matchedColumns": [
     0,
@@ -5418,21 +5546,21 @@ formatter.match({
       "offset": 102
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 232312115,
+  "duration": 3356018663,
   "status": "passed"
 });
 formatter.after({
-  "duration": 37758,
+  "duration": 30962,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 126,
+  "line": 135,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;9",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;8",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -5443,7 +5571,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Type de la section Account Information de type select requis false avec la valeur Channel Partner / Reseller",
   "matchedColumns": [
     0,
@@ -5477,21 +5605,21 @@ formatter.match({
       "offset": 102
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 198655660,
+  "duration": 3429064388,
   "status": "passed"
 });
 formatter.after({
-  "duration": 19635,
+  "duration": 23410,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 127,
+  "line": 136,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;10",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;9",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -5502,7 +5630,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Type de la section Account Information de type select requis false avec la valeur Installation Partner",
   "matchedColumns": [
     0,
@@ -5536,21 +5664,21 @@ formatter.match({
       "offset": 102
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 199533914,
+  "duration": 3456714658,
   "status": "passed"
 });
 formatter.after({
-  "duration": 24921,
+  "duration": 21523,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 128,
+  "line": 137,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;11",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;10",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -5561,7 +5689,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Type de la section Account Information de type select requis false avec la valeur Technology Partner",
   "matchedColumns": [
     0,
@@ -5595,21 +5723,21 @@ formatter.match({
       "offset": 102
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 202679165,
+  "duration": 3508984356,
   "status": "passed"
 });
 formatter.after({
-  "duration": 20389,
+  "duration": 18501,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 129,
+  "line": 138,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;12",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;11",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -5620,7 +5748,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Type de la section Account Information de type select requis false avec la valeur Prospect",
   "matchedColumns": [
     0,
@@ -5654,21 +5782,21 @@ formatter.match({
       "offset": 102
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 200512226,
+  "duration": 3474961270,
   "status": "passed"
 });
 formatter.after({
-  "duration": 18124,
+  "duration": 18501,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 130,
+  "line": 139,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;13",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;12",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -5679,7 +5807,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Industry de la section Account Information de type select requis false avec la valeur Agriculture",
   "matchedColumns": [
     0,
@@ -5713,21 +5841,21 @@ formatter.match({
       "offset": 106
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 743821733,
+  "duration": 4040838804,
   "status": "passed"
 });
 formatter.after({
-  "duration": 28319,
+  "duration": 24920,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 131,
+  "line": 140,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;14",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;13",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -5738,7 +5866,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Industry de la section Account Information de type select requis false avec la valeur Consulting",
   "matchedColumns": [
     0,
@@ -5772,21 +5900,21 @@ formatter.match({
       "offset": 106
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 458627485,
+  "duration": 3726085989,
   "status": "passed"
 });
 formatter.after({
-  "duration": 18879,
+  "duration": 18501,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 132,
+  "line": 141,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;15",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;14",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -5797,7 +5925,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Industry de la section Account Information de type select requis false avec la valeur Energy",
   "matchedColumns": [
     0,
@@ -5831,21 +5959,21 @@ formatter.match({
       "offset": 106
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 427273142,
+  "duration": 3656521941,
   "status": "passed"
 });
 formatter.after({
-  "duration": 20389,
+  "duration": 78159,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 133,
+  "line": 142,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;16",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;15",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -5856,7 +5984,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Industry de la section Account Information de type select requis false avec la valeur Finance",
   "matchedColumns": [
     0,
@@ -5890,21 +6018,21 @@ formatter.match({
       "offset": 106
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 435460613,
+  "duration": 3696071305,
   "status": "passed"
 });
 formatter.after({
-  "duration": 17369,
+  "duration": 60035,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 134,
+  "line": 143,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;17",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;16",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -5915,7 +6043,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Industry de la section Account Information de type select requis false avec la valeur Media",
   "matchedColumns": [
     0,
@@ -5949,21 +6077,21 @@ formatter.match({
       "offset": 106
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 429294712,
+  "duration": 3700145028,
   "status": "passed"
 });
 formatter.after({
-  "duration": 23787,
+  "duration": 77026,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 135,
+  "line": 144,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;18",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;17",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -5974,7 +6102,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Industry de la section Account Information de type select requis false avec la valeur Telecommunications",
   "matchedColumns": [
     0,
@@ -6008,21 +6136,21 @@ formatter.match({
       "offset": 106
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 439637416,
+  "duration": 3693605323,
   "status": "passed"
 });
 formatter.after({
-  "duration": 18879,
+  "duration": 51351,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 136,
+  "line": 145,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;19",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;18",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -6033,7 +6161,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Annual Revenue de la section Account Information de type Input requis false avec la valeur 50 000",
   "matchedColumns": [
     0,
@@ -6067,21 +6195,21 @@ formatter.match({
       "offset": 111
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 128171068,
+  "duration": 215934908,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15480,
+  "duration": 14348,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 137,
+  "line": 146,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;20",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;19",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -6092,7 +6220,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Rating de la section Account Information de type select requis false avec la valeur Hot",
   "matchedColumns": [
     0,
@@ -6126,21 +6254,21 @@ formatter.match({
       "offset": 104
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 225261541,
+  "duration": 3476906190,
   "status": "passed"
 });
 formatter.after({
-  "duration": 17368,
+  "duration": 16614,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 138,
+  "line": 147,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;21",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;20",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -6151,7 +6279,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Rating de la section Account Information de type select requis false avec la valeur Warm",
   "matchedColumns": [
     0,
@@ -6185,21 +6313,21 @@ formatter.match({
       "offset": 104
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 161994037,
+  "duration": 3518492983,
   "status": "passed"
 });
 formatter.after({
-  "duration": 17746,
+  "duration": 18124,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 139,
+  "line": 148,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;22",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;21",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -6210,7 +6338,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Rating de la section Account Information de type select requis false avec la valeur Cold",
   "matchedColumns": [
     0,
@@ -6244,21 +6372,21 @@ formatter.match({
       "offset": 104
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 161108986,
+  "duration": 3413173883,
   "status": "passed"
 });
 formatter.after({
-  "duration": 20012,
+  "duration": 17746,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 140,
+  "line": 149,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;23",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;22",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -6269,7 +6397,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Rating de la section Account Information de type select requis false avec la valeur Warm",
   "matchedColumns": [
     0,
@@ -6303,21 +6431,21 @@ formatter.match({
       "offset": 104
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 152970601,
+  "duration": 3385079955,
   "status": "passed"
 });
 formatter.after({
-  "duration": 22655,
+  "duration": 22277,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 141,
+  "line": 150,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;24",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;23",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -6328,7 +6456,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Phone de la section Account Information de type Input requis false avec la valeur 0202020202",
   "matchedColumns": [
     0,
@@ -6362,21 +6490,21 @@ formatter.match({
       "offset": 102
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 145484677,
+  "duration": 280896996,
   "status": "passed"
 });
 formatter.after({
-  "duration": 20767,
+  "duration": 15481,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 142,
+  "line": 151,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;25",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;24",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -6387,8 +6515,8 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
-  "name": "je remplis le champ Fax de la section Account Information de type Input requis false avec la valeur 0202020202",
+  "line": 125,
+  "name": "je remplis le champ Fax de la section Account Information de type Input requis false avec la valeur 0404040404",
   "matchedColumns": [
     0,
     1,
@@ -6417,25 +6545,25 @@ formatter.match({
       "offset": 79
     },
     {
-      "val": "0202020202",
+      "val": "0404040404",
       "offset": 100
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 162646875,
+  "duration": 314579505,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15481,
+  "duration": 17368,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 143,
+  "line": 152,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;26",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;25",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -6446,7 +6574,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Website de la section Account Information de type Input requis false avec la valeur https://www.accenture.com",
   "matchedColumns": [
     0,
@@ -6480,21 +6608,21 @@ formatter.match({
       "offset": 104
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 216370259,
+  "duration": 414816362,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15481,
+  "duration": 19634,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 144,
+  "line": 153,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;27",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;26",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -6505,7 +6633,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Ownership de la section Account Information de type select requis false avec la valeur Public",
   "matchedColumns": [
     0,
@@ -6539,21 +6667,21 @@ formatter.match({
       "offset": 107
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 217979888,
+  "duration": 3492963586,
   "status": "passed"
 });
 formatter.after({
-  "duration": 16991,
+  "duration": 82313,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 145,
+  "line": 154,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;28",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;27",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -6564,7 +6692,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Ownership de la section Account Information de type select requis false avec la valeur Private",
   "matchedColumns": [
     0,
@@ -6598,21 +6726,21 @@ formatter.match({
       "offset": 107
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 171383348,
+  "duration": 3405287345,
   "status": "passed"
 });
 formatter.after({
-  "duration": 32849,
+  "duration": 18124,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 146,
+  "line": 155,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;29",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;28",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -6623,7 +6751,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Ownership de la section Account Information de type select requis false avec la valeur Subsidiary",
   "matchedColumns": [
     0,
@@ -6657,21 +6785,21 @@ formatter.match({
       "offset": 107
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 186913640,
+  "duration": 3420265235,
   "status": "passed"
 });
 formatter.after({
-  "duration": 39269,
+  "duration": 19257,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 147,
+  "line": 156,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;30",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;29",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -6682,7 +6810,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Ownership de la section Account Information de type select requis false avec la valeur Private",
   "matchedColumns": [
     0,
@@ -6716,21 +6844,21 @@ formatter.match({
       "offset": 107
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 158019994,
+  "duration": 3443504603,
   "status": "passed"
 });
 formatter.after({
-  "duration": 45310,
+  "duration": 42289,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 148,
+  "line": 157,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;31",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;30",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -6741,7 +6869,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Billing Street de la section Address Information de type textArea requis false avec la valeur 500, route de Vannes",
   "matchedColumns": [
     0,
@@ -6775,21 +6903,21 @@ formatter.match({
       "offset": 114
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 118554830,
+  "duration": 258118656,
   "status": "passed"
 });
 formatter.after({
-  "duration": 16613,
+  "duration": 21522,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 149,
+  "line": 158,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;32",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;31",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -6800,7 +6928,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Billing Zip/Postal Code de la section Address Information de type Input requis false avec la valeur 44000",
   "matchedColumns": [
     0,
@@ -6834,21 +6962,21 @@ formatter.match({
       "offset": 120
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 124965404,
+  "duration": 245137792,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15481,
+  "duration": 19257,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 150,
+  "line": 159,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;33",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;32",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -6859,7 +6987,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Billing City de la section Address Information de type Input requis false avec la valeur Nantes",
   "matchedColumns": [
     0,
@@ -6893,10 +7021,10 @@ formatter.match({
       "offset": 109
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 134968663,
+  "duration": 201022717,
   "status": "passed"
 });
 formatter.after({
@@ -6904,10 +7032,10 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "line": 151,
+  "line": 160,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;34",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;33",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -6918,7 +7046,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Billing State/Province de la section Address Information de type Input requis false avec la valeur Loire Atlantique",
   "matchedColumns": [
     0,
@@ -6952,21 +7080,21 @@ formatter.match({
       "offset": 119
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 171097519,
+  "duration": 360468080,
   "status": "passed"
 });
 formatter.after({
-  "duration": 16991,
+  "duration": 17369,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 152,
+  "line": 161,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;35",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;34",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -6977,7 +7105,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Billing Country de la section Address Information de type Input requis false avec la valeur France",
   "matchedColumns": [
     0,
@@ -7011,21 +7139,21 @@ formatter.match({
       "offset": 112
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 130365193,
+  "duration": 208389703,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15103,
+  "duration": 39268,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 153,
+  "line": 162,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;36",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;35",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -7036,7 +7164,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Shipping Street de la section Address Information de type textArea requis false avec la valeur 500, route de Vannes",
   "matchedColumns": [
     0,
@@ -7070,21 +7198,21 @@ formatter.match({
       "offset": 115
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 150151203,
+  "duration": 209920794,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15103,
+  "duration": 16991,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 154,
+  "line": 163,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;37",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;36",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -7095,7 +7223,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Shipping Zip/Postal Code de la section Address Information de type Input requis false avec la valeur 44000",
   "matchedColumns": [
     0,
@@ -7129,21 +7257,21 @@ formatter.match({
       "offset": 121
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 114716718,
+  "duration": 198469135,
   "status": "passed"
 });
 formatter.after({
-  "duration": 19257,
+  "duration": 17369,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 155,
+  "line": 164,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;38",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;37",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -7154,7 +7282,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Shipping City de la section Address Information de type Input requis false avec la valeur Nantes",
   "matchedColumns": [
     0,
@@ -7188,21 +7316,21 @@ formatter.match({
       "offset": 110
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 127325664,
+  "duration": 194460733,
   "status": "passed"
 });
 formatter.after({
-  "duration": 23032,
+  "duration": 19257,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 156,
+  "line": 165,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;39",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;38",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -7213,7 +7341,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Shipping State/Province de la section Address Information de type Input requis false avec la valeur Loire Atlantique",
   "matchedColumns": [
     0,
@@ -7247,21 +7375,21 @@ formatter.match({
       "offset": 120
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 171666534,
+  "duration": 309877864,
   "status": "passed"
 });
 formatter.after({
-  "duration": 19634,
+  "duration": 19257,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 157,
+  "line": 166,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;40",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;39",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -7272,7 +7400,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Shipping Country de la section Address Information de type Input requis false avec la valeur France",
   "matchedColumns": [
     0,
@@ -7306,21 +7434,21 @@ formatter.match({
       "offset": 113
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 127521629,
+  "duration": 192268119,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15859,
+  "duration": 29452,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 158,
+  "line": 167,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;41",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;40",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -7331,7 +7459,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Customer Priority de la section Additional Information de type select requis false avec la valeur High",
   "matchedColumns": [
     0,
@@ -7365,21 +7493,21 @@ formatter.match({
       "offset": 118
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 226003488,
+  "duration": 3402698648,
   "status": "passed"
 });
 formatter.after({
-  "duration": 34738,
+  "duration": 20012,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 159,
+  "line": 168,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;42",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;41",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -7390,7 +7518,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Customer Priority de la section Additional Information de type select requis false avec la valeur Low",
   "matchedColumns": [
     0,
@@ -7424,21 +7552,21 @@ formatter.match({
       "offset": 118
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 162863228,
+  "duration": 3366263951,
   "status": "passed"
 });
 formatter.after({
-  "duration": 16992,
+  "duration": 28318,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 160,
+  "line": 169,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;43",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;42",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -7449,7 +7577,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Customer Priority de la section Additional Information de type select requis false avec la valeur Medium",
   "matchedColumns": [
     0,
@@ -7483,21 +7611,21 @@ formatter.match({
       "offset": 118
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 161534520,
+  "duration": 3391585679,
   "status": "passed"
 });
 formatter.after({
-  "duration": 18502,
+  "duration": 43422,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 161,
+  "line": 170,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;44",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;43",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -7508,7 +7636,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Customer Priority de la section Additional Information de type select requis false avec la valeur High",
   "matchedColumns": [
     0,
@@ -7542,21 +7670,21 @@ formatter.match({
       "offset": 118
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 166090792,
+  "duration": 3397114600,
   "status": "passed"
 });
 formatter.after({
-  "duration": 26431,
+  "duration": 40401,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 162,
+  "line": 171,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;45",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;44",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -7567,7 +7695,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Number of Locations de la section Additional Information de type Input requis false avec la valeur 123",
   "matchedColumns": [
     0,
@@ -7601,21 +7729,21 @@ formatter.match({
       "offset": 119
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 115395986,
+  "duration": 165180444,
   "status": "passed"
 });
 formatter.after({
-  "duration": 33982,
+  "duration": 32472,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 163,
+  "line": 172,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;46",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;45",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -7626,7 +7754,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Active de la section Additional Information de type select requis false avec la valeur Yes",
   "matchedColumns": [
     0,
@@ -7660,21 +7788,21 @@ formatter.match({
       "offset": 107
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 201836782,
+  "duration": 3452957348,
   "status": "passed"
 });
 formatter.after({
-  "duration": 18501,
+  "duration": 53617,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 164,
+  "line": 173,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;47",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;46",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -7685,7 +7813,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Active de la section Additional Information de type select requis false avec la valeur No",
   "matchedColumns": [
     0,
@@ -7719,21 +7847,21 @@ formatter.match({
       "offset": 107
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 171929708,
+  "duration": 3443779104,
   "status": "passed"
 });
 formatter.after({
-  "duration": 35870,
+  "duration": 111764,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 165,
+  "line": 174,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;48",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;47",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -7744,7 +7872,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Active de la section Additional Information de type select requis false avec la valeur Yes",
   "matchedColumns": [
     0,
@@ -7778,21 +7906,21 @@ formatter.match({
       "offset": 107
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 131945747,
+  "duration": 3396838211,
   "status": "passed"
 });
 formatter.after({
-  "duration": 18879,
+  "duration": 18124,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 166,
+  "line": 175,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;49",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;48",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -7803,7 +7931,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ SLA de la section Additional Information de type select requis false avec la valeur Gold",
   "matchedColumns": [
     0,
@@ -7837,21 +7965,21 @@ formatter.match({
       "offset": 104
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 271759155,
+  "duration": 3505370904,
   "status": "passed"
 });
 formatter.after({
-  "duration": 18124,
+  "duration": 21523,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 167,
+  "line": 176,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;50",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;49",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -7862,7 +7990,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ SLA de la section Additional Information de type select requis false avec la valeur Silver",
   "matchedColumns": [
     0,
@@ -7896,21 +8024,21 @@ formatter.match({
       "offset": 104
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 162663111,
+  "duration": 3430303987,
   "status": "passed"
 });
 formatter.after({
-  "duration": 16614,
+  "duration": 21900,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 168,
+  "line": 177,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;51",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;50",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -7921,7 +8049,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ SLA de la section Additional Information de type select requis false avec la valeur Platinum",
   "matchedColumns": [
     0,
@@ -7955,21 +8083,21 @@ formatter.match({
       "offset": 104
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 177022145,
+  "duration": 3445037205,
   "status": "passed"
 });
 formatter.after({
-  "duration": 22655,
+  "duration": 23033,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 169,
+  "line": 178,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;52",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;51",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -7980,7 +8108,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ SLA de la section Additional Information de type select requis false avec la valeur Bronze",
   "matchedColumns": [
     0,
@@ -8014,21 +8142,21 @@ formatter.match({
       "offset": 104
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 169494309,
+  "duration": 3431437863,
   "status": "passed"
 });
 formatter.after({
-  "duration": 21900,
+  "duration": 21522,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 170,
+  "line": 179,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;53",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;52",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -8039,7 +8167,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ SLA de la section Additional Information de type select requis false avec la valeur Silver",
   "matchedColumns": [
     0,
@@ -8073,21 +8201,21 @@ formatter.match({
       "offset": 104
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 164671843,
+  "duration": 3417640668,
   "status": "passed"
 });
 formatter.after({
-  "duration": 21523,
+  "duration": 48331,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 171,
+  "line": 180,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;54",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;53",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -8098,7 +8226,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Upsell Opportunity de la section Additional Information de type select requis false avec la valeur Maybe",
   "matchedColumns": [
     0,
@@ -8132,21 +8260,21 @@ formatter.match({
       "offset": 119
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 212574813,
+  "duration": 3498015244,
   "status": "passed"
 });
 formatter.after({
-  "duration": 21522,
+  "duration": 89487,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 172,
+  "line": 181,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;55",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;54",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -8157,7 +8285,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Upsell Opportunity de la section Additional Information de type select requis false avec la valeur No",
   "matchedColumns": [
     0,
@@ -8191,21 +8319,21 @@ formatter.match({
       "offset": 119
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 189960342,
+  "duration": 3417010864,
   "status": "passed"
 });
 formatter.after({
-  "duration": 22655,
+  "duration": 17368,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 173,
+  "line": 182,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;56",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;55",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -8216,7 +8344,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Upsell Opportunity de la section Additional Information de type select requis false avec la valeur Yes",
   "matchedColumns": [
     0,
@@ -8250,21 +8378,21 @@ formatter.match({
       "offset": 119
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 157550284,
+  "duration": 3442849121,
   "status": "passed"
 });
 formatter.after({
-  "duration": 84201,
+  "duration": 78537,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 174,
+  "line": 183,
   "name": "Remplissage des champs de l\u0027Account",
   "description": "",
-  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;57",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;56",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -8275,7 +8403,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 115,
+  "line": 125,
   "name": "je remplis le champ Description de la section Description Information de type textArea requis false avec la valeur OK",
   "matchedColumns": [
     0,
@@ -8309,18 +8437,77 @@ formatter.match({
       "offset": 115
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 98305906,
+  "duration": 137127294,
   "status": "passed"
 });
 formatter.after({
-  "duration": 13970,
+  "duration": 16991,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 184,
+  "name": "Remplissage des champs de l\u0027Account",
+  "description": "",
+  "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;57",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 125,
+  "name": "je remplis le champ Parent Account de la section Account Information de type searchField requis false avec la valeur Accenture",
+  "matchedColumns": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Parent Account",
+      "offset": 20
+    },
+    {
+      "val": "Account Information",
+      "offset": 49
+    },
+    {
+      "val": "searchField",
+      "offset": 77
+    },
+    {
+      "val": "false",
+      "offset": 96
+    },
+    {
+      "val": "Accenture",
+      "offset": 117
+    }
+  ],
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
+});
+formatter.result({
+  "duration": 3620943221,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 33983,
   "status": "passed"
 });
 formatter.scenarioOutline({
-  "line": 177,
+  "line": 188,
   "name": "Enregistrer l\u0027Account",
   "description": "",
   "id": "test-non-regression-account;enregistrer-l\u0027account",
@@ -8328,33 +8515,28 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 176,
+      "line": 187,
       "name": "@CheckHomePage"
     }
   ]
 });
 formatter.step({
-  "line": 178,
+  "line": 189,
   "name": "je clique sur le bouton \"Save\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 179,
-  "name": "je reviens sur la HomePage il faut preciser le bon Parent Account",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 180,
+  "line": 190,
   "name": "je remplis le champ \u003celementName\u003e de la section \u003csectionName\u003e de type \u003celementType\u003e requis \u003crequired\u003e avec la valeur \u003cvalues\u003e",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 181,
+  "line": 191,
   "name": "je clique sur le bouton \"Save\"",
   "keyword": "When "
 });
 formatter.examples({
-  "line": 183,
+  "line": 193,
   "name": "",
   "description": "",
   "id": "test-non-regression-account;enregistrer-l\u0027account;",
@@ -8367,29 +8549,25 @@ formatter.examples({
         "required",
         "values"
       ],
-      "line": 184,
+      "line": 194,
       "id": "test-non-regression-account;enregistrer-l\u0027account;;1"
     },
     {
       "cells": [
         "Parent Account",
         "Account Information",
-        "select",
+        "select_searchField",
         "false",
         "Accenture Nantes"
       ],
-      "line": 185,
+      "line": 195,
       "id": "test-non-regression-account;enregistrer-l\u0027account;;2"
     }
   ],
   "keyword": "Examples"
 });
-formatter.before({
-  "duration": 122714,
-  "status": "passed"
-});
 formatter.scenario({
-  "line": 185,
+  "line": 195,
   "name": "Enregistrer l\u0027Account",
   "description": "",
   "id": "test-non-regression-account;enregistrer-l\u0027account;;2",
@@ -8401,24 +8579,19 @@ formatter.scenario({
       "name": "@tag"
     },
     {
-      "line": 176,
+      "line": 187,
       "name": "@CheckHomePage"
     }
   ]
 });
 formatter.step({
-  "line": 178,
+  "line": 189,
   "name": "je clique sur le bouton \"Save\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 179,
-  "name": "je reviens sur la HomePage il faut preciser le bon Parent Account",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 180,
-  "name": "je remplis le champ Parent Account de la section Account Information de type select requis false avec la valeur Accenture Nantes",
+  "line": 190,
+  "name": "je remplis le champ Parent Account de la section Account Information de type select_searchField requis false avec la valeur Accenture Nantes",
   "matchedColumns": [
     0,
     1,
@@ -8429,22 +8602,15 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.step({
-  "line": 181,
+  "line": 191,
   "name": "je clique sur le bouton \"Save\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "AccountStep.clickSaveButton()"
+  "location": "AccountStepClassic.clickSaveButton()"
 });
 formatter.result({
-  "duration": 4425918003,
-  "status": "passed"
-});
-formatter.match({
-  "location": "AccountStep.saveMultipleAccounts()"
-});
-formatter.result({
-  "duration": 378336,
+  "duration": 4123298761,
   "status": "passed"
 });
 formatter.match({
@@ -8458,3040 +8624,37 @@ formatter.match({
       "offset": 49
     },
     {
-      "val": "select",
+      "val": "select_searchField",
       "offset": 77
     },
     {
       "val": "false",
-      "offset": 91
+      "offset": 103
     },
     {
       "val": "Accenture Nantes",
-      "offset": 112
+      "offset": 124
     }
   ],
-  "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
+  "location": "AccountStepClassic.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 219956903,
+  "duration": 3967691888,
   "status": "passed"
 });
 formatter.match({
-  "location": "AccountStep.clickSaveButton()"
+  "location": "AccountStepClassic.clickSaveButton()"
 });
 formatter.result({
-  "duration": 4513828722,
+  "duration": 4144058552,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15481,
+  "duration": 26809,
   "status": "passed"
 });
 formatter.scenarioOutline({
-  "line": 188,
-  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record)",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 189,
-  "name": "je verifie la presence du label \u003clabelName\u003e de la section \u003csectionName\u003e et son type \u003celementType\u003e",
-  "keyword": "Then "
-});
-formatter.examples({
-  "line": 191,
-  "name": "",
-  "description": "",
-  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);",
-  "rows": [
-    {
-      "cells": [
-        "labelName",
-        "sectionName",
-        "elementType"
-      ],
-      "line": 192,
-      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;1"
-    },
-    {
-      "cells": [
-        "Account Owner",
-        "",
-        "Label View"
-      ],
-      "line": 193,
-      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;2"
-    },
-    {
-      "cells": [
-        "Account Name",
-        "",
-        "Label View"
-      ],
-      "line": 194,
-      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;3"
-    },
-    {
-      "cells": [
-        "Parent Account",
-        "",
-        "Label View"
-      ],
-      "line": 195,
-      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;4"
-    },
-    {
-      "cells": [
-        "Account Number",
-        "",
-        "Label View"
-      ],
-      "line": 196,
-      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;5"
-    },
-    {
-      "cells": [
-        "Account Site",
-        "",
-        "Label View"
-      ],
-      "line": 197,
-      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;6"
-    },
-    {
-      "cells": [
-        "Type",
-        "",
-        "Label View"
-      ],
-      "line": 198,
-      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;7"
-    },
-    {
-      "cells": [
-        "Industry",
-        "",
-        "Label View"
-      ],
-      "line": 199,
-      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;8"
-    },
-    {
-      "cells": [
-        "Annual Revenue",
-        "",
-        "Label View"
-      ],
-      "line": 200,
-      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;9"
-    },
-    {
-      "cells": [
-        "Rating",
-        "",
-        "Label View"
-      ],
-      "line": 201,
-      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;10"
-    },
-    {
-      "cells": [
-        "Phone",
-        "",
-        "Label View"
-      ],
-      "line": 202,
-      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;11"
-    },
-    {
-      "cells": [
-        "Fax",
-        "",
-        "Label View"
-      ],
-      "line": 203,
-      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;12"
-    },
-    {
-      "cells": [
-        "Website",
-        "",
-        "Label View"
-      ],
-      "line": 204,
-      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;13"
-    },
-    {
-      "cells": [
-        "Ticker Symbol",
-        "",
-        "Label View"
-      ],
-      "line": 205,
-      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;14"
-    },
-    {
-      "cells": [
-        "Ownership",
-        "",
-        "Label View"
-      ],
-      "line": 206,
-      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;15"
-    },
-    {
-      "cells": [
-        "Employees",
-        "",
-        "Label View"
-      ],
-      "line": 207,
-      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;16"
-    },
-    {
-      "cells": [
-        "SIC Code",
-        "",
-        "Label View"
-      ],
-      "line": 208,
-      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;17"
-    },
-    {
-      "cells": [
-        "Billing Address",
-        "",
-        "Label View"
-      ],
-      "line": 209,
-      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;18"
-    },
-    {
-      "cells": [
-        "Shipping Address",
-        "",
-        "Label View"
-      ],
-      "line": 210,
-      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;19"
-    },
-    {
-      "cells": [
-        "Customer Priority",
-        "",
-        "Label View"
-      ],
-      "line": 211,
-      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;20"
-    },
-    {
-      "cells": [
-        "SLA Expiration Date",
-        "",
-        "Label View"
-      ],
-      "line": 212,
-      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;21"
-    },
-    {
-      "cells": [
-        "Number of Locations",
-        "",
-        "Label View"
-      ],
-      "line": 213,
-      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;22"
-    },
-    {
-      "cells": [
-        "Active",
-        "",
-        "Label View"
-      ],
-      "line": 214,
-      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;23"
-    },
-    {
-      "cells": [
-        "SLA",
-        "",
-        "Label View"
-      ],
-      "line": 215,
-      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;24"
-    },
-    {
-      "cells": [
-        "SLA Serial Number",
-        "",
-        "Label View"
-      ],
-      "line": 216,
-      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;25"
-    },
-    {
-      "cells": [
-        "Upsell Opportunity",
-        "",
-        "Label View"
-      ],
-      "line": 217,
-      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;26"
-    },
-    {
-      "cells": [
-        "Description",
-        "",
-        "Label View"
-      ],
-      "line": 218,
-      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;27"
-    }
-  ],
-  "keyword": "Examples"
-});
-formatter.scenario({
-  "line": 193,
-  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;2",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 189,
-  "name": "je verifie la presence du label Account Owner de la section  et son type Label View",
-  "matchedColumns": [
-    0,
-    1,
-    2
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Account Owner",
-      "offset": 32
-    },
-    {
-      "val": "",
-      "offset": 60
-    },
-    {
-      "val": "Label View",
-      "offset": 73
-    }
-  ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
-});
-formatter.result({
-  "duration": 38434744,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 13215,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 194,
-  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;3",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 189,
-  "name": "je verifie la presence du label Account Name de la section  et son type Label View",
-  "matchedColumns": [
-    0,
-    1,
-    2
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Account Name",
-      "offset": 32
-    },
-    {
-      "val": "",
-      "offset": 59
-    },
-    {
-      "val": "Label View",
-      "offset": 72
-    }
-  ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
-});
-formatter.result({
-  "duration": 22492134,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 12460,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 195,
-  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;4",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 189,
-  "name": "je verifie la presence du label Parent Account de la section  et son type Label View",
-  "matchedColumns": [
-    0,
-    1,
-    2
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Parent Account",
-      "offset": 32
-    },
-    {
-      "val": "",
-      "offset": 61
-    },
-    {
-      "val": "Label View",
-      "offset": 74
-    }
-  ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
-});
-formatter.result({
-  "duration": 23304311,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 12460,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 196,
-  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;5",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 189,
-  "name": "je verifie la presence du label Account Number de la section  et son type Label View",
-  "matchedColumns": [
-    0,
-    1,
-    2
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Account Number",
-      "offset": 32
-    },
-    {
-      "val": "",
-      "offset": 61
-    },
-    {
-      "val": "Label View",
-      "offset": 74
-    }
-  ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
-});
-formatter.result({
-  "duration": 23357173,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 12082,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 197,
-  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;6",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 189,
-  "name": "je verifie la presence du label Account Site de la section  et son type Label View",
-  "matchedColumns": [
-    0,
-    1,
-    2
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Account Site",
-      "offset": 32
-    },
-    {
-      "val": "",
-      "offset": 59
-    },
-    {
-      "val": "Label View",
-      "offset": 72
-    }
-  ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
-});
-formatter.result({
-  "duration": 22976948,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 12083,
-  "status": "passed"
-});
-formatter.scenario({
   "line": 198,
-  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;7",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 189,
-  "name": "je verifie la presence du label Type de la section  et son type Label View",
-  "matchedColumns": [
-    0,
-    1,
-    2
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Type",
-      "offset": 32
-    },
-    {
-      "val": "",
-      "offset": 51
-    },
-    {
-      "val": "Label View",
-      "offset": 64
-    }
-  ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
-});
-formatter.result({
-  "duration": 24418176,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 12838,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 199,
-  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;8",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 189,
-  "name": "je verifie la presence du label Industry de la section  et son type Label View",
-  "matchedColumns": [
-    0,
-    1,
-    2
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Industry",
-      "offset": 32
-    },
-    {
-      "val": "",
-      "offset": 55
-    },
-    {
-      "val": "Label View",
-      "offset": 68
-    }
-  ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
-});
-formatter.result({
-  "duration": 23494989,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 12082,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 200,
-  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;9",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 189,
-  "name": "je verifie la presence du label Annual Revenue de la section  et son type Label View",
-  "matchedColumns": [
-    0,
-    1,
-    2
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Annual Revenue",
-      "offset": 32
-    },
-    {
-      "val": "",
-      "offset": 61
-    },
-    {
-      "val": "Label View",
-      "offset": 74
-    }
-  ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
-});
-formatter.result({
-  "duration": 22924842,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 12461,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 201,
-  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;10",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 189,
-  "name": "je verifie la presence du label Rating de la section  et son type Label View",
-  "matchedColumns": [
-    0,
-    1,
-    2
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Rating",
-      "offset": 32
-    },
-    {
-      "val": "",
-      "offset": 53
-    },
-    {
-      "val": "Label View",
-      "offset": 66
-    }
-  ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
-});
-formatter.result({
-  "duration": 24044370,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 16613,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 202,
-  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;11",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 189,
-  "name": "je verifie la presence du label Phone de la section  et son type Label View",
-  "matchedColumns": [
-    0,
-    1,
-    2
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Phone",
-      "offset": 32
-    },
-    {
-      "val": "",
-      "offset": 52
-    },
-    {
-      "val": "Label View",
-      "offset": 65
-    }
-  ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
-});
-formatter.result({
-  "duration": 24186719,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 12460,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 203,
-  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;12",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 189,
-  "name": "je verifie la presence du label Fax de la section  et son type Label View",
-  "matchedColumns": [
-    0,
-    1,
-    2
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Fax",
-      "offset": 32
-    },
-    {
-      "val": "",
-      "offset": 50
-    },
-    {
-      "val": "Label View",
-      "offset": 63
-    }
-  ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
-});
-formatter.result({
-  "duration": 23262022,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 12083,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 204,
-  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;13",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 189,
-  "name": "je verifie la presence du label Website de la section  et son type Label View",
-  "matchedColumns": [
-    0,
-    1,
-    2
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Website",
-      "offset": 32
-    },
-    {
-      "val": "",
-      "offset": 54
-    },
-    {
-      "val": "Label View",
-      "offset": 67
-    }
-  ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
-});
-formatter.result({
-  "duration": 21728288,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 11705,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 205,
-  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;14",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 189,
-  "name": "je verifie la presence du label Ticker Symbol de la section  et son type Label View",
-  "matchedColumns": [
-    0,
-    1,
-    2
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Ticker Symbol",
-      "offset": 32
-    },
-    {
-      "val": "",
-      "offset": 60
-    },
-    {
-      "val": "Label View",
-      "offset": 73
-    }
-  ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
-});
-formatter.result({
-  "duration": 22684701,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 17369,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 206,
-  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;15",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 189,
-  "name": "je verifie la presence du label Ownership de la section  et son type Label View",
-  "matchedColumns": [
-    0,
-    1,
-    2
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Ownership",
-      "offset": 32
-    },
-    {
-      "val": "",
-      "offset": 56
-    },
-    {
-      "val": "Label View",
-      "offset": 69
-    }
-  ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
-});
-formatter.result({
-  "duration": 24631132,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 13215,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 207,
-  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;16",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 189,
-  "name": "je verifie la presence du label Employees de la section  et son type Label View",
-  "matchedColumns": [
-    0,
-    1,
-    2
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Employees",
-      "offset": 32
-    },
-    {
-      "val": "",
-      "offset": 56
-    },
-    {
-      "val": "Label View",
-      "offset": 69
-    }
-  ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
-});
-formatter.result({
-  "duration": 23783839,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 12083,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 208,
-  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;17",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 189,
-  "name": "je verifie la presence du label SIC Code de la section  et son type Label View",
-  "matchedColumns": [
-    0,
-    1,
-    2
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "SIC Code",
-      "offset": 32
-    },
-    {
-      "val": "",
-      "offset": 55
-    },
-    {
-      "val": "Label View",
-      "offset": 68
-    }
-  ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
-});
-formatter.result({
-  "duration": 23762317,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 12461,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 209,
-  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;18",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 189,
-  "name": "je verifie la presence du label Billing Address de la section  et son type Label View",
-  "matchedColumns": [
-    0,
-    1,
-    2
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Billing Address",
-      "offset": 32
-    },
-    {
-      "val": "",
-      "offset": 62
-    },
-    {
-      "val": "Label View",
-      "offset": 75
-    }
-  ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
-});
-formatter.result({
-  "duration": 24072311,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 15481,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 210,
-  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;19",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 189,
-  "name": "je verifie la presence du label Shipping Address de la section  et son type Label View",
-  "matchedColumns": [
-    0,
-    1,
-    2
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Shipping Address",
-      "offset": 32
-    },
-    {
-      "val": "",
-      "offset": 63
-    },
-    {
-      "val": "Label View",
-      "offset": 76
-    }
-  ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
-});
-formatter.result({
-  "duration": 27627994,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 12460,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 211,
-  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;20",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 189,
-  "name": "je verifie la presence du label Customer Priority de la section  et son type Label View",
-  "matchedColumns": [
-    0,
-    1,
-    2
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Customer Priority",
-      "offset": 32
-    },
-    {
-      "val": "",
-      "offset": 64
-    },
-    {
-      "val": "Label View",
-      "offset": 77
-    }
-  ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
-});
-formatter.result({
-  "duration": 23500653,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 13216,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 212,
-  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;21",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 189,
-  "name": "je verifie la presence du label SLA Expiration Date de la section  et son type Label View",
-  "matchedColumns": [
-    0,
-    1,
-    2
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "SLA Expiration Date",
-      "offset": 32
-    },
-    {
-      "val": "",
-      "offset": 66
-    },
-    {
-      "val": "Label View",
-      "offset": 79
-    }
-  ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
-});
-formatter.result({
-  "duration": 24318116,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 12838,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 213,
-  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;22",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 189,
-  "name": "je verifie la presence du label Number of Locations de la section  et son type Label View",
-  "matchedColumns": [
-    0,
-    1,
-    2
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Number of Locations",
-      "offset": 32
-    },
-    {
-      "val": "",
-      "offset": 66
-    },
-    {
-      "val": "Label View",
-      "offset": 79
-    }
-  ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
-});
-formatter.result({
-  "duration": 24624336,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 13593,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 214,
-  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;23",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 189,
-  "name": "je verifie la presence du label Active de la section  et son type Label View",
-  "matchedColumns": [
-    0,
-    1,
-    2
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Active",
-      "offset": 32
-    },
-    {
-      "val": "",
-      "offset": 53
-    },
-    {
-      "val": "Label View",
-      "offset": 66
-    }
-  ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
-});
-formatter.result({
-  "duration": 23077763,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 15103,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 215,
-  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;24",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 189,
-  "name": "je verifie la presence du label SLA de la section  et son type Label View",
-  "matchedColumns": [
-    0,
-    1,
-    2
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "SLA",
-      "offset": 32
-    },
-    {
-      "val": "",
-      "offset": 50
-    },
-    {
-      "val": "Label View",
-      "offset": 63
-    }
-  ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
-});
-formatter.result({
-  "duration": 25199013,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 15104,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 216,
-  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;25",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 189,
-  "name": "je verifie la presence du label SLA Serial Number de la section  et son type Label View",
-  "matchedColumns": [
-    0,
-    1,
-    2
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "SLA Serial Number",
-      "offset": 32
-    },
-    {
-      "val": "",
-      "offset": 64
-    },
-    {
-      "val": "Label View",
-      "offset": 77
-    }
-  ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
-});
-formatter.result({
-  "duration": 27053315,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 14348,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 217,
-  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;26",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 189,
-  "name": "je verifie la presence du label Upsell Opportunity de la section  et son type Label View",
-  "matchedColumns": [
-    0,
-    1,
-    2
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Upsell Opportunity",
-      "offset": 32
-    },
-    {
-      "val": "",
-      "offset": 65
-    },
-    {
-      "val": "Label View",
-      "offset": 78
-    }
-  ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
-});
-formatter.result({
-  "duration": 23922789,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 12838,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 218,
-  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;27",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 189,
-  "name": "je verifie la presence du label Description de la section  et son type Label View",
-  "matchedColumns": [
-    0,
-    1,
-    2
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Description",
-      "offset": 32
-    },
-    {
-      "val": "",
-      "offset": 58
-    },
-    {
-      "val": "Label View",
-      "offset": 71
-    }
-  ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
-});
-formatter.result({
-  "duration": 19826411,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 13593,
-  "status": "passed"
-});
-formatter.scenarioOutline({
-  "line": 221,
-  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record)",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 222,
-  "name": "je verifie que dans le champ \u003clabelName\u003e contient la valeur \u003cvalue\u003e",
-  "keyword": "Then "
-});
-formatter.examples({
-  "line": 224,
-  "name": "",
-  "description": "",
-  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);",
-  "rows": [
-    {
-      "cells": [
-        "labelName",
-        "value"
-      ],
-      "line": 225,
-      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;1"
-    },
-    {
-      "cells": [
-        "Account Name",
-        "Non Regression -"
-      ],
-      "line": 226,
-      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;2"
-    },
-    {
-      "cells": [
-        "Parent Account",
-        "Accenture Nantes"
-      ],
-      "line": 227,
-      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;3"
-    },
-    {
-      "cells": [
-        "Account Number",
-        "2121212121"
-      ],
-      "line": 228,
-      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;4"
-    },
-    {
-      "cells": [
-        "Type",
-        "Prospect"
-      ],
-      "line": 229,
-      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;5"
-    },
-    {
-      "cells": [
-        "Industry",
-        "Telecommunications"
-      ],
-      "line": 230,
-      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;6"
-    },
-    {
-      "cells": [
-        "Annual Revenue",
-        "50 000 €"
-      ],
-      "line": 231,
-      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;7"
-    },
-    {
-      "cells": [
-        "Billing Address",
-        "500, route de Vannes"
-      ],
-      "line": 232,
-      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;8"
-    },
-    {
-      "cells": [
-        "Billing Address",
-        "44000 Nantes"
-      ],
-      "line": 233,
-      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;9"
-    },
-    {
-      "cells": [
-        "Billing Address",
-        "Loire Atlantique France"
-      ],
-      "line": 234,
-      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;10"
-    },
-    {
-      "cells": [
-        "Customer Priority",
-        "High"
-      ],
-      "line": 235,
-      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;11"
-    },
-    {
-      "cells": [
-        "Number of Locations",
-        "123"
-      ],
-      "line": 236,
-      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;12"
-    },
-    {
-      "cells": [
-        "Active",
-        "Yes"
-      ],
-      "line": 237,
-      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;13"
-    },
-    {
-      "cells": [
-        "Description",
-        "OK"
-      ],
-      "line": 238,
-      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;14"
-    },
-    {
-      "cells": [
-        "Rating",
-        "Warm"
-      ],
-      "line": 239,
-      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;15"
-    },
-    {
-      "cells": [
-        "Phone",
-        "0202020202"
-      ],
-      "line": 240,
-      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;16"
-    },
-    {
-      "cells": [
-        "Fax",
-        "0202020202"
-      ],
-      "line": 241,
-      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;17"
-    },
-    {
-      "cells": [
-        "Website",
-        "https://www.accenture.com"
-      ],
-      "line": 242,
-      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;18"
-    },
-    {
-      "cells": [
-        "Ownership",
-        "Private"
-      ],
-      "line": 243,
-      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;19"
-    },
-    {
-      "cells": [
-        "Shipping Address",
-        "500, route de Vannes"
-      ],
-      "line": 244,
-      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;20"
-    },
-    {
-      "cells": [
-        "Shipping Address",
-        "44000 Nantes"
-      ],
-      "line": 245,
-      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;21"
-    },
-    {
-      "cells": [
-        "Shipping Address",
-        "Loire Atlantique France"
-      ],
-      "line": 246,
-      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;22"
-    },
-    {
-      "cells": [
-        "SLA",
-        "Silver"
-      ],
-      "line": 247,
-      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;23"
-    },
-    {
-      "cells": [
-        "Upsell Opportunity",
-        "Yes"
-      ],
-      "line": 248,
-      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;24"
-    }
-  ],
-  "keyword": "Examples"
-});
-formatter.scenario({
-  "line": 226,
-  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;2",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 222,
-  "name": "je verifie que dans le champ Account Name contient la valeur Non Regression -",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Account Name",
-      "offset": 29
-    },
-    {
-      "val": "Non Regression -",
-      "offset": 61
-    }
-  ],
-  "location": "AccountStep.validateNewAccount(String,String)"
-});
-formatter.result({
-  "duration": 50522251,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 16236,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 227,
-  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;3",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 222,
-  "name": "je verifie que dans le champ Parent Account contient la valeur Accenture Nantes",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Parent Account",
-      "offset": 29
-    },
-    {
-      "val": "Accenture Nantes",
-      "offset": 63
-    }
-  ],
-  "location": "AccountStep.validateNewAccount(String,String)"
-});
-formatter.result({
-  "duration": 37967677,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 13215,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 228,
-  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;4",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 222,
-  "name": "je verifie que dans le champ Account Number contient la valeur 2121212121",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Account Number",
-      "offset": 29
-    },
-    {
-      "val": "2121212121",
-      "offset": 63
-    }
-  ],
-  "location": "AccountStep.validateNewAccount(String,String)"
-});
-formatter.result({
-  "duration": 39915996,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 13215,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 229,
-  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;5",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 222,
-  "name": "je verifie que dans le champ Type contient la valeur Prospect",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Type",
-      "offset": 29
-    },
-    {
-      "val": "Prospect",
-      "offset": 53
-    }
-  ],
-  "location": "AccountStep.validateNewAccount(String,String)"
-});
-formatter.result({
-  "duration": 42970250,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 16614,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 230,
-  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;6",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 222,
-  "name": "je verifie que dans le champ Industry contient la valeur Telecommunications",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Industry",
-      "offset": 29
-    },
-    {
-      "val": "Telecommunications",
-      "offset": 57
-    }
-  ],
-  "location": "AccountStep.validateNewAccount(String,String)"
-});
-formatter.result({
-  "duration": 40349837,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 18879,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 231,
-  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;7",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 222,
-  "name": "je verifie que dans le champ Annual Revenue contient la valeur 50 000 €",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Annual Revenue",
-      "offset": 29
-    },
-    {
-      "val": "50 000 €",
-      "offset": 63
-    }
-  ],
-  "location": "AccountStep.validateNewAccount(String,String)"
-});
-formatter.result({
-  "duration": 37327676,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 20389,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 232,
-  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;8",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 222,
-  "name": "je verifie que dans le champ Billing Address contient la valeur 500, route de Vannes",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Billing Address",
-      "offset": 29
-    },
-    {
-      "val": "500, route de Vannes",
-      "offset": 64
-    }
-  ],
-  "location": "AccountStep.validateNewAccount(String,String)"
-});
-formatter.result({
-  "duration": 45179100,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 17746,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 233,
-  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;9",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 222,
-  "name": "je verifie que dans le champ Billing Address contient la valeur 44000 Nantes",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Billing Address",
-      "offset": 29
-    },
-    {
-      "val": "44000 Nantes",
-      "offset": 64
-    }
-  ],
-  "location": "AccountStep.validateNewAccount(String,String)"
-});
-formatter.result({
-  "duration": 44741106,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 17369,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 234,
-  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;10",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 222,
-  "name": "je verifie que dans le champ Billing Address contient la valeur Loire Atlantique France",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Billing Address",
-      "offset": 29
-    },
-    {
-      "val": "Loire Atlantique France",
-      "offset": 64
-    }
-  ],
-  "location": "AccountStep.validateNewAccount(String,String)"
-});
-formatter.result({
-  "duration": 46967702,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 13970,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 235,
-  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;11",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 222,
-  "name": "je verifie que dans le champ Customer Priority contient la valeur High",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Customer Priority",
-      "offset": 29
-    },
-    {
-      "val": "High",
-      "offset": 66
-    }
-  ],
-  "location": "AccountStep.validateNewAccount(String,String)"
-});
-formatter.result({
-  "duration": 41207701,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 13592,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 236,
-  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;12",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 222,
-  "name": "je verifie que dans le champ Number of Locations contient la valeur 123",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Number of Locations",
-      "offset": 29
-    },
-    {
-      "val": "123",
-      "offset": 68
-    }
-  ],
-  "location": "AccountStep.validateNewAccount(String,String)"
-});
-formatter.result({
-  "duration": 33982307,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 13215,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 237,
-  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;13",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 222,
-  "name": "je verifie que dans le champ Active contient la valeur Yes",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Active",
-      "offset": 29
-    },
-    {
-      "val": "Yes",
-      "offset": 55
-    }
-  ],
-  "location": "AccountStep.validateNewAccount(String,String)"
-});
-formatter.result({
-  "duration": 33950591,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 12838,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 238,
-  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;14",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 222,
-  "name": "je verifie que dans le champ Description contient la valeur OK",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Description",
-      "offset": 29
-    },
-    {
-      "val": "OK",
-      "offset": 60
-    }
-  ],
-  "location": "AccountStep.validateNewAccount(String,String)"
-});
-formatter.result({
-  "duration": 52920269,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 15858,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 239,
-  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;15",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 222,
-  "name": "je verifie que dans le champ Rating contient la valeur Warm",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Rating",
-      "offset": 29
-    },
-    {
-      "val": "Warm",
-      "offset": 55
-    }
-  ],
-  "location": "AccountStep.validateNewAccount(String,String)"
-});
-formatter.result({
-  "duration": 40587713,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 11705,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 240,
-  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;16",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 222,
-  "name": "je verifie que dans le champ Phone contient la valeur 0202020202",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Phone",
-      "offset": 29
-    },
-    {
-      "val": "0202020202",
-      "offset": 54
-    }
-  ],
-  "location": "AccountStep.validateNewAccount(String,String)"
-});
-formatter.result({
-  "duration": 45217236,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 12838,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 241,
-  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;17",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 222,
-  "name": "je verifie que dans le champ Fax contient la valeur 0202020202",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Fax",
-      "offset": 29
-    },
-    {
-      "val": "0202020202",
-      "offset": 52
-    }
-  ],
-  "location": "AccountStep.validateNewAccount(String,String)"
-});
-formatter.result({
-  "duration": 36467169,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 13215,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 242,
-  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;18",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 222,
-  "name": "je verifie que dans le champ Website contient la valeur https://www.accenture.com",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Website",
-      "offset": 29
-    },
-    {
-      "val": "https://www.accenture.com",
-      "offset": 56
-    }
-  ],
-  "location": "AccountStep.validateNewAccount(String,String)"
-});
-formatter.result({
-  "duration": 37545919,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 12083,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 243,
-  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;19",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 222,
-  "name": "je verifie que dans le champ Ownership contient la valeur Private",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Ownership",
-      "offset": 29
-    },
-    {
-      "val": "Private",
-      "offset": 58
-    }
-  ],
-  "location": "AccountStep.validateNewAccount(String,String)"
-});
-formatter.result({
-  "duration": 36871937,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 12460,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 244,
-  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;20",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 222,
-  "name": "je verifie que dans le champ Shipping Address contient la valeur 500, route de Vannes",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Shipping Address",
-      "offset": 29
-    },
-    {
-      "val": "500, route de Vannes",
-      "offset": 65
-    }
-  ],
-  "location": "AccountStep.validateNewAccount(String,String)"
-});
-formatter.result({
-  "duration": 57627574,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 15104,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 245,
-  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;21",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 222,
-  "name": "je verifie que dans le champ Shipping Address contient la valeur 44000 Nantes",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Shipping Address",
-      "offset": 29
-    },
-    {
-      "val": "44000 Nantes",
-      "offset": 65
-    }
-  ],
-  "location": "AccountStep.validateNewAccount(String,String)"
-});
-formatter.result({
-  "duration": 25925480,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 12083,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 246,
-  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;22",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 222,
-  "name": "je verifie que dans le champ Shipping Address contient la valeur Loire Atlantique France",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Shipping Address",
-      "offset": 29
-    },
-    {
-      "val": "Loire Atlantique France",
-      "offset": 65
-    }
-  ],
-  "location": "AccountStep.validateNewAccount(String,String)"
-});
-formatter.result({
-  "duration": 25501833,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 26431,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 247,
-  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;23",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 222,
-  "name": "je verifie que dans le champ SLA contient la valeur Silver",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "SLA",
-      "offset": 29
-    },
-    {
-      "val": "Silver",
-      "offset": 52
-    }
-  ],
-  "location": "AccountStep.validateNewAccount(String,String)"
-});
-formatter.result({
-  "duration": 38256904,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 16614,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 248,
-  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;24",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 222,
-  "name": "je verifie que dans le champ Upsell Opportunity contient la valeur Yes",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Upsell Opportunity",
-      "offset": 29
-    },
-    {
-      "val": "Yes",
-      "offset": 67
-    }
-  ],
-  "location": "AccountStep.validateNewAccount(String,String)"
-});
-formatter.result({
-  "duration": 38138721,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 12460,
-  "status": "passed"
-});
-formatter.scenarioOutline({
-  "line": 251,
-  "name": "Verificiation de la presence des boutons \"Edit\" et \"Delete\" en haut et bas de page (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verificiation-de-la-presence-des-boutons-\"edit\"-et-\"delete\"-en-haut-et-bas-de-page-(affichage-du-record)",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 252,
-  "name": "je verifie la presence du bouton \u003cbuttonName\u003e situe en \u003cposition\u003e",
-  "keyword": "Then "
-});
-formatter.examples({
-  "line": 254,
-  "name": "",
-  "description": "",
-  "id": "test-non-regression-account;verificiation-de-la-presence-des-boutons-\"edit\"-et-\"delete\"-en-haut-et-bas-de-page-(affichage-du-record);",
-  "rows": [
-    {
-      "cells": [
-        "buttonName",
-        "position"
-      ],
-      "line": 255,
-      "id": "test-non-regression-account;verificiation-de-la-presence-des-boutons-\"edit\"-et-\"delete\"-en-haut-et-bas-de-page-(affichage-du-record);;1"
-    },
-    {
-      "cells": [
-        "edit",
-        "top"
-      ],
-      "line": 256,
-      "id": "test-non-regression-account;verificiation-de-la-presence-des-boutons-\"edit\"-et-\"delete\"-en-haut-et-bas-de-page-(affichage-du-record);;2"
-    },
-    {
-      "cells": [
-        "delete",
-        "top"
-      ],
-      "line": 257,
-      "id": "test-non-regression-account;verificiation-de-la-presence-des-boutons-\"edit\"-et-\"delete\"-en-haut-et-bas-de-page-(affichage-du-record);;3"
-    },
-    {
-      "cells": [
-        "edit",
-        "bottom"
-      ],
-      "line": 258,
-      "id": "test-non-regression-account;verificiation-de-la-presence-des-boutons-\"edit\"-et-\"delete\"-en-haut-et-bas-de-page-(affichage-du-record);;4"
-    },
-    {
-      "cells": [
-        "delete",
-        "bottom"
-      ],
-      "line": 259,
-      "id": "test-non-regression-account;verificiation-de-la-presence-des-boutons-\"edit\"-et-\"delete\"-en-haut-et-bas-de-page-(affichage-du-record);;5"
-    }
-  ],
-  "keyword": "Examples"
-});
-formatter.scenario({
-  "line": 256,
-  "name": "Verificiation de la presence des boutons \"Edit\" et \"Delete\" en haut et bas de page (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verificiation-de-la-presence-des-boutons-\"edit\"-et-\"delete\"-en-haut-et-bas-de-page-(affichage-du-record);;2",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 252,
-  "name": "je verifie la presence du bouton edit situe en top",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "edit",
-      "offset": 33
-    },
-    {
-      "val": "top",
-      "offset": 47
-    }
-  ],
-  "location": "AccountStep.checkEditPageButtons(String,String)"
-});
-formatter.result({
-  "duration": 13685431,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 12838,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 257,
-  "name": "Verificiation de la presence des boutons \"Edit\" et \"Delete\" en haut et bas de page (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verificiation-de-la-presence-des-boutons-\"edit\"-et-\"delete\"-en-haut-et-bas-de-page-(affichage-du-record);;3",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 252,
-  "name": "je verifie la presence du bouton delete situe en top",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "delete",
-      "offset": 33
-    },
-    {
-      "val": "top",
-      "offset": 49
-    }
-  ],
-  "location": "AccountStep.checkEditPageButtons(String,String)"
-});
-formatter.result({
-  "duration": 13321064,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 12838,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 258,
-  "name": "Verificiation de la presence des boutons \"Edit\" et \"Delete\" en haut et bas de page (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verificiation-de-la-presence-des-boutons-\"edit\"-et-\"delete\"-en-haut-et-bas-de-page-(affichage-du-record);;4",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 252,
-  "name": "je verifie la presence du bouton edit situe en bottom",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "edit",
-      "offset": 33
-    },
-    {
-      "val": "bottom",
-      "offset": 47
-    }
-  ],
-  "location": "AccountStep.checkEditPageButtons(String,String)"
-});
-formatter.result({
-  "duration": 12377867,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 14348,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 259,
-  "name": "Verificiation de la presence des boutons \"Edit\" et \"Delete\" en haut et bas de page (Affichage du record)",
-  "description": "",
-  "id": "test-non-regression-account;verificiation-de-la-presence-des-boutons-\"edit\"-et-\"delete\"-en-haut-et-bas-de-page-(affichage-du-record);;5",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 252,
-  "name": "je verifie la presence du bouton delete situe en bottom",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "delete",
-      "offset": 33
-    },
-    {
-      "val": "bottom",
-      "offset": 49
-    }
-  ],
-  "location": "AccountStep.checkEditPageButtons(String,String)"
-});
-formatter.result({
-  "duration": 16114410,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 13971,
-  "status": "passed"
-});
-formatter.scenarioOutline({
-  "line": 262,
   "name": "Verification de la presence des Related Lists",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-related-lists",
@@ -11499,12 +8662,12 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 263,
+  "line": 199,
   "name": "je verifie la presence du label \u003clabelName\u003e de la section \u003csectionName\u003e et son type \u003celementType\u003e",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 265,
+  "line": 201,
   "name": "",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-related-lists;",
@@ -11515,7 +8678,7 @@ formatter.examples({
         "sectionName",
         "elementType"
       ],
-      "line": 266,
+      "line": 202,
       "id": "test-non-regression-account;verification-de-la-presence-des-related-lists;;1"
     },
     {
@@ -11524,7 +8687,7 @@ formatter.examples({
         "",
         "Related List"
       ],
-      "line": 267,
+      "line": 203,
       "id": "test-non-regression-account;verification-de-la-presence-des-related-lists;;2"
     },
     {
@@ -11533,7 +8696,7 @@ formatter.examples({
         "",
         "Related List"
       ],
-      "line": 268,
+      "line": 204,
       "id": "test-non-regression-account;verification-de-la-presence-des-related-lists;;3"
     },
     {
@@ -11542,26 +8705,8 @@ formatter.examples({
         "",
         "Related List"
       ],
-      "line": 269,
+      "line": 205,
       "id": "test-non-regression-account;verification-de-la-presence-des-related-lists;;4"
-    },
-    {
-      "cells": [
-        "Open Activities",
-        "",
-        "Related List"
-      ],
-      "line": 270,
-      "id": "test-non-regression-account;verification-de-la-presence-des-related-lists;;5"
-    },
-    {
-      "cells": [
-        "Activity History",
-        "",
-        "Related List"
-      ],
-      "line": 271,
-      "id": "test-non-regression-account;verification-de-la-presence-des-related-lists;;6"
     },
     {
       "cells": [
@@ -11569,23 +8714,14 @@ formatter.examples({
         "",
         "Related List"
       ],
-      "line": 272,
-      "id": "test-non-regression-account;verification-de-la-presence-des-related-lists;;7"
-    },
-    {
-      "cells": [
-        "Partners",
-        "",
-        "Related List"
-      ],
-      "line": 273,
-      "id": "test-non-regression-account;verification-de-la-presence-des-related-lists;;8"
+      "line": 206,
+      "id": "test-non-regression-account;verification-de-la-presence-des-related-lists;;5"
     }
   ],
   "keyword": "Examples"
 });
 formatter.scenario({
-  "line": 267,
+  "line": 203,
   "name": "Verification de la presence des Related Lists",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-related-lists;;2",
@@ -11599,7 +8735,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 263,
+  "line": 199,
   "name": "je verifie la presence du label Contacts de la section  et son type Related List",
   "matchedColumns": [
     0,
@@ -11623,10 +8759,10 @@ formatter.match({
       "offset": 68
     }
   ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 27458460,
+  "duration": 24504264,
   "status": "passed"
 });
 formatter.after({
@@ -11634,7 +8770,7 @@ formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "line": 268,
+  "line": 204,
   "name": "Verification de la presence des Related Lists",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-related-lists;;3",
@@ -11648,7 +8784,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 263,
+  "line": 199,
   "name": "je verifie la presence du label Opportunities de la section  et son type Related List",
   "matchedColumns": [
     0,
@@ -11672,18 +8808,18 @@ formatter.match({
       "offset": 73
     }
   ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 23428158,
+  "duration": 15648852,
   "status": "passed"
 });
 formatter.after({
-  "duration": 12083,
+  "duration": 14348,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 269,
+  "line": 205,
   "name": "Verification de la presence des Related Lists",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-related-lists;;4",
@@ -11697,7 +8833,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 263,
+  "line": 199,
   "name": "je verifie la presence du label Cases de la section  et son type Related List",
   "matchedColumns": [
     0,
@@ -11721,18 +8857,18 @@ formatter.match({
       "offset": 65
     }
   ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 23358683,
+  "duration": 16000759,
   "status": "passed"
 });
 formatter.after({
-  "duration": 21145,
+  "duration": 13593,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 270,
+  "line": 206,
   "name": "Verification de la presence des Related Lists",
   "description": "",
   "id": "test-non-regression-account;verification-de-la-presence-des-related-lists;;5",
@@ -11746,105 +8882,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 263,
-  "name": "je verifie la presence du label Open Activities de la section  et son type Related List",
-  "matchedColumns": [
-    0,
-    1,
-    2
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Open Activities",
-      "offset": 32
-    },
-    {
-      "val": "",
-      "offset": 62
-    },
-    {
-      "val": "Related List",
-      "offset": 75
-    }
-  ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
-});
-formatter.result({
-  "duration": 22688099,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 22655,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 271,
-  "name": "Verification de la presence des Related Lists",
-  "description": "",
-  "id": "test-non-regression-account;verification-de-la-presence-des-related-lists;;6",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 263,
-  "name": "je verifie la presence du label Activity History de la section  et son type Related List",
-  "matchedColumns": [
-    0,
-    1,
-    2
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Activity History",
-      "offset": 32
-    },
-    {
-      "val": "",
-      "offset": 63
-    },
-    {
-      "val": "Related List",
-      "offset": 76
-    }
-  ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
-});
-formatter.result({
-  "duration": 24420063,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 13593,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 272,
-  "name": "Verification de la presence des Related Lists",
-  "description": "",
-  "id": "test-non-regression-account;verification-de-la-presence-des-related-lists;;7",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@tag"
-    }
-  ]
-});
-formatter.step({
-  "line": 263,
+  "line": 199,
   "name": "je verifie la presence du label Notes \u0026 Attachments de la section  et son type Related List",
   "matchedColumns": [
     0,
@@ -11868,21 +8906,471 @@ formatter.match({
       "offset": 79
     }
   ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 21479461,
+  "duration": 16303201,
   "status": "passed"
 });
 formatter.after({
-  "duration": 12838,
+  "duration": 13593,
+  "status": "passed"
+});
+formatter.scenarioOutline({
+  "line": 209,
+  "name": "Cliquer sur les onglets",
+  "description": "",
+  "id": "test-non-regression-account;cliquer-sur-les-onglets",
+  "type": "scenario_outline",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 208,
+      "name": "@Lightning"
+    }
+  ]
+});
+formatter.step({
+  "line": 210,
+  "name": "je clique sur la vue \u003conglet\u003e Light",
+  "keyword": "Then "
+});
+formatter.examples({
+  "line": 212,
+  "name": "",
+  "description": "",
+  "id": "test-non-regression-account;cliquer-sur-les-onglets;",
+  "rows": [
+    {
+      "cells": [
+        "onglet"
+      ],
+      "line": 213,
+      "id": "test-non-regression-account;cliquer-sur-les-onglets;;1"
+    },
+    {
+      "cells": [
+        "News"
+      ],
+      "line": 214,
+      "id": "test-non-regression-account;cliquer-sur-les-onglets;;2"
+    },
+    {
+      "cells": [
+        "Related"
+      ],
+      "line": 215,
+      "id": "test-non-regression-account;cliquer-sur-les-onglets;;3"
+    },
+    {
+      "cells": [
+        "Details"
+      ],
+      "line": 216,
+      "id": "test-non-regression-account;cliquer-sur-les-onglets;;4"
+    }
+  ],
+  "keyword": "Examples"
+});
+formatter.scenario({
+  "line": 214,
+  "name": "Cliquer sur les onglets",
+  "description": "",
+  "id": "test-non-regression-account;cliquer-sur-les-onglets;;2",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 208,
+      "name": "@Lightning"
+    },
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 210,
+  "name": "je clique sur la vue News Light",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "News",
+      "offset": 21
+    }
+  ],
+  "location": "AccountStepClassic.accessView(String)"
+});
+formatter.result({
+  "duration": 2137033277,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 20767,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 273,
-  "name": "Verification de la presence des Related Lists",
+  "line": 215,
+  "name": "Cliquer sur les onglets",
   "description": "",
-  "id": "test-non-regression-account;verification-de-la-presence-des-related-lists;;8",
+  "id": "test-non-regression-account;cliquer-sur-les-onglets;;3",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 208,
+      "name": "@Lightning"
+    },
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 210,
+  "name": "je clique sur la vue Related Light",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Related",
+      "offset": 21
+    }
+  ],
+  "location": "AccountStepClassic.accessView(String)"
+});
+formatter.result({
+  "duration": 2114515845,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 23410,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 216,
+  "name": "Cliquer sur les onglets",
+  "description": "",
+  "id": "test-non-regression-account;cliquer-sur-les-onglets;;4",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 208,
+      "name": "@Lightning"
+    },
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 210,
+  "name": "je clique sur la vue Details Light",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Details",
+      "offset": 21
+    }
+  ],
+  "location": "AccountStepClassic.accessView(String)"
+});
+formatter.result({
+  "duration": 2103123087,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 33227,
+  "status": "passed"
+});
+formatter.scenarioOutline({
+  "line": 219,
+  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record)",
+  "type": "scenario_outline",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "line": 220,
+  "name": "je verifie la presence du label \u003clabelName\u003e de la section \u003csectionName\u003e et son type \u003celementType\u003e",
+  "keyword": "Then "
+});
+formatter.examples({
+  "line": 222,
+  "name": "",
+  "description": "",
+  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);",
+  "rows": [
+    {
+      "cells": [
+        "labelName",
+        "sectionName",
+        "elementType"
+      ],
+      "line": 223,
+      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;1"
+    },
+    {
+      "cells": [
+        "Account Owner",
+        "",
+        "Label View"
+      ],
+      "line": 224,
+      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;2"
+    },
+    {
+      "cells": [
+        "Account Name",
+        "",
+        "Label View"
+      ],
+      "line": 225,
+      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;3"
+    },
+    {
+      "cells": [
+        "Parent Account",
+        "",
+        "Label View"
+      ],
+      "line": 226,
+      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;4"
+    },
+    {
+      "cells": [
+        "Account Number",
+        "",
+        "Label View"
+      ],
+      "line": 227,
+      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;5"
+    },
+    {
+      "cells": [
+        "Account Site",
+        "",
+        "Label View"
+      ],
+      "line": 228,
+      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;6"
+    },
+    {
+      "cells": [
+        "Type",
+        "",
+        "Label View"
+      ],
+      "line": 229,
+      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;7"
+    },
+    {
+      "cells": [
+        "Industry",
+        "",
+        "Label View"
+      ],
+      "line": 230,
+      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;8"
+    },
+    {
+      "cells": [
+        "Annual Revenue",
+        "",
+        "Label View"
+      ],
+      "line": 231,
+      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;9"
+    },
+    {
+      "cells": [
+        "Rating",
+        "",
+        "Label View"
+      ],
+      "line": 232,
+      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;10"
+    },
+    {
+      "cells": [
+        "Phone",
+        "",
+        "Label View"
+      ],
+      "line": 233,
+      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;11"
+    },
+    {
+      "cells": [
+        "Fax",
+        "",
+        "Label View"
+      ],
+      "line": 234,
+      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;12"
+    },
+    {
+      "cells": [
+        "Website",
+        "",
+        "Label View"
+      ],
+      "line": 235,
+      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;13"
+    },
+    {
+      "cells": [
+        "Ticker Symbol",
+        "",
+        "Label View"
+      ],
+      "line": 236,
+      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;14"
+    },
+    {
+      "cells": [
+        "Ownership",
+        "",
+        "Label View"
+      ],
+      "line": 237,
+      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;15"
+    },
+    {
+      "cells": [
+        "Employees",
+        "",
+        "Label View"
+      ],
+      "line": 238,
+      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;16"
+    },
+    {
+      "cells": [
+        "SIC Code",
+        "",
+        "Label View"
+      ],
+      "line": 239,
+      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;17"
+    },
+    {
+      "cells": [
+        "Billing Address",
+        "",
+        "Label View"
+      ],
+      "line": 240,
+      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;18"
+    },
+    {
+      "cells": [
+        "Shipping Address",
+        "",
+        "Label View"
+      ],
+      "line": 241,
+      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;19"
+    },
+    {
+      "cells": [
+        "Customer Priority",
+        "",
+        "Label View"
+      ],
+      "line": 242,
+      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;20"
+    },
+    {
+      "cells": [
+        "SLA Expiration Date",
+        "",
+        "Label View"
+      ],
+      "line": 243,
+      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;21"
+    },
+    {
+      "cells": [
+        "Number of Locations",
+        "",
+        "Label View"
+      ],
+      "line": 244,
+      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;22"
+    },
+    {
+      "cells": [
+        "Active",
+        "",
+        "Label View"
+      ],
+      "line": 245,
+      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;23"
+    },
+    {
+      "cells": [
+        "SLA",
+        "",
+        "Label View"
+      ],
+      "line": 246,
+      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;24"
+    },
+    {
+      "cells": [
+        "SLA Serial Number",
+        "",
+        "Label View"
+      ],
+      "line": 247,
+      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;25"
+    },
+    {
+      "cells": [
+        "Upsell Opportunity",
+        "",
+        "Label View"
+      ],
+      "line": 248,
+      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;26"
+    },
+    {
+      "cells": [
+        "Description",
+        "",
+        "Label View"
+      ],
+      "line": 249,
+      "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;27"
+    }
+  ],
+  "keyword": "Examples"
+});
+formatter.scenario({
+  "line": 224,
+  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;2",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -11893,8 +9381,8 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 263,
-  "name": "je verifie la presence du label Partners de la section  et son type Related List",
+  "line": 220,
+  "name": "je verifie la presence du label Account Owner de la section  et son type Label View",
   "matchedColumns": [
     0,
     1,
@@ -11905,7 +9393,301 @@ formatter.step({
 formatter.match({
   "arguments": [
     {
-      "val": "Partners",
+      "val": "Account Owner",
+      "offset": 32
+    },
+    {
+      "val": "",
+      "offset": 60
+    },
+    {
+      "val": "Label View",
+      "offset": 73
+    }
+  ],
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
+});
+formatter.result({
+  "duration": 38282202,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 13593,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 225,
+  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;3",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 220,
+  "name": "je verifie la presence du label Account Name de la section  et son type Label View",
+  "matchedColumns": [
+    0,
+    1,
+    2
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Account Name",
+      "offset": 32
+    },
+    {
+      "val": "",
+      "offset": 59
+    },
+    {
+      "val": "Label View",
+      "offset": 72
+    }
+  ],
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
+});
+formatter.result({
+  "duration": 25877527,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 15104,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 226,
+  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;4",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 220,
+  "name": "je verifie la presence du label Parent Account de la section  et son type Label View",
+  "matchedColumns": [
+    0,
+    1,
+    2
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Parent Account",
+      "offset": 32
+    },
+    {
+      "val": "",
+      "offset": 61
+    },
+    {
+      "val": "Label View",
+      "offset": 74
+    }
+  ],
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
+});
+formatter.result({
+  "duration": 22703957,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 21522,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 227,
+  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;5",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 220,
+  "name": "je verifie la presence du label Account Number de la section  et son type Label View",
+  "matchedColumns": [
+    0,
+    1,
+    2
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Account Number",
+      "offset": 32
+    },
+    {
+      "val": "",
+      "offset": 61
+    },
+    {
+      "val": "Label View",
+      "offset": 74
+    }
+  ],
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
+});
+formatter.result({
+  "duration": 27265893,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 13216,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 228,
+  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;6",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 220,
+  "name": "je verifie la presence du label Account Site de la section  et son type Label View",
+  "matchedColumns": [
+    0,
+    1,
+    2
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Account Site",
+      "offset": 32
+    },
+    {
+      "val": "",
+      "offset": 59
+    },
+    {
+      "val": "Label View",
+      "offset": 72
+    }
+  ],
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
+});
+formatter.result({
+  "duration": 22342612,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 15103,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 229,
+  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;7",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 220,
+  "name": "je verifie la presence du label Type de la section  et son type Label View",
+  "matchedColumns": [
+    0,
+    1,
+    2
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Type",
+      "offset": 32
+    },
+    {
+      "val": "",
+      "offset": 51
+    },
+    {
+      "val": "Label View",
+      "offset": 64
+    }
+  ],
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
+});
+formatter.result({
+  "duration": 24250529,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 15858,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 230,
+  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;8",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 220,
+  "name": "je verifie la presence du label Industry de la section  et son type Label View",
+  "matchedColumns": [
+    0,
+    1,
+    2
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Industry",
       "offset": 32
     },
     {
@@ -11913,22 +9695,2417 @@ formatter.match({
       "offset": 55
     },
     {
-      "val": "Related List",
+      "val": "Label View",
       "offset": 68
     }
   ],
-  "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 22582754,
+  "duration": 23698884,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14726,
+  "duration": 15103,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 231,
+  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;9",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 220,
+  "name": "je verifie la presence du label Annual Revenue de la section  et son type Label View",
+  "matchedColumns": [
+    0,
+    1,
+    2
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Annual Revenue",
+      "offset": 32
+    },
+    {
+      "val": "",
+      "offset": 61
+    },
+    {
+      "val": "Label View",
+      "offset": 74
+    }
+  ],
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
+});
+formatter.result({
+  "duration": 28667852,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 17746,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 232,
+  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;10",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 220,
+  "name": "je verifie la presence du label Rating de la section  et son type Label View",
+  "matchedColumns": [
+    0,
+    1,
+    2
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Rating",
+      "offset": 32
+    },
+    {
+      "val": "",
+      "offset": 53
+    },
+    {
+      "val": "Label View",
+      "offset": 66
+    }
+  ],
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
+});
+formatter.result({
+  "duration": 22968641,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 17747,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 233,
+  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;11",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 220,
+  "name": "je verifie la presence du label Phone de la section  et son type Label View",
+  "matchedColumns": [
+    0,
+    1,
+    2
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Phone",
+      "offset": 32
+    },
+    {
+      "val": "",
+      "offset": 52
+    },
+    {
+      "val": "Label View",
+      "offset": 65
+    }
+  ],
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
+});
+formatter.result({
+  "duration": 27970082,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 16236,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 234,
+  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;12",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 220,
+  "name": "je verifie la presence du label Fax de la section  et son type Label View",
+  "matchedColumns": [
+    0,
+    1,
+    2
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Fax",
+      "offset": 32
+    },
+    {
+      "val": "",
+      "offset": 50
+    },
+    {
+      "val": "Label View",
+      "offset": 63
+    }
+  ],
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
+});
+formatter.result({
+  "duration": 28726378,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 15481,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 235,
+  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;13",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 220,
+  "name": "je verifie la presence du label Website de la section  et son type Label View",
+  "matchedColumns": [
+    0,
+    1,
+    2
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Website",
+      "offset": 32
+    },
+    {
+      "val": "",
+      "offset": 54
+    },
+    {
+      "val": "Label View",
+      "offset": 67
+    }
+  ],
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
+});
+formatter.result({
+  "duration": 23623367,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 72873,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 236,
+  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;14",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 220,
+  "name": "je verifie la presence du label Ticker Symbol de la section  et son type Label View",
+  "matchedColumns": [
+    0,
+    1,
+    2
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Ticker Symbol",
+      "offset": 32
+    },
+    {
+      "val": "",
+      "offset": 60
+    },
+    {
+      "val": "Label View",
+      "offset": 73
+    }
+  ],
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
+});
+formatter.result({
+  "duration": 28352949,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 28318,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 237,
+  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;15",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 220,
+  "name": "je verifie la presence du label Ownership de la section  et son type Label View",
+  "matchedColumns": [
+    0,
+    1,
+    2
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Ownership",
+      "offset": 32
+    },
+    {
+      "val": "",
+      "offset": 56
+    },
+    {
+      "val": "Label View",
+      "offset": 69
+    }
+  ],
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
+});
+formatter.result({
+  "duration": 29705445,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 15103,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 238,
+  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;16",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 220,
+  "name": "je verifie la presence du label Employees de la section  et son type Label View",
+  "matchedColumns": [
+    0,
+    1,
+    2
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Employees",
+      "offset": 32
+    },
+    {
+      "val": "",
+      "offset": 56
+    },
+    {
+      "val": "Label View",
+      "offset": 69
+    }
+  ],
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
+});
+formatter.result({
+  "duration": 21170977,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 13970,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 239,
+  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;17",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 220,
+  "name": "je verifie la presence du label SIC Code de la section  et son type Label View",
+  "matchedColumns": [
+    0,
+    1,
+    2
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "SIC Code",
+      "offset": 32
+    },
+    {
+      "val": "",
+      "offset": 55
+    },
+    {
+      "val": "Label View",
+      "offset": 68
+    }
+  ],
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
+});
+formatter.result({
+  "duration": 25504854,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 13970,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 240,
+  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;18",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 220,
+  "name": "je verifie la presence du label Billing Address de la section  et son type Label View",
+  "matchedColumns": [
+    0,
+    1,
+    2
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Billing Address",
+      "offset": 32
+    },
+    {
+      "val": "",
+      "offset": 62
+    },
+    {
+      "val": "Label View",
+      "offset": 75
+    }
+  ],
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
+});
+formatter.result({
+  "duration": 21232524,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 14348,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 241,
+  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;19",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 220,
+  "name": "je verifie la presence du label Shipping Address de la section  et son type Label View",
+  "matchedColumns": [
+    0,
+    1,
+    2
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Shipping Address",
+      "offset": 32
+    },
+    {
+      "val": "",
+      "offset": 63
+    },
+    {
+      "val": "Label View",
+      "offset": 76
+    }
+  ],
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
+});
+formatter.result({
+  "duration": 26027049,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 15859,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 242,
+  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;20",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 220,
+  "name": "je verifie la presence du label Customer Priority de la section  et son type Label View",
+  "matchedColumns": [
+    0,
+    1,
+    2
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Customer Priority",
+      "offset": 32
+    },
+    {
+      "val": "",
+      "offset": 64
+    },
+    {
+      "val": "Label View",
+      "offset": 77
+    }
+  ],
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
+});
+formatter.result({
+  "duration": 37995995,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 14725,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 243,
+  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;21",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 220,
+  "name": "je verifie la presence du label SLA Expiration Date de la section  et son type Label View",
+  "matchedColumns": [
+    0,
+    1,
+    2
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "SLA Expiration Date",
+      "offset": 32
+    },
+    {
+      "val": "",
+      "offset": 66
+    },
+    {
+      "val": "Label View",
+      "offset": 79
+    }
+  ],
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
+});
+formatter.result({
+  "duration": 28230990,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 15104,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 244,
+  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;22",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 220,
+  "name": "je verifie la presence du label Number of Locations de la section  et son type Label View",
+  "matchedColumns": [
+    0,
+    1,
+    2
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Number of Locations",
+      "offset": 32
+    },
+    {
+      "val": "",
+      "offset": 66
+    },
+    {
+      "val": "Label View",
+      "offset": 79
+    }
+  ],
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
+});
+formatter.result({
+  "duration": 29047321,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 15859,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 245,
+  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;23",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 220,
+  "name": "je verifie la presence du label Active de la section  et son type Label View",
+  "matchedColumns": [
+    0,
+    1,
+    2
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Active",
+      "offset": 32
+    },
+    {
+      "val": "",
+      "offset": 53
+    },
+    {
+      "val": "Label View",
+      "offset": 66
+    }
+  ],
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
+});
+formatter.result({
+  "duration": 28868348,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 17746,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 246,
+  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;24",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 220,
+  "name": "je verifie la presence du label SLA de la section  et son type Label View",
+  "matchedColumns": [
+    0,
+    1,
+    2
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "SLA",
+      "offset": 32
+    },
+    {
+      "val": "",
+      "offset": 50
+    },
+    {
+      "val": "Label View",
+      "offset": 63
+    }
+  ],
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
+});
+formatter.result({
+  "duration": 24306034,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 16991,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 247,
+  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;25",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 220,
+  "name": "je verifie la presence du label SLA Serial Number de la section  et son type Label View",
+  "matchedColumns": [
+    0,
+    1,
+    2
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "SLA Serial Number",
+      "offset": 32
+    },
+    {
+      "val": "",
+      "offset": 64
+    },
+    {
+      "val": "Label View",
+      "offset": 77
+    }
+  ],
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
+});
+formatter.result({
+  "duration": 21484747,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 18123,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 248,
+  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;26",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 220,
+  "name": "je verifie la presence du label Upsell Opportunity de la section  et son type Label View",
+  "matchedColumns": [
+    0,
+    1,
+    2
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Upsell Opportunity",
+      "offset": 32
+    },
+    {
+      "val": "",
+      "offset": 65
+    },
+    {
+      "val": "Label View",
+      "offset": 78
+    }
+  ],
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
+});
+formatter.result({
+  "duration": 30977139,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 17368,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 249,
+  "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;27",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 220,
+  "name": "je verifie la presence du label Description de la section  et son type Label View",
+  "matchedColumns": [
+    0,
+    1,
+    2
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Description",
+      "offset": 32
+    },
+    {
+      "val": "",
+      "offset": 58
+    },
+    {
+      "val": "Label View",
+      "offset": 71
+    }
+  ],
+  "location": "AccountStepClassic.checkNewAccountVisibleFields(String,String,String)"
+});
+formatter.result({
+  "duration": 29624643,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 17746,
+  "status": "passed"
+});
+formatter.scenarioOutline({
+  "line": 252,
+  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record)",
+  "type": "scenario_outline",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "line": 253,
+  "name": "je verifie que dans le champ \u003clabelName\u003e contient la valeur \u003cvalue\u003e",
+  "keyword": "Then "
+});
+formatter.examples({
+  "line": 255,
+  "name": "",
+  "description": "",
+  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);",
+  "rows": [
+    {
+      "cells": [
+        "labelName",
+        "value"
+      ],
+      "line": 256,
+      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;1"
+    },
+    {
+      "cells": [
+        "Account Name",
+        "Non Regression -"
+      ],
+      "line": 257,
+      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;2"
+    },
+    {
+      "cells": [
+        "Parent Account",
+        "Accenture Nantes"
+      ],
+      "line": 258,
+      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;3"
+    },
+    {
+      "cells": [
+        "Account Number",
+        "2121212121"
+      ],
+      "line": 259,
+      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;4"
+    },
+    {
+      "cells": [
+        "Type",
+        "Prospect"
+      ],
+      "line": 260,
+      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;5"
+    },
+    {
+      "cells": [
+        "Industry",
+        "Telecommunications"
+      ],
+      "line": 261,
+      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;6"
+    },
+    {
+      "cells": [
+        "Annual Revenue",
+        "50 000 €"
+      ],
+      "line": 262,
+      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;7"
+    },
+    {
+      "cells": [
+        "Billing Address",
+        "500, route de Vannes"
+      ],
+      "line": 263,
+      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;8"
+    },
+    {
+      "cells": [
+        "Billing Address",
+        "44000 Nantes"
+      ],
+      "line": 264,
+      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;9"
+    },
+    {
+      "cells": [
+        "Billing Address",
+        "Loire Atlantique France"
+      ],
+      "line": 265,
+      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;10"
+    },
+    {
+      "cells": [
+        "Customer Priority",
+        "High"
+      ],
+      "line": 266,
+      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;11"
+    },
+    {
+      "cells": [
+        "Number of Locations",
+        "123"
+      ],
+      "line": 267,
+      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;12"
+    },
+    {
+      "cells": [
+        "Active",
+        "Yes"
+      ],
+      "line": 268,
+      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;13"
+    },
+    {
+      "cells": [
+        "Description",
+        "OK"
+      ],
+      "line": 269,
+      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;14"
+    },
+    {
+      "cells": [
+        "Rating",
+        "Warm"
+      ],
+      "line": 270,
+      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;15"
+    },
+    {
+      "cells": [
+        "Phone",
+        "0202020202"
+      ],
+      "line": 271,
+      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;16"
+    },
+    {
+      "cells": [
+        "Fax",
+        "0404040404"
+      ],
+      "line": 272,
+      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;17"
+    },
+    {
+      "cells": [
+        "Website",
+        "https://www.accenture.com"
+      ],
+      "line": 273,
+      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;18"
+    },
+    {
+      "cells": [
+        "Ownership",
+        "Private"
+      ],
+      "line": 274,
+      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;19"
+    },
+    {
+      "cells": [
+        "Shipping Address",
+        "500, route de Vannes"
+      ],
+      "line": 275,
+      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;20"
+    },
+    {
+      "cells": [
+        "Shipping Address",
+        "44000 Nantes"
+      ],
+      "line": 276,
+      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;21"
+    },
+    {
+      "cells": [
+        "Shipping Address",
+        "Loire Atlantique France"
+      ],
+      "line": 277,
+      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;22"
+    },
+    {
+      "cells": [
+        "SLA",
+        "Silver"
+      ],
+      "line": 278,
+      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;23"
+    },
+    {
+      "cells": [
+        "Upsell Opportunity",
+        "Yes"
+      ],
+      "line": 279,
+      "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;24"
+    }
+  ],
+  "keyword": "Examples"
+});
+formatter.scenario({
+  "line": 257,
+  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;2",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 253,
+  "name": "je verifie que dans le champ Account Name contient la valeur Non Regression -",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Account Name",
+      "offset": 29
+    },
+    {
+      "val": "Non Regression -",
+      "offset": 61
+    }
+  ],
+  "location": "AccountStepClassic.validateNewAccount(String,String)"
+});
+formatter.result({
+  "duration": 59310832,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 17369,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 258,
+  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;3",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 253,
+  "name": "je verifie que dans le champ Parent Account contient la valeur Accenture Nantes",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Parent Account",
+      "offset": 29
+    },
+    {
+      "val": "Accenture Nantes",
+      "offset": 63
+    }
+  ],
+  "location": "AccountStepClassic.validateNewAccount(String,String)"
+});
+formatter.result({
+  "duration": 50869626,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 15481,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 259,
+  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;4",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 253,
+  "name": "je verifie que dans le champ Account Number contient la valeur 2121212121",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Account Number",
+      "offset": 29
+    },
+    {
+      "val": "2121212121",
+      "offset": 63
+    }
+  ],
+  "location": "AccountStepClassic.validateNewAccount(String,String)"
+});
+formatter.result({
+  "duration": 41111418,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 13970,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 260,
+  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;5",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 253,
+  "name": "je verifie que dans le champ Type contient la valeur Prospect",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Type",
+      "offset": 29
+    },
+    {
+      "val": "Prospect",
+      "offset": 53
+    }
+  ],
+  "location": "AccountStepClassic.validateNewAccount(String,String)"
+});
+formatter.result({
+  "duration": 43468657,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 13215,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 261,
+  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;6",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 253,
+  "name": "je verifie que dans le champ Industry contient la valeur Telecommunications",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Industry",
+      "offset": 29
+    },
+    {
+      "val": "Telecommunications",
+      "offset": 57
+    }
+  ],
+  "location": "AccountStepClassic.validateNewAccount(String,String)"
+});
+formatter.result({
+  "duration": 41074037,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 14725,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 262,
+  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;7",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 253,
+  "name": "je verifie que dans le champ Annual Revenue contient la valeur 50 000 €",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Annual Revenue",
+      "offset": 29
+    },
+    {
+      "val": "50 000 €",
+      "offset": 63
+    }
+  ],
+  "location": "AccountStepClassic.validateNewAccount(String,String)"
+});
+formatter.result({
+  "duration": 40215417,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 13970,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 263,
+  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;8",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 253,
+  "name": "je verifie que dans le champ Billing Address contient la valeur 500, route de Vannes",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Billing Address",
+      "offset": 29
+    },
+    {
+      "val": "500, route de Vannes",
+      "offset": 64
+    }
+  ],
+  "location": "AccountStepClassic.validateNewAccount(String,String)"
+});
+formatter.result({
+  "duration": 55980188,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 15481,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 264,
+  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;9",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 253,
+  "name": "je verifie que dans le champ Billing Address contient la valeur 44000 Nantes",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Billing Address",
+      "offset": 29
+    },
+    {
+      "val": "44000 Nantes",
+      "offset": 64
+    }
+  ],
+  "location": "AccountStepClassic.validateNewAccount(String,String)"
+});
+formatter.result({
+  "duration": 37511936,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 17747,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 265,
+  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;10",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 253,
+  "name": "je verifie que dans le champ Billing Address contient la valeur Loire Atlantique France",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Billing Address",
+      "offset": 29
+    },
+    {
+      "val": "Loire Atlantique France",
+      "offset": 64
+    }
+  ],
+  "location": "AccountStepClassic.validateNewAccount(String,String)"
+});
+formatter.result({
+  "duration": 39151771,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 18879,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 266,
+  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;11",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 253,
+  "name": "je verifie que dans le champ Customer Priority contient la valeur High",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Customer Priority",
+      "offset": 29
+    },
+    {
+      "val": "High",
+      "offset": 66
+    }
+  ],
+  "location": "AccountStepClassic.validateNewAccount(String,String)"
+});
+formatter.result({
+  "duration": 43133365,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 13594,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 267,
+  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;12",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 253,
+  "name": "je verifie que dans le champ Number of Locations contient la valeur 123",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Number of Locations",
+      "offset": 29
+    },
+    {
+      "val": "123",
+      "offset": 68
+    }
+  ],
+  "location": "AccountStepClassic.validateNewAccount(String,String)"
+});
+formatter.result({
+  "duration": 44409968,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 16991,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 268,
+  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;13",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 253,
+  "name": "je verifie que dans le champ Active contient la valeur Yes",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Active",
+      "offset": 29
+    },
+    {
+      "val": "Yes",
+      "offset": 55
+    }
+  ],
+  "location": "AccountStepClassic.validateNewAccount(String,String)"
+});
+formatter.result({
+  "duration": 41056291,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 13215,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 269,
+  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;14",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 253,
+  "name": "je verifie que dans le champ Description contient la valeur OK",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Description",
+      "offset": 29
+    },
+    {
+      "val": "OK",
+      "offset": 60
+    }
+  ],
+  "location": "AccountStepClassic.validateNewAccount(String,String)"
+});
+formatter.result({
+  "duration": 46143820,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 14725,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 270,
+  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;15",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 253,
+  "name": "je verifie que dans le champ Rating contient la valeur Warm",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Rating",
+      "offset": 29
+    },
+    {
+      "val": "Warm",
+      "offset": 55
+    }
+  ],
+  "location": "AccountStepClassic.validateNewAccount(String,String)"
+});
+formatter.result({
+  "duration": 46678475,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 13971,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 271,
+  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;16",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 253,
+  "name": "je verifie que dans le champ Phone contient la valeur 0202020202",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Phone",
+      "offset": 29
+    },
+    {
+      "val": "0202020202",
+      "offset": 54
+    }
+  ],
+  "location": "AccountStepClassic.validateNewAccount(String,String)"
+});
+formatter.result({
+  "duration": 44469247,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 16613,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 272,
+  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;17",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 253,
+  "name": "je verifie que dans le champ Fax contient la valeur 0404040404",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Fax",
+      "offset": 29
+    },
+    {
+      "val": "0404040404",
+      "offset": 52
+    }
+  ],
+  "location": "AccountStepClassic.validateNewAccount(String,String)"
+});
+formatter.result({
+  "duration": 40827099,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 13971,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 273,
+  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;18",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 253,
+  "name": "je verifie que dans le champ Website contient la valeur https://www.accenture.com",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Website",
+      "offset": 29
+    },
+    {
+      "val": "https://www.accenture.com",
+      "offset": 56
+    }
+  ],
+  "location": "AccountStepClassic.validateNewAccount(String,String)"
+});
+formatter.result({
+  "duration": 61140589,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 27941,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 274,
+  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;19",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 253,
+  "name": "je verifie que dans le champ Ownership contient la valeur Private",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Ownership",
+      "offset": 29
+    },
+    {
+      "val": "Private",
+      "offset": 58
+    }
+  ],
+  "location": "AccountStepClassic.validateNewAccount(String,String)"
+});
+formatter.result({
+  "duration": 42448433,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 15480,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 275,
+  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;20",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 253,
+  "name": "je verifie que dans le champ Shipping Address contient la valeur 500, route de Vannes",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Shipping Address",
+      "offset": 29
+    },
+    {
+      "val": "500, route de Vannes",
+      "offset": 65
+    }
+  ],
+  "location": "AccountStepClassic.validateNewAccount(String,String)"
+});
+formatter.result({
+  "duration": 51348776,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 13215,
   "status": "passed"
 });
 formatter.scenario({
   "line": 276,
+  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;21",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 253,
+  "name": "je verifie que dans le champ Shipping Address contient la valeur 44000 Nantes",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Shipping Address",
+      "offset": 29
+    },
+    {
+      "val": "44000 Nantes",
+      "offset": 65
+    }
+  ],
+  "location": "AccountStepClassic.validateNewAccount(String,String)"
+});
+formatter.result({
+  "duration": 27911180,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 12838,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 277,
+  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;22",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 253,
+  "name": "je verifie que dans le champ Shipping Address contient la valeur Loire Atlantique France",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Shipping Address",
+      "offset": 29
+    },
+    {
+      "val": "Loire Atlantique France",
+      "offset": 65
+    }
+  ],
+  "location": "AccountStepClassic.validateNewAccount(String,String)"
+});
+formatter.result({
+  "duration": 33752360,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 30207,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 278,
+  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;23",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 253,
+  "name": "je verifie que dans le champ SLA contient la valeur Silver",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "SLA",
+      "offset": 29
+    },
+    {
+      "val": "Silver",
+      "offset": 52
+    }
+  ],
+  "location": "AccountStepClassic.validateNewAccount(String,String)"
+});
+formatter.result({
+  "duration": 55841615,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 14348,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 279,
+  "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;24",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 253,
+  "name": "je verifie que dans le champ Upsell Opportunity contient la valeur Yes",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Upsell Opportunity",
+      "offset": 29
+    },
+    {
+      "val": "Yes",
+      "offset": 67
+    }
+  ],
+  "location": "AccountStepClassic.validateNewAccount(String,String)"
+});
+formatter.result({
+  "duration": 46484020,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 14349,
+  "status": "passed"
+});
+formatter.scenarioOutline({
+  "line": 282,
+  "name": "Verificiation de la presence des boutons \"Edit\" et \"Delete\" en haut et bas de page (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verificiation-de-la-presence-des-boutons-\"edit\"-et-\"delete\"-en-haut-et-bas-de-page-(affichage-du-record)",
+  "type": "scenario_outline",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "line": 283,
+  "name": "je verifie la presence du bouton \u003cbuttonName\u003e situe en \u003cposition\u003e",
+  "keyword": "Then "
+});
+formatter.examples({
+  "line": 285,
+  "name": "",
+  "description": "",
+  "id": "test-non-regression-account;verificiation-de-la-presence-des-boutons-\"edit\"-et-\"delete\"-en-haut-et-bas-de-page-(affichage-du-record);",
+  "rows": [
+    {
+      "cells": [
+        "buttonName",
+        "position"
+      ],
+      "line": 286,
+      "id": "test-non-regression-account;verificiation-de-la-presence-des-boutons-\"edit\"-et-\"delete\"-en-haut-et-bas-de-page-(affichage-du-record);;1"
+    },
+    {
+      "cells": [
+        "edit",
+        "top"
+      ],
+      "line": 287,
+      "id": "test-non-regression-account;verificiation-de-la-presence-des-boutons-\"edit\"-et-\"delete\"-en-haut-et-bas-de-page-(affichage-du-record);;2"
+    },
+    {
+      "cells": [
+        "delete",
+        "top"
+      ],
+      "line": 288,
+      "id": "test-non-regression-account;verificiation-de-la-presence-des-boutons-\"edit\"-et-\"delete\"-en-haut-et-bas-de-page-(affichage-du-record);;3"
+    },
+    {
+      "cells": [
+        "edit",
+        "bottom"
+      ],
+      "line": 289,
+      "id": "test-non-regression-account;verificiation-de-la-presence-des-boutons-\"edit\"-et-\"delete\"-en-haut-et-bas-de-page-(affichage-du-record);;4"
+    },
+    {
+      "cells": [
+        "delete",
+        "bottom"
+      ],
+      "line": 290,
+      "id": "test-non-regression-account;verificiation-de-la-presence-des-boutons-\"edit\"-et-\"delete\"-en-haut-et-bas-de-page-(affichage-du-record);;5"
+    }
+  ],
+  "keyword": "Examples"
+});
+formatter.scenario({
+  "line": 287,
+  "name": "Verificiation de la presence des boutons \"Edit\" et \"Delete\" en haut et bas de page (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verificiation-de-la-presence-des-boutons-\"edit\"-et-\"delete\"-en-haut-et-bas-de-page-(affichage-du-record);;2",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 283,
+  "name": "je verifie la presence du bouton edit situe en top",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "edit",
+      "offset": 33
+    },
+    {
+      "val": "top",
+      "offset": 47
+    }
+  ],
+  "location": "AccountStepClassic.checkEditPageButtons(String,String)"
+});
+formatter.result({
+  "duration": 38513,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 9817,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 288,
+  "name": "Verificiation de la presence des boutons \"Edit\" et \"Delete\" en haut et bas de page (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verificiation-de-la-presence-des-boutons-\"edit\"-et-\"delete\"-en-haut-et-bas-de-page-(affichage-du-record);;3",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 283,
+  "name": "je verifie la presence du bouton delete situe en top",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "delete",
+      "offset": 33
+    },
+    {
+      "val": "top",
+      "offset": 49
+    }
+  ],
+  "location": "AccountStepClassic.checkEditPageButtons(String,String)"
+});
+formatter.result({
+  "duration": 25675,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 8684,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 289,
+  "name": "Verificiation de la presence des boutons \"Edit\" et \"Delete\" en haut et bas de page (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verificiation-de-la-presence-des-boutons-\"edit\"-et-\"delete\"-en-haut-et-bas-de-page-(affichage-du-record);;4",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 283,
+  "name": "je verifie la presence du bouton edit situe en bottom",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "edit",
+      "offset": 33
+    },
+    {
+      "val": "bottom",
+      "offset": 47
+    }
+  ],
+  "location": "AccountStepClassic.checkEditPageButtons(String,String)"
+});
+formatter.result({
+  "duration": 32849,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 20389,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 290,
+  "name": "Verificiation de la presence des boutons \"Edit\" et \"Delete\" en haut et bas de page (Affichage du record)",
+  "description": "",
+  "id": "test-non-regression-account;verificiation-de-la-presence-des-boutons-\"edit\"-et-\"delete\"-en-haut-et-bas-de-page-(affichage-du-record);;5",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 3,
+      "name": "@tag"
+    }
+  ]
+});
+formatter.step({
+  "line": 283,
+  "name": "je verifie la presence du bouton delete situe en bottom",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "delete",
+      "offset": 33
+    },
+    {
+      "val": "bottom",
+      "offset": 49
+    }
+  ],
+  "location": "AccountStepClassic.checkEditPageButtons(String,String)"
+});
+formatter.result({
+  "duration": 28319,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 8684,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 294,
   "name": "Logout",
   "description": "",
   "id": "test-non-regression-account;logout",
@@ -11936,23 +12113,23 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 275,
+      "line": 293,
       "name": "@Logout"
     }
   ]
 });
 formatter.step({
-  "line": 277,
+  "line": 295,
   "name": "je recupere les elements de la page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 278,
+  "line": 296,
   "name": "je verifie les options du menu",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 279,
+  "line": 297,
   "name": "je me deconnecte",
   "keyword": "Then "
 });
@@ -11960,25 +12137,25 @@ formatter.match({
   "location": "LogoutStep.checkHomePage()"
 });
 formatter.result({
-  "duration": 325853,
+  "duration": 239009,
   "status": "passed"
 });
 formatter.match({
   "location": "LogoutStep.checkOptions()"
 });
 formatter.result({
-  "duration": 18879,
+  "duration": 1139950469,
   "status": "passed"
 });
 formatter.match({
   "location": "LogoutStep.logout()"
 });
 formatter.result({
-  "duration": 1540973412,
+  "duration": 3889046257,
   "status": "passed"
 });
 formatter.after({
-  "duration": 16613,
+  "duration": 53239,
   "status": "passed"
 });
 });

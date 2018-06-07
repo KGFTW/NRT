@@ -1,0 +1,47 @@
+2018/06/07-13:42:03.255 9760 Reusing MANIFEST C:\Users\sylvain.tropee\eclipse-workspace\NRT_Starter_Pack\resources\GoogleChromePortable\Data\profile\Default\IndexedDB\https_curious-goat-340090-dev-ed.lightning.force.com_0.indexeddb.leveldb/MANIFEST-000001
+2018/06/07-13:42:03.260 9760 Recovering log #1281
+2018/06/07-13:42:03.260 9760 Reusing old log C:\Users\sylvain.tropee\eclipse-workspace\NRT_Starter_Pack\resources\GoogleChromePortable\Data\profile\Default\IndexedDB\https_curious-goat-340090-dev-ed.lightning.force.com_0.indexeddb.leveldb/001281.log 
+2018/06/07-13:42:15.168 24408 Level-0 table #1288: started
+2018/06/07-13:42:15.212 24408 Level-0 table #1288: 3341374 bytes OK
+2018/06/07-13:42:15.215 24408 Delete type=0 #1281
+2018/06/07-13:44:58.658 24408 Compacting 1@1 + 1@2 files
+2018/06/07-13:44:58.728 24408 Generated table #1289@1: 14542 keys, 3169468 bytes
+2018/06/07-13:44:58.731 24408 Generated table #1290@1: 83 keys, 142879 bytes
+2018/06/07-13:44:58.731 24408 Compacted 1@1 + 1@2 files => 3312347 bytes
+2018/06/07-13:44:58.732 24408 compacted to: files[ 0 0 2 0 0 0 0 ]
+2018/06/07-13:44:58.733 24408 Delete type=2 #1285
+2018/06/07-13:44:58.734 24408 Delete type=2 #1288
+2018/06/07-13:45:03.700 24408 Level-0 table #1292: started
+2018/06/07-13:45:03.723 24408 Level-0 table #1292: 3374312 bytes OK
+2018/06/07-13:45:03.726 24408 Delete type=0 #1287
+2018/06/07-13:45:08.346 24408 Compacting 1@1 + 2@2 files
+2018/06/07-13:45:08.359 18808 Current memtable full; waiting...
+2018/06/07-13:45:08.359 24408 Level-0 table #1295: started
+2018/06/07-13:45:08.366 24408 Level-0 table #1295: 500822 bytes OK
+2018/06/07-13:45:08.368 24408 Delete type=0 #1291
+2018/06/07-13:45:08.370 24408 Level-0 table #1297: started
+2018/06/07-13:45:08.370 24408 Level-0 table #1297: 0 bytes OK
+2018/06/07-13:45:08.372 24408 Delete type=0 #1294
+2018/06/07-13:45:08.530 24408 Generated table #1293@1: 14708 keys, 3258682 bytes
+2018/06/07-13:45:08.537 24408 Generated table #1298@1: 213 keys, 259634 bytes
+2018/06/07-13:45:08.537 24408 Compacted 1@1 + 2@2 files => 3518316 bytes
+2018/06/07-13:45:08.538 24408 compacted to: files[ 1 0 2 0 0 0 0 ]
+2018/06/07-13:45:08.539 24408 Delete type=2 #1289
+2018/06/07-13:45:08.541 24408 Delete type=2 #1290
+2018/06/07-13:45:08.544 24408 Delete type=2 #1292
+2018/06/07-13:45:08.545 24408 Manual compaction at level-0 from '\x00\xde\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\xdf\x00\x00\x00' @ 0 : 0; will stop at '\x00\xde\x01\x1f\x03\x00\x00\xd6g^xvB\x00\x01\x0d\x00c\x00r\x00y\x00p\x00t\x00o\x00a\x00d\x00a\x00p\x00t\x00e\x00r' @ 201136 : 0
+2018/06/07-13:45:08.545 24408 Compacting 1@0 + 0@1 files
+2018/06/07-13:45:08.552 24408 Generated table #1299@0: 280 keys, 153591 bytes
+2018/06/07-13:45:08.552 24408 Compacted 1@0 + 0@1 files => 153591 bytes
+2018/06/07-13:45:08.553 24408 compacted to: files[ 0 1 2 0 0 0 0 ]
+2018/06/07-13:45:08.553 24408 Delete type=2 #1295
+2018/06/07-13:45:08.554 24408 Manual compaction at level-0 from '\x00\xde\x01\x1f\x03\x00\x00\xd6g^xvB\x00\x01\x0d\x00c\x00r\x00y\x00p\x00t\x00o\x00a\x00d\x00a\x00p\x00t\x00e\x00r' @ 201136 : 0 .. '\x00\xdf\x00\x00\x00' @ 0 : 0; will stop at (end)
+2018/06/07-13:45:08.554 24408 Manual compaction at level-1 from '\x00\xde\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\xdf\x00\x00\x00' @ 0 : 0; will stop at '\x00\xde\x01\x1f\x03\x00\x00\xd6g^xvB\x00\x01\x0d\x00c\x00r\x00y\x00p\x00t\x00o\x00a\x00d\x00a\x00p\x00t\x00e\x00r' @ 201136 : 0
+2018/06/07-13:45:08.554 24408 Compacting 1@1 + 2@2 files
+2018/06/07-13:45:08.636 24408 Generated table #1300@1: 14708 keys, 1855729 bytes
+2018/06/07-13:45:08.636 24408 Compacted 1@1 + 2@2 files => 1855729 bytes
+2018/06/07-13:45:08.639 24408 compacted to: files[ 0 0 1 0 0 0 0 ]
+2018/06/07-13:45:08.639 24408 Delete type=2 #1293
+2018/06/07-13:45:08.641 24408 Delete type=2 #1298
+2018/06/07-13:45:08.642 24408 Delete type=2 #1299
+2018/06/07-13:45:08.643 24408 Manual compaction at level-1 from '\x00\xde\x01\x1f\x03\x00\x00\xd6g^xvB\x00\x01\x0d\x00c\x00r\x00y\x00p\x00t\x00o\x00a\x00d\x00a\x00p\x00t\x00e\x00r' @ 201136 : 0 .. '\x00\xdf\x00\x00\x00' @ 0 : 0; will stop at (end)

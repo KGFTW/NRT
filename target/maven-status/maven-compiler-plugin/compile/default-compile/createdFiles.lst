@@ -1,6 +1,6 @@
-utils\Driver$Tag.class
 utils\Driver.class
+pages\HomePageLightning.class
 utils\Selectors.class
 pages\LoginPage.class
-utils\StandardButton.class
 pages\HomePage.class
+pages\HomePageClassic.class
