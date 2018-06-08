@@ -9,7 +9,7 @@ public class Selectors {
 	public static final String EQ_END = "']";
 	
 	//select an item in parentAccount search (lightning)
-	public static final String PARENT_ACCOUNT_SELECT = "//mark[1]";
+	public static final String PARENT_ACCOUNT_SELECT = "//mark[2]";
 	
 	// List view list table selector
 	public static final String LIST_VIEW_TABLE = "//div[@id='main-panel']//div[@class='listBody']//table[@class='x-grid3-row-table']";

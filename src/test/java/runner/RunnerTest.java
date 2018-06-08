@@ -13,7 +13,7 @@ public class RunnerTest extends AbstractTestNGCucumberTests {
 	
 	// features : correspond au dossier source où sont stockés nos fichier .feature
 	
-	// glue : correspon au dossier source où sont stockés les différentes méthodse appelés par les scénarios
+	// glue : correspond au dossier source où sont stockés les différentes méthodes appelées par les scénarios
 	
 	// plugin : permet de récupérer des rapports de test détaillés
 	

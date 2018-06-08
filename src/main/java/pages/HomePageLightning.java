@@ -77,7 +77,7 @@ public class HomePageLightning {
 			launcher.click();
 			FactoryDriver.getInstance().waitMs(3000);
 			WebElement sales = block
-					.findElement(By.xpath("//li[@id='02u1r0000015jIjAAI']//a[@class='tile inner-card']"));
+					.findElement(By.xpath("//div[@class='dragArea uiDraggable']//div[text()='Sales']"));
 			sales.click();
 
 			FactoryDriver.getInstance().waitMs(3000);
