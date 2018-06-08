@@ -11,7 +11,6 @@ Feature: Test Non regression account
     [32mThen [0m[32mjarrive sur la page d'accueil de Salesforce[0m   [90m# LoginStep.checkHomepage()[0m
     [32mThen [0m[32mje change de vue si necessaire[0m                [90m# LoginStep.switchView()[0m
 
-  @CheckHomePageClassic
   Scenario: Clic sur Account                         [90m# NRT_Account.feature:16[0m
     [32mGiven [0m[32mje suis sur la page d'accueil[0m              [90m# AccountStep.initHomepage()[0m
     [32mThen [0m[32mje vais sur la page principal de Salesforce[0m [90m# AccountStep.accesHome()[0m
@@ -292,563 +291,565 @@ Feature: Test Non regression account
   Scenario Outline: Verification de la possibilite d'edition des champs d'Account (Affichage d'edition)                  [90m# NRT_Account.feature:100[0m
     [32mThen [0m[32mje verifie que le champ qui suit le label [0m[32m[1mDescription[0m[32m de la section [0m[32m[1mDescription Information[0m[32m et de type [0m[32m[1mtextArea[0m [90m# AccountStep.checkNewAccountEditableFields(String,String,String)[0m
 
+  @Classic
   Scenario Outline: Verification de la presence des boutons "Save" / "Save & New" / "Cancel" en haut et bas de page (Affichage d'edition) [90m# NRT_Account.feature:103[0m
     [36mThen [0m[36mje verifie la presence du bouton <buttonName> situe en <position>[0m
 
     Examples: 
 
-  @tag
+  @tag @Classic
   Scenario Outline: Verification de la presence des boutons "Save" / "Save & New" / "Cancel" en haut et bas de page (Affichage d'edition) [90m# NRT_Account.feature:108[0m
     [32mThen [0m[32mje verifie la presence du bouton [0m[32m[1msave[0m[32m situe en [0m[32m[1mtop[0m                                                                               [90m# AccountStep.checkEditPageButtons(String,String)[0m
 
-  @tag
+  @tag @Classic
   Scenario Outline: Verification de la presence des boutons "Save" / "Save & New" / "Cancel" en haut et bas de page (Affichage d'edition) [90m# NRT_Account.feature:109[0m
     [32mThen [0m[32mje verifie la presence du bouton [0m[32m[1msave_new[0m[32m situe en [0m[32m[1mtop[0m                                                                           [90m# AccountStep.checkEditPageButtons(String,String)[0m
 
-  @tag
+  @tag @Classic
   Scenario Outline: Verification de la presence des boutons "Save" / "Save & New" / "Cancel" en haut et bas de page (Affichage d'edition) [90m# NRT_Account.feature:110[0m
     [32mThen [0m[32mje verifie la presence du bouton [0m[32m[1mcancel[0m[32m situe en [0m[32m[1mtop[0m                                                                             [90m# AccountStep.checkEditPageButtons(String,String)[0m
 
-  @tag
+  @tag @Classic
   Scenario Outline: Verification de la presence des boutons "Save" / "Save & New" / "Cancel" en haut et bas de page (Affichage d'edition) [90m# NRT_Account.feature:111[0m
     [32mThen [0m[32mje verifie la presence du bouton [0m[32m[1msave[0m[32m situe en [0m[32m[1mbottom[0m                                                                            [90m# AccountStep.checkEditPageButtons(String,String)[0m
 
-  @tag
+  @tag @Classic
   Scenario Outline: Verification de la presence des boutons "Save" / "Save & New" / "Cancel" en haut et bas de page (Affichage d'edition) [90m# NRT_Account.feature:112[0m
     [32mThen [0m[32mje verifie la presence du bouton [0m[32m[1msave_new[0m[32m situe en [0m[32m[1mbottom[0m                                                                        [90m# AccountStep.checkEditPageButtons(String,String)[0m
 
-  @tag
+  @tag @Classic
   Scenario Outline: Verification de la presence des boutons "Save" / "Save & New" / "Cancel" en haut et bas de page (Affichage d'edition) [90m# NRT_Account.feature:113[0m
     [32mThen [0m[32mje verifie la presence du bouton [0m[32m[1mcancel[0m[32m situe en [0m[32m[1mbottom[0m                                                                          [90m# AccountStep.checkEditPageButtons(String,String)[0m
 
-  Scenario Outline: Verification de la presence des boutons "Save" / "Save & New" / "Cancel" en bas de page (Affichage d'edition) [90m# NRT_Account.feature:115[0m
+  @Lightning
+  Scenario Outline: Verification de la presence des boutons "Save" / "Save & New" / "Cancel" en bas de page (Affichage d'edition) [90m# NRT_Account.feature:116[0m
     [36mThen [0m[36mverification de  la presence du bouton <buttonName>[0m
 
     Examples: 
 
-  @tag
-  Scenario Outline: Verification de la presence des boutons "Save" / "Save & New" / "Cancel" en bas de page (Affichage d'edition) [90m# NRT_Account.feature:120[0m
+  @Lightning @tag
+  Scenario Outline: Verification de la presence des boutons "Save" / "Save & New" / "Cancel" en bas de page (Affichage d'edition) [90m# NRT_Account.feature:121[0m
     [32mThen [0m[32mverification de  la presence du bouton [0m[32m[1mSave[0m                                                                              [90m# AccountStep.checkEditPageButtons(String)[0m
 
-  @tag
-  Scenario Outline: Verification de la presence des boutons "Save" / "Save & New" / "Cancel" en bas de page (Affichage d'edition) [90m# NRT_Account.feature:121[0m
+  @Lightning @tag
+  Scenario Outline: Verification de la presence des boutons "Save" / "Save & New" / "Cancel" en bas de page (Affichage d'edition) [90m# NRT_Account.feature:122[0m
     [32mThen [0m[32mverification de  la presence du bouton [0m[32m[1mSave & New[0m                                                                        [90m# AccountStep.checkEditPageButtons(String)[0m
 
-  @tag
-  Scenario Outline: Verification de la presence des boutons "Save" / "Save & New" / "Cancel" en bas de page (Affichage d'edition) [90m# NRT_Account.feature:122[0m
+  @Lightning @tag
+  Scenario Outline: Verification de la presence des boutons "Save" / "Save & New" / "Cancel" en bas de page (Affichage d'edition) [90m# NRT_Account.feature:123[0m
     [32mThen [0m[32mverification de  la presence du bouton [0m[32m[1mCancel[0m                                                                            [90m# AccountStep.checkEditPageButtons(String)[0m
 
-  Scenario Outline: Remplissage des champs de l'Account                                                                                [90m# NRT_Account.feature:124[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                                [90m# NRT_Account.feature:125[0m
     [36mThen [0m[36mje remplis le champ <elementName> de la section <sectionName> de type <elementType> requis <required> avec la valeur <values>[0m
 
     Examples: 
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                               [90m# NRT_Account.feature:129[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                               [90m# NRT_Account.feature:130[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mAccount Name[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mInput[0m[32m requis [0m[32m[1mtrue[0m[32m avec la valeur [0m[32m[1m[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                            [90m# NRT_Account.feature:130[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                            [90m# NRT_Account.feature:131[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mAccount Number[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mInput[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1m2121212121[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                              [90m# NRT_Account.feature:131[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                              [90m# NRT_Account.feature:132[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mType[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mOther[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                 [90m# NRT_Account.feature:132[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                 [90m# NRT_Account.feature:133[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mType[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mProspect[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                          [90m# NRT_Account.feature:133[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                          [90m# NRT_Account.feature:134[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mType[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mCustomer - Direct[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                           [90m# NRT_Account.feature:134[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                           [90m# NRT_Account.feature:135[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mType[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mCustomer - Channel[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                                   [90m# NRT_Account.feature:135[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                                   [90m# NRT_Account.feature:136[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mType[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mChannel Partner / Reseller[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                             [90m# NRT_Account.feature:136[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                             [90m# NRT_Account.feature:137[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mType[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mInstallation Partner[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                           [90m# NRT_Account.feature:137[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                           [90m# NRT_Account.feature:138[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mType[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mTechnology Partner[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                 [90m# NRT_Account.feature:138[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                 [90m# NRT_Account.feature:139[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mType[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mProspect[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                        [90m# NRT_Account.feature:139[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                        [90m# NRT_Account.feature:140[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mIndustry[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mAgriculture[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                       [90m# NRT_Account.feature:140[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                       [90m# NRT_Account.feature:141[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mIndustry[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mConsulting[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                   [90m# NRT_Account.feature:141[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                   [90m# NRT_Account.feature:142[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mIndustry[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mEnergy[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                    [90m# NRT_Account.feature:142[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                    [90m# NRT_Account.feature:143[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mIndustry[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mFinance[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                  [90m# NRT_Account.feature:143[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                  [90m# NRT_Account.feature:144[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mIndustry[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mMedia[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                               [90m# NRT_Account.feature:144[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                               [90m# NRT_Account.feature:145[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mIndustry[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mTelecommunications[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                        [90m# NRT_Account.feature:145[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                        [90m# NRT_Account.feature:146[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mAnnual Revenue[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mInput[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1m50 000[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                              [90m# NRT_Account.feature:146[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                              [90m# NRT_Account.feature:147[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mRating[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mHot[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                               [90m# NRT_Account.feature:147[0m
-    [32mThen [0m[32mje remplis le champ [0m[32m[1mRating[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mWarm[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
-
-  @tag
   Scenario Outline: Remplissage des champs de l'Account                                                               [90m# NRT_Account.feature:148[0m
-    [32mThen [0m[32mje remplis le champ [0m[32m[1mRating[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mCold[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mRating[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mWarm[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
   Scenario Outline: Remplissage des champs de l'Account                                                               [90m# NRT_Account.feature:149[0m
+    [32mThen [0m[32mje remplis le champ [0m[32m[1mRating[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mCold[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
+
+  @tag
+  Scenario Outline: Remplissage des champs de l'Account                                                               [90m# NRT_Account.feature:150[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mRating[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mWarm[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                   [90m# NRT_Account.feature:150[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                   [90m# NRT_Account.feature:151[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mPhone[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mInput[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1m0202020202[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                 [90m# NRT_Account.feature:151[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                 [90m# NRT_Account.feature:152[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mFax[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mInput[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1m0404040404[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                                    [90m# NRT_Account.feature:152[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                                    [90m# NRT_Account.feature:153[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mWebsite[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mInput[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mhttps://www.accenture.com[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                    [90m# NRT_Account.feature:153[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                    [90m# NRT_Account.feature:154[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mOwnership[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mPublic[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                     [90m# NRT_Account.feature:154[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                     [90m# NRT_Account.feature:155[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mOwnership[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mPrivate[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                        [90m# NRT_Account.feature:155[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                        [90m# NRT_Account.feature:156[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mOwnership[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mSubsidiary[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                     [90m# NRT_Account.feature:156[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                     [90m# NRT_Account.feature:157[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mOwnership[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mPrivate[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                                         [90m# NRT_Account.feature:157[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                                         [90m# NRT_Account.feature:158[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mBilling Street[0m[32m de la section [0m[32m[1mAddress Information[0m[32m de type [0m[32m[1mtextArea[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1m500, route de Vannes[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                                [90m# NRT_Account.feature:158[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                                [90m# NRT_Account.feature:159[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mBilling Zip/Postal Code[0m[32m de la section [0m[32m[1mAddress Information[0m[32m de type [0m[32m[1mInput[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1m44000[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                      [90m# NRT_Account.feature:159[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                      [90m# NRT_Account.feature:160[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mBilling City[0m[32m de la section [0m[32m[1mAddress Information[0m[32m de type [0m[32m[1mInput[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mNantes[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                                          [90m# NRT_Account.feature:160[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                                          [90m# NRT_Account.feature:161[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mBilling State/Province[0m[32m de la section [0m[32m[1mAddress Information[0m[32m de type [0m[32m[1mInput[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mLoire Atlantique[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                         [90m# NRT_Account.feature:161[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                         [90m# NRT_Account.feature:162[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mBilling Country[0m[32m de la section [0m[32m[1mAddress Information[0m[32m de type [0m[32m[1mInput[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mFrance[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                                          [90m# NRT_Account.feature:162[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                                          [90m# NRT_Account.feature:163[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mShipping Street[0m[32m de la section [0m[32m[1mAddress Information[0m[32m de type [0m[32m[1mtextArea[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1m500, route de Vannes[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                                 [90m# NRT_Account.feature:163[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                                 [90m# NRT_Account.feature:164[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mShipping Zip/Postal Code[0m[32m de la section [0m[32m[1mAddress Information[0m[32m de type [0m[32m[1mInput[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1m44000[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                       [90m# NRT_Account.feature:164[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                       [90m# NRT_Account.feature:165[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mShipping City[0m[32m de la section [0m[32m[1mAddress Information[0m[32m de type [0m[32m[1mInput[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mNantes[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                                           [90m# NRT_Account.feature:165[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                                           [90m# NRT_Account.feature:166[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mShipping State/Province[0m[32m de la section [0m[32m[1mAddress Information[0m[32m de type [0m[32m[1mInput[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mLoire Atlantique[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                          [90m# NRT_Account.feature:166[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                          [90m# NRT_Account.feature:167[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mShipping Country[0m[32m de la section [0m[32m[1mAddress Information[0m[32m de type [0m[32m[1mInput[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mFrance[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                             [90m# NRT_Account.feature:167[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                             [90m# NRT_Account.feature:168[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mCustomer Priority[0m[32m de la section [0m[32m[1mAdditional Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mHigh[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                            [90m# NRT_Account.feature:168[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                            [90m# NRT_Account.feature:169[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mCustomer Priority[0m[32m de la section [0m[32m[1mAdditional Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mLow[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                               [90m# NRT_Account.feature:169[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                               [90m# NRT_Account.feature:170[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mCustomer Priority[0m[32m de la section [0m[32m[1mAdditional Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mMedium[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                             [90m# NRT_Account.feature:170[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                             [90m# NRT_Account.feature:171[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mCustomer Priority[0m[32m de la section [0m[32m[1mAdditional Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mHigh[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                             [90m# NRT_Account.feature:171[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                             [90m# NRT_Account.feature:172[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mNumber of Locations[0m[32m de la section [0m[32m[1mAdditional Information[0m[32m de type [0m[32m[1mInput[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1m123[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                 [90m# NRT_Account.feature:172[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                 [90m# NRT_Account.feature:173[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mActive[0m[32m de la section [0m[32m[1mAdditional Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mYes[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                [90m# NRT_Account.feature:173[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                [90m# NRT_Account.feature:174[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mActive[0m[32m de la section [0m[32m[1mAdditional Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mNo[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                 [90m# NRT_Account.feature:174[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                 [90m# NRT_Account.feature:175[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mActive[0m[32m de la section [0m[32m[1mAdditional Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mYes[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                               [90m# NRT_Account.feature:175[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                               [90m# NRT_Account.feature:176[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mSLA[0m[32m de la section [0m[32m[1mAdditional Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mGold[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                 [90m# NRT_Account.feature:176[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                 [90m# NRT_Account.feature:177[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mSLA[0m[32m de la section [0m[32m[1mAdditional Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mSilver[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                   [90m# NRT_Account.feature:177[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                   [90m# NRT_Account.feature:178[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mSLA[0m[32m de la section [0m[32m[1mAdditional Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mPlatinum[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                 [90m# NRT_Account.feature:178[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                 [90m# NRT_Account.feature:179[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mSLA[0m[32m de la section [0m[32m[1mAdditional Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mBronze[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                 [90m# NRT_Account.feature:179[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                 [90m# NRT_Account.feature:180[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mSLA[0m[32m de la section [0m[32m[1mAdditional Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mSilver[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                               [90m# NRT_Account.feature:180[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                               [90m# NRT_Account.feature:181[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mUpsell Opportunity[0m[32m de la section [0m[32m[1mAdditional Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mMaybe[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                            [90m# NRT_Account.feature:181[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                            [90m# NRT_Account.feature:182[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mUpsell Opportunity[0m[32m de la section [0m[32m[1mAdditional Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mNo[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                             [90m# NRT_Account.feature:182[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                             [90m# NRT_Account.feature:183[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mUpsell Opportunity[0m[32m de la section [0m[32m[1mAdditional Information[0m[32m de type [0m[32m[1mselect[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mYes[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                        [90m# NRT_Account.feature:183[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                        [90m# NRT_Account.feature:184[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mDescription[0m[32m de la section [0m[32m[1mDescription Information[0m[32m de type [0m[32m[1mtextArea[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mOK[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
   @tag
-  Scenario Outline: Remplissage des champs de l'Account                                                                                 [90m# NRT_Account.feature:184[0m
+  Scenario Outline: Remplissage des champs de l'Account                                                                                 [90m# NRT_Account.feature:185[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mParent Account[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1msearchField[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mAccenture[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
 
-  @CheckHomePage
-  Scenario Outline: Enregistrer l'Account                                                                                              [90m# NRT_Account.feature:188[0m
+  Scenario Outline: Enregistrer l'Account                                                                                              [90m# NRT_Account.feature:189[0m
     [36mWhen [0m[36mje clique sur le bouton "Save"[0m
     [36mThen [0m[36mje remplis le champ <elementName> de la section <sectionName> de type <elementType> requis <required> avec la valeur <values>[0m
     [36mWhen [0m[36mje clique sur le bouton "Save"[0m
 
     Examples: 
 
-  @tag @CheckHomePage
-  Scenario Outline: Enregistrer l'Account                                                                                                             [90m# NRT_Account.feature:195[0m
+  @tag
+  Scenario Outline: Enregistrer l'Account                                                                                                             [90m# NRT_Account.feature:196[0m
     [32mWhen [0m[32mje clique sur le bouton "Save"[0m                                                                                                               [90m# AccountStep.clickSaveButton()[0m
     [32mThen [0m[32mje remplis le champ [0m[32m[1mParent Account[0m[32m de la section [0m[32m[1mAccount Information[0m[32m de type [0m[32m[1mselect_searchField[0m[32m requis [0m[32m[1mfalse[0m[32m avec la valeur [0m[32m[1mAccenture Nantes[0m [90m# AccountStep.fillNewAccountFields(String,String,String,String,String)[0m
     [32mWhen [0m[32mje clique sur le bouton "Save"[0m                                                                                                               [90m# AccountStep.clickSaveButton()[0m
 
-  Scenario Outline: Verification de la presence des Related Lists                                          [90m# NRT_Account.feature:198[0m
+  Scenario Outline: Verification de la presence des Related Lists                                          [90m# NRT_Account.feature:199[0m
     [36mThen [0m[36mje verifie la presence du label <labelName> de la section <sectionName> et son type <elementType>[0m
 
     Examples: 
 
   @tag
-  Scenario Outline: Verification de la presence des Related Lists                         [90m# NRT_Account.feature:203[0m
+  Scenario Outline: Verification de la presence des Related Lists                         [90m# NRT_Account.feature:204[0m
     [32mThen [0m[32mje verifie la presence du label [0m[32m[1mContacts[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mRelated List[0m [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
 
   @tag
-  Scenario Outline: Verification de la presence des Related Lists                              [90m# NRT_Account.feature:204[0m
+  Scenario Outline: Verification de la presence des Related Lists                              [90m# NRT_Account.feature:205[0m
     [32mThen [0m[32mje verifie la presence du label [0m[32m[1mOpportunities[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mRelated List[0m [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
 
   @tag
-  Scenario Outline: Verification de la presence des Related Lists                      [90m# NRT_Account.feature:205[0m
+  Scenario Outline: Verification de la presence des Related Lists                      [90m# NRT_Account.feature:206[0m
     [32mThen [0m[32mje verifie la presence du label [0m[32m[1mCases[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mRelated List[0m [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
 
   @tag
-  Scenario Outline: Verification de la presence des Related Lists                                    [90m# NRT_Account.feature:206[0m
+  Scenario Outline: Verification de la presence des Related Lists                                    [90m# NRT_Account.feature:207[0m
     [32mThen [0m[32mje verifie la presence du label [0m[32m[1mNotes & Attachments[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mRelated List[0m [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
 
   @Lightning
-  Scenario Outline: Cliquer sur les onglets  [90m# NRT_Account.feature:209[0m
+  Scenario Outline: Cliquer sur les onglets  [90m# NRT_Account.feature:210[0m
     [36mThen [0m[36mje clique sur la vue <onglet> Light[0m
 
     Examples: 
 
   @Lightning @tag
-  Scenario Outline: Cliquer sur les onglets [90m# NRT_Account.feature:214[0m
+  Scenario Outline: Cliquer sur les onglets [90m# NRT_Account.feature:215[0m
     [32mThen [0m[32mje clique sur la vue [0m[32m[1mNews[0m[32m Light[0m    [90m# AccountStep.accessView(String)[0m
 
   @Lightning @tag
-  Scenario Outline: Cliquer sur les onglets [90m# NRT_Account.feature:215[0m
+  Scenario Outline: Cliquer sur les onglets [90m# NRT_Account.feature:216[0m
     [32mThen [0m[32mje clique sur la vue [0m[32m[1mRelated[0m[32m Light[0m [90m# AccountStep.accessView(String)[0m
 
   @Lightning @tag
-  Scenario Outline: Cliquer sur les onglets [90m# NRT_Account.feature:216[0m
+  Scenario Outline: Cliquer sur les onglets [90m# NRT_Account.feature:217[0m
     [32mThen [0m[32mje clique sur la vue [0m[32m[1mDetails[0m[32m Light[0m [90m# AccountStep.accessView(String)[0m
 
-  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record)    [90m# NRT_Account.feature:219[0m
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record)    [90m# NRT_Account.feature:220[0m
     [36mThen [0m[36mje verifie la presence du label <labelName> de la section <sectionName> et son type <elementType>[0m
 
     Examples: 
 
   @tag
-  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:224[0m
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:225[0m
     [32mThen [0m[32mje verifie la presence du label [0m[32m[1mAccount Owner[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m            [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
 
   @tag
-  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:225[0m
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:226[0m
     [32mThen [0m[32mje verifie la presence du label [0m[32m[1mAccount Name[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m             [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
 
   @tag
-  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:226[0m
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:227[0m
     [32mThen [0m[32mje verifie la presence du label [0m[32m[1mParent Account[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m           [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
 
   @tag
-  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:227[0m
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:228[0m
     [32mThen [0m[32mje verifie la presence du label [0m[32m[1mAccount Number[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m           [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
 
   @tag
-  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:228[0m
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:229[0m
     [32mThen [0m[32mje verifie la presence du label [0m[32m[1mAccount Site[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m             [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
 
   @tag
-  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:229[0m
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:230[0m
     [32mThen [0m[32mje verifie la presence du label [0m[32m[1mType[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m                     [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
 
   @tag
-  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:230[0m
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:231[0m
     [32mThen [0m[32mje verifie la presence du label [0m[32m[1mIndustry[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m                 [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
 
   @tag
-  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:231[0m
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:232[0m
     [32mThen [0m[32mje verifie la presence du label [0m[32m[1mAnnual Revenue[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m           [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
 
   @tag
-  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:232[0m
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:233[0m
     [32mThen [0m[32mje verifie la presence du label [0m[32m[1mRating[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m                   [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
 
   @tag
-  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:233[0m
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:234[0m
     [32mThen [0m[32mje verifie la presence du label [0m[32m[1mPhone[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m                    [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
 
   @tag
-  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:234[0m
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:235[0m
     [32mThen [0m[32mje verifie la presence du label [0m[32m[1mFax[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m                      [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
 
   @tag
-  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:235[0m
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:236[0m
     [32mThen [0m[32mje verifie la presence du label [0m[32m[1mWebsite[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m                  [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
 
   @tag
-  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:236[0m
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:237[0m
     [32mThen [0m[32mje verifie la presence du label [0m[32m[1mTicker Symbol[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m            [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
 
   @tag
-  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:237[0m
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:238[0m
     [32mThen [0m[32mje verifie la presence du label [0m[32m[1mOwnership[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m                [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
 
   @tag
-  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:238[0m
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:239[0m
     [32mThen [0m[32mje verifie la presence du label [0m[32m[1mEmployees[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m                [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
 
   @tag
-  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:239[0m
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:240[0m
     [32mThen [0m[32mje verifie la presence du label [0m[32m[1mSIC Code[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m                 [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
 
   @tag
-  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:240[0m
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:241[0m
     [32mThen [0m[32mje verifie la presence du label [0m[32m[1mBilling Address[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m          [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
 
   @tag
-  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:241[0m
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:242[0m
     [32mThen [0m[32mje verifie la presence du label [0m[32m[1mShipping Address[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m         [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
 
   @tag
-  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:242[0m
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:243[0m
     [32mThen [0m[32mje verifie la presence du label [0m[32m[1mCustomer Priority[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m        [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
 
   @tag
-  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:243[0m
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:244[0m
     [32mThen [0m[32mje verifie la presence du label [0m[32m[1mSLA Expiration Date[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m      [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
 
   @tag
-  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:244[0m
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:245[0m
     [32mThen [0m[32mje verifie la presence du label [0m[32m[1mNumber of Locations[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m      [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
 
   @tag
-  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:245[0m
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:246[0m
     [32mThen [0m[32mje verifie la presence du label [0m[32m[1mActive[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m                   [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
 
   @tag
-  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:246[0m
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:247[0m
     [32mThen [0m[32mje verifie la presence du label [0m[32m[1mSLA[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m                      [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
 
   @tag
-  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:247[0m
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:248[0m
     [32mThen [0m[32mje verifie la presence du label [0m[32m[1mSLA Serial Number[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m        [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
 
   @tag
-  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:248[0m
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:249[0m
     [32mThen [0m[32mje verifie la presence du label [0m[32m[1mUpsell Opportunity[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m       [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
 
   @tag
-  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:249[0m
+  Scenario Outline: Verification de la presence des champs dans la page d'Account (Affichage du record) [90m# NRT_Account.feature:250[0m
     [32mThen [0m[32mje verifie la presence du label [0m[32m[1mDescription[0m[32m de la section [0m[32m[1m[0m[32m et son type [0m[32m[1mLabel View[0m              [90m# AccountStep.checkNewAccountVisibleFields(String,String,String)[0m
 
-  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:252[0m
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:253[0m
     [36mThen [0m[36mje verifie que dans le champ <labelName> contient la valeur <value>[0m
 
     Examples: 
 
   @tag
-  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:257[0m
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:258[0m
     [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mAccount Name[0m[32m contient la valeur [0m[32m[1mNon Regression -[0m                               [90m# AccountStep.validateNewAccount(String,String)[0m
 
   @tag
-  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:258[0m
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:259[0m
     [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mParent Account[0m[32m contient la valeur [0m[32m[1mAccenture Nantes[0m                             [90m# AccountStep.validateNewAccount(String,String)[0m
 
   @tag
-  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:259[0m
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:260[0m
     [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mAccount Number[0m[32m contient la valeur [0m[32m[1m2121212121[0m                                   [90m# AccountStep.validateNewAccount(String,String)[0m
 
   @tag
-  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:260[0m
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:261[0m
     [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mType[0m[32m contient la valeur [0m[32m[1mProspect[0m                                               [90m# AccountStep.validateNewAccount(String,String)[0m
 
   @tag
-  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:261[0m
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:262[0m
     [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mIndustry[0m[32m contient la valeur [0m[32m[1mTelecommunications[0m                                 [90m# AccountStep.validateNewAccount(String,String)[0m
 
   @tag
-  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:262[0m
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:263[0m
     [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mAnnual Revenue[0m[32m contient la valeur [0m[32m[1m50 000 €[0m                                     [90m# AccountStep.validateNewAccount(String,String)[0m
 
   @tag
-  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:263[0m
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:264[0m
     [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mBilling Address[0m[32m contient la valeur [0m[32m[1m500, route de Vannes[0m                        [90m# AccountStep.validateNewAccount(String,String)[0m
 
   @tag
-  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:264[0m
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:265[0m
     [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mBilling Address[0m[32m contient la valeur [0m[32m[1m44000 Nantes[0m                                [90m# AccountStep.validateNewAccount(String,String)[0m
 
   @tag
-  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:265[0m
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:266[0m
     [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mBilling Address[0m[32m contient la valeur [0m[32m[1mLoire Atlantique France[0m                     [90m# AccountStep.validateNewAccount(String,String)[0m
 
   @tag
-  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:266[0m
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:267[0m
     [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mCustomer Priority[0m[32m contient la valeur [0m[32m[1mHigh[0m                                      [90m# AccountStep.validateNewAccount(String,String)[0m
 
   @tag
-  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:267[0m
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:268[0m
     [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mNumber of Locations[0m[32m contient la valeur [0m[32m[1m123[0m                                     [90m# AccountStep.validateNewAccount(String,String)[0m
 
   @tag
-  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:268[0m
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:269[0m
     [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mActive[0m[32m contient la valeur [0m[32m[1mYes[0m                                                  [90m# AccountStep.validateNewAccount(String,String)[0m
 
   @tag
-  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:269[0m
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:270[0m
     [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mDescription[0m[32m contient la valeur [0m[32m[1mOK[0m                                              [90m# AccountStep.validateNewAccount(String,String)[0m
 
   @tag
-  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:270[0m
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:271[0m
     [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mRating[0m[32m contient la valeur [0m[32m[1mWarm[0m                                                 [90m# AccountStep.validateNewAccount(String,String)[0m
 
   @tag
-  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:271[0m
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:272[0m
     [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mPhone[0m[32m contient la valeur [0m[32m[1m0202020202[0m                                            [90m# AccountStep.validateNewAccount(String,String)[0m
 
   @tag
-  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:272[0m
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:273[0m
     [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mFax[0m[32m contient la valeur [0m[32m[1m0404040404[0m                                              [90m# AccountStep.validateNewAccount(String,String)[0m
 
   @tag
-  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:273[0m
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:274[0m
     [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mWebsite[0m[32m contient la valeur [0m[32m[1mhttps://www.accenture.com[0m                           [90m# AccountStep.validateNewAccount(String,String)[0m
 
   @tag
-  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:274[0m
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:275[0m
     [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mOwnership[0m[32m contient la valeur [0m[32m[1mPrivate[0m                                           [90m# AccountStep.validateNewAccount(String,String)[0m
 
   @tag
-  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:275[0m
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:276[0m
     [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mShipping Address[0m[32m contient la valeur [0m[32m[1m500, route de Vannes[0m                       [90m# AccountStep.validateNewAccount(String,String)[0m
 
   @tag
-  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:276[0m
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:277[0m
     [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mShipping Address[0m[32m contient la valeur [0m[32m[1m44000 Nantes[0m                               [90m# AccountStep.validateNewAccount(String,String)[0m
 
   @tag
-  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:277[0m
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:278[0m
     [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mShipping Address[0m[32m contient la valeur [0m[32m[1mLoire Atlantique France[0m                    [90m# AccountStep.validateNewAccount(String,String)[0m
 
   @tag
-  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:278[0m
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:279[0m
     [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mSLA[0m[32m contient la valeur [0m[32m[1mSilver[0m                                                  [90m# AccountStep.validateNewAccount(String,String)[0m
 
   @tag
-  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:279[0m
+  Scenario Outline: Verification des valeurs renseignees dans les champs  de la page d'Account (Affichage du record) [90m# NRT_Account.feature:280[0m
     [32mThen [0m[32mje verifie que dans le champ [0m[32m[1mUpsell Opportunity[0m[32m contient la valeur [0m[32m[1mYes[0m                                      [90m# AccountStep.validateNewAccount(String,String)[0m
 
-  Scenario Outline: Verificiation de la presence des boutons "Edit" et "Delete" en haut et bas de page (Affichage du record) [90m# NRT_Account.feature:282[0m
+  @Classic
+  Scenario Outline: Verificiation de la presence des boutons "Edit" et "Delete" en haut et bas de page (Affichage du record) [90m# NRT_Account.feature:283[0m
     [36mThen [0m[36mje verifie la presence du bouton <buttonName> situe en <position>[0m
 
     Examples: 
 
-  @tag
-  Scenario Outline: Verificiation de la presence des boutons "Edit" et "Delete" en haut et bas de page (Affichage du record) [90m# NRT_Account.feature:287[0m
+  @tag @Classic
+  Scenario Outline: Verificiation de la presence des boutons "Edit" et "Delete" en haut et bas de page (Affichage du record) [90m# NRT_Account.feature:288[0m
     [32mThen [0m[32mje verifie la presence du bouton [0m[32m[1medit[0m[32m situe en [0m[32m[1mtop[0m                                                                  [90m# AccountStep.checkEditPageButtons(String,String)[0m
 
-  @tag
-  Scenario Outline: Verificiation de la presence des boutons "Edit" et "Delete" en haut et bas de page (Affichage du record) [90m# NRT_Account.feature:288[0m
+  @tag @Classic
+  Scenario Outline: Verificiation de la presence des boutons "Edit" et "Delete" en haut et bas de page (Affichage du record) [90m# NRT_Account.feature:289[0m
     [32mThen [0m[32mje verifie la presence du bouton [0m[32m[1mdelete[0m[32m situe en [0m[32m[1mtop[0m                                                                [90m# AccountStep.checkEditPageButtons(String,String)[0m
 
-  @tag
-  Scenario Outline: Verificiation de la presence des boutons "Edit" et "Delete" en haut et bas de page (Affichage du record) [90m# NRT_Account.feature:289[0m
+  @tag @Classic
+  Scenario Outline: Verificiation de la presence des boutons "Edit" et "Delete" en haut et bas de page (Affichage du record) [90m# NRT_Account.feature:290[0m
     [32mThen [0m[32mje verifie la presence du bouton [0m[32m[1medit[0m[32m situe en [0m[32m[1mbottom[0m                                                               [90m# AccountStep.checkEditPageButtons(String,String)[0m
 
-  @tag
-  Scenario Outline: Verificiation de la presence des boutons "Edit" et "Delete" en haut et bas de page (Affichage du record) [90m# NRT_Account.feature:290[0m
+  @tag @Classic
+  Scenario Outline: Verificiation de la presence des boutons "Edit" et "Delete" en haut et bas de page (Affichage du record) [90m# NRT_Account.feature:291[0m
     [32mThen [0m[32mje verifie la presence du bouton [0m[32m[1mdelete[0m[32m situe en [0m[32m[1mbottom[0m                                                             [90m# AccountStep.checkEditPageButtons(String,String)[0m
 
   @Logout
-  Scenario: Logout                            [90m# NRT_Account.feature:294[0m
+  Scenario: Logout                            [90m# NRT_Account.feature:295[0m
     [32mGiven [0m[32mje recupere les elements de la page[0m [90m# LogoutStep.checkHomePage()[0m
     [32mThen [0m[32mje verifie les options du menu[0m       [90m# LogoutStep.checkOptions()[0m
     [32mThen [0m[32mje me deconnecte[0m                     [90m# LogoutStep.logout()[0m

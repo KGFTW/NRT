@@ -12,7 +12,7 @@ Test NRT with cucumber
     Then jarrive sur la page d'accueil de Salesforce  
   	Then je change de vue si necessaire 
 	
-	@CheckHomePageClassic
+	
 	Scenario: Clic sur Account
 		Given je suis sur la page d'accueil
 		Then je vais sur la page principal de Salesforce
@@ -99,7 +99,7 @@ Test NRT with cucumber
  	 	|Upsell Opportunity					|Additional Information	|select 		|
  	 	|Description								|Description Information|textArea		|
  	 	
- 	 	
+ 	 	@Classic
  	 	Scenario Outline: Verification de la presence des boutons "Save" / "Save & New" / "Cancel" en haut et bas de page (Affichage d'edition)
  	 		Then je verifie la presence du bouton <buttonName> situe en <position>
  	 		
@@ -112,6 +112,7 @@ Test NRT with cucumber
  				|save_new						|bottom		|
  				|cancel							|bottom		|
  				
+ 		@Lightning		
  		Scenario Outline: Verification de la presence des boutons "Save" / "Save & New" / "Cancel" en bas de page (Affichage d'edition)
    	 Then verification de  la presence du bouton <buttonName>
 
@@ -184,7 +185,7 @@ Test NRT with cucumber
 			|Parent Account								|Account Information						|searchField		|false		|Accenture										|
 							
  			
- 		@CheckHomePage	
+ 		
  		Scenario Outline: Enregistrer l'Account
  			When je clique sur le bouton "Save" 		
  			Then je remplis le champ <elementName> de la section <sectionName> de type <elementType> requis <required> avec la valeur <values>
@@ -278,7 +279,7 @@ Test NRT with cucumber
  				|SLA									|Silver													|
  				|Upsell Opportunity		|Yes														|
  				
- 	
+ 		@Classic
  		Scenario Outline: Verificiation de la presence des boutons "Edit" et "Delete" en haut et bas de page (Affichage du record)
  			Then je verifie la presence du bouton <buttonName> situe en <position>
  	 		

@@ -77,7 +77,7 @@ public class LoginPage extends DriverClassic {
 	 */
 	public void waitLogin(WebDriver driver) {
 
-		FactoryDriver.getInstance().waitPageLoaded();
+		FactoryDriver.getInstance().waitMs(5000);
 	}
 
 	/**

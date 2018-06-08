@@ -12,7 +12,7 @@
         "before": [
           {
             "result": {
-              "duration": 5802762535,
+              "duration": 6062830265,
               "status": "passed"
             },
             "match": {
@@ -27,7 +27,7 @@
         "after": [
           {
             "result": {
-              "duration": 63434,
+              "duration": 55882,
               "status": "passed"
             },
             "match": {
@@ -40,7 +40,7 @@
         "steps": [
           {
             "result": {
-              "duration": 142020369,
+              "duration": 172658062,
               "status": "passed"
             },
             "line": 10,
@@ -52,7 +52,7 @@
           },
           {
             "result": {
-              "duration": 741561910,
+              "duration": 832287119,
               "status": "passed"
             },
             "line": 11,
@@ -64,7 +64,7 @@
           },
           {
             "result": {
-              "duration": 8525783,
+              "duration": 5006255388,
               "status": "passed"
             },
             "line": 12,
@@ -76,7 +76,7 @@
           },
           {
             "result": {
-              "duration": 10587588831,
+              "duration": 187709958,
               "status": "passed"
             },
             "line": 13,
@@ -102,7 +102,7 @@
         "after": [
           {
             "result": {
-              "duration": 65322,
+              "duration": 75138,
               "status": "passed"
             },
             "match": {
@@ -115,7 +115,7 @@
         "steps": [
           {
             "result": {
-              "duration": 376071,
+              "duration": 284319,
               "status": "passed"
             },
             "line": 17,
@@ -127,7 +127,7 @@
           },
           {
             "result": {
-              "duration": 11277627899,
+              "duration": 16277877480,
               "status": "passed"
             },
             "line": 18,
@@ -139,7 +139,7 @@
           },
           {
             "result": {
-              "duration": 44427336,
+              "duration": 40695323,
               "status": "passed"
             },
             "line": 19,
@@ -151,7 +151,7 @@
           },
           {
             "result": {
-              "duration": 8274400335,
+              "duration": 8224919075,
               "status": "passed"
             },
             "line": 20,
@@ -160,12 +160,6 @@
               "location": "AccountStep.clicNewAccountBtn()"
             },
             "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 15,
-            "name": "@CheckHomePageClassic"
           }
         ]
       },
@@ -177,7 +171,7 @@
         "after": [
           {
             "result": {
-              "duration": 41156,
+              "duration": 38513,
               "status": "passed"
             },
             "match": {
@@ -190,7 +184,7 @@
         "steps": [
           {
             "result": {
-              "duration": 118489509,
+              "duration": 164364113,
               "status": "passed"
             },
             "line": 24,
@@ -248,7 +242,7 @@
         "steps": [
           {
             "result": {
-              "duration": 37810603,
+              "duration": 45716776,
               "status": "passed"
             },
             "line": 24,
@@ -293,7 +287,7 @@
         "after": [
           {
             "result": {
-              "duration": 38513,
+              "duration": 23032,
               "status": "passed"
             },
             "match": {
@@ -306,7 +300,7 @@
         "steps": [
           {
             "result": {
-              "duration": 38844043,
+              "duration": 33126330,
               "status": "passed"
             },
             "line": 24,
@@ -351,7 +345,7 @@
         "after": [
           {
             "result": {
-              "duration": 23788,
+              "duration": 26808,
               "status": "passed"
             },
             "match": {
@@ -364,7 +358,7 @@
         "steps": [
           {
             "result": {
-              "duration": 49320788,
+              "duration": 73982504,
               "status": "passed"
             },
             "line": 24,
@@ -422,7 +416,7 @@
         "steps": [
           {
             "result": {
-              "duration": 37683358,
+              "duration": 51264953,
               "status": "passed"
             },
             "line": 24,
@@ -467,7 +461,7 @@
         "after": [
           {
             "result": {
-              "duration": 27186,
+              "duration": 23788,
               "status": "passed"
             },
             "match": {
@@ -480,7 +474,7 @@
         "steps": [
           {
             "result": {
-              "duration": 38380750,
+              "duration": 42864905,
               "status": "passed"
             },
             "line": 24,
@@ -525,7 +519,7 @@
         "after": [
           {
             "result": {
-              "duration": 23410,
+              "duration": 22655,
               "status": "passed"
             },
             "match": {
@@ -538,7 +532,7 @@
         "steps": [
           {
             "result": {
-              "duration": 37466249,
+              "duration": 39544078,
               "status": "passed"
             },
             "line": 24,
@@ -596,7 +590,7 @@
         "steps": [
           {
             "result": {
-              "duration": 53366948,
+              "duration": 36581576,
               "status": "passed"
             },
             "line": 24,
@@ -641,7 +635,7 @@
         "after": [
           {
             "result": {
-              "duration": 57015,
+              "duration": 44933,
               "status": "passed"
             },
             "match": {
@@ -654,7 +648,7 @@
         "steps": [
           {
             "result": {
-              "duration": 35674627,
+              "duration": 46253696,
               "status": "passed"
             },
             "line": 24,
@@ -699,7 +693,7 @@
         "after": [
           {
             "result": {
-              "duration": 43044,
+              "duration": 23788,
               "status": "passed"
             },
             "match": {
@@ -712,7 +706,7 @@
         "steps": [
           {
             "result": {
-              "duration": 36348986,
+              "duration": 41899053,
               "status": "passed"
             },
             "line": 24,
@@ -757,7 +751,7 @@
         "after": [
           {
             "result": {
-              "duration": 24542,
+              "duration": 21900,
               "status": "passed"
             },
             "match": {
@@ -770,7 +764,7 @@
         "steps": [
           {
             "result": {
-              "duration": 36091476,
+              "duration": 34774850,
               "status": "passed"
             },
             "line": 24,
@@ -815,7 +809,7 @@
         "after": [
           {
             "result": {
-              "duration": 27941,
+              "duration": 26054,
               "status": "passed"
             },
             "match": {
@@ -828,7 +822,7 @@
         "steps": [
           {
             "result": {
-              "duration": 92887994,
+              "duration": 39919017,
               "status": "passed"
             },
             "line": 24,
@@ -873,7 +867,7 @@
         "after": [
           {
             "result": {
-              "duration": 25298,
+              "duration": 22277,
               "status": "passed"
             },
             "match": {
@@ -886,7 +880,7 @@
         "steps": [
           {
             "result": {
-              "duration": 38757955,
+              "duration": 35770532,
               "status": "passed"
             },
             "line": 24,
@@ -931,7 +925,7 @@
         "after": [
           {
             "result": {
-              "duration": 384000,
+              "duration": 367009,
               "status": "passed"
             },
             "match": {
@@ -944,7 +938,7 @@
         "steps": [
           {
             "result": {
-              "duration": 39543323,
+              "duration": 36531358,
               "status": "passed"
             },
             "line": 24,
@@ -989,7 +983,7 @@
         "after": [
           {
             "result": {
-              "duration": 40024,
+              "duration": 32849,
               "status": "passed"
             },
             "match": {
@@ -1002,7 +996,7 @@
         "steps": [
           {
             "result": {
-              "duration": 37865729,
+              "duration": 40321140,
               "status": "passed"
             },
             "line": 24,
@@ -1047,7 +1041,7 @@
         "after": [
           {
             "result": {
-              "duration": 17747,
+              "duration": 15481,
               "status": "passed"
             },
             "match": {
@@ -1060,7 +1054,7 @@
         "steps": [
           {
             "result": {
-              "duration": 47002062,
+              "duration": 45834203,
               "status": "passed"
             },
             "line": 24,
@@ -1105,7 +1099,7 @@
         "after": [
           {
             "result": {
-              "duration": 17746,
+              "duration": 29074,
               "status": "passed"
             },
             "match": {
@@ -1118,7 +1112,7 @@
         "steps": [
           {
             "result": {
-              "duration": 36659735,
+              "duration": 36709576,
               "status": "passed"
             },
             "line": 24,
@@ -1163,7 +1157,7 @@
         "after": [
           {
             "result": {
-              "duration": 18501,
+              "duration": 22655,
               "status": "passed"
             },
             "match": {
@@ -1176,7 +1170,7 @@
         "steps": [
           {
             "result": {
-              "duration": 38434744,
+              "duration": 39949978,
               "status": "passed"
             },
             "line": 24,
@@ -1221,7 +1215,7 @@
         "after": [
           {
             "result": {
-              "duration": 18879,
+              "duration": 18124,
               "status": "passed"
             },
             "match": {
@@ -1234,7 +1228,7 @@
         "steps": [
           {
             "result": {
-              "duration": 38660160,
+              "duration": 35447323,
               "status": "passed"
             },
             "line": 24,
@@ -1279,7 +1273,7 @@
         "after": [
           {
             "result": {
-              "duration": 27941,
+              "duration": 14726,
               "status": "passed"
             },
             "match": {
@@ -1292,7 +1286,7 @@
         "steps": [
           {
             "result": {
-              "duration": 74630055,
+              "duration": 34049517,
               "status": "passed"
             },
             "line": 24,
@@ -1337,7 +1331,7 @@
         "after": [
           {
             "result": {
-              "duration": 17369,
+              "duration": 32472,
               "status": "passed"
             },
             "match": {
@@ -1350,7 +1344,7 @@
         "steps": [
           {
             "result": {
-              "duration": 36472078,
+              "duration": 41513919,
               "status": "passed"
             },
             "line": 24,
@@ -1395,7 +1389,7 @@
         "after": [
           {
             "result": {
-              "duration": 16236,
+              "duration": 15103,
               "status": "passed"
             },
             "match": {
@@ -1408,7 +1402,7 @@
         "steps": [
           {
             "result": {
-              "duration": 38349412,
+              "duration": 39302804,
               "status": "passed"
             },
             "line": 24,
@@ -1453,7 +1447,7 @@
         "after": [
           {
             "result": {
-              "duration": 18879,
+              "duration": 15481,
               "status": "passed"
             },
             "match": {
@@ -1466,7 +1460,7 @@
         "steps": [
           {
             "result": {
-              "duration": 43267029,
+              "duration": 34976856,
               "status": "passed"
             },
             "line": 24,
@@ -1511,7 +1505,7 @@
         "after": [
           {
             "result": {
-              "duration": 16613,
+              "duration": 14725,
               "status": "passed"
             },
             "match": {
@@ -1524,7 +1518,7 @@
         "steps": [
           {
             "result": {
-              "duration": 36589506,
+              "duration": 38869718,
               "status": "passed"
             },
             "line": 24,
@@ -1569,7 +1563,7 @@
         "after": [
           {
             "result": {
-              "duration": 17746,
+              "duration": 13971,
               "status": "passed"
             },
             "match": {
@@ -1582,7 +1576,7 @@
         "steps": [
           {
             "result": {
-              "duration": 35061435,
+              "duration": 40053813,
               "status": "passed"
             },
             "line": 24,
@@ -1627,7 +1621,7 @@
         "after": [
           {
             "result": {
-              "duration": 22277,
+              "duration": 14348,
               "status": "passed"
             },
             "match": {
@@ -1640,7 +1634,7 @@
         "steps": [
           {
             "result": {
-              "duration": 42906817,
+              "duration": 39626014,
               "status": "passed"
             },
             "line": 24,
@@ -1685,7 +1679,7 @@
         "after": [
           {
             "result": {
-              "duration": 18879,
+              "duration": 16991,
               "status": "passed"
             },
             "match": {
@@ -1698,7 +1692,7 @@
         "steps": [
           {
             "result": {
-              "duration": 44311796,
+              "duration": 57195244,
               "status": "passed"
             },
             "line": 24,
@@ -1743,7 +1737,7 @@
         "after": [
           {
             "result": {
-              "duration": 19256,
+              "duration": 16992,
               "status": "passed"
             },
             "match": {
@@ -1756,7 +1750,7 @@
         "steps": [
           {
             "result": {
-              "duration": 37503630,
+              "duration": 41313801,
               "status": "passed"
             },
             "line": 24,
@@ -1801,7 +1795,7 @@
         "after": [
           {
             "result": {
-              "duration": 17369,
+              "duration": 30206,
               "status": "passed"
             },
             "match": {
@@ -1814,7 +1808,7 @@
         "steps": [
           {
             "result": {
-              "duration": 36202485,
+              "duration": 45577825,
               "status": "passed"
             },
             "line": 24,
@@ -1859,7 +1853,7 @@
         "after": [
           {
             "result": {
-              "duration": 16613,
+              "duration": 15104,
               "status": "passed"
             },
             "match": {
@@ -1872,7 +1866,7 @@
         "steps": [
           {
             "result": {
-              "duration": 35984243,
+              "duration": 34762767,
               "status": "passed"
             },
             "line": 24,
@@ -1917,7 +1911,7 @@
         "after": [
           {
             "result": {
-              "duration": 16992,
+              "duration": 56637,
               "status": "passed"
             },
             "match": {
@@ -1930,7 +1924,7 @@
         "steps": [
           {
             "result": {
-              "duration": 45841755,
+              "duration": 41341365,
               "status": "passed"
             },
             "line": 24,
@@ -1975,7 +1969,7 @@
         "after": [
           {
             "result": {
-              "duration": 16236,
+              "duration": 15103,
               "status": "passed"
             },
             "match": {
@@ -1988,7 +1982,7 @@
         "steps": [
           {
             "result": {
-              "duration": 33525434,
+              "duration": 40640197,
               "status": "passed"
             },
             "line": 24,
@@ -2033,7 +2027,7 @@
         "after": [
           {
             "result": {
-              "duration": 16614,
+              "duration": 14348,
               "status": "passed"
             },
             "match": {
@@ -2046,7 +2040,7 @@
         "steps": [
           {
             "result": {
-              "duration": 41010226,
+              "duration": 39912975,
               "status": "passed"
             },
             "line": 24,
@@ -2104,7 +2098,7 @@
         "steps": [
           {
             "result": {
-              "duration": 52188139,
+              "duration": 56313592,
               "status": "passed"
             },
             "line": 64,
@@ -2149,7 +2143,7 @@
         "after": [
           {
             "result": {
-              "duration": 15859,
+              "duration": 15103,
               "status": "passed"
             },
             "match": {
@@ -2162,7 +2156,7 @@
         "steps": [
           {
             "result": {
-              "duration": 46355265,
+              "duration": 44221177,
               "status": "passed"
             },
             "line": 64,
@@ -2207,7 +2201,7 @@
         "after": [
           {
             "result": {
-              "duration": 15480,
+              "duration": 28697,
               "status": "passed"
             },
             "match": {
@@ -2220,7 +2214,7 @@
         "steps": [
           {
             "result": {
-              "duration": 50741626,
+              "duration": 50878311,
               "status": "passed"
             },
             "line": 64,
@@ -2265,7 +2259,7 @@
         "after": [
           {
             "result": {
-              "duration": 15480,
+              "duration": 15481,
               "status": "passed"
             },
             "match": {
@@ -2278,7 +2272,7 @@
         "steps": [
           {
             "result": {
-              "duration": 54266347,
+              "duration": 53182311,
               "status": "passed"
             },
             "line": 64,
@@ -2323,7 +2317,7 @@
         "after": [
           {
             "result": {
-              "duration": 15859,
+              "duration": 15858,
               "status": "passed"
             },
             "match": {
@@ -2336,7 +2330,7 @@
         "steps": [
           {
             "result": {
-              "duration": 47035666,
+              "duration": 45779077,
               "status": "passed"
             },
             "line": 64,
@@ -2381,7 +2375,7 @@
         "after": [
           {
             "result": {
-              "duration": 16236,
+              "duration": 14348,
               "status": "passed"
             },
             "match": {
@@ -2394,7 +2388,7 @@
         "steps": [
           {
             "result": {
-              "duration": 51954795,
+              "duration": 50420682,
               "status": "passed"
             },
             "line": 64,
@@ -2439,7 +2433,7 @@
         "after": [
           {
             "result": {
-              "duration": 14726,
+              "duration": 20767,
               "status": "passed"
             },
             "match": {
@@ -2452,7 +2446,7 @@
         "steps": [
           {
             "result": {
-              "duration": 49823349,
+              "duration": 50897567,
               "status": "passed"
             },
             "line": 64,
@@ -2497,7 +2491,7 @@
         "after": [
           {
             "result": {
-              "duration": 15858,
+              "duration": 28696,
               "status": "passed"
             },
             "match": {
@@ -2510,7 +2504,7 @@
         "steps": [
           {
             "result": {
-              "duration": 49784080,
+              "duration": 53943514,
               "status": "passed"
             },
             "line": 64,
@@ -2555,7 +2549,7 @@
         "after": [
           {
             "result": {
-              "duration": 16991,
+              "duration": 25298,
               "status": "passed"
             },
             "match": {
@@ -2568,7 +2562,7 @@
         "steps": [
           {
             "result": {
-              "duration": 51656505,
+              "duration": 44134332,
               "status": "passed"
             },
             "line": 64,
@@ -2613,7 +2607,7 @@
         "after": [
           {
             "result": {
-              "duration": 22277,
+              "duration": 13593,
               "status": "passed"
             },
             "match": {
@@ -2626,7 +2620,7 @@
         "steps": [
           {
             "result": {
-              "duration": 56354371,
+              "duration": 52095633,
               "status": "passed"
             },
             "line": 64,
@@ -2671,7 +2665,7 @@
         "after": [
           {
             "result": {
-              "duration": 18502,
+              "duration": 30207,
               "status": "passed"
             },
             "match": {
@@ -2684,7 +2678,7 @@
         "steps": [
           {
             "result": {
-              "duration": 61980330,
+              "duration": 50530180,
               "status": "passed"
             },
             "line": 64,
@@ -2729,7 +2723,7 @@
         "after": [
           {
             "result": {
-              "duration": 20012,
+              "duration": 15858,
               "status": "passed"
             },
             "match": {
@@ -2742,7 +2736,7 @@
         "steps": [
           {
             "result": {
-              "duration": 50083880,
+              "duration": 51460164,
               "status": "passed"
             },
             "line": 64,
@@ -2787,7 +2781,7 @@
         "after": [
           {
             "result": {
-              "duration": 24166,
+              "duration": 16614,
               "status": "passed"
             },
             "match": {
@@ -2800,7 +2794,7 @@
         "steps": [
           {
             "result": {
-              "duration": 50032529,
+              "duration": 54736813,
               "status": "passed"
             },
             "line": 64,
@@ -2845,7 +2839,7 @@
         "after": [
           {
             "result": {
-              "duration": 16992,
+              "duration": 14349,
               "status": "passed"
             },
             "match": {
@@ -2858,7 +2852,7 @@
         "steps": [
           {
             "result": {
-              "duration": 49401968,
+              "duration": 65648531,
               "status": "passed"
             },
             "line": 64,
@@ -2903,7 +2897,7 @@
         "after": [
           {
             "result": {
-              "duration": 20767,
+              "duration": 16991,
               "status": "passed"
             },
             "match": {
@@ -2916,7 +2910,7 @@
         "steps": [
           {
             "result": {
-              "duration": 54500447,
+              "duration": 51975561,
               "status": "passed"
             },
             "line": 64,
@@ -2961,7 +2955,7 @@
         "after": [
           {
             "result": {
-              "duration": 16614,
+              "duration": 15103,
               "status": "passed"
             },
             "match": {
@@ -2974,7 +2968,7 @@
         "steps": [
           {
             "result": {
-              "duration": 50880198,
+              "duration": 50435785,
               "status": "passed"
             },
             "line": 64,
@@ -3019,7 +3013,7 @@
         "after": [
           {
             "result": {
-              "duration": 26431,
+              "duration": 17368,
               "status": "passed"
             },
             "match": {
@@ -3032,7 +3026,7 @@
         "steps": [
           {
             "result": {
-              "duration": 49781060,
+              "duration": 50183184,
               "status": "passed"
             },
             "line": 64,
@@ -3077,7 +3071,7 @@
         "after": [
           {
             "result": {
-              "duration": 21145,
+              "duration": 14348,
               "status": "passed"
             },
             "match": {
@@ -3090,7 +3084,7 @@
         "steps": [
           {
             "result": {
-              "duration": 56020967,
+              "duration": 50328930,
               "status": "passed"
             },
             "line": 64,
@@ -3135,7 +3129,7 @@
         "after": [
           {
             "result": {
-              "duration": 24165,
+              "duration": 14726,
               "status": "passed"
             },
             "match": {
@@ -3148,7 +3142,7 @@
         "steps": [
           {
             "result": {
-              "duration": 58572660,
+              "duration": 48729874,
               "status": "passed"
             },
             "line": 64,
@@ -3193,7 +3187,7 @@
         "after": [
           {
             "result": {
-              "duration": 17747,
+              "duration": 16236,
               "status": "passed"
             },
             "match": {
@@ -3206,7 +3200,7 @@
         "steps": [
           {
             "result": {
-              "duration": 52662381,
+              "duration": 52092989,
               "status": "passed"
             },
             "line": 64,
@@ -3251,7 +3245,7 @@
         "after": [
           {
             "result": {
-              "duration": 18124,
+              "duration": 30961,
               "status": "passed"
             },
             "match": {
@@ -3264,7 +3258,7 @@
         "steps": [
           {
             "result": {
-              "duration": 55178205,
+              "duration": 50989319,
               "status": "passed"
             },
             "line": 64,
@@ -3309,7 +3303,7 @@
         "after": [
           {
             "result": {
-              "duration": 19634,
+              "duration": 15858,
               "status": "passed"
             },
             "match": {
@@ -3322,7 +3316,7 @@
         "steps": [
           {
             "result": {
-              "duration": 55292235,
+              "duration": 44336717,
               "status": "passed"
             },
             "line": 64,
@@ -3367,7 +3361,7 @@
         "after": [
           {
             "result": {
-              "duration": 22655,
+              "duration": 14348,
               "status": "passed"
             },
             "match": {
@@ -3380,7 +3374,7 @@
         "steps": [
           {
             "result": {
-              "duration": 56650394,
+              "duration": 49846759,
               "status": "passed"
             },
             "line": 64,
@@ -3425,7 +3419,7 @@
         "after": [
           {
             "result": {
-              "duration": 19257,
+              "duration": 22655,
               "status": "passed"
             },
             "match": {
@@ -3438,7 +3432,7 @@
         "steps": [
           {
             "result": {
-              "duration": 59344435,
+              "duration": 50945897,
               "status": "passed"
             },
             "line": 64,
@@ -3483,7 +3477,7 @@
         "after": [
           {
             "result": {
-              "duration": 18124,
+              "duration": 14348,
               "status": "passed"
             },
             "match": {
@@ -3496,7 +3490,7 @@
         "steps": [
           {
             "result": {
-              "duration": 93536301,
+              "duration": 46705661,
               "status": "passed"
             },
             "line": 64,
@@ -3541,7 +3535,7 @@
         "after": [
           {
             "result": {
-              "duration": 16991,
+              "duration": 15103,
               "status": "passed"
             },
             "match": {
@@ -3554,7 +3548,7 @@
         "steps": [
           {
             "result": {
-              "duration": 92494177,
+              "duration": 52374287,
               "status": "passed"
             },
             "line": 64,
@@ -3599,7 +3593,7 @@
         "after": [
           {
             "result": {
-              "duration": 19257,
+              "duration": 14348,
               "status": "passed"
             },
             "match": {
@@ -3612,7 +3606,7 @@
         "steps": [
           {
             "result": {
-              "duration": 55027172,
+              "duration": 49047797,
               "status": "passed"
             },
             "line": 64,
@@ -3657,7 +3651,7 @@
         "after": [
           {
             "result": {
-              "duration": 22654,
+              "duration": 15103,
               "status": "passed"
             },
             "match": {
@@ -3670,7 +3664,7 @@
         "steps": [
           {
             "result": {
-              "duration": 86467226,
+              "duration": 47386062,
               "status": "passed"
             },
             "line": 64,
@@ -3715,7 +3709,7 @@
         "after": [
           {
             "result": {
-              "duration": 20389,
+              "duration": 15103,
               "status": "passed"
             },
             "match": {
@@ -3728,7 +3722,7 @@
         "steps": [
           {
             "result": {
-              "duration": 66619671,
+              "duration": 50075950,
               "status": "passed"
             },
             "line": 64,
@@ -3773,7 +3767,7 @@
         "after": [
           {
             "result": {
-              "duration": 16613,
+              "duration": 13970,
               "status": "passed"
             },
             "match": {
@@ -3786,7 +3780,7 @@
         "steps": [
           {
             "result": {
-              "duration": 52393922,
+              "duration": 45794180,
               "status": "passed"
             },
             "line": 64,
@@ -3831,7 +3825,7 @@
         "after": [
           {
             "result": {
-              "duration": 16991,
+              "duration": 14725,
               "status": "passed"
             },
             "match": {
@@ -3844,7 +3838,7 @@
         "steps": [
           {
             "result": {
-              "duration": 54798736,
+              "duration": 55238618,
               "status": "passed"
             },
             "line": 64,
@@ -3889,7 +3883,7 @@
         "after": [
           {
             "result": {
-              "duration": 20389,
+              "duration": 14726,
               "status": "passed"
             },
             "match": {
@@ -3902,7 +3896,7 @@
         "steps": [
           {
             "result": {
-              "duration": 51470735,
+              "duration": 49364587,
               "status": "passed"
             },
             "line": 64,
@@ -3947,7 +3941,7 @@
         "after": [
           {
             "result": {
-              "duration": 47198,
+              "duration": 15481,
               "status": "passed"
             },
             "match": {
@@ -3960,7 +3954,7 @@
         "steps": [
           {
             "result": {
-              "duration": 51482818,
+              "duration": 51163007,
               "status": "passed"
             },
             "line": 64,
@@ -4005,7 +3999,7 @@
         "after": [
           {
             "result": {
-              "duration": 17369,
+              "duration": 9817,
               "status": "passed"
             },
             "match": {
@@ -4018,7 +4012,7 @@
         "steps": [
           {
             "result": {
-              "duration": 81935,
+              "duration": 52106,
               "status": "passed"
             },
             "line": 104,
@@ -4047,6 +4041,10 @@
           {
             "line": 3,
             "name": "@tag"
+          },
+          {
+            "line": 102,
+            "name": "@Classic"
           }
         ]
       },
@@ -4058,7 +4056,7 @@
         "after": [
           {
             "result": {
-              "duration": 15481,
+              "duration": 7930,
               "status": "passed"
             },
             "match": {
@@ -4071,7 +4069,7 @@
         "steps": [
           {
             "result": {
-              "duration": 61545,
+              "duration": 37758,
               "status": "passed"
             },
             "line": 104,
@@ -4100,6 +4098,10 @@
           {
             "line": 3,
             "name": "@tag"
+          },
+          {
+            "line": 102,
+            "name": "@Classic"
           }
         ]
       },
@@ -4111,7 +4113,7 @@
         "after": [
           {
             "result": {
-              "duration": 11327,
+              "duration": 8685,
               "status": "passed"
             },
             "match": {
@@ -4124,7 +4126,7 @@
         "steps": [
           {
             "result": {
-              "duration": 55127,
+              "duration": 32472,
               "status": "passed"
             },
             "line": 104,
@@ -4153,6 +4155,10 @@
           {
             "line": 3,
             "name": "@tag"
+          },
+          {
+            "line": 102,
+            "name": "@Classic"
           }
         ]
       },
@@ -4164,7 +4170,7 @@
         "after": [
           {
             "result": {
-              "duration": 15481,
+              "duration": 9440,
               "status": "passed"
             },
             "match": {
@@ -4177,7 +4183,7 @@
         "steps": [
           {
             "result": {
-              "duration": 100059,
+              "duration": 78914,
               "status": "passed"
             },
             "line": 104,
@@ -4206,6 +4212,10 @@
           {
             "line": 3,
             "name": "@tag"
+          },
+          {
+            "line": 102,
+            "name": "@Classic"
           }
         ]
       },
@@ -4217,7 +4227,7 @@
         "after": [
           {
             "result": {
-              "duration": 14726,
+              "duration": 9062,
               "status": "passed"
             },
             "match": {
@@ -4230,7 +4240,7 @@
         "steps": [
           {
             "result": {
-              "duration": 55882,
+              "duration": 36625,
               "status": "passed"
             },
             "line": 104,
@@ -4259,6 +4269,10 @@
           {
             "line": 3,
             "name": "@tag"
+          },
+          {
+            "line": 102,
+            "name": "@Classic"
           }
         ]
       },
@@ -4270,7 +4284,7 @@
         "after": [
           {
             "result": {
-              "duration": 9439,
+              "duration": 9817,
               "status": "passed"
             },
             "match": {
@@ -4283,7 +4297,7 @@
         "steps": [
           {
             "result": {
-              "duration": 49085,
+              "duration": 40024,
               "status": "passed"
             },
             "line": 104,
@@ -4312,18 +4326,22 @@
           {
             "line": 3,
             "name": "@tag"
+          },
+          {
+            "line": 102,
+            "name": "@Classic"
           }
         ]
       },
       {
-        "line": 120,
+        "line": 121,
         "name": "Verification de la presence des boutons \"Save\" / \"Save \u0026 New\" / \"Cancel\" en bas de page (Affichage d\u0027edition)",
         "description": "",
         "id": "test-non-regression-account;verification-de-la-presence-des-boutons-\"save\"-/-\"save-\u0026-new\"-/-\"cancel\"-en-bas-de-page-(affichage-d\u0027edition);;2",
         "after": [
           {
             "result": {
-              "duration": 21900,
+              "duration": 17369,
               "status": "passed"
             },
             "match": {
@@ -4336,10 +4354,10 @@
         "steps": [
           {
             "result": {
-              "duration": 17166351,
+              "duration": 15714552,
               "status": "passed"
             },
-            "line": 116,
+            "line": 117,
             "name": "verification de  la presence du bouton Save",
             "match": {
               "arguments": [
@@ -4358,20 +4376,24 @@
         ],
         "tags": [
           {
+            "line": 115,
+            "name": "@Lightning"
+          },
+          {
             "line": 3,
             "name": "@tag"
           }
         ]
       },
       {
-        "line": 121,
+        "line": 122,
         "name": "Verification de la presence des boutons \"Save\" / \"Save \u0026 New\" / \"Cancel\" en bas de page (Affichage d\u0027edition)",
         "description": "",
         "id": "test-non-regression-account;verification-de-la-presence-des-boutons-\"save\"-/-\"save-\u0026-new\"-/-\"cancel\"-en-bas-de-page-(affichage-d\u0027edition);;3",
         "after": [
           {
             "result": {
-              "duration": 18124,
+              "duration": 30207,
               "status": "passed"
             },
             "match": {
@@ -4384,10 +4406,10 @@
         "steps": [
           {
             "result": {
-              "duration": 15604298,
+              "duration": 15947897,
               "status": "passed"
             },
-            "line": 116,
+            "line": 117,
             "name": "verification de  la presence du bouton Save \u0026 New",
             "match": {
               "arguments": [
@@ -4406,20 +4428,24 @@
         ],
         "tags": [
           {
+            "line": 115,
+            "name": "@Lightning"
+          },
+          {
             "line": 3,
             "name": "@tag"
           }
         ]
       },
       {
-        "line": 122,
+        "line": 123,
         "name": "Verification de la presence des boutons \"Save\" / \"Save \u0026 New\" / \"Cancel\" en bas de page (Affichage d\u0027edition)",
         "description": "",
         "id": "test-non-regression-account;verification-de-la-presence-des-boutons-\"save\"-/-\"save-\u0026-new\"-/-\"cancel\"-en-bas-de-page-(affichage-d\u0027edition);;4",
         "after": [
           {
             "result": {
-              "duration": 17369,
+              "duration": 15481,
               "status": "passed"
             },
             "match": {
@@ -4432,10 +4458,10 @@
         "steps": [
           {
             "result": {
-              "duration": 16852204,
+              "duration": 15873891,
               "status": "passed"
             },
-            "line": 116,
+            "line": 117,
             "name": "verification de  la presence du bouton Cancel",
             "match": {
               "arguments": [
@@ -4454,20 +4480,24 @@
         ],
         "tags": [
           {
+            "line": 115,
+            "name": "@Lightning"
+          },
+          {
             "line": 3,
             "name": "@tag"
           }
         ]
       },
       {
-        "line": 129,
+        "line": 130,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;2",
         "after": [
           {
             "result": {
-              "duration": 15858,
+              "duration": 14348,
               "status": "passed"
             },
             "match": {
@@ -4480,10 +4510,10 @@
         "steps": [
           {
             "result": {
-              "duration": 405365504,
+              "duration": 646821126,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Account Name de la section Account Information de type Input requis true avec la valeur ",
             "match": {
               "arguments": [
@@ -4528,14 +4558,14 @@
         ]
       },
       {
-        "line": 130,
+        "line": 131,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;3",
         "after": [
           {
             "result": {
-              "duration": 18124,
+              "duration": 13971,
               "status": "passed"
             },
             "match": {
@@ -4548,10 +4578,10 @@
         "steps": [
           {
             "result": {
-              "duration": 154747876,
+              "duration": 222540313,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Account Number de la section Account Information de type Input requis false avec la valeur 2121212121",
             "match": {
               "arguments": [
@@ -4596,14 +4626,14 @@
         ]
       },
       {
-        "line": 131,
+        "line": 132,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;4",
         "after": [
           {
             "result": {
-              "duration": 56259,
+              "duration": 21900,
               "status": "passed"
             },
             "match": {
@@ -4616,10 +4646,10 @@
         "steps": [
           {
             "result": {
-              "duration": 588676265,
+              "duration": 555096836,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Type de la section Account Information de type select requis false avec la valeur Other",
             "match": {
               "arguments": [
@@ -4664,14 +4694,14 @@
         ]
       },
       {
-        "line": 132,
+        "line": 133,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;5",
         "after": [
           {
             "result": {
-              "duration": 15858,
+              "duration": 18501,
               "status": "passed"
             },
             "match": {
@@ -4684,10 +4714,10 @@
         "steps": [
           {
             "result": {
-              "duration": 533727251,
+              "duration": 478144657,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Type de la section Account Information de type select requis false avec la valeur Prospect",
             "match": {
               "arguments": [
@@ -4732,14 +4762,14 @@
         ]
       },
       {
-        "line": 133,
+        "line": 134,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;6",
         "after": [
           {
             "result": {
-              "duration": 17369,
+              "duration": 21522,
               "status": "passed"
             },
             "match": {
@@ -4752,10 +4782,10 @@
         "steps": [
           {
             "result": {
-              "duration": 549691007,
+              "duration": 504356343,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Type de la section Account Information de type select requis false avec la valeur Customer - Direct",
             "match": {
               "arguments": [
@@ -4800,14 +4830,14 @@
         ]
       },
       {
-        "line": 134,
+        "line": 135,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;7",
         "after": [
           {
             "result": {
-              "duration": 15858,
+              "duration": 20389,
               "status": "passed"
             },
             "match": {
@@ -4820,10 +4850,10 @@
         "steps": [
           {
             "result": {
-              "duration": 513465490,
+              "duration": 484765543,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Type de la section Account Information de type select requis false avec la valeur Customer - Channel",
             "match": {
               "arguments": [
@@ -4868,14 +4898,14 @@
         ]
       },
       {
-        "line": 135,
+        "line": 136,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;8",
         "after": [
           {
             "result": {
-              "duration": 32094,
+              "duration": 33605,
               "status": "passed"
             },
             "match": {
@@ -4888,10 +4918,10 @@
         "steps": [
           {
             "result": {
-              "duration": 506263128,
+              "duration": 528842484,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Type de la section Account Information de type select requis false avec la valeur Channel Partner / Reseller",
             "match": {
               "arguments": [
@@ -4936,14 +4966,14 @@
         ]
       },
       {
-        "line": 136,
+        "line": 137,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;9",
         "after": [
           {
             "result": {
-              "duration": 35870,
+              "duration": 20766,
               "status": "passed"
             },
             "match": {
@@ -4956,10 +4986,10 @@
         "steps": [
           {
             "result": {
-              "duration": 520053904,
+              "duration": 485119336,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Type de la section Account Information de type select requis false avec la valeur Installation Partner",
             "match": {
               "arguments": [
@@ -5004,14 +5034,14 @@
         ]
       },
       {
-        "line": 137,
+        "line": 138,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;10",
         "after": [
           {
             "result": {
-              "duration": 18879,
+              "duration": 26431,
               "status": "passed"
             },
             "match": {
@@ -5024,10 +5054,10 @@
         "steps": [
           {
             "result": {
-              "duration": 519573242,
+              "duration": 502943434,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Type de la section Account Information de type select requis false avec la valeur Technology Partner",
             "match": {
               "arguments": [
@@ -5072,14 +5102,14 @@
         ]
       },
       {
-        "line": 138,
+        "line": 139,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;11",
         "after": [
           {
             "result": {
-              "duration": 29451,
+              "duration": 17746,
               "status": "passed"
             },
             "match": {
@@ -5092,10 +5122,10 @@
         "steps": [
           {
             "result": {
-              "duration": 495917404,
+              "duration": 447492993,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Type de la section Account Information de type select requis false avec la valeur Prospect",
             "match": {
               "arguments": [
@@ -5140,14 +5170,14 @@
         ]
       },
       {
-        "line": 139,
+        "line": 140,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;12",
         "after": [
           {
             "result": {
-              "duration": 18502,
+              "duration": 20767,
               "status": "passed"
             },
             "match": {
@@ -5160,10 +5190,10 @@
         "steps": [
           {
             "result": {
-              "duration": 1083702576,
+              "duration": 987707467,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Industry de la section Account Information de type select requis false avec la valeur Agriculture",
             "match": {
               "arguments": [
@@ -5208,14 +5238,14 @@
         ]
       },
       {
-        "line": 140,
+        "line": 141,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;13",
         "after": [
           {
             "result": {
-              "duration": 18879,
+              "duration": 36248,
               "status": "passed"
             },
             "match": {
@@ -5228,10 +5258,10 @@
         "steps": [
           {
             "result": {
-              "duration": 805083149,
+              "duration": 676456340,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Industry de la section Account Information de type select requis false avec la valeur Consulting",
             "match": {
               "arguments": [
@@ -5276,14 +5306,14 @@
         ]
       },
       {
-        "line": 141,
+        "line": 142,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;14",
         "after": [
           {
             "result": {
-              "duration": 20012,
+              "duration": 68720,
               "status": "passed"
             },
             "match": {
@@ -5296,10 +5326,10 @@
         "steps": [
           {
             "result": {
-              "duration": 747691185,
+              "duration": 678513025,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Industry de la section Account Information de type select requis false avec la valeur Energy",
             "match": {
               "arguments": [
@@ -5344,14 +5374,14 @@
         ]
       },
       {
-        "line": 142,
+        "line": 143,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;15",
         "after": [
           {
             "result": {
-              "duration": 33983,
+              "duration": 17369,
               "status": "passed"
             },
             "match": {
@@ -5364,10 +5394,10 @@
         "steps": [
           {
             "result": {
-              "duration": 772414447,
+              "duration": 735869119,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Industry de la section Account Information de type select requis false avec la valeur Finance",
             "match": {
               "arguments": [
@@ -5412,14 +5442,14 @@
         ]
       },
       {
-        "line": 143,
+        "line": 144,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;16",
         "after": [
           {
             "result": {
-              "duration": 30584,
+              "duration": 22655,
               "status": "passed"
             },
             "match": {
@@ -5432,10 +5462,10 @@
         "steps": [
           {
             "result": {
-              "duration": 758020674,
+              "duration": 692040626,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Industry de la section Account Information de type select requis false avec la valeur Media",
             "match": {
               "arguments": [
@@ -5480,14 +5510,14 @@
         ]
       },
       {
-        "line": 144,
+        "line": 145,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;17",
         "after": [
           {
             "result": {
-              "duration": 18879,
+              "duration": 19256,
               "status": "passed"
             },
             "match": {
@@ -5500,10 +5530,10 @@
         "steps": [
           {
             "result": {
-              "duration": 763302280,
+              "duration": 683665498,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Industry de la section Account Information de type select requis false avec la valeur Telecommunications",
             "match": {
               "arguments": [
@@ -5548,14 +5578,14 @@
         ]
       },
       {
-        "line": 145,
+        "line": 146,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;18",
         "after": [
           {
             "result": {
-              "duration": 18123,
+              "duration": 23033,
               "status": "passed"
             },
             "match": {
@@ -5568,10 +5598,10 @@
         "steps": [
           {
             "result": {
-              "duration": 153680454,
+              "duration": 193614196,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Annual Revenue de la section Account Information de type Input requis false avec la valeur 50 000",
             "match": {
               "arguments": [
@@ -5616,14 +5646,14 @@
         ]
       },
       {
-        "line": 146,
+        "line": 147,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;19",
         "after": [
           {
             "result": {
-              "duration": 27941,
+              "duration": 18502,
               "status": "passed"
             },
             "match": {
@@ -5636,10 +5666,10 @@
         "steps": [
           {
             "result": {
-              "duration": 551985945,
+              "duration": 510566044,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Rating de la section Account Information de type select requis false avec la valeur Hot",
             "match": {
               "arguments": [
@@ -5684,14 +5714,14 @@
         ]
       },
       {
-        "line": 147,
+        "line": 148,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;20",
         "after": [
           {
             "result": {
-              "duration": 19257,
+              "duration": 19635,
               "status": "passed"
             },
             "match": {
@@ -5704,10 +5734,10 @@
         "steps": [
           {
             "result": {
-              "duration": 487518110,
+              "duration": 410441328,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Rating de la section Account Information de type select requis false avec la valeur Warm",
             "match": {
               "arguments": [
@@ -5752,14 +5782,14 @@
         ]
       },
       {
-        "line": 148,
+        "line": 149,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;21",
         "after": [
           {
             "result": {
-              "duration": 20389,
+              "duration": 21900,
               "status": "passed"
             },
             "match": {
@@ -5772,10 +5802,10 @@
         "steps": [
           {
             "result": {
-              "duration": 457256865,
+              "duration": 400092583,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Rating de la section Account Information de type select requis false avec la valeur Cold",
             "match": {
               "arguments": [
@@ -5820,14 +5850,14 @@
         ]
       },
       {
-        "line": 149,
+        "line": 150,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;22",
         "after": [
           {
             "result": {
-              "duration": 25676,
+              "duration": 20767,
               "status": "passed"
             },
             "match": {
@@ -5840,10 +5870,10 @@
         "steps": [
           {
             "result": {
-              "duration": 466207805,
+              "duration": 421274510,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Rating de la section Account Information de type select requis false avec la valeur Warm",
             "match": {
               "arguments": [
@@ -5888,14 +5918,14 @@
         ]
       },
       {
-        "line": 150,
+        "line": 151,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;23",
         "after": [
           {
             "result": {
-              "duration": 18124,
+              "duration": 15859,
               "status": "passed"
             },
             "match": {
@@ -5908,10 +5938,10 @@
         "steps": [
           {
             "result": {
-              "duration": 205834234,
+              "duration": 246570335,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Phone de la section Account Information de type Input requis false avec la valeur 0202020202",
             "match": {
               "arguments": [
@@ -5956,14 +5986,14 @@
         ]
       },
       {
-        "line": 151,
+        "line": 152,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;24",
         "after": [
           {
             "result": {
-              "duration": 17369,
+              "duration": 16614,
               "status": "passed"
             },
             "match": {
@@ -5976,10 +6006,10 @@
         "steps": [
           {
             "result": {
-              "duration": 237740600,
+              "duration": 289161494,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Fax de la section Account Information de type Input requis false avec la valeur 0404040404",
             "match": {
               "arguments": [
@@ -6024,14 +6054,14 @@
         ]
       },
       {
-        "line": 152,
+        "line": 153,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;25",
         "after": [
           {
             "result": {
-              "duration": 18124,
+              "duration": 20767,
               "status": "passed"
             },
             "match": {
@@ -6044,10 +6074,10 @@
         "steps": [
           {
             "result": {
-              "duration": 233311572,
+              "duration": 382812579,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Website de la section Account Information de type Input requis false avec la valeur https://www.accenture.com",
             "match": {
               "arguments": [
@@ -6092,14 +6122,14 @@
         ]
       },
       {
-        "line": 153,
+        "line": 154,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;26",
         "after": [
           {
             "result": {
-              "duration": 18501,
+              "duration": 77782,
               "status": "passed"
             },
             "match": {
@@ -6112,10 +6142,10 @@
         "steps": [
           {
             "result": {
-              "duration": 485536941,
+              "duration": 487972340,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Ownership de la section Account Information de type select requis false avec la valeur Public",
             "match": {
               "arguments": [
@@ -6160,14 +6190,14 @@
         ]
       },
       {
-        "line": 154,
+        "line": 155,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;27",
         "after": [
           {
             "result": {
-              "duration": 16991,
+              "duration": 124602,
               "status": "passed"
             },
             "match": {
@@ -6180,10 +6210,10 @@
         "steps": [
           {
             "result": {
-              "duration": 481487383,
+              "duration": 491669615,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Ownership de la section Account Information de type select requis false avec la valeur Private",
             "match": {
               "arguments": [
@@ -6228,14 +6258,14 @@
         ]
       },
       {
-        "line": 155,
+        "line": 156,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;28",
         "after": [
           {
             "result": {
-              "duration": 18124,
+              "duration": 41533,
               "status": "passed"
             },
             "match": {
@@ -6248,10 +6278,10 @@
         "steps": [
           {
             "result": {
-              "duration": 500104024,
+              "duration": 446815235,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Ownership de la section Account Information de type select requis false avec la valeur Subsidiary",
             "match": {
               "arguments": [
@@ -6296,14 +6326,14 @@
         ]
       },
       {
-        "line": 156,
+        "line": 157,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;29",
         "after": [
           {
             "result": {
-              "duration": 19634,
+              "duration": 20767,
               "status": "passed"
             },
             "match": {
@@ -6316,10 +6346,10 @@
         "steps": [
           {
             "result": {
-              "duration": 461107061,
+              "duration": 414590945,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Ownership de la section Account Information de type select requis false avec la valeur Private",
             "match": {
               "arguments": [
@@ -6364,14 +6394,14 @@
         ]
       },
       {
-        "line": 157,
+        "line": 158,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;30",
         "after": [
           {
             "result": {
-              "duration": 15481,
+              "duration": 15858,
               "status": "passed"
             },
             "match": {
@@ -6384,10 +6414,10 @@
         "steps": [
           {
             "result": {
-              "duration": 254579210,
+              "duration": 229434191,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Billing Street de la section Address Information de type textArea requis false avec la valeur 500, route de Vannes",
             "match": {
               "arguments": [
@@ -6432,14 +6462,14 @@
         ]
       },
       {
-        "line": 158,
+        "line": 159,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;31",
         "after": [
           {
             "result": {
-              "duration": 17368,
+              "duration": 18880,
               "status": "passed"
             },
             "match": {
@@ -6452,10 +6482,10 @@
         "steps": [
           {
             "result": {
-              "duration": 201303637,
+              "duration": 224277564,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Billing Zip/Postal Code de la section Address Information de type Input requis false avec la valeur 44000",
             "match": {
               "arguments": [
@@ -6500,14 +6530,14 @@
         ]
       },
       {
-        "line": 159,
+        "line": 160,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;32",
         "after": [
           {
             "result": {
-              "duration": 15481,
+              "duration": 16991,
               "status": "passed"
             },
             "match": {
@@ -6520,10 +6550,10 @@
         "steps": [
           {
             "result": {
-              "duration": 160236019,
+              "duration": 183740825,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Billing City de la section Address Information de type Input requis false avec la valeur Nantes",
             "match": {
               "arguments": [
@@ -6568,14 +6598,14 @@
         ]
       },
       {
-        "line": 160,
+        "line": 161,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;33",
         "after": [
           {
             "result": {
-              "duration": 48331,
+              "duration": 15858,
               "status": "passed"
             },
             "match": {
@@ -6588,10 +6618,10 @@
         "steps": [
           {
             "result": {
-              "duration": 199752155,
+              "duration": 306897238,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Billing State/Province de la section Address Information de type Input requis false avec la valeur Loire Atlantique",
             "match": {
               "arguments": [
@@ -6636,14 +6666,14 @@
         ]
       },
       {
-        "line": 161,
+        "line": 162,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;34",
         "after": [
           {
             "result": {
-              "duration": 29452,
+              "duration": 17746,
               "status": "passed"
             },
             "match": {
@@ -6656,10 +6686,10 @@
         "steps": [
           {
             "result": {
-              "duration": 186338206,
+              "duration": 178735987,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Billing Country de la section Address Information de type Input requis false avec la valeur France",
             "match": {
               "arguments": [
@@ -6704,14 +6734,14 @@
         ]
       },
       {
-        "line": 162,
+        "line": 163,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;35",
         "after": [
           {
             "result": {
-              "duration": 27564,
+              "duration": 23410,
               "status": "passed"
             },
             "match": {
@@ -6724,10 +6754,10 @@
         "steps": [
           {
             "result": {
-              "duration": 249376142,
+              "duration": 201676687,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Shipping Street de la section Address Information de type textArea requis false avec la valeur 500, route de Vannes",
             "match": {
               "arguments": [
@@ -6772,14 +6802,14 @@
         ]
       },
       {
-        "line": 163,
+        "line": 164,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;36",
         "after": [
           {
             "result": {
-              "duration": 19634,
+              "duration": 17747,
               "status": "passed"
             },
             "match": {
@@ -6792,10 +6822,10 @@
         "steps": [
           {
             "result": {
-              "duration": 149147592,
+              "duration": 185829227,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Shipping Zip/Postal Code de la section Address Information de type Input requis false avec la valeur 44000",
             "match": {
               "arguments": [
@@ -6840,14 +6870,14 @@
         ]
       },
       {
-        "line": 164,
+        "line": 165,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;37",
         "after": [
           {
             "result": {
-              "duration": 23787,
+              "duration": 16614,
               "status": "passed"
             },
             "match": {
@@ -6860,10 +6890,10 @@
         "steps": [
           {
             "result": {
-              "duration": 149302400,
+              "duration": 178363692,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Shipping City de la section Address Information de type Input requis false avec la valeur Nantes",
             "match": {
               "arguments": [
@@ -6908,14 +6938,14 @@
         ]
       },
       {
-        "line": 165,
+        "line": 166,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;38",
         "after": [
           {
             "result": {
-              "duration": 28319,
+              "duration": 29073,
               "status": "passed"
             },
             "match": {
@@ -6928,10 +6958,10 @@
         "steps": [
           {
             "result": {
-              "duration": 206754398,
+              "duration": 279488996,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Shipping State/Province de la section Address Information de type Input requis false avec la valeur Loire Atlantique",
             "match": {
               "arguments": [
@@ -6976,14 +7006,14 @@
         ]
       },
       {
-        "line": 166,
+        "line": 167,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;39",
         "after": [
           {
             "result": {
-              "duration": 45687,
+              "duration": 19634,
               "status": "passed"
             },
             "match": {
@@ -6996,10 +7026,10 @@
         "steps": [
           {
             "result": {
-              "duration": 140797006,
+              "duration": 173824788,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Shipping Country de la section Address Information de type Input requis false avec la valeur France",
             "match": {
               "arguments": [
@@ -7044,14 +7074,14 @@
         ]
       },
       {
-        "line": 167,
+        "line": 168,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;40",
         "after": [
           {
             "result": {
-              "duration": 18879,
+              "duration": 52484,
               "status": "passed"
             },
             "match": {
@@ -7064,10 +7094,10 @@
         "steps": [
           {
             "result": {
-              "duration": 473157565,
+              "duration": 462482212,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Customer Priority de la section Additional Information de type select requis false avec la valeur High",
             "match": {
               "arguments": [
@@ -7112,14 +7142,14 @@
         ]
       },
       {
-        "line": 168,
+        "line": 169,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;41",
         "after": [
           {
             "result": {
-              "duration": 30584,
+              "duration": 30962,
               "status": "passed"
             },
             "match": {
@@ -7132,10 +7162,10 @@
         "steps": [
           {
             "result": {
-              "duration": 464956879,
+              "duration": 433023704,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Customer Priority de la section Additional Information de type select requis false avec la valeur Low",
             "match": {
               "arguments": [
@@ -7180,14 +7210,14 @@
         ]
       },
       {
-        "line": 169,
+        "line": 170,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;42",
         "after": [
           {
             "result": {
-              "duration": 18124,
+              "duration": 39269,
               "status": "passed"
             },
             "match": {
@@ -7200,10 +7230,10 @@
         "steps": [
           {
             "result": {
-              "duration": 471054814,
+              "duration": 390681372,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Customer Priority de la section Additional Information de type select requis false avec la valeur Medium",
             "match": {
               "arguments": [
@@ -7248,14 +7278,14 @@
         ]
       },
       {
-        "line": 170,
+        "line": 171,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;43",
         "after": [
           {
             "result": {
-              "duration": 19256,
+              "duration": 45687,
               "status": "passed"
             },
             "match": {
@@ -7268,10 +7298,10 @@
         "steps": [
           {
             "result": {
-              "duration": 448579671,
+              "duration": 380779683,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Customer Priority de la section Additional Information de type select requis false avec la valeur High",
             "match": {
               "arguments": [
@@ -7316,14 +7346,14 @@
         ]
       },
       {
-        "line": 171,
+        "line": 172,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;44",
         "after": [
           {
             "result": {
-              "duration": 31339,
+              "duration": 189546,
               "status": "passed"
             },
             "match": {
@@ -7336,10 +7366,10 @@
         "steps": [
           {
             "result": {
-              "duration": 131964249,
+              "duration": 157693009,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Number of Locations de la section Additional Information de type Input requis false avec la valeur 123",
             "match": {
               "arguments": [
@@ -7384,14 +7414,14 @@
         ]
       },
       {
-        "line": 172,
+        "line": 173,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;45",
         "after": [
           {
             "result": {
-              "duration": 43044,
+              "duration": 37758,
               "status": "passed"
             },
             "match": {
@@ -7404,10 +7434,10 @@
         "steps": [
           {
             "result": {
-              "duration": 507908249,
+              "duration": 481044102,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Active de la section Additional Information de type select requis false avec la valeur Yes",
             "match": {
               "arguments": [
@@ -7452,14 +7482,14 @@
         ]
       },
       {
-        "line": 173,
+        "line": 174,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;46",
         "after": [
           {
             "result": {
-              "duration": 47575,
+              "duration": 84956,
               "status": "passed"
             },
             "match": {
@@ -7472,10 +7502,10 @@
         "steps": [
           {
             "result": {
-              "duration": 612399313,
+              "duration": 389046068,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Active de la section Additional Information de type select requis false avec la valeur No",
             "match": {
               "arguments": [
@@ -7520,14 +7550,14 @@
         ]
       },
       {
-        "line": 174,
+        "line": 175,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;47",
         "after": [
           {
             "result": {
-              "duration": 19257,
+              "duration": 20767,
               "status": "passed"
             },
             "match": {
@@ -7540,10 +7570,10 @@
         "steps": [
           {
             "result": {
-              "duration": 555779504,
+              "duration": 382622656,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Active de la section Additional Information de type select requis false avec la valeur Yes",
             "match": {
               "arguments": [
@@ -7588,14 +7618,14 @@
         ]
       },
       {
-        "line": 175,
+        "line": 176,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;48",
         "after": [
           {
             "result": {
-              "duration": 27941,
+              "duration": 18501,
               "status": "passed"
             },
             "match": {
@@ -7608,10 +7638,10 @@
         "steps": [
           {
             "result": {
-              "duration": 640802858,
+              "duration": 471203204,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ SLA de la section Additional Information de type select requis false avec la valeur Gold",
             "match": {
               "arguments": [
@@ -7656,14 +7686,14 @@
         ]
       },
       {
-        "line": 176,
+        "line": 177,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;49",
         "after": [
           {
             "result": {
-              "duration": 24543,
+              "duration": 35115,
               "status": "passed"
             },
             "match": {
@@ -7676,10 +7706,10 @@
         "steps": [
           {
             "result": {
-              "duration": 529517976,
+              "duration": 399520925,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ SLA de la section Additional Information de type select requis false avec la valeur Silver",
             "match": {
               "arguments": [
@@ -7724,14 +7754,14 @@
         ]
       },
       {
-        "line": 177,
+        "line": 178,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;50",
         "after": [
           {
             "result": {
-              "duration": 26431,
+              "duration": 23033,
               "status": "passed"
             },
             "match": {
@@ -7744,10 +7774,10 @@
         "steps": [
           {
             "result": {
-              "duration": 655070519,
+              "duration": 518258128,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ SLA de la section Additional Information de type select requis false avec la valeur Platinum",
             "match": {
               "arguments": [
@@ -7792,14 +7822,14 @@
         ]
       },
       {
-        "line": 178,
+        "line": 179,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;51",
         "after": [
           {
             "result": {
-              "duration": 38891,
+              "duration": 33605,
               "status": "passed"
             },
             "match": {
@@ -7812,10 +7842,10 @@
         "steps": [
           {
             "result": {
-              "duration": 472573824,
+              "duration": 421248835,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ SLA de la section Additional Information de type select requis false avec la valeur Bronze",
             "match": {
               "arguments": [
@@ -7860,14 +7890,14 @@
         ]
       },
       {
-        "line": 179,
+        "line": 180,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;52",
         "after": [
           {
             "result": {
-              "duration": 38513,
+              "duration": 39646,
               "status": "passed"
             },
             "match": {
@@ -7880,10 +7910,10 @@
         "steps": [
           {
             "result": {
-              "duration": 476153294,
+              "duration": 392400499,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ SLA de la section Additional Information de type select requis false avec la valeur Silver",
             "match": {
               "arguments": [
@@ -7928,14 +7958,14 @@
         ]
       },
       {
-        "line": 180,
+        "line": 181,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;53",
         "after": [
           {
             "result": {
-              "duration": 83823,
+              "duration": 72118,
               "status": "passed"
             },
             "match": {
@@ -7948,10 +7978,10 @@
         "steps": [
           {
             "result": {
-              "duration": 531471581,
+              "duration": 459990930,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Upsell Opportunity de la section Additional Information de type select requis false avec la valeur Maybe",
             "match": {
               "arguments": [
@@ -7996,14 +8026,14 @@
         ]
       },
       {
-        "line": 181,
+        "line": 182,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;54",
         "after": [
           {
             "result": {
-              "duration": 19257,
+              "duration": 14348,
               "status": "passed"
             },
             "match": {
@@ -8016,10 +8046,10 @@
         "steps": [
           {
             "result": {
-              "duration": 529362035,
+              "duration": 415740680,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Upsell Opportunity de la section Additional Information de type select requis false avec la valeur No",
             "match": {
               "arguments": [
@@ -8064,14 +8094,14 @@
         ]
       },
       {
-        "line": 182,
+        "line": 183,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;55",
         "after": [
           {
             "result": {
-              "duration": 15859,
+              "duration": 24542,
               "status": "passed"
             },
             "match": {
@@ -8084,10 +8114,10 @@
         "steps": [
           {
             "result": {
-              "duration": 468705882,
+              "duration": 481551572,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Upsell Opportunity de la section Additional Information de type select requis false avec la valeur Yes",
             "match": {
               "arguments": [
@@ -8132,14 +8162,14 @@
         ]
       },
       {
-        "line": 183,
+        "line": 184,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;56",
         "after": [
           {
             "result": {
-              "duration": 14725,
+              "duration": 13970,
               "status": "passed"
             },
             "match": {
@@ -8152,10 +8182,10 @@
         "steps": [
           {
             "result": {
-              "duration": 149416429,
+              "duration": 119849179,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Description de la section Description Information de type textArea requis false avec la valeur OK",
             "match": {
               "arguments": [
@@ -8200,14 +8230,14 @@
         ]
       },
       {
-        "line": 184,
+        "line": 185,
         "name": "Remplissage des champs de l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;remplissage-des-champs-de-l\u0027account;;57",
         "after": [
           {
             "result": {
-              "duration": 29451,
+              "duration": 27941,
               "status": "passed"
             },
             "match": {
@@ -8220,10 +8250,10 @@
         "steps": [
           {
             "result": {
-              "duration": 2549553567,
+              "duration": 2623737699,
               "status": "passed"
             },
-            "line": 125,
+            "line": 126,
             "name": "je remplis le champ Parent Account de la section Account Information de type searchField requis false avec la valeur Accenture",
             "match": {
               "arguments": [
@@ -8268,14 +8298,14 @@
         ]
       },
       {
-        "line": 195,
+        "line": 196,
         "name": "Enregistrer l\u0027Account",
         "description": "",
         "id": "test-non-regression-account;enregistrer-l\u0027account;;2",
         "after": [
           {
             "result": {
-              "duration": 18124,
+              "duration": 18502,
               "status": "passed"
             },
             "match": {
@@ -8288,10 +8318,10 @@
         "steps": [
           {
             "result": {
-              "duration": 4144631342,
+              "duration": 4113141071,
               "status": "passed"
             },
-            "line": 189,
+            "line": 190,
             "name": "je clique sur le bouton \"Save\"",
             "match": {
               "location": "AccountStep.clickSaveButton()"
@@ -8300,10 +8330,10 @@
           },
           {
             "result": {
-              "duration": 2532909788,
+              "duration": 2605196952,
               "status": "passed"
             },
-            "line": 190,
+            "line": 191,
             "name": "je remplis le champ Parent Account de la section Account Information de type select_searchField requis false avec la valeur Accenture Nantes",
             "match": {
               "arguments": [
@@ -8341,10 +8371,10 @@
           },
           {
             "result": {
-              "duration": 4106388410,
+              "duration": 4108271029,
               "status": "passed"
             },
-            "line": 191,
+            "line": 192,
             "name": "je clique sur le bouton \"Save\"",
             "match": {
               "location": "AccountStep.clickSaveButton()"
@@ -8356,22 +8386,18 @@
           {
             "line": 3,
             "name": "@tag"
-          },
-          {
-            "line": 187,
-            "name": "@CheckHomePage"
           }
         ]
       },
       {
-        "line": 203,
+        "line": 204,
         "name": "Verification de la presence des Related Lists",
         "description": "",
         "id": "test-non-regression-account;verification-de-la-presence-des-related-lists;;2",
         "after": [
           {
             "result": {
-              "duration": 16613,
+              "duration": 14348,
               "status": "passed"
             },
             "match": {
@@ -8384,10 +8410,10 @@
         "steps": [
           {
             "result": {
-              "duration": 19497537,
+              "duration": 17653053,
               "status": "passed"
             },
-            "line": 199,
+            "line": 200,
             "name": "je verifie la presence du label Contacts de la section  et son type Related List",
             "match": {
               "arguments": [
@@ -8422,14 +8448,14 @@
         ]
       },
       {
-        "line": 204,
+        "line": 205,
         "name": "Verification de la presence des Related Lists",
         "description": "",
         "id": "test-non-regression-account;verification-de-la-presence-des-related-lists;;3",
         "after": [
           {
             "result": {
-              "duration": 15481,
+              "duration": 12837,
               "status": "passed"
             },
             "match": {
@@ -8442,10 +8468,10 @@
         "steps": [
           {
             "result": {
-              "duration": 16772534,
+              "duration": 14553490,
               "status": "passed"
             },
-            "line": 199,
+            "line": 200,
             "name": "je verifie la presence du label Opportunities de la section  et son type Related List",
             "match": {
               "arguments": [
@@ -8480,14 +8506,14 @@
         ]
       },
       {
-        "line": 205,
+        "line": 206,
         "name": "Verification de la presence des Related Lists",
         "description": "",
         "id": "test-non-regression-account;verification-de-la-presence-des-related-lists;;4",
         "after": [
           {
             "result": {
-              "duration": 14348,
+              "duration": 13593,
               "status": "passed"
             },
             "match": {
@@ -8500,10 +8526,10 @@
         "steps": [
           {
             "result": {
-              "duration": 16368145,
+              "duration": 16001135,
               "status": "passed"
             },
-            "line": 199,
+            "line": 200,
             "name": "je verifie la presence du label Cases de la section  et son type Related List",
             "match": {
               "arguments": [
@@ -8538,14 +8564,14 @@
         ]
       },
       {
-        "line": 206,
+        "line": 207,
         "name": "Verification de la presence des Related Lists",
         "description": "",
         "id": "test-non-regression-account;verification-de-la-presence-des-related-lists;;5",
         "after": [
           {
             "result": {
-              "duration": 13215,
+              "duration": 13593,
               "status": "passed"
             },
             "match": {
@@ -8558,10 +8584,10 @@
         "steps": [
           {
             "result": {
-              "duration": 15278067,
+              "duration": 14477218,
               "status": "passed"
             },
-            "line": 199,
+            "line": 200,
             "name": "je verifie la presence du label Notes \u0026 Attachments de la section  et son type Related List",
             "match": {
               "arguments": [
@@ -8596,14 +8622,14 @@
         ]
       },
       {
-        "line": 214,
+        "line": 215,
         "name": "Cliquer sur les onglets",
         "description": "",
         "id": "test-non-regression-account;cliquer-sur-les-onglets;;2",
         "after": [
           {
             "result": {
-              "duration": 19635,
+              "duration": 43045,
               "status": "passed"
             },
             "match": {
@@ -8616,10 +8642,10 @@
         "steps": [
           {
             "result": {
-              "duration": 2124735080,
+              "duration": 2144620393,
               "status": "passed"
             },
-            "line": 210,
+            "line": 211,
             "name": "je clique sur la vue News Light",
             "match": {
               "arguments": [
@@ -8638,7 +8664,7 @@
         ],
         "tags": [
           {
-            "line": 208,
+            "line": 209,
             "name": "@Lightning"
           },
           {
@@ -8648,14 +8674,14 @@
         ]
       },
       {
-        "line": 215,
+        "line": 216,
         "name": "Cliquer sur les onglets",
         "description": "",
         "id": "test-non-regression-account;cliquer-sur-les-onglets;;3",
         "after": [
           {
             "result": {
-              "duration": 16991,
+              "duration": 43044,
               "status": "passed"
             },
             "match": {
@@ -8668,10 +8694,10 @@
         "steps": [
           {
             "result": {
-              "duration": 2085485515,
+              "duration": 2092563651,
               "status": "passed"
             },
-            "line": 210,
+            "line": 211,
             "name": "je clique sur la vue Related Light",
             "match": {
               "arguments": [
@@ -8690,7 +8716,7 @@
         ],
         "tags": [
           {
-            "line": 208,
+            "line": 209,
             "name": "@Lightning"
           },
           {
@@ -8700,14 +8726,14 @@
         ]
       },
       {
-        "line": 216,
+        "line": 217,
         "name": "Cliquer sur les onglets",
         "description": "",
         "id": "test-non-regression-account;cliquer-sur-les-onglets;;4",
         "after": [
           {
             "result": {
-              "duration": 45310,
+              "duration": 43800,
               "status": "passed"
             },
             "match": {
@@ -8720,10 +8746,10 @@
         "steps": [
           {
             "result": {
-              "duration": 2092812855,
+              "duration": 2123756012,
               "status": "passed"
             },
-            "line": 210,
+            "line": 211,
             "name": "je clique sur la vue Details Light",
             "match": {
               "arguments": [
@@ -8742,7 +8768,7 @@
         ],
         "tags": [
           {
-            "line": 208,
+            "line": 209,
             "name": "@Lightning"
           },
           {
@@ -8752,14 +8778,14 @@
         ]
       },
       {
-        "line": 224,
+        "line": 225,
         "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;2",
         "after": [
           {
             "result": {
-              "duration": 13215,
+              "duration": 12082,
               "status": "passed"
             },
             "match": {
@@ -8772,10 +8798,10 @@
         "steps": [
           {
             "result": {
-              "duration": 24201822,
+              "duration": 22816854,
               "status": "passed"
             },
-            "line": 220,
+            "line": 221,
             "name": "je verifie la presence du label Account Owner de la section  et son type Label View",
             "match": {
               "arguments": [
@@ -8810,14 +8836,14 @@
         ]
       },
       {
-        "line": 225,
+        "line": 226,
         "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;3",
         "after": [
           {
             "result": {
-              "duration": 14348,
+              "duration": 13970,
               "status": "passed"
             },
             "match": {
@@ -8830,10 +8856,10 @@
         "steps": [
           {
             "result": {
-              "duration": 25344760,
+              "duration": 23637715,
               "status": "passed"
             },
-            "line": 220,
+            "line": 221,
             "name": "je verifie la presence du label Account Name de la section  et son type Label View",
             "match": {
               "arguments": [
@@ -8868,14 +8894,14 @@
         ]
       },
       {
-        "line": 226,
+        "line": 227,
         "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;4",
         "after": [
           {
             "result": {
-              "duration": 16613,
+              "duration": 18501,
               "status": "passed"
             },
             "match": {
@@ -8888,10 +8914,10 @@
         "steps": [
           {
             "result": {
-              "duration": 25723473,
+              "duration": 22676394,
               "status": "passed"
             },
-            "line": 220,
+            "line": 221,
             "name": "je verifie la presence du label Parent Account de la section  et son type Label View",
             "match": {
               "arguments": [
@@ -8926,14 +8952,14 @@
         ]
       },
       {
-        "line": 227,
+        "line": 228,
         "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;5",
         "after": [
           {
             "result": {
-              "duration": 16614,
+              "duration": 15859,
               "status": "passed"
             },
             "match": {
@@ -8946,10 +8972,10 @@
         "steps": [
           {
             "result": {
-              "duration": 23944689,
+              "duration": 21519862,
               "status": "passed"
             },
-            "line": 220,
+            "line": 221,
             "name": "je verifie la presence du label Account Number de la section  et son type Label View",
             "match": {
               "arguments": [
@@ -8984,14 +9010,14 @@
         ]
       },
       {
-        "line": 228,
+        "line": 229,
         "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;6",
         "after": [
           {
             "result": {
-              "duration": 15859,
+              "duration": 12838,
               "status": "passed"
             },
             "match": {
@@ -9004,10 +9030,10 @@
         "steps": [
           {
             "result": {
-              "duration": 23571261,
+              "duration": 23085692,
               "status": "passed"
             },
-            "line": 220,
+            "line": 221,
             "name": "je verifie la presence du label Account Site de la section  et son type Label View",
             "match": {
               "arguments": [
@@ -9042,14 +9068,14 @@
         ]
       },
       {
-        "line": 229,
+        "line": 230,
         "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;7",
         "after": [
           {
             "result": {
-              "duration": 15103,
+              "duration": 12460,
               "status": "passed"
             },
             "match": {
@@ -9062,10 +9088,10 @@
         "steps": [
           {
             "result": {
-              "duration": 26068583,
+              "duration": 23394176,
               "status": "passed"
             },
-            "line": 220,
+            "line": 221,
             "name": "je verifie la presence du label Type de la section  et son type Label View",
             "match": {
               "arguments": [
@@ -9100,14 +9126,14 @@
         ]
       },
       {
-        "line": 230,
+        "line": 231,
         "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;8",
         "after": [
           {
             "result": {
-              "duration": 13593,
+              "duration": 12460,
               "status": "passed"
             },
             "match": {
@@ -9120,10 +9146,10 @@
         "steps": [
           {
             "result": {
-              "duration": 22247084,
+              "duration": 22341857,
               "status": "passed"
             },
-            "line": 220,
+            "line": 221,
             "name": "je verifie la presence du label Industry de la section  et son type Label View",
             "match": {
               "arguments": [
@@ -9158,14 +9184,14 @@
         ]
       },
       {
-        "line": 231,
+        "line": 232,
         "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;9",
         "after": [
           {
             "result": {
-              "duration": 13215,
+              "duration": 12460,
               "status": "passed"
             },
             "match": {
@@ -9178,10 +9204,10 @@
         "steps": [
           {
             "result": {
-              "duration": 28207958,
+              "duration": 20045408,
               "status": "passed"
             },
-            "line": 220,
+            "line": 221,
             "name": "je verifie la presence du label Annual Revenue de la section  et son type Label View",
             "match": {
               "arguments": [
@@ -9216,14 +9242,14 @@
         ]
       },
       {
-        "line": 232,
+        "line": 233,
         "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;10",
         "after": [
           {
             "result": {
-              "duration": 18879,
+              "duration": 14348,
               "status": "passed"
             },
             "match": {
@@ -9236,10 +9262,10 @@
         "steps": [
           {
             "result": {
-              "duration": 23251827,
+              "duration": 25867710,
               "status": "passed"
             },
-            "line": 220,
+            "line": 221,
             "name": "je verifie la presence du label Rating de la section  et son type Label View",
             "match": {
               "arguments": [
@@ -9274,14 +9300,14 @@
         ]
       },
       {
-        "line": 233,
+        "line": 234,
         "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;11",
         "after": [
           {
             "result": {
-              "duration": 18879,
+              "duration": 14725,
               "status": "passed"
             },
             "match": {
@@ -9294,10 +9320,10 @@
         "steps": [
           {
             "result": {
-              "duration": 27450152,
+              "duration": 25860913,
               "status": "passed"
             },
-            "line": 220,
+            "line": 221,
             "name": "je verifie la presence du label Phone de la section  et son type Label View",
             "match": {
               "arguments": [
@@ -9332,14 +9358,14 @@
         ]
       },
       {
-        "line": 234,
+        "line": 235,
         "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;12",
         "after": [
           {
             "result": {
-              "duration": 14348,
+              "duration": 13971,
               "status": "passed"
             },
             "match": {
@@ -9352,10 +9378,10 @@
         "steps": [
           {
             "result": {
-              "duration": 26332512,
+              "duration": 22045078,
               "status": "passed"
             },
-            "line": 220,
+            "line": 221,
             "name": "je verifie la presence du label Fax de la section  et son type Label View",
             "match": {
               "arguments": [
@@ -9390,14 +9416,14 @@
         ]
       },
       {
-        "line": 235,
+        "line": 236,
         "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;13",
         "after": [
           {
             "result": {
-              "duration": 16613,
+              "duration": 13970,
               "status": "passed"
             },
             "match": {
@@ -9410,10 +9436,10 @@
         "steps": [
           {
             "result": {
-              "duration": 22853479,
+              "duration": 22427567,
               "status": "passed"
             },
-            "line": 220,
+            "line": 221,
             "name": "je verifie la presence du label Website de la section  et son type Label View",
             "match": {
               "arguments": [
@@ -9448,14 +9474,14 @@
         ]
       },
       {
-        "line": 236,
+        "line": 237,
         "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;14",
         "after": [
           {
             "result": {
-              "duration": 15103,
+              "duration": 16236,
               "status": "passed"
             },
             "match": {
@@ -9468,10 +9494,10 @@
         "steps": [
           {
             "result": {
-              "duration": 23791391,
+              "duration": 24325668,
               "status": "passed"
             },
-            "line": 220,
+            "line": 221,
             "name": "je verifie la presence du label Ticker Symbol de la section  et son type Label View",
             "match": {
               "arguments": [
@@ -9506,14 +9532,14 @@
         ]
       },
       {
-        "line": 237,
+        "line": 238,
         "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;15",
         "after": [
           {
             "result": {
-              "duration": 16991,
+              "duration": 13593,
               "status": "passed"
             },
             "match": {
@@ -9526,10 +9552,10 @@
         "steps": [
           {
             "result": {
-              "duration": 21967296,
+              "duration": 19481679,
               "status": "passed"
             },
-            "line": 220,
+            "line": 221,
             "name": "je verifie la presence du label Ownership de la section  et son type Label View",
             "match": {
               "arguments": [
@@ -9564,14 +9590,14 @@
         ]
       },
       {
-        "line": 238,
+        "line": 239,
         "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;16",
         "after": [
           {
             "result": {
-              "duration": 12838,
+              "duration": 13215,
               "status": "passed"
             },
             "match": {
@@ -9584,10 +9610,10 @@
         "steps": [
           {
             "result": {
-              "duration": 37278969,
+              "duration": 23389644,
               "status": "passed"
             },
-            "line": 220,
+            "line": 221,
             "name": "je verifie la presence du label Employees de la section  et son type Label View",
             "match": {
               "arguments": [
@@ -9622,14 +9648,14 @@
         ]
       },
       {
-        "line": 239,
+        "line": 240,
         "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;17",
         "after": [
           {
             "result": {
-              "duration": 13215,
+              "duration": 12838,
               "status": "passed"
             },
             "match": {
@@ -9642,10 +9668,10 @@
         "steps": [
           {
             "result": {
-              "duration": 23850293,
+              "duration": 33928691,
               "status": "passed"
             },
-            "line": 220,
+            "line": 221,
             "name": "je verifie la presence du label SIC Code de la section  et son type Label View",
             "match": {
               "arguments": [
@@ -9680,7 +9706,7 @@
         ]
       },
       {
-        "line": 240,
+        "line": 241,
         "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;18",
@@ -9700,10 +9726,10 @@
         "steps": [
           {
             "result": {
-              "duration": 24581669,
+              "duration": 20409019,
               "status": "passed"
             },
-            "line": 220,
+            "line": 221,
             "name": "je verifie la presence du label Billing Address de la section  et son type Label View",
             "match": {
               "arguments": [
@@ -9738,14 +9764,14 @@
         ]
       },
       {
-        "line": 241,
+        "line": 242,
         "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;19",
         "after": [
           {
             "result": {
-              "duration": 13970,
+              "duration": 13593,
               "status": "passed"
             },
             "match": {
@@ -9758,10 +9784,10 @@
         "steps": [
           {
             "result": {
-              "duration": 21203449,
+              "duration": 23672453,
               "status": "passed"
             },
-            "line": 220,
+            "line": 221,
             "name": "je verifie la presence du label Shipping Address de la section  et son type Label View",
             "match": {
               "arguments": [
@@ -9796,14 +9822,14 @@
         ]
       },
       {
-        "line": 242,
+        "line": 243,
         "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;20",
         "after": [
           {
             "result": {
-              "duration": 13592,
+              "duration": 13970,
               "status": "passed"
             },
             "match": {
@@ -9816,10 +9842,10 @@
         "steps": [
           {
             "result": {
-              "duration": 21612370,
+              "duration": 23650554,
               "status": "passed"
             },
-            "line": 220,
+            "line": 221,
             "name": "je verifie la presence du label Customer Priority de la section  et son type Label View",
             "match": {
               "arguments": [
@@ -9854,14 +9880,14 @@
         ]
       },
       {
-        "line": 243,
+        "line": 244,
         "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;21",
         "after": [
           {
             "result": {
-              "duration": 13970,
+              "duration": 22655,
               "status": "passed"
             },
             "match": {
@@ -9874,10 +9900,10 @@
         "steps": [
           {
             "result": {
-              "duration": 24912429,
+              "duration": 21389597,
               "status": "passed"
             },
-            "line": 220,
+            "line": 221,
             "name": "je verifie la presence du label SLA Expiration Date de la section  et son type Label View",
             "match": {
               "arguments": [
@@ -9912,14 +9938,14 @@
         ]
       },
       {
-        "line": 244,
+        "line": 245,
         "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;22",
         "after": [
           {
             "result": {
-              "duration": 18879,
+              "duration": 16236,
               "status": "passed"
             },
             "match": {
@@ -9932,10 +9958,10 @@
         "steps": [
           {
             "result": {
-              "duration": 21930293,
+              "duration": 31476301,
               "status": "passed"
             },
-            "line": 220,
+            "line": 221,
             "name": "je verifie la presence du label Number of Locations de la section  et son type Label View",
             "match": {
               "arguments": [
@@ -9970,14 +9996,14 @@
         ]
       },
       {
-        "line": 245,
+        "line": 246,
         "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;23",
         "after": [
           {
             "result": {
-              "duration": 33982,
+              "duration": 14725,
               "status": "passed"
             },
             "match": {
@@ -9990,10 +10016,10 @@
         "steps": [
           {
             "result": {
-              "duration": 21265750,
+              "duration": 20519272,
               "status": "passed"
             },
-            "line": 220,
+            "line": 221,
             "name": "je verifie la presence du label Active de la section  et son type Label View",
             "match": {
               "arguments": [
@@ -10028,14 +10054,14 @@
         ]
       },
       {
-        "line": 246,
+        "line": 247,
         "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;24",
         "after": [
           {
             "result": {
-              "duration": 18879,
+              "duration": 16991,
               "status": "passed"
             },
             "match": {
@@ -10048,10 +10074,10 @@
         "steps": [
           {
             "result": {
-              "duration": 37401305,
+              "duration": 29093764,
               "status": "passed"
             },
-            "line": 220,
+            "line": 221,
             "name": "je verifie la presence du label SLA de la section  et son type Label View",
             "match": {
               "arguments": [
@@ -10086,14 +10112,14 @@
         ]
       },
       {
-        "line": 247,
+        "line": 248,
         "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;25",
         "after": [
           {
             "result": {
-              "duration": 15859,
+              "duration": 14725,
               "status": "passed"
             },
             "match": {
@@ -10106,10 +10132,10 @@
         "steps": [
           {
             "result": {
-              "duration": 44442062,
+              "duration": 24395898,
               "status": "passed"
             },
-            "line": 220,
+            "line": 221,
             "name": "je verifie la presence du label SLA Serial Number de la section  et son type Label View",
             "match": {
               "arguments": [
@@ -10144,14 +10170,14 @@
         ]
       },
       {
-        "line": 248,
+        "line": 249,
         "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;26",
         "after": [
           {
             "result": {
-              "duration": 17369,
+              "duration": 16613,
               "status": "passed"
             },
             "match": {
@@ -10164,10 +10190,10 @@
         "steps": [
           {
             "result": {
-              "duration": 38493270,
+              "duration": 29337304,
               "status": "passed"
             },
-            "line": 220,
+            "line": 221,
             "name": "je verifie la presence du label Upsell Opportunity de la section  et son type Label View",
             "match": {
               "arguments": [
@@ -10202,14 +10228,14 @@
         ]
       },
       {
-        "line": 249,
+        "line": 250,
         "name": "Verification de la presence des champs dans la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-de-la-presence-des-champs-dans-la-page-d\u0027account-(affichage-du-record);;27",
         "after": [
           {
             "result": {
-              "duration": 18502,
+              "duration": 16236,
               "status": "passed"
             },
             "match": {
@@ -10222,10 +10248,10 @@
         "steps": [
           {
             "result": {
-              "duration": 27944029,
+              "duration": 22764748,
               "status": "passed"
             },
-            "line": 220,
+            "line": 221,
             "name": "je verifie la presence du label Description de la section  et son type Label View",
             "match": {
               "arguments": [
@@ -10260,14 +10286,14 @@
         ]
       },
       {
-        "line": 257,
+        "line": 258,
         "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;2",
         "after": [
           {
             "result": {
-              "duration": 21145,
+              "duration": 15481,
               "status": "passed"
             },
             "match": {
@@ -10280,10 +10306,10 @@
         "steps": [
           {
             "result": {
-              "duration": 58079162,
+              "duration": 48470098,
               "status": "passed"
             },
-            "line": 253,
+            "line": 254,
             "name": "je verifie que dans le champ Account Name contient la valeur Non Regression -",
             "match": {
               "arguments": [
@@ -10313,14 +10339,14 @@
         ]
       },
       {
-        "line": 258,
+        "line": 259,
         "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;3",
         "after": [
           {
             "result": {
-              "duration": 20767,
+              "duration": 15481,
               "status": "passed"
             },
             "match": {
@@ -10333,10 +10359,10 @@
         "steps": [
           {
             "result": {
-              "duration": 61518926,
+              "duration": 43904008,
               "status": "passed"
             },
-            "line": 253,
+            "line": 254,
             "name": "je verifie que dans le champ Parent Account contient la valeur Accenture Nantes",
             "match": {
               "arguments": [
@@ -10366,14 +10392,14 @@
         ]
       },
       {
-        "line": 259,
+        "line": 260,
         "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;4",
         "after": [
           {
             "result": {
-              "duration": 14726,
+              "duration": 16236,
               "status": "passed"
             },
             "match": {
@@ -10386,10 +10412,10 @@
         "steps": [
           {
             "result": {
-              "duration": 62618820,
+              "duration": 39447795,
               "status": "passed"
             },
-            "line": 253,
+            "line": 254,
             "name": "je verifie que dans le champ Account Number contient la valeur 2121212121",
             "match": {
               "arguments": [
@@ -10419,14 +10445,14 @@
         ]
       },
       {
-        "line": 260,
+        "line": 261,
         "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;5",
         "after": [
           {
             "result": {
-              "duration": 15103,
+              "duration": 13215,
               "status": "passed"
             },
             "match": {
@@ -10439,10 +10465,10 @@
         "steps": [
           {
             "result": {
-              "duration": 38188939,
+              "duration": 39138556,
               "status": "passed"
             },
-            "line": 253,
+            "line": 254,
             "name": "je verifie que dans le champ Type contient la valeur Prospect",
             "match": {
               "arguments": [
@@ -10472,14 +10498,14 @@
         ]
       },
       {
-        "line": 261,
+        "line": 262,
         "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;6",
         "after": [
           {
             "result": {
-              "duration": 14348,
+              "duration": 13215,
               "status": "passed"
             },
             "match": {
@@ -10492,10 +10518,10 @@
         "steps": [
           {
             "result": {
-              "duration": 38770415,
+              "duration": 34185823,
               "status": "passed"
             },
-            "line": 253,
+            "line": 254,
             "name": "je verifie que dans le champ Industry contient la valeur Telecommunications",
             "match": {
               "arguments": [
@@ -10525,14 +10551,14 @@
         ]
       },
       {
-        "line": 262,
+        "line": 263,
         "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;7",
         "after": [
           {
             "result": {
-              "duration": 17746,
+              "duration": 13971,
               "status": "passed"
             },
             "match": {
@@ -10545,10 +10571,10 @@
         "steps": [
           {
             "result": {
-              "duration": 44002557,
+              "duration": 35086733,
               "status": "passed"
             },
-            "line": 253,
+            "line": 254,
             "name": "je verifie que dans le champ Annual Revenue contient la valeur 50 000 €",
             "match": {
               "arguments": [
@@ -10578,14 +10604,14 @@
         ]
       },
       {
-        "line": 263,
+        "line": 264,
         "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;8",
         "after": [
           {
             "result": {
-              "duration": 16992,
+              "duration": 13215,
               "status": "passed"
             },
             "match": {
@@ -10598,10 +10624,10 @@
         "steps": [
           {
             "result": {
-              "duration": 44657283,
+              "duration": 42431819,
               "status": "passed"
             },
-            "line": 253,
+            "line": 254,
             "name": "je verifie que dans le champ Billing Address contient la valeur 500, route de Vannes",
             "match": {
               "arguments": [
@@ -10631,14 +10657,14 @@
         ]
       },
       {
-        "line": 264,
+        "line": 265,
         "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;9",
         "after": [
           {
             "result": {
-              "duration": 15858,
+              "duration": 13593,
               "status": "passed"
             },
             "match": {
@@ -10651,10 +10677,10 @@
         "steps": [
           {
             "result": {
-              "duration": 31150070,
+              "duration": 30594649,
               "status": "passed"
             },
-            "line": 253,
+            "line": 254,
             "name": "je verifie que dans le champ Billing Address contient la valeur 44000 Nantes",
             "match": {
               "arguments": [
@@ -10684,14 +10710,14 @@
         ]
       },
       {
-        "line": 265,
+        "line": 266,
         "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;10",
         "after": [
           {
             "result": {
-              "duration": 21145,
+              "duration": 13593,
               "status": "passed"
             },
             "match": {
@@ -10704,10 +10730,10 @@
         "steps": [
           {
             "result": {
-              "duration": 28139238,
+              "duration": 25923214,
               "status": "passed"
             },
-            "line": 253,
+            "line": 254,
             "name": "je verifie que dans le champ Billing Address contient la valeur Loire Atlantique France",
             "match": {
               "arguments": [
@@ -10737,14 +10763,14 @@
         ]
       },
       {
-        "line": 266,
+        "line": 267,
         "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;11",
         "after": [
           {
             "result": {
-              "duration": 21144,
+              "duration": 13593,
               "status": "passed"
             },
             "match": {
@@ -10757,10 +10783,10 @@
         "steps": [
           {
             "result": {
-              "duration": 38552927,
+              "duration": 41012492,
               "status": "passed"
             },
-            "line": 253,
+            "line": 254,
             "name": "je verifie que dans le champ Customer Priority contient la valeur High",
             "match": {
               "arguments": [
@@ -10790,14 +10816,14 @@
         ]
       },
       {
-        "line": 267,
+        "line": 268,
         "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;12",
         "after": [
           {
             "result": {
-              "duration": 17746,
+              "duration": 13215,
               "status": "passed"
             },
             "match": {
@@ -10810,10 +10836,10 @@
         "steps": [
           {
             "result": {
-              "duration": 41906981,
+              "duration": 39460633,
               "status": "passed"
             },
-            "line": 253,
+            "line": 254,
             "name": "je verifie que dans le champ Number of Locations contient la valeur 123",
             "match": {
               "arguments": [
@@ -10843,14 +10869,14 @@
         ]
       },
       {
-        "line": 268,
+        "line": 269,
         "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;13",
         "after": [
           {
             "result": {
-              "duration": 14726,
+              "duration": 15481,
               "status": "passed"
             },
             "match": {
@@ -10863,10 +10889,10 @@
         "steps": [
           {
             "result": {
-              "duration": 39468940,
+              "duration": 34502992,
               "status": "passed"
             },
-            "line": 253,
+            "line": 254,
             "name": "je verifie que dans le champ Active contient la valeur Yes",
             "match": {
               "arguments": [
@@ -10896,14 +10922,14 @@
         ]
       },
       {
-        "line": 269,
+        "line": 270,
         "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;14",
         "after": [
           {
             "result": {
-              "duration": 14348,
+              "duration": 13971,
               "status": "passed"
             },
             "match": {
@@ -10916,10 +10942,10 @@
         "steps": [
           {
             "result": {
-              "duration": 40250533,
+              "duration": 39117789,
               "status": "passed"
             },
-            "line": 253,
+            "line": 254,
             "name": "je verifie que dans le champ Description contient la valeur OK",
             "match": {
               "arguments": [
@@ -10949,14 +10975,14 @@
         ]
       },
       {
-        "line": 270,
+        "line": 271,
         "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;15",
         "after": [
           {
             "result": {
-              "duration": 18880,
+              "duration": 13216,
               "status": "passed"
             },
             "match": {
@@ -10969,10 +10995,10 @@
         "steps": [
           {
             "result": {
-              "duration": 43970840,
+              "duration": 40494828,
               "status": "passed"
             },
-            "line": 253,
+            "line": 254,
             "name": "je verifie que dans le champ Rating contient la valeur Warm",
             "match": {
               "arguments": [
@@ -11002,14 +11028,14 @@
         ]
       },
       {
-        "line": 271,
+        "line": 272,
         "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;16",
         "after": [
           {
             "result": {
-              "duration": 15481,
+              "duration": 13593,
               "status": "passed"
             },
             "match": {
@@ -11022,10 +11048,10 @@
         "steps": [
           {
             "result": {
-              "duration": 38159866,
+              "duration": 36845128,
               "status": "passed"
             },
-            "line": 253,
+            "line": 254,
             "name": "je verifie que dans le champ Phone contient la valeur 0202020202",
             "match": {
               "arguments": [
@@ -11055,14 +11081,14 @@
         ]
       },
       {
-        "line": 272,
+        "line": 273,
         "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;17",
         "after": [
           {
             "result": {
-              "duration": 15103,
+              "duration": 13215,
               "status": "passed"
             },
             "match": {
@@ -11075,10 +11101,10 @@
         "steps": [
           {
             "result": {
-              "duration": 49032694,
+              "duration": 40137636,
               "status": "passed"
             },
-            "line": 253,
+            "line": 254,
             "name": "je verifie que dans le champ Fax contient la valeur 0404040404",
             "match": {
               "arguments": [
@@ -11108,14 +11134,14 @@
         ]
       },
       {
-        "line": 273,
+        "line": 274,
         "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;18",
         "after": [
           {
             "result": {
-              "duration": 18879,
+              "duration": 13593,
               "status": "passed"
             },
             "match": {
@@ -11128,10 +11154,10 @@
         "steps": [
           {
             "result": {
-              "duration": 39953377,
+              "duration": 46115879,
               "status": "passed"
             },
-            "line": 253,
+            "line": 254,
             "name": "je verifie que dans le champ Website contient la valeur https://www.accenture.com",
             "match": {
               "arguments": [
@@ -11161,14 +11187,14 @@
         ]
       },
       {
-        "line": 274,
+        "line": 275,
         "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;19",
         "after": [
           {
             "result": {
-              "duration": 14725,
+              "duration": 13216,
               "status": "passed"
             },
             "match": {
@@ -11181,10 +11207,10 @@
         "steps": [
           {
             "result": {
-              "duration": 51336316,
+              "duration": 38545753,
               "status": "passed"
             },
-            "line": 253,
+            "line": 254,
             "name": "je verifie que dans le champ Ownership contient la valeur Private",
             "match": {
               "arguments": [
@@ -11214,14 +11240,14 @@
         ]
       },
       {
-        "line": 275,
+        "line": 276,
         "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;20",
         "after": [
           {
             "result": {
-              "duration": 13971,
+              "duration": 15481,
               "status": "passed"
             },
             "match": {
@@ -11234,10 +11260,10 @@
         "steps": [
           {
             "result": {
-              "duration": 40317365,
+              "duration": 41689117,
               "status": "passed"
             },
-            "line": 253,
+            "line": 254,
             "name": "je verifie que dans le champ Shipping Address contient la valeur 500, route de Vannes",
             "match": {
               "arguments": [
@@ -11267,14 +11293,14 @@
         ]
       },
       {
-        "line": 276,
+        "line": 277,
         "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;21",
         "after": [
           {
             "result": {
-              "duration": 15481,
+              "duration": 13971,
               "status": "passed"
             },
             "match": {
@@ -11287,10 +11313,10 @@
         "steps": [
           {
             "result": {
-              "duration": 32728360,
+              "duration": 39892963,
               "status": "passed"
             },
-            "line": 253,
+            "line": 254,
             "name": "je verifie que dans le champ Shipping Address contient la valeur 44000 Nantes",
             "match": {
               "arguments": [
@@ -11320,14 +11346,14 @@
         ]
       },
       {
-        "line": 277,
+        "line": 278,
         "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;22",
         "after": [
           {
             "result": {
-              "duration": 31339,
+              "duration": 37003,
               "status": "passed"
             },
             "match": {
@@ -11340,10 +11366,10 @@
         "steps": [
           {
             "result": {
-              "duration": 29363734,
+              "duration": 32995687,
               "status": "passed"
             },
-            "line": 253,
+            "line": 254,
             "name": "je verifie que dans le champ Shipping Address contient la valeur Loire Atlantique France",
             "match": {
               "arguments": [
@@ -11373,14 +11399,14 @@
         ]
       },
       {
-        "line": 278,
+        "line": 279,
         "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;23",
         "after": [
           {
             "result": {
-              "duration": 13971,
+              "duration": 13970,
               "status": "passed"
             },
             "match": {
@@ -11393,10 +11419,10 @@
         "steps": [
           {
             "result": {
-              "duration": 47515950,
+              "duration": 37868751,
               "status": "passed"
             },
-            "line": 253,
+            "line": 254,
             "name": "je verifie que dans le champ SLA contient la valeur Silver",
             "match": {
               "arguments": [
@@ -11426,14 +11452,14 @@
         ]
       },
       {
-        "line": 279,
+        "line": 280,
         "name": "Verification des valeurs renseignees dans les champs  de la page d\u0027Account (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verification-des-valeurs-renseignees-dans-les-champs--de-la-page-d\u0027account-(affichage-du-record);;24",
         "after": [
           {
             "result": {
-              "duration": 15858,
+              "duration": 16614,
               "status": "passed"
             },
             "match": {
@@ -11446,10 +11472,10 @@
         "steps": [
           {
             "result": {
-              "duration": 39601470,
+              "duration": 92012383,
               "status": "passed"
             },
-            "line": 253,
+            "line": 254,
             "name": "je verifie que dans le champ Upsell Opportunity contient la valeur Yes",
             "match": {
               "arguments": [
@@ -11479,14 +11505,14 @@
         ]
       },
       {
-        "line": 287,
+        "line": 288,
         "name": "Verificiation de la presence des boutons \"Edit\" et \"Delete\" en haut et bas de page (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verificiation-de-la-presence-des-boutons-\"edit\"-et-\"delete\"-en-haut-et-bas-de-page-(affichage-du-record);;2",
         "after": [
           {
             "result": {
-              "duration": 8307,
+              "duration": 7174,
               "status": "passed"
             },
             "match": {
@@ -11499,10 +11525,10 @@
         "steps": [
           {
             "result": {
-              "duration": 44932,
+              "duration": 41911,
               "status": "passed"
             },
-            "line": 283,
+            "line": 284,
             "name": "je verifie la presence du bouton edit situe en top",
             "match": {
               "arguments": [
@@ -11528,18 +11554,22 @@
           {
             "line": 3,
             "name": "@tag"
+          },
+          {
+            "line": 282,
+            "name": "@Classic"
           }
         ]
       },
       {
-        "line": 288,
+        "line": 289,
         "name": "Verificiation de la presence des boutons \"Edit\" et \"Delete\" en haut et bas de page (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verificiation-de-la-presence-des-boutons-\"edit\"-et-\"delete\"-en-haut-et-bas-de-page-(affichage-du-record);;3",
         "after": [
           {
             "result": {
-              "duration": 7174,
+              "duration": 19635,
               "status": "passed"
             },
             "match": {
@@ -11552,10 +11582,10 @@
         "steps": [
           {
             "result": {
-              "duration": 27941,
+              "duration": 25676,
               "status": "passed"
             },
-            "line": 283,
+            "line": 284,
             "name": "je verifie la presence du bouton delete situe en top",
             "match": {
               "arguments": [
@@ -11581,18 +11611,22 @@
           {
             "line": 3,
             "name": "@tag"
+          },
+          {
+            "line": 282,
+            "name": "@Classic"
           }
         ]
       },
       {
-        "line": 289,
+        "line": 290,
         "name": "Verificiation de la presence des boutons \"Edit\" et \"Delete\" en haut et bas de page (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verificiation-de-la-presence-des-boutons-\"edit\"-et-\"delete\"-en-haut-et-bas-de-page-(affichage-du-record);;4",
         "after": [
           {
             "result": {
-              "duration": 6796,
+              "duration": 7551,
               "status": "passed"
             },
             "match": {
@@ -11605,10 +11639,10 @@
         "steps": [
           {
             "result": {
-              "duration": 35871,
+              "duration": 27185,
               "status": "passed"
             },
-            "line": 283,
+            "line": 284,
             "name": "je verifie la presence du bouton edit situe en bottom",
             "match": {
               "arguments": [
@@ -11634,18 +11668,22 @@
           {
             "line": 3,
             "name": "@tag"
+          },
+          {
+            "line": 282,
+            "name": "@Classic"
           }
         ]
       },
       {
-        "line": 290,
+        "line": 291,
         "name": "Verificiation de la presence des boutons \"Edit\" et \"Delete\" en haut et bas de page (Affichage du record)",
         "description": "",
         "id": "test-non-regression-account;verificiation-de-la-presence-des-boutons-\"edit\"-et-\"delete\"-en-haut-et-bas-de-page-(affichage-du-record);;5",
         "after": [
           {
             "result": {
-              "duration": 6796,
+              "duration": 6419,
               "status": "passed"
             },
             "match": {
@@ -11658,10 +11696,10 @@
         "steps": [
           {
             "result": {
-              "duration": 37381,
+              "duration": 22278,
               "status": "passed"
             },
-            "line": 283,
+            "line": 284,
             "name": "je verifie la presence du bouton delete situe en bottom",
             "match": {
               "arguments": [
@@ -11687,18 +11725,22 @@
           {
             "line": 3,
             "name": "@tag"
+          },
+          {
+            "line": 282,
+            "name": "@Classic"
           }
         ]
       },
       {
-        "line": 294,
+        "line": 295,
         "name": "Logout",
         "description": "",
         "id": "test-non-regression-account;logout",
         "after": [
           {
             "result": {
-              "duration": 34738,
+              "duration": 16235,
               "status": "passed"
             },
             "match": {
@@ -11711,10 +11753,10 @@
         "steps": [
           {
             "result": {
-              "duration": 340578,
+              "duration": 232590,
               "status": "passed"
             },
-            "line": 295,
+            "line": 296,
             "name": "je recupere les elements de la page",
             "match": {
               "location": "LogoutStep.checkHomePage()"
@@ -11723,10 +11765,10 @@
           },
           {
             "result": {
-              "duration": 1126271835,
+              "duration": 1131938196,
               "status": "passed"
             },
-            "line": 296,
+            "line": 297,
             "name": "je verifie les options du menu",
             "match": {
               "location": "LogoutStep.checkOptions()"
@@ -11735,10 +11777,10 @@
           },
           {
             "result": {
-              "duration": 3135652840,
+              "duration": 3689618443,
               "status": "passed"
             },
-            "line": 297,
+            "line": 298,
             "name": "je me deconnecte",
             "match": {
               "location": "LogoutStep.logout()"
@@ -11748,7 +11790,7 @@
         ],
         "tags": [
           {
-            "line": 293,
+            "line": 294,
             "name": "@Logout"
           }
         ]
