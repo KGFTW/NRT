@@ -60,7 +60,8 @@ public abstract class Driver {
 	public WebDriverWait wait;
 
 	 {
-		// On charge les properties de config (paths des web drivers)		 
+		// On charge les properties de config (paths des web drivers)
+		// et on attribut une valeur booléenne pour savoir si l'on va travailler en classic ou en lightning
 		loadConfigProperties();
 		if (Selectors.CLASSIC.equals(System.getProperty(Selectors.VIEW))) {
 			onSalesClassic = true;
@@ -182,6 +183,7 @@ public abstract class Driver {
 	public  void waitPageLoaded() {
 		// On attend l'affichage de la page, au maximum le temps paramétré dans
 		// config.properties -> 30secondes
+		// ne fonctionne qu'en partie sur lightning
 		driver.manage().timeouts().implicitlyWait(getTimeout(), TimeUnit.SECONDS);
 	}
 
@@ -264,6 +266,7 @@ public abstract class Driver {
 					//Methodes abstraites à surcharger dans les classes filles
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	
+	//spécification des méthodes notées dans les classes filles
 	
 	public abstract boolean isRecordPageButtonVisible(String location, String button);
 	
@@ -284,6 +287,8 @@ public abstract class Driver {
 	
 	public abstract  String getValueView(String label);
 	
+	
+	//méthode spécifique à lightning
 	public abstract void clickAccessView(String viewName);
 	
 	

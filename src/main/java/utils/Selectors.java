@@ -3,12 +3,12 @@ package utils;
 public class Selectors {
 	/** Global Xpath Selectors **/
 	
-	public static final String THE_SELECTOR = "//span[not(contains(@style,'display:none'))]//span[text()='Prospect']";
+	
 	// Ctn and Eq ending tags
 	public static final String CTN_END = "')]";
 	public static final String EQ_END = "']";
 	
-	//select an item in parentAccount search
+	//select an item in parentAccount search (lightning)
 	public static final String PARENT_ACCOUNT_SELECT = "//mark[1]";
 	
 	// List view list table selector
@@ -112,8 +112,8 @@ public class Selectors {
 	public static final String SEARCH_PATH = "//div[@class='autocompleteWrapper slds-grow']//input";
 	
 	// Following field used to find the direct following field value in View page layouts
-	public static final String FOLLOWING_FIELD = FOLLOWING_TD + "//div";
-	
+	public static final String FOLLOWING_FIELD = FOLLOWING_TD + "//div";	
+		
 	/** MultiSelect selectors **/
 	// MultiSelect global element
 	public static final String MULTISELECT = "//table[@class='multiSelectPicklistTable']";
@@ -125,7 +125,7 @@ public class Selectors {
 	public static final String TARGET = "//td[3]//select";
 	
 	
-	//Constantes pour le NRT
+	//Constantes pour les paramètres passés varaibles globales dans le NRT
 	public static final String CLASSIC = "classic";
 	public static final String LIGHTNING = "lightning";
 	

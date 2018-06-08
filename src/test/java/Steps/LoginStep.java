@@ -28,16 +28,12 @@ public class LoginStep {
 
 	@Given("je suis sur la page de connection Salesforce")
 	public void InitLoginPage() {
-
 		loginPage = PageFactory.initElements(FactoryDriver.getInstance().driver, LoginPage.class);
-
 	}
 
 	@When("^je remplis le login et le password$")
 	public void putNameAndPassword() {
-
 		loginPage.login(System.getProperty(Selectors.USERNAME), System.getProperty(Selectors.PASSWORD));
-
 	}
 
 	@Then("^jarrive sur la page d'accueil de Salesforce$")
@@ -49,12 +45,10 @@ public class LoginStep {
 	@Then("^je change de vue si necessaire$")
 	public void switchView() {
 
-		if (homePageClassic.checkPage() && !FactoryDriver.getInstance().onSalesClassic) {
-			
+		if (homePageClassic.checkPage() && !FactoryDriver.getInstance().onSalesClassic) {			
 			homePageClassic.switchToLightning();			
 
 		} else if (!homePageClassic.checkPage()) {
-
 			homePageLightning = PageFactory.initElements(FactoryDriver.getInstance().driver, HomePageLightning.class);
 			FactoryDriver.getInstance().waitPageLoaded();
 
@@ -62,7 +56,6 @@ public class LoginStep {
 				homePageLightning.switchToClassic();				
 			}
 		}
-
 		loginPage.assertLogin(FactoryDriver.getInstance().driver);
 	}
 

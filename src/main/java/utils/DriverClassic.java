@@ -14,7 +14,6 @@ public class DriverClassic extends Driver {
 	 * visibles Boutons specifiques aux "pages de record" dans Salesforce
 	 */
 	public boolean isRecordPageButtonVisible(String location, String button) {
-		boolean btnPresent = true;
 		String cssSelector = "";
 		if (location != null && !location.isEmpty()) {
 			cssSelector = "#" + location + "ButtonRow > ";
@@ -24,9 +23,9 @@ public class DriverClassic extends Driver {
 			WebElement element = driver.findElement(By.cssSelector(cssSelector));
 		} catch (Exception e) {
 			System.err.println("Button " + button + " not found.");
-			btnPresent = false;
+			return false;
 		}
-		return btnPresent;
+		return true;
 	}
 
 	/**
@@ -37,15 +36,13 @@ public class DriverClassic extends Driver {
 	 * @return
 	 */
 	public boolean isButtonVisible(String btnName) {
-		boolean btnPresent = true;
-
 		try {
 			WebElement element = driver.findElement(By.name(btnName.toLowerCase()));
 		} catch (Exception e) {
 			System.err.println("Button " + btnName + " not found.");
-			btnPresent = false;
+			return false;
 		}
-		return btnPresent;
+		return true;
 	}
 
 	/**
@@ -82,8 +79,7 @@ public class DriverClassic extends Driver {
 		// On declare le webElement "preXpath" contenant la valeur du debut du chemin
 		// d'acces xpath du label e verifier
 		String preXpath = Selectors.MAIN_BODY;
-		// Declaration de la variable boolean "labelPresent" initialise e "true"
-		boolean labelPresent = true;
+		
 		try {
 			// Si la "sectionName" est different de null
 			if (sectionName != "") {
@@ -115,10 +111,10 @@ public class DriverClassic extends Driver {
 		} catch (Exception e) {
 			// Si le label n'est pas present on affiche le message d'erreur
 			System.err.println("Label " + label + " not found.");
-			labelPresent = false;
+			return false;
 		}
 		// On retourne le booleen, pour effectuer un assert en fonction
-		return labelPresent;
+		return true;
 	}
 
 	/**
@@ -142,14 +138,15 @@ public class DriverClassic extends Driver {
 		// On declare le webElement "preXpath" contenant la valeur du debut du chemin
 		// d'acces xpath du champ e remplir
 		String preXpath = Selectors.MAIN_BODY;
-		boolean labelPresent = true;
+	
 		try {
 			if (sectionName != "") {
 				preXpath += Selectors.H_3_EQ_START + sectionName + Selectors.H_3_EQ_END + Selectors.NEXT_DIV;
 			}
 			// On determine le webelement "block" grece e son xpath
 			WebElement block = driver.findElement(By.xpath(preXpath));
-
+			
+			// on détermine ensuite un nouvel xpath pour la recherche de l'élément à partir du block
 			preXpath = Selectors.LBL_CTN_START + eltName + Selectors.LBL_CTN_END + Selectors.NEXT_TD;
 
 			switch (eltType) {
@@ -245,6 +242,7 @@ public class DriverClassic extends Driver {
 				// On selectionne la valeur determine
 				selectElementInSelect(element, values[0]);
 				break;
+			// type spécifique pour le champ de recherche du parent account qui diffère de beaucoup entre classic et lightning	
 			case SELECT_SEARCHFIELD:
 				element = block.findElement(By.xpath(preXpath + Selectors.SELECT));
 				// On selectionne la valeur determine
@@ -372,6 +370,7 @@ public class DriverClassic extends Driver {
 	@Override
 	public void clickAccessView(String viewName) {
 		// Methode spécifique à lightning
+		// non implémenté en classic
 
 	}
 

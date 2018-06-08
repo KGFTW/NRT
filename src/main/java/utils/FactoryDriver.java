@@ -12,8 +12,7 @@ public class FactoryDriver {
 				driver = new DriverClassic();
 			else
 				driver = new DriverLightning();
-		}
-		
+		}		
 		return driver;
 
 	}

@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("NRT_Account.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("non_regression_account.feature");
 formatter.feature({
   "comments": [
     {
@@ -19,7 +19,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 6062830265,
+  "duration": 5797748634,
   "status": "passed"
 });
 formatter.scenario({
@@ -60,32 +60,32 @@ formatter.match({
   "location": "LoginStep.InitLoginPage()"
 });
 formatter.result({
-  "duration": 172658062,
+  "duration": 246302253,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStep.putNameAndPassword()"
 });
 formatter.result({
-  "duration": 832287119,
+  "duration": 1155704289,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStep.checkHomepage()"
 });
 formatter.result({
-  "duration": 5006255388,
+  "duration": 5004042762,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStep.switchView()"
 });
 formatter.result({
-  "duration": 187709958,
+  "duration": 1674224836,
   "status": "passed"
 });
 formatter.after({
-  "duration": 55882,
+  "duration": 70985,
   "status": "passed"
 });
 formatter.scenario({
@@ -120,32 +120,32 @@ formatter.match({
   "location": "AccountStep.initHomepage()"
 });
 formatter.result({
-  "duration": 284319,
+  "duration": 2380649,
   "status": "passed"
 });
 formatter.match({
   "location": "AccountStep.accesHome()"
 });
 formatter.result({
-  "duration": 16277877480,
+  "duration": 814519658,
   "status": "passed"
 });
 formatter.match({
   "location": "AccountStep.verifAccountButton()"
 });
 formatter.result({
-  "duration": 40695323,
+  "duration": 66008744,
   "status": "passed"
 });
 formatter.match({
   "location": "AccountStep.clicNewAccountBtn()"
 });
 formatter.result({
-  "duration": 8224919075,
+  "duration": 8601307111,
   "status": "passed"
 });
 formatter.after({
-  "duration": 75138,
+  "duration": 39268,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -518,11 +518,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 164364113,
+  "duration": 176544883,
   "status": "passed"
 });
 formatter.after({
-  "duration": 38513,
+  "duration": 41157,
   "status": "passed"
 });
 formatter.scenario({
@@ -567,11 +567,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 45716776,
+  "duration": 46818180,
   "status": "passed"
 });
 formatter.after({
-  "duration": 23787,
+  "duration": 24543,
   "status": "passed"
 });
 formatter.scenario({
@@ -616,11 +616,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 33126330,
+  "duration": 41104621,
   "status": "passed"
 });
 formatter.after({
-  "duration": 23032,
+  "duration": 36247,
   "status": "passed"
 });
 formatter.scenario({
@@ -665,11 +665,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 73982504,
+  "duration": 37146060,
   "status": "passed"
 });
 formatter.after({
-  "duration": 26808,
+  "duration": 24165,
   "status": "passed"
 });
 formatter.scenario({
@@ -714,11 +714,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 51264953,
+  "duration": 37348444,
   "status": "passed"
 });
 formatter.after({
-  "duration": 25298,
+  "duration": 23032,
   "status": "passed"
 });
 formatter.scenario({
@@ -763,11 +763,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 42864905,
+  "duration": 38779476,
   "status": "passed"
 });
 formatter.after({
-  "duration": 23788,
+  "duration": 23033,
   "status": "passed"
 });
 formatter.scenario({
@@ -812,11 +812,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 39544078,
+  "duration": 37724514,
   "status": "passed"
 });
 formatter.after({
-  "duration": 22655,
+  "duration": 24920,
   "status": "passed"
 });
 formatter.scenario({
@@ -861,11 +861,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 36581576,
+  "duration": 35439771,
   "status": "passed"
 });
 formatter.after({
-  "duration": 23033,
+  "duration": 26054,
   "status": "passed"
 });
 formatter.scenario({
@@ -910,11 +910,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 46253696,
+  "duration": 39448172,
   "status": "passed"
 });
 formatter.after({
-  "duration": 44933,
+  "duration": 37381,
   "status": "passed"
 });
 formatter.scenario({
@@ -959,11 +959,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 41899053,
+  "duration": 35943464,
   "status": "passed"
 });
 formatter.after({
-  "duration": 23788,
+  "duration": 23410,
   "status": "passed"
 });
 formatter.scenario({
@@ -1008,11 +1008,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 34774850,
+  "duration": 38618249,
   "status": "passed"
 });
 formatter.after({
-  "duration": 21900,
+  "duration": 22654,
   "status": "passed"
 });
 formatter.scenario({
@@ -1057,11 +1057,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 39919017,
+  "duration": 37265753,
   "status": "passed"
 });
 formatter.after({
-  "duration": 26054,
+  "duration": 26808,
   "status": "passed"
 });
 formatter.scenario({
@@ -1106,11 +1106,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 35770532,
+  "duration": 35610438,
   "status": "passed"
 });
 formatter.after({
-  "duration": 22277,
+  "duration": 21522,
   "status": "passed"
 });
 formatter.scenario({
@@ -1155,11 +1155,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 36531358,
+  "duration": 38182898,
   "status": "passed"
 });
 formatter.after({
-  "duration": 367009,
+  "duration": 366254,
   "status": "passed"
 });
 formatter.scenario({
@@ -1204,7 +1204,7 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 40321140,
+  "duration": 40653790,
   "status": "passed"
 });
 formatter.after({
@@ -1253,11 +1253,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 45834203,
+  "duration": 40660208,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15481,
+  "duration": 16236,
   "status": "passed"
 });
 formatter.scenario({
@@ -1302,11 +1302,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 36709576,
+  "duration": 35161116,
   "status": "passed"
 });
 formatter.after({
-  "duration": 29074,
+  "duration": 17369,
   "status": "passed"
 });
 formatter.scenario({
@@ -1351,11 +1351,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 39949978,
+  "duration": 43681990,
   "status": "passed"
 });
 formatter.after({
-  "duration": 22655,
+  "duration": 16613,
   "status": "passed"
 });
 formatter.scenario({
@@ -1400,11 +1400,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 35447323,
+  "duration": 38285978,
   "status": "passed"
 });
 formatter.after({
-  "duration": 18124,
+  "duration": 26809,
   "status": "passed"
 });
 formatter.scenario({
@@ -1449,11 +1449,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 34049517,
+  "duration": 39073234,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14726,
+  "duration": 16236,
   "status": "passed"
 });
 formatter.scenario({
@@ -1498,11 +1498,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 41513919,
+  "duration": 38936173,
   "status": "passed"
 });
 formatter.after({
-  "duration": 32472,
+  "duration": 17747,
   "status": "passed"
 });
 formatter.scenario({
@@ -1547,7 +1547,7 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 39302804,
+  "duration": 35461293,
   "status": "passed"
 });
 formatter.after({
@@ -1596,11 +1596,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 34976856,
+  "duration": 36966709,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15481,
+  "duration": 14348,
   "status": "passed"
 });
 formatter.scenario({
@@ -1645,11 +1645,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 38869718,
+  "duration": 34985918,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14725,
+  "duration": 16991,
   "status": "passed"
 });
 formatter.scenario({
@@ -1694,11 +1694,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 40053813,
+  "duration": 33658720,
   "status": "passed"
 });
 formatter.after({
-  "duration": 13971,
+  "duration": 15859,
   "status": "passed"
 });
 formatter.scenario({
@@ -1743,11 +1743,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 39626014,
+  "duration": 96383263,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14348,
+  "duration": 17747,
   "status": "passed"
 });
 formatter.scenario({
@@ -1792,11 +1792,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 57195244,
+  "duration": 38721329,
   "status": "passed"
 });
 formatter.after({
-  "duration": 16991,
+  "duration": 18879,
   "status": "passed"
 });
 formatter.scenario({
@@ -1841,11 +1841,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 41313801,
+  "duration": 37460585,
   "status": "passed"
 });
 formatter.after({
-  "duration": 16992,
+  "duration": 15858,
   "status": "passed"
 });
 formatter.scenario({
@@ -1890,11 +1890,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 45577825,
+  "duration": 40171618,
   "status": "passed"
 });
 formatter.after({
-  "duration": 30206,
+  "duration": 14725,
   "status": "passed"
 });
 formatter.scenario({
@@ -1939,11 +1939,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 34762767,
+  "duration": 36425258,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15104,
+  "duration": 15103,
   "status": "passed"
 });
 formatter.scenario({
@@ -1988,11 +1988,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 41341365,
+  "duration": 35629694,
   "status": "passed"
 });
 formatter.after({
-  "duration": 56637,
+  "duration": 17369,
   "status": "passed"
 });
 formatter.scenario({
@@ -2037,11 +2037,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 40640197,
+  "duration": 40164821,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15103,
+  "duration": 15481,
   "status": "passed"
 });
 formatter.scenario({
@@ -2086,11 +2086,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 39912975,
+  "duration": 45408291,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14348,
+  "duration": 15859,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -2463,11 +2463,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 56313592,
+  "duration": 48092895,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15481,
+  "duration": 15480,
   "status": "passed"
 });
 formatter.scenario({
@@ -2512,11 +2512,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 44221177,
+  "duration": 44288385,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15103,
+  "duration": 16614,
   "status": "passed"
 });
 formatter.scenario({
@@ -2561,11 +2561,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 50878311,
+  "duration": 49067431,
   "status": "passed"
 });
 formatter.after({
-  "duration": 28697,
+  "duration": 15481,
   "status": "passed"
 });
 formatter.scenario({
@@ -2610,7 +2610,7 @@ formatter.match({
   "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 53182311,
+  "duration": 46589365,
   "status": "passed"
 });
 formatter.after({
@@ -2659,11 +2659,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 45779077,
+  "duration": 46652422,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15858,
+  "duration": 15103,
   "status": "passed"
 });
 formatter.scenario({
@@ -2708,11 +2708,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 50420682,
+  "duration": 48388540,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14348,
+  "duration": 16236,
   "status": "passed"
 });
 formatter.scenario({
@@ -2757,11 +2757,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 50897567,
+  "duration": 49805602,
   "status": "passed"
 });
 formatter.after({
-  "duration": 20767,
+  "duration": 15481,
   "status": "passed"
 });
 formatter.scenario({
@@ -2806,11 +2806,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 53943514,
+  "duration": 47071537,
   "status": "passed"
 });
 formatter.after({
-  "duration": 28696,
+  "duration": 15481,
   "status": "passed"
 });
 formatter.scenario({
@@ -2855,11 +2855,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 44134332,
+  "duration": 45452091,
   "status": "passed"
 });
 formatter.after({
-  "duration": 25298,
+  "duration": 20012,
   "status": "passed"
 });
 formatter.scenario({
@@ -2904,11 +2904,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 52095633,
+  "duration": 53965036,
   "status": "passed"
 });
 formatter.after({
-  "duration": 13593,
+  "duration": 17368,
   "status": "passed"
 });
 formatter.scenario({
@@ -2953,11 +2953,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 50530180,
+  "duration": 51586653,
   "status": "passed"
 });
 formatter.after({
-  "duration": 30207,
+  "duration": 16614,
   "status": "passed"
 });
 formatter.scenario({
@@ -3002,11 +3002,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 51460164,
+  "duration": 48908847,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15858,
+  "duration": 17369,
   "status": "passed"
 });
 formatter.scenario({
@@ -3051,11 +3051,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 54736813,
+  "duration": 48232977,
   "status": "passed"
 });
 formatter.after({
-  "duration": 16614,
+  "duration": 14726,
   "status": "passed"
 });
 formatter.scenario({
@@ -3100,11 +3100,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 65648531,
+  "duration": 51282322,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14349,
+  "duration": 15103,
   "status": "passed"
 });
 formatter.scenario({
@@ -3149,11 +3149,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 51975561,
+  "duration": 50610983,
   "status": "passed"
 });
 formatter.after({
-  "duration": 16991,
+  "duration": 15104,
   "status": "passed"
 });
 formatter.scenario({
@@ -3198,11 +3198,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 50435785,
+  "duration": 52597060,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15103,
+  "duration": 15480,
   "status": "passed"
 });
 formatter.scenario({
@@ -3247,11 +3247,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 50183184,
+  "duration": 53339007,
   "status": "passed"
 });
 formatter.after({
-  "duration": 17368,
+  "duration": 16614,
   "status": "passed"
 });
 formatter.scenario({
@@ -3296,11 +3296,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 50328930,
+  "duration": 46271442,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14348,
+  "duration": 15858,
   "status": "passed"
 });
 formatter.scenario({
@@ -3345,11 +3345,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 48729874,
+  "duration": 47802912,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14726,
+  "duration": 18124,
   "status": "passed"
 });
 formatter.scenario({
@@ -3394,11 +3394,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 52092989,
+  "duration": 62595032,
   "status": "passed"
 });
 formatter.after({
-  "duration": 16236,
+  "duration": 13971,
   "status": "passed"
 });
 formatter.scenario({
@@ -3443,11 +3443,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 50989319,
+  "duration": 49021744,
   "status": "passed"
 });
 formatter.after({
-  "duration": 30961,
+  "duration": 14726,
   "status": "passed"
 });
 formatter.scenario({
@@ -3492,11 +3492,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 44336717,
+  "duration": 49318145,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15858,
+  "duration": 14348,
   "status": "passed"
 });
 formatter.scenario({
@@ -3541,11 +3541,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 49846759,
+  "duration": 58015728,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14348,
+  "duration": 14726,
   "status": "passed"
 });
 formatter.scenario({
@@ -3590,11 +3590,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 50945897,
+  "duration": 76341630,
   "status": "passed"
 });
 formatter.after({
-  "duration": 22655,
+  "duration": 15480,
   "status": "passed"
 });
 formatter.scenario({
@@ -3639,11 +3639,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 46705661,
+  "duration": 49286805,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14348,
+  "duration": 14726,
   "status": "passed"
 });
 formatter.scenario({
@@ -3688,11 +3688,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 52374287,
+  "duration": 46578416,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15103,
+  "duration": 16237,
   "status": "passed"
 });
 formatter.scenario({
@@ -3737,11 +3737,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 49047797,
+  "duration": 53585567,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14348,
+  "duration": 14726,
   "status": "passed"
 });
 formatter.scenario({
@@ -3786,11 +3786,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 47386062,
+  "duration": 50842818,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15103,
+  "duration": 15859,
   "status": "passed"
 });
 formatter.scenario({
@@ -3835,11 +3835,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 50075950,
+  "duration": 52566476,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15103,
+  "duration": 14725,
   "status": "passed"
 });
 formatter.scenario({
@@ -3884,11 +3884,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 45794180,
+  "duration": 50629485,
   "status": "passed"
 });
 formatter.after({
-  "duration": 13970,
+  "duration": 14725,
   "status": "passed"
 });
 formatter.scenario({
@@ -3933,7 +3933,7 @@ formatter.match({
   "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 55238618,
+  "duration": 49566216,
   "status": "passed"
 });
 formatter.after({
@@ -3982,11 +3982,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 49364587,
+  "duration": 51036894,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14726,
+  "duration": 16614,
   "status": "passed"
 });
 formatter.scenario({
@@ -4031,11 +4031,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountEditableFields(String,String,String)"
 });
 formatter.result({
-  "duration": 51163007,
+  "duration": 46350735,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15481,
+  "duration": 13971,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -4163,11 +4163,11 @@ formatter.match({
   "location": "AccountStep.checkEditPageButtons(String,String)"
 });
 formatter.result({
-  "duration": 52106,
+  "duration": 52484,
   "status": "passed"
 });
 formatter.after({
-  "duration": 9817,
+  "duration": 9062,
   "status": "passed"
 });
 formatter.scenario({
@@ -4211,11 +4211,11 @@ formatter.match({
   "location": "AccountStep.checkEditPageButtons(String,String)"
 });
 formatter.result({
-  "duration": 37758,
+  "duration": 40023,
   "status": "passed"
 });
 formatter.after({
-  "duration": 7930,
+  "duration": 8684,
   "status": "passed"
 });
 formatter.scenario({
@@ -4259,11 +4259,11 @@ formatter.match({
   "location": "AccountStep.checkEditPageButtons(String,String)"
 });
 formatter.result({
-  "duration": 32472,
+  "duration": 47197,
   "status": "passed"
 });
 formatter.after({
-  "duration": 8685,
+  "duration": 12838,
   "status": "passed"
 });
 formatter.scenario({
@@ -4307,11 +4307,11 @@ formatter.match({
   "location": "AccountStep.checkEditPageButtons(String,String)"
 });
 formatter.result({
-  "duration": 78914,
+  "duration": 57014,
   "status": "passed"
 });
 formatter.after({
-  "duration": 9440,
+  "duration": 10195,
   "status": "passed"
 });
 formatter.scenario({
@@ -4355,11 +4355,11 @@ formatter.match({
   "location": "AccountStep.checkEditPageButtons(String,String)"
 });
 formatter.result({
-  "duration": 36625,
+  "duration": 40401,
   "status": "passed"
 });
 formatter.after({
-  "duration": 9062,
+  "duration": 9817,
   "status": "passed"
 });
 formatter.scenario({
@@ -4403,11 +4403,11 @@ formatter.match({
   "location": "AccountStep.checkEditPageButtons(String,String)"
 });
 formatter.result({
-  "duration": 40024,
+  "duration": 48331,
   "status": "passed"
 });
 formatter.after({
-  "duration": 9817,
+  "duration": 10572,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -4502,11 +4502,11 @@ formatter.match({
   "location": "AccountStep.checkEditPageButtons(String)"
 });
 formatter.result({
-  "duration": 15714552,
+  "duration": 15595236,
   "status": "passed"
 });
 formatter.after({
-  "duration": 17369,
+  "duration": 16613,
   "status": "passed"
 });
 formatter.scenario({
@@ -4545,11 +4545,11 @@ formatter.match({
   "location": "AccountStep.checkEditPageButtons(String)"
 });
 formatter.result({
-  "duration": 15947897,
+  "duration": 16791036,
   "status": "passed"
 });
 formatter.after({
-  "duration": 30207,
+  "duration": 14726,
   "status": "passed"
 });
 formatter.scenario({
@@ -4588,11 +4588,11 @@ formatter.match({
   "location": "AccountStep.checkEditPageButtons(String)"
 });
 formatter.result({
-  "duration": 15873891,
+  "duration": 15612227,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15481,
+  "duration": 16236,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -5296,11 +5296,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 646821126,
+  "duration": 679134901,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14348,
+  "duration": 23410,
   "status": "passed"
 });
 formatter.scenario({
@@ -5355,11 +5355,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 222540313,
+  "duration": 253322998,
   "status": "passed"
 });
 formatter.after({
-  "duration": 13971,
+  "duration": 33982,
   "status": "passed"
 });
 formatter.scenario({
@@ -5414,11 +5414,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 555096836,
+  "duration": 562941085,
   "status": "passed"
 });
 formatter.after({
-  "duration": 21900,
+  "duration": 19257,
   "status": "passed"
 });
 formatter.scenario({
@@ -5473,11 +5473,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 478144657,
+  "duration": 479504705,
   "status": "passed"
 });
 formatter.after({
-  "duration": 18501,
+  "duration": 17747,
   "status": "passed"
 });
 formatter.scenario({
@@ -5532,11 +5532,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 504356343,
+  "duration": 483222368,
   "status": "passed"
 });
 formatter.after({
-  "duration": 21522,
+  "duration": 94395,
   "status": "passed"
 });
 formatter.scenario({
@@ -5591,11 +5591,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 484765543,
+  "duration": 480841719,
   "status": "passed"
 });
 formatter.after({
-  "duration": 20389,
+  "duration": 37381,
   "status": "passed"
 });
 formatter.scenario({
@@ -5650,11 +5650,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 528842484,
+  "duration": 523173857,
   "status": "passed"
 });
 formatter.after({
-  "duration": 33605,
+  "duration": 21522,
   "status": "passed"
 });
 formatter.scenario({
@@ -5709,11 +5709,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 485119336,
+  "duration": 491337344,
   "status": "passed"
 });
 formatter.after({
-  "duration": 20766,
+  "duration": 22278,
   "status": "passed"
 });
 formatter.scenario({
@@ -5768,11 +5768,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 502943434,
+  "duration": 506658078,
   "status": "passed"
 });
 formatter.after({
-  "duration": 26431,
+  "duration": 26808,
   "status": "passed"
 });
 formatter.scenario({
@@ -5827,11 +5827,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 447492993,
+  "duration": 474585199,
   "status": "passed"
 });
 formatter.after({
-  "duration": 17746,
+  "duration": 21899,
   "status": "passed"
 });
 formatter.scenario({
@@ -5886,11 +5886,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 987707467,
+  "duration": 1066260591,
   "status": "passed"
 });
 formatter.after({
-  "duration": 20767,
+  "duration": 17369,
   "status": "passed"
 });
 formatter.scenario({
@@ -5945,11 +5945,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 676456340,
+  "duration": 712475321,
   "status": "passed"
 });
 formatter.after({
-  "duration": 36248,
+  "duration": 20012,
   "status": "passed"
 });
 formatter.scenario({
@@ -6004,11 +6004,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 678513025,
+  "duration": 772628535,
   "status": "passed"
 });
 formatter.after({
-  "duration": 68720,
+  "duration": 27941,
   "status": "passed"
 });
 formatter.scenario({
@@ -6063,11 +6063,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 735869119,
+  "duration": 724394804,
   "status": "passed"
 });
 formatter.after({
-  "duration": 17369,
+  "duration": 20012,
   "status": "passed"
 });
 formatter.scenario({
@@ -6122,11 +6122,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 692040626,
+  "duration": 724392537,
   "status": "passed"
 });
 formatter.after({
-  "duration": 22655,
+  "duration": 22277,
   "status": "passed"
 });
 formatter.scenario({
@@ -6181,11 +6181,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 683665498,
+  "duration": 692001736,
   "status": "passed"
 });
 formatter.after({
-  "duration": 19256,
+  "duration": 23410,
   "status": "passed"
 });
 formatter.scenario({
@@ -6240,11 +6240,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 193614196,
+  "duration": 202161501,
   "status": "passed"
 });
 formatter.after({
-  "duration": 23033,
+  "duration": 16236,
   "status": "passed"
 });
 formatter.scenario({
@@ -6299,11 +6299,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 510566044,
+  "duration": 496403350,
   "status": "passed"
 });
 formatter.after({
-  "duration": 18502,
+  "duration": 86467,
   "status": "passed"
 });
 formatter.scenario({
@@ -6358,11 +6358,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 410441328,
+  "duration": 463385008,
   "status": "passed"
 });
 formatter.after({
-  "duration": 19635,
+  "duration": 20767,
   "status": "passed"
 });
 formatter.scenario({
@@ -6417,11 +6417,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 400092583,
+  "duration": 441169263,
   "status": "passed"
 });
 formatter.after({
-  "duration": 21900,
+  "duration": 40779,
   "status": "passed"
 });
 formatter.scenario({
@@ -6476,11 +6476,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 421274510,
+  "duration": 462238671,
   "status": "passed"
 });
 formatter.after({
-  "duration": 20767,
+  "duration": 18501,
   "status": "passed"
 });
 formatter.scenario({
@@ -6535,11 +6535,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 246570335,
+  "duration": 344838106,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15859,
+  "duration": 17368,
   "status": "passed"
 });
 formatter.scenario({
@@ -6594,7 +6594,7 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 289161494,
+  "duration": 267704310,
   "status": "passed"
 });
 formatter.after({
@@ -6653,11 +6653,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 382812579,
+  "duration": 419681495,
   "status": "passed"
 });
 formatter.after({
-  "duration": 20767,
+  "duration": 16614,
   "status": "passed"
 });
 formatter.scenario({
@@ -6712,11 +6712,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 487972340,
+  "duration": 463584370,
   "status": "passed"
 });
 formatter.after({
-  "duration": 77782,
+  "duration": 17369,
   "status": "passed"
 });
 formatter.scenario({
@@ -6771,11 +6771,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 491669615,
+  "duration": 499234832,
   "status": "passed"
 });
 formatter.after({
-  "duration": 124602,
+  "duration": 18124,
   "status": "passed"
 });
 formatter.scenario({
@@ -6830,11 +6830,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 446815235,
+  "duration": 455741254,
   "status": "passed"
 });
 formatter.after({
-  "duration": 41533,
+  "duration": 26808,
   "status": "passed"
 });
 formatter.scenario({
@@ -6889,11 +6889,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 414590945,
+  "duration": 441544957,
   "status": "passed"
 });
 formatter.after({
-  "duration": 20767,
+  "duration": 47953,
   "status": "passed"
 });
 formatter.scenario({
@@ -6948,11 +6948,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 229434191,
+  "duration": 300976388,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15858,
+  "duration": 16991,
   "status": "passed"
 });
 formatter.scenario({
@@ -7007,11 +7007,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 224277564,
+  "duration": 233654416,
   "status": "passed"
 });
 formatter.after({
-  "duration": 18880,
+  "duration": 18124,
   "status": "passed"
 });
 formatter.scenario({
@@ -7066,11 +7066,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 183740825,
+  "duration": 219177575,
   "status": "passed"
 });
 formatter.after({
-  "duration": 16991,
+  "duration": 52861,
   "status": "passed"
 });
 formatter.scenario({
@@ -7125,11 +7125,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 306897238,
+  "duration": 372890124,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15858,
+  "duration": 16614,
   "status": "passed"
 });
 formatter.scenario({
@@ -7184,11 +7184,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 178735987,
+  "duration": 202706729,
   "status": "passed"
 });
 formatter.after({
-  "duration": 17746,
+  "duration": 16991,
   "status": "passed"
 });
 formatter.scenario({
@@ -7243,11 +7243,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 201676687,
+  "duration": 243302748,
   "status": "passed"
 });
 formatter.after({
-  "duration": 23410,
+  "duration": 43799,
   "status": "passed"
 });
 formatter.scenario({
@@ -7302,11 +7302,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 185829227,
+  "duration": 222184254,
   "status": "passed"
 });
 formatter.after({
-  "duration": 17747,
+  "duration": 15481,
   "status": "passed"
 });
 formatter.scenario({
@@ -7361,11 +7361,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 178363692,
+  "duration": 215839758,
   "status": "passed"
 });
 formatter.after({
-  "duration": 16614,
+  "duration": 26053,
   "status": "passed"
 });
 formatter.scenario({
@@ -7420,11 +7420,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 279488996,
+  "duration": 335615308,
   "status": "passed"
 });
 formatter.after({
-  "duration": 29073,
+  "duration": 18879,
   "status": "passed"
 });
 formatter.scenario({
@@ -7479,11 +7479,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 173824788,
+  "duration": 173614098,
   "status": "passed"
 });
 formatter.after({
-  "duration": 19634,
+  "duration": 19635,
   "status": "passed"
 });
 formatter.scenario({
@@ -7538,11 +7538,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 462482212,
+  "duration": 524166518,
   "status": "passed"
 });
 formatter.after({
-  "duration": 52484,
+  "duration": 20767,
   "status": "passed"
 });
 formatter.scenario({
@@ -7597,11 +7597,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 433023704,
+  "duration": 421416103,
   "status": "passed"
 });
 formatter.after({
-  "duration": 30962,
+  "duration": 34738,
   "status": "passed"
 });
 formatter.scenario({
@@ -7656,11 +7656,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 390681372,
+  "duration": 419874439,
   "status": "passed"
 });
 formatter.after({
-  "duration": 39269,
+  "duration": 32095,
   "status": "passed"
 });
 formatter.scenario({
@@ -7715,11 +7715,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 380779683,
+  "duration": 397334730,
   "status": "passed"
 });
 formatter.after({
-  "duration": 45687,
+  "duration": 23032,
   "status": "passed"
 });
 formatter.scenario({
@@ -7774,11 +7774,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 157693009,
+  "duration": 167370037,
   "status": "passed"
 });
 formatter.after({
-  "duration": 189546,
+  "duration": 16991,
   "status": "passed"
 });
 formatter.scenario({
@@ -7833,11 +7833,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 481044102,
+  "duration": 468927522,
   "status": "passed"
 });
 formatter.after({
-  "duration": 37758,
+  "duration": 26808,
   "status": "passed"
 });
 formatter.scenario({
@@ -7892,11 +7892,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 389046068,
+  "duration": 425680506,
   "status": "passed"
 });
 formatter.after({
-  "duration": 84956,
+  "duration": 80047,
   "status": "passed"
 });
 formatter.scenario({
@@ -7951,11 +7951,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 382622656,
+  "duration": 405286590,
   "status": "passed"
 });
 formatter.after({
-  "duration": 20767,
+  "duration": 20012,
   "status": "passed"
 });
 formatter.scenario({
@@ -8010,11 +8010,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 471203204,
+  "duration": 540046072,
   "status": "passed"
 });
 formatter.after({
-  "duration": 18501,
+  "duration": 20012,
   "status": "passed"
 });
 formatter.scenario({
@@ -8069,11 +8069,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 399520925,
+  "duration": 603481223,
   "status": "passed"
 });
 formatter.after({
-  "duration": 35115,
+  "duration": 21899,
   "status": "passed"
 });
 formatter.scenario({
@@ -8128,11 +8128,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 518258128,
+  "duration": 415684043,
   "status": "passed"
 });
 formatter.after({
-  "duration": 23033,
+  "duration": 62679,
   "status": "passed"
 });
 formatter.scenario({
@@ -8187,11 +8187,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 421248835,
+  "duration": 429486146,
   "status": "passed"
 });
 formatter.after({
-  "duration": 33605,
+  "duration": 71362,
   "status": "passed"
 });
 formatter.scenario({
@@ -8246,11 +8246,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 392400499,
+  "duration": 359601154,
   "status": "passed"
 });
 formatter.after({
-  "duration": 39646,
+  "duration": 33605,
   "status": "passed"
 });
 formatter.scenario({
@@ -8305,11 +8305,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 459990930,
+  "duration": 600083370,
   "status": "passed"
 });
 formatter.after({
-  "duration": 72118,
+  "duration": 228436,
   "status": "passed"
 });
 formatter.scenario({
@@ -8364,11 +8364,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 415740680,
+  "duration": 563854833,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14348,
+  "duration": 48331,
   "status": "passed"
 });
 formatter.scenario({
@@ -8423,11 +8423,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 481551572,
+  "duration": 415939288,
   "status": "passed"
 });
 formatter.after({
-  "duration": 24542,
+  "duration": 20389,
   "status": "passed"
 });
 formatter.scenario({
@@ -8482,11 +8482,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 119849179,
+  "duration": 122768259,
   "status": "passed"
 });
 formatter.after({
-  "duration": 13970,
+  "duration": 64566,
   "status": "passed"
 });
 formatter.scenario({
@@ -8541,11 +8541,11 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 2623737699,
+  "duration": 2458773986,
   "status": "passed"
 });
 formatter.after({
-  "duration": 27941,
+  "duration": 24543,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -8642,7 +8642,7 @@ formatter.match({
   "location": "AccountStep.clickSaveButton()"
 });
 formatter.result({
-  "duration": 4113141071,
+  "duration": 4128638136,
   "status": "passed"
 });
 formatter.match({
@@ -8671,18 +8671,18 @@ formatter.match({
   "location": "AccountStep.fillNewAccountFields(String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 2605196952,
+  "duration": 2647309337,
   "status": "passed"
 });
 formatter.match({
   "location": "AccountStep.clickSaveButton()"
 });
 formatter.result({
-  "duration": 4108271029,
+  "duration": 4107921766,
   "status": "passed"
 });
 formatter.after({
-  "duration": 18502,
+  "duration": 57392,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -8794,11 +8794,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 17653053,
+  "duration": 35053128,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14348,
+  "duration": 16992,
   "status": "passed"
 });
 formatter.scenario({
@@ -8843,11 +8843,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 14553490,
+  "duration": 15154222,
   "status": "passed"
 });
 formatter.after({
-  "duration": 12837,
+  "duration": 13216,
   "status": "passed"
 });
 formatter.scenario({
@@ -8892,11 +8892,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 16001135,
+  "duration": 15429101,
   "status": "passed"
 });
 formatter.after({
-  "duration": 13593,
+  "duration": 12838,
   "status": "passed"
 });
 formatter.scenario({
@@ -8941,11 +8941,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 14477218,
+  "duration": 14125313,
   "status": "passed"
 });
 formatter.after({
-  "duration": 13593,
+  "duration": 12838,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -9040,11 +9040,11 @@ formatter.match({
   "location": "AccountStep.accessView(String)"
 });
 formatter.result({
-  "duration": 2144620393,
+  "duration": 2127093830,
   "status": "passed"
 });
 formatter.after({
-  "duration": 43045,
+  "duration": 43422,
   "status": "passed"
 });
 formatter.scenario({
@@ -9083,11 +9083,11 @@ formatter.match({
   "location": "AccountStep.accessView(String)"
 });
 formatter.result({
-  "duration": 2092563651,
+  "duration": 2103951878,
   "status": "passed"
 });
 formatter.after({
-  "duration": 43044,
+  "duration": 18124,
   "status": "passed"
 });
 formatter.scenario({
@@ -9126,11 +9126,11 @@ formatter.match({
   "location": "AccountStep.accessView(String)"
 });
 formatter.result({
-  "duration": 2123756012,
+  "duration": 2122889085,
   "status": "passed"
 });
 formatter.after({
-  "duration": 43800,
+  "duration": 17746,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -9440,11 +9440,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 22816854,
+  "duration": 23234081,
   "status": "passed"
 });
 formatter.after({
-  "duration": 12082,
+  "duration": 12460,
   "status": "passed"
 });
 formatter.scenario({
@@ -9489,11 +9489,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 23637715,
+  "duration": 22096429,
   "status": "passed"
 });
 formatter.after({
-  "duration": 13970,
+  "duration": 30962,
   "status": "passed"
 });
 formatter.scenario({
@@ -9538,11 +9538,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 22676394,
+  "duration": 26369138,
   "status": "passed"
 });
 formatter.after({
-  "duration": 18501,
+  "duration": 33227,
   "status": "passed"
 });
 formatter.scenario({
@@ -9587,11 +9587,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 21519862,
+  "duration": 22089632,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15859,
+  "duration": 16613,
   "status": "passed"
 });
 formatter.scenario({
@@ -9636,11 +9636,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 23085692,
+  "duration": 27560784,
   "status": "passed"
 });
 formatter.after({
-  "duration": 12838,
+  "duration": 13216,
   "status": "passed"
 });
 formatter.scenario({
@@ -9685,11 +9685,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 23394176,
+  "duration": 19567391,
   "status": "passed"
 });
 formatter.after({
-  "duration": 12460,
+  "duration": 13593,
   "status": "passed"
 });
 formatter.scenario({
@@ -9734,11 +9734,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 22341857,
+  "duration": 25707993,
   "status": "passed"
 });
 formatter.after({
-  "duration": 12460,
+  "duration": 27941,
   "status": "passed"
 });
 formatter.scenario({
@@ -9783,11 +9783,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 20045408,
+  "duration": 27580041,
   "status": "passed"
 });
 formatter.after({
-  "duration": 12460,
+  "duration": 14348,
   "status": "passed"
 });
 formatter.scenario({
@@ -9832,11 +9832,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 25867710,
+  "duration": 25870353,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14348,
+  "duration": 57015,
   "status": "passed"
 });
 formatter.scenario({
@@ -9881,11 +9881,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 25860913,
+  "duration": 27582306,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14725,
+  "duration": 13971,
   "status": "passed"
 });
 formatter.scenario({
@@ -9930,11 +9930,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 22045078,
+  "duration": 33937752,
   "status": "passed"
 });
 formatter.after({
-  "duration": 13971,
+  "duration": 33227,
   "status": "passed"
 });
 formatter.scenario({
@@ -9979,11 +9979,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 22427567,
+  "duration": 32618861,
   "status": "passed"
 });
 formatter.after({
-  "duration": 13970,
+  "duration": 32849,
   "status": "passed"
 });
 formatter.scenario({
@@ -10028,11 +10028,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 24325668,
+  "duration": 27208501,
   "status": "passed"
 });
 formatter.after({
-  "duration": 16236,
+  "duration": 30584,
   "status": "passed"
 });
 formatter.scenario({
@@ -10077,11 +10077,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 19481679,
+  "duration": 28031627,
   "status": "passed"
 });
 formatter.after({
-  "duration": 13593,
+  "duration": 14348,
   "status": "passed"
 });
 formatter.scenario({
@@ -10126,11 +10126,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 23389644,
+  "duration": 34850367,
   "status": "passed"
 });
 formatter.after({
-  "duration": 13215,
+  "duration": 13593,
   "status": "passed"
 });
 formatter.scenario({
@@ -10175,11 +10175,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 33928691,
+  "duration": 32072502,
   "status": "passed"
 });
 formatter.after({
-  "duration": 12838,
+  "duration": 14348,
   "status": "passed"
 });
 formatter.scenario({
@@ -10224,11 +10224,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 20409019,
+  "duration": 25495037,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14726,
+  "duration": 14348,
   "status": "passed"
 });
 formatter.scenario({
@@ -10273,7 +10273,7 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 23672453,
+  "duration": 21564039,
   "status": "passed"
 });
 formatter.after({
@@ -10322,11 +10322,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 23650554,
+  "duration": 23435332,
   "status": "passed"
 });
 formatter.after({
-  "duration": 13970,
+  "duration": 41534,
   "status": "passed"
 });
 formatter.scenario({
@@ -10371,11 +10371,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 21389597,
+  "duration": 30213292,
   "status": "passed"
 });
 formatter.after({
-  "duration": 22655,
+  "duration": 18879,
   "status": "passed"
 });
 formatter.scenario({
@@ -10420,11 +10420,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 31476301,
+  "duration": 25664572,
   "status": "passed"
 });
 formatter.after({
-  "duration": 16236,
+  "duration": 23410,
   "status": "passed"
 });
 formatter.scenario({
@@ -10469,11 +10469,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 20519272,
+  "duration": 32075900,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14725,
+  "duration": 15103,
   "status": "passed"
 });
 formatter.scenario({
@@ -10518,11 +10518,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 29093764,
+  "duration": 22744358,
   "status": "passed"
 });
 formatter.after({
-  "duration": 16991,
+  "duration": 14725,
   "status": "passed"
 });
 formatter.scenario({
@@ -10567,11 +10567,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 24395898,
+  "duration": 30091333,
   "status": "passed"
 });
 formatter.after({
-  "duration": 14725,
+  "duration": 15103,
   "status": "passed"
 });
 formatter.scenario({
@@ -10616,11 +10616,11 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 29337304,
+  "duration": 26336666,
   "status": "passed"
 });
 formatter.after({
-  "duration": 16613,
+  "duration": 25676,
   "status": "passed"
 });
 formatter.scenario({
@@ -10665,7 +10665,7 @@ formatter.match({
   "location": "AccountStep.checkNewAccountVisibleFields(String,String,String)"
 });
 formatter.result({
-  "duration": 22764748,
+  "duration": 23641869,
   "status": "passed"
 });
 formatter.after({
@@ -10923,11 +10923,11 @@ formatter.match({
   "location": "AccountStep.validateNewAccount(String,String)"
 });
 formatter.result({
-  "duration": 48470098,
+  "duration": 54288246,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15481,
+  "duration": 55127,
   "status": "passed"
 });
 formatter.scenario({
@@ -10967,11 +10967,11 @@ formatter.match({
   "location": "AccountStep.validateNewAccount(String,String)"
 });
 formatter.result({
-  "duration": 43904008,
+  "duration": 51516422,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15481,
+  "duration": 18124,
   "status": "passed"
 });
 formatter.scenario({
@@ -11011,11 +11011,11 @@ formatter.match({
   "location": "AccountStep.validateNewAccount(String,String)"
 });
 formatter.result({
-  "duration": 39447795,
+  "duration": 45064315,
   "status": "passed"
 });
 formatter.after({
-  "duration": 16236,
+  "duration": 13971,
   "status": "passed"
 });
 formatter.scenario({
@@ -11055,11 +11055,11 @@ formatter.match({
   "location": "AccountStep.validateNewAccount(String,String)"
 });
 formatter.result({
-  "duration": 39138556,
+  "duration": 38887464,
   "status": "passed"
 });
 formatter.after({
-  "duration": 13215,
+  "duration": 13971,
   "status": "passed"
 });
 formatter.scenario({
@@ -11099,11 +11099,11 @@ formatter.match({
   "location": "AccountStep.validateNewAccount(String,String)"
 });
 formatter.result({
-  "duration": 34185823,
+  "duration": 94551995,
   "status": "passed"
 });
 formatter.after({
-  "duration": 13215,
+  "duration": 25298,
   "status": "passed"
 });
 formatter.scenario({
@@ -11143,11 +11143,11 @@ formatter.match({
   "location": "AccountStep.validateNewAccount(String,String)"
 });
 formatter.result({
-  "duration": 35086733,
+  "duration": 45873094,
   "status": "passed"
 });
 formatter.after({
-  "duration": 13971,
+  "duration": 15858,
   "status": "passed"
 });
 formatter.scenario({
@@ -11187,11 +11187,11 @@ formatter.match({
   "location": "AccountStep.validateNewAccount(String,String)"
 });
 formatter.result({
-  "duration": 42431819,
+  "duration": 49386865,
   "status": "passed"
 });
 formatter.after({
-  "duration": 13215,
+  "duration": 31717,
   "status": "passed"
 });
 formatter.scenario({
@@ -11231,11 +11231,11 @@ formatter.match({
   "location": "AccountStep.validateNewAccount(String,String)"
 });
 formatter.result({
-  "duration": 30594649,
+  "duration": 34336101,
   "status": "passed"
 });
 formatter.after({
-  "duration": 13593,
+  "duration": 14348,
   "status": "passed"
 });
 formatter.scenario({
@@ -11275,11 +11275,11 @@ formatter.match({
   "location": "AccountStep.validateNewAccount(String,String)"
 });
 formatter.result({
-  "duration": 25923214,
+  "duration": 39023394,
   "status": "passed"
 });
 formatter.after({
-  "duration": 13593,
+  "duration": 15859,
   "status": "passed"
 });
 formatter.scenario({
@@ -11319,11 +11319,11 @@ formatter.match({
   "location": "AccountStep.validateNewAccount(String,String)"
 });
 formatter.result({
-  "duration": 41012492,
+  "duration": 48695136,
   "status": "passed"
 });
 formatter.after({
-  "duration": 13593,
+  "duration": 14726,
   "status": "passed"
 });
 formatter.scenario({
@@ -11363,11 +11363,11 @@ formatter.match({
   "location": "AccountStep.validateNewAccount(String,String)"
 });
 formatter.result({
-  "duration": 39460633,
+  "duration": 44071654,
   "status": "passed"
 });
 formatter.after({
-  "duration": 13215,
+  "duration": 13970,
   "status": "passed"
 });
 formatter.scenario({
@@ -11407,11 +11407,11 @@ formatter.match({
   "location": "AccountStep.validateNewAccount(String,String)"
 });
 formatter.result({
-  "duration": 34502992,
+  "duration": 45282180,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15481,
+  "duration": 16992,
   "status": "passed"
 });
 formatter.scenario({
@@ -11451,11 +11451,11 @@ formatter.match({
   "location": "AccountStep.validateNewAccount(String,String)"
 });
 formatter.result({
-  "duration": 39117789,
+  "duration": 76329171,
   "status": "passed"
 });
 formatter.after({
-  "duration": 13971,
+  "duration": 18501,
   "status": "passed"
 });
 formatter.scenario({
@@ -11495,11 +11495,11 @@ formatter.match({
   "location": "AccountStep.validateNewAccount(String,String)"
 });
 formatter.result({
-  "duration": 40494828,
+  "duration": 59034442,
   "status": "passed"
 });
 formatter.after({
-  "duration": 13216,
+  "duration": 25298,
   "status": "passed"
 });
 formatter.scenario({
@@ -11539,11 +11539,11 @@ formatter.match({
   "location": "AccountStep.validateNewAccount(String,String)"
 });
 formatter.result({
-  "duration": 36845128,
+  "duration": 59418065,
   "status": "passed"
 });
 formatter.after({
-  "duration": 13593,
+  "duration": 22278,
   "status": "passed"
 });
 formatter.scenario({
@@ -11583,11 +11583,11 @@ formatter.match({
   "location": "AccountStep.validateNewAccount(String,String)"
 });
 formatter.result({
-  "duration": 40137636,
+  "duration": 56453675,
   "status": "passed"
 });
 formatter.after({
-  "duration": 13215,
+  "duration": 17369,
   "status": "passed"
 });
 formatter.scenario({
@@ -11627,11 +11627,11 @@ formatter.match({
   "location": "AccountStep.validateNewAccount(String,String)"
 });
 formatter.result({
-  "duration": 46115879,
+  "duration": 52100918,
   "status": "passed"
 });
 formatter.after({
-  "duration": 13593,
+  "duration": 18502,
   "status": "passed"
 });
 formatter.scenario({
@@ -11671,11 +11671,11 @@ formatter.match({
   "location": "AccountStep.validateNewAccount(String,String)"
 });
 formatter.result({
-  "duration": 38545753,
+  "duration": 121160896,
   "status": "passed"
 });
 formatter.after({
-  "duration": 13216,
+  "duration": 15103,
   "status": "passed"
 });
 formatter.scenario({
@@ -11715,11 +11715,11 @@ formatter.match({
   "location": "AccountStep.validateNewAccount(String,String)"
 });
 formatter.result({
-  "duration": 41689117,
+  "duration": 40420066,
   "status": "passed"
 });
 formatter.after({
-  "duration": 15481,
+  "duration": 17746,
   "status": "passed"
 });
 formatter.scenario({
@@ -11759,11 +11759,11 @@ formatter.match({
   "location": "AccountStep.validateNewAccount(String,String)"
 });
 formatter.result({
-  "duration": 39892963,
+  "duration": 25968146,
   "status": "passed"
 });
 formatter.after({
-  "duration": 13971,
+  "duration": 13593,
   "status": "passed"
 });
 formatter.scenario({
@@ -11803,11 +11803,11 @@ formatter.match({
   "location": "AccountStep.validateNewAccount(String,String)"
 });
 formatter.result({
-  "duration": 32995687,
+  "duration": 27362554,
   "status": "passed"
 });
 formatter.after({
-  "duration": 37003,
+  "duration": 16614,
   "status": "passed"
 });
 formatter.scenario({
@@ -11847,11 +11847,12 @@ formatter.match({
   "location": "AccountStep.validateNewAccount(String,String)"
 });
 formatter.result({
-  "duration": 37868751,
-  "status": "passed"
+  "duration": 58751256,
+  "error_message": "org.junit.ComparisonFailure: expected:\u003c[tru]e\u003e but was:\u003c[fals]e\u003e\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat steps.AccountStep.validateNewAccount(AccountStep.java:108)\r\n\tat ✽.Then je verifie que dans le champ SLA contient la valeur Silver(non_regression_account.feature:254)\r\n",
+  "status": "failed"
 });
 formatter.after({
-  "duration": 13970,
+  "duration": 396817066,
   "status": "passed"
 });
 formatter.scenario({
@@ -11891,11 +11892,11 @@ formatter.match({
   "location": "AccountStep.validateNewAccount(String,String)"
 });
 formatter.result({
-  "duration": 92012383,
+  "duration": 42210179,
   "status": "passed"
 });
 formatter.after({
-  "duration": 16614,
+  "duration": 18879,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -12007,11 +12008,11 @@ formatter.match({
   "location": "AccountStep.checkEditPageButtons(String,String)"
 });
 formatter.result({
-  "duration": 41911,
+  "duration": 124979,
   "status": "passed"
 });
 formatter.after({
-  "duration": 7174,
+  "duration": 15481,
   "status": "passed"
 });
 formatter.scenario({
@@ -12055,11 +12056,11 @@ formatter.match({
   "location": "AccountStep.checkEditPageButtons(String,String)"
 });
 formatter.result({
-  "duration": 25676,
+  "duration": 36625,
   "status": "passed"
 });
 formatter.after({
-  "duration": 19635,
+  "duration": 9062,
   "status": "passed"
 });
 formatter.scenario({
@@ -12103,11 +12104,11 @@ formatter.match({
   "location": "AccountStep.checkEditPageButtons(String,String)"
 });
 formatter.result({
-  "duration": 27185,
+  "duration": 23410,
   "status": "passed"
 });
 formatter.after({
-  "duration": 7551,
+  "duration": 7929,
   "status": "passed"
 });
 formatter.scenario({
@@ -12151,11 +12152,11 @@ formatter.match({
   "location": "AccountStep.checkEditPageButtons(String,String)"
 });
 formatter.result({
-  "duration": 22278,
+  "duration": 21144,
   "status": "passed"
 });
 formatter.after({
-  "duration": 6419,
+  "duration": 8684,
   "status": "passed"
 });
 formatter.scenario({
@@ -12191,25 +12192,25 @@ formatter.match({
   "location": "LogoutStep.checkHomePage()"
 });
 formatter.result({
-  "duration": 232590,
+  "duration": 218620,
   "status": "passed"
 });
 formatter.match({
   "location": "LogoutStep.checkOptions()"
 });
 formatter.result({
-  "duration": 1131938196,
+  "duration": 1123375033,
   "status": "passed"
 });
 formatter.match({
   "location": "LogoutStep.logout()"
 });
 formatter.result({
-  "duration": 3689618443,
+  "duration": 3261141572,
   "status": "passed"
 });
 formatter.after({
-  "duration": 16235,
+  "duration": 15858,
   "status": "passed"
 });
 });

@@ -7,7 +7,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class DriverLightning extends Driver {
 
@@ -16,16 +15,15 @@ public class DriverLightning extends Driver {
 	 * isRecordPageButtonVisible Methodes pour verifier que les boutons sont bien
 	 * visibles Boutons specifiques aux "pages de record" dans Salesforce
 	 */
-	public boolean isRecordPageButtonVisible(String location, String button) {
-		boolean btnPresent = true;
+	public boolean isRecordPageButtonVisible(String location, String button) {		
 		String xpath = Selectors.RECORD_BUTTON + button + Selectors.EQ_END;
 		try {
 			WebElement element = driver.findElement(By.xpath(xpath));
 		} catch (Exception e) {
 			System.err.println("Button " + button + " not found.");
-			btnPresent = false;
+			return false;
 		}
-		return btnPresent;
+		return true;
 	} 
 
 	/**
@@ -75,9 +73,7 @@ public class DriverLightning extends Driver {
 		// Declaration de la variable "element" qu'on initie e "null"
 		WebElement labelElement = null;
 		// On declare le webElement "preXpath" du label e verifier
-		String preXpath = "";
-		// Declaration de la variable boolean "labelPresent" initialise e "true"
-		boolean labelPresent = true;
+		String preXpath = "";		
 		try {
 			// Si la "sectionName" est different de null
 			if (sectionName != "") {
@@ -95,6 +91,7 @@ public class DriverLightning extends Driver {
 			case LABELVIEW:
 				labelElement = driver.findElement(By.xpath(Selectors.SPAN_CTN_START + label + Selectors.SPAN_CTN_END));
 				break;
+			// cases non utilisés pour l'account	
 			// case LINK:
 			// labelElement = block.findElement(By.xpath(Selectors.SPAN_EQ_START + "label" +
 			// Selectors.SPAN_EQ_END));
@@ -111,10 +108,10 @@ public class DriverLightning extends Driver {
 		} catch (Exception e) {
 			// Si le label n'est pas present on affiche le message d'erreur
 			System.err.println("Label " + label + " not found.");
-			labelPresent = false;
+			return false;
 		}
 		// On retourne le booleen, pour effectuer un assert en fonction
-		return labelPresent;
+		return true;
 	}
 
 	/**
@@ -137,15 +134,13 @@ public class DriverLightning extends Driver {
 		WebElement element = null;
 		// On declare le webElement "preXpath" contenant la valeur du debut du chemin
 		// d'acces xpath du champ e remplir
-		String preXpath = "";
-		boolean labelPresent = true;
+		String preXpath = "";	
 		try {
 			if (sectionName != "") {
 				preXpath += Selectors.SPAN_EQ_START + sectionName + Selectors.SPAN_EQ_END;
 			}
 			// On determine le webelement "block" grece e son xpath
 			WebElement block = driver.findElement(By.xpath(preXpath));
-
 			switch (eltType) {
 			case INPUT:
 				// Si c'est un type "INPUT", creation du chemin e l'aide du preXpath + valeur
@@ -225,6 +220,8 @@ public class DriverLightning extends Driver {
 				element.sendKeys(values[0]);
 				waitMs(2000);				
 				break;
+				//spécifique à lightning et au parent account d'un account permet de choisir le premier
+				//parent account de la liste
 			case SELECT_SEARCHFIELD:
 				element = block.findElement(By.xpath(Selectors.SEARCH_PATH));
 				element.clear();
@@ -278,7 +275,7 @@ public class DriverLightning extends Driver {
 		// On clique sur la picklist
 		elementSelect.click();	
 		// On recupere la liste d'options html (<option>) correspondant e notre valeur
-		// "stringToSelect" dans le WebElement "elementSelect"		
+		// "stringToSelect" dans le WebElement "elementSelect"	on attend qu'elle soit chargée pour selectionner notre option	
 		WebElement listeOptions = wait.until(ExpectedConditions.presenceOfElementLocated(By.className("positioned")));
 		List<WebElement> options = listeOptions.findElements(By.className("uiMenuItem")).stream()
 				.filter(option -> option.getText().equals(stringToSelect)).collect(Collectors.toList());
@@ -357,6 +354,10 @@ public class DriverLightning extends Driver {
 		return fieldValue;
 	}
 
+	/**
+	 * @param btnName	
+	 * 
+	 */
 	@Override
 	public boolean isButtonVisible(String btnName) {
 

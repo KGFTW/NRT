@@ -1,8 +1,3 @@
-2018/06/08-08:55:06.066 3568 Reusing MANIFEST C:\Users\sylvain.tropee\eclipse-workspace\NRT_Starter_Pack\resources\GoogleChromePortable\Data\profile\Default\IndexedDB\https_curious-goat-340090-dev-ed.lightning.force.com_0.indexeddb.leveldb/MANIFEST-000001
-2018/06/08-08:55:06.070 3568 Recovering log #1511
-2018/06/08-08:55:06.075 3568 Reusing old log C:\Users\sylvain.tropee\eclipse-workspace\NRT_Starter_Pack\resources\GoogleChromePortable\Data\profile\Default\IndexedDB\https_curious-goat-340090-dev-ed.lightning.force.com_0.indexeddb.leveldb/001511.log 
-2018/06/08-08:55:06.207 25136 Compacting 1@1 + 2@2 files
-2018/06/08-08:55:06.281 25136 Generated table #1514@1: 12901 keys, 2159419 bytes
-2018/06/08-08:55:06.313 25136 Generated table #1515@1: 7587 keys, 821427 bytes
-2018/06/08-08:55:06.314 25136 Compacted 1@1 + 2@2 files => 2980846 bytes
-2018/06/08-08:55:06.316 25136 compacted to: files[ 0 0 2 0 0 0 0 ]
+2018/06/08-13:38:57.093 4436 Reusing MANIFEST C:\Users\sylvain.tropee\eclipse-workspace\NRT_Starter_Pack\resources\GoogleChromePortable\Data\profile\Default\IndexedDB\https_curious-goat-340090-dev-ed.lightning.force.com_0.indexeddb.leveldb/MANIFEST-000001
+2018/06/08-13:38:57.098 4436 Recovering log #1562
+2018/06/08-13:38:57.098 4436 Reusing old log C:\Users\sylvain.tropee\eclipse-workspace\NRT_Starter_Pack\resources\GoogleChromePortable\Data\profile\Default\IndexedDB\https_curious-goat-340090-dev-ed.lightning.force.com_0.indexeddb.leveldb/001562.log 

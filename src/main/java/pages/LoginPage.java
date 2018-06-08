@@ -42,16 +42,13 @@ public class LoginPage extends DriverClassic {
 			if (entrepriseEditionPageTitleClassicOther.equals(driver.getTitle())
 					|| enterpriseEditionPageTitleClassic.equals(driver.getTitle()))
 				title = true;
-
-			Assert.assertEquals(title, true);
-
 		} else {
 			if (enterpriseEditionPageTitleLightning.equals(driver.getTitle())
 					|| enterpriseEditionPageTitleLightningOther.equals(driver.getTitle()))
 				title = true;
-
-			Assert.assertEquals(title, true);
 		}
+
+		Assert.assertEquals(title, true);
 
 	}
 
