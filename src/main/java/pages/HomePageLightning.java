@@ -10,13 +10,13 @@ import utils.FactoryDriver;
 public class HomePageLightning {
 
 	// on charges certains éléments de la page dès sa création
-	@FindBy(xpath = "//div[3]/div/div[1]/div[1]/div/button/span")
+	@FindBy(xpath = "//nav[@class='appLauncher slds-context-bar__icon-action']")
 	private WebElement launcher;
 
 	@FindBy(xpath = "//div[@class='DESKTOP uiContainerManager']")
 	private WebElement block;
 
-	@FindBy(xpath = "//button/div/span[1]/span/img")
+	@FindBy(xpath = "//span[@class='photoContainer forceSocialPhoto']")
 	private WebElement menu;
 
 	@FindBy(linkText = "Accounts")
@@ -72,15 +72,15 @@ public class HomePageLightning {
 	public void accessLauncher() {
 
 		try {
-			accountTab = FactoryDriver.getInstance().driver.findElement(By.linkText("Accounts"));
-		} catch (Exception e) {
-			launcher.click();
+			accountTab = FactoryDriver.getInstance().driver.findElement(By.linkText("Accounts"));			
+		} catch (Exception e) {			
+			launcher.click();		
 			FactoryDriver.getInstance().waitMs(3000);
 			WebElement sales = block
 					.findElement(By.xpath("//div[@class='dragArea uiDraggable']//div[text()='Sales']"));
 			sales.click();
 
-			FactoryDriver.getInstance().waitMs(3000);
+			FactoryDriver.getInstance().waitMs(5000);
 		}
 
 	}

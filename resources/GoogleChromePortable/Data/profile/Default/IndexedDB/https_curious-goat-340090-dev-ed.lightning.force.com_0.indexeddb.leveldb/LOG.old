@@ -1,53 +1,56 @@
-2018/06/08-13:59:17.379 18652 Reusing MANIFEST C:\Users\sylvain.tropee\eclipse-workspace\NRT_Starter_Pack\resources\GoogleChromePortable\Data\profile\Default\IndexedDB\https_curious-goat-340090-dev-ed.lightning.force.com_0.indexeddb.leveldb/MANIFEST-000001
-2018/06/08-13:59:17.383 18652 Recovering log #1562
-2018/06/08-13:59:17.413 18652 Reusing old log C:\Users\sylvain.tropee\eclipse-workspace\NRT_Starter_Pack\resources\GoogleChromePortable\Data\profile\Default\IndexedDB\https_curious-goat-340090-dev-ed.lightning.force.com_0.indexeddb.leveldb/001562.log 
-2018/06/08-13:59:18.618 24756 Level-0 table #1571: started
-2018/06/08-13:59:18.666 24756 Level-0 table #1571: 3382083 bytes OK
-2018/06/08-13:59:18.670 24756 Delete type=0 #1562
-2018/06/08-14:00:04.741 24756 Compacting 1@1 + 2@2 files
-2018/06/08-14:00:04.836 24756 Generated table #1572@1: 10651 keys, 2149791 bytes
-2018/06/08-14:00:04.904 24756 Generated table #1573@1: 11232 keys, 2184970 bytes
-2018/06/08-14:00:04.910 24756 Generated table #1574@1: 85 keys, 9447 bytes
-2018/06/08-14:00:04.911 24756 Compacted 1@1 + 2@2 files => 4344208 bytes
-2018/06/08-14:00:04.915 24756 compacted to: files[ 0 0 3 0 0 0 0 ]
-2018/06/08-14:00:04.917 24756 Delete type=2 #1567
-2018/06/08-14:00:04.918 24756 Delete type=2 #1568
-2018/06/08-14:00:04.918 24756 Delete type=2 #1571
-2018/06/08-14:00:06.458 24756 Level-0 table #1576: started
-2018/06/08-14:00:06.490 24756 Level-0 table #1576: 2921620 bytes OK
-2018/06/08-14:00:06.495 24756 Delete type=0 #1570
-2018/06/08-14:00:18.294 24756 Compacting 1@1 + 3@2 files
-2018/06/08-14:00:18.315 18652 Current memtable full; waiting...
-2018/06/08-14:00:18.316 24756 Level-0 table #1579: started
-2018/06/08-14:00:18.339 24756 Level-0 table #1579: 906866 bytes OK
-2018/06/08-14:00:18.345 24756 Delete type=0 #1575
-2018/06/08-14:00:18.354 24756 Level-0 table #1581: started
-2018/06/08-14:00:18.355 24756 Level-0 table #1581: 0 bytes OK
-2018/06/08-14:00:18.361 24756 Delete type=0 #1578
-2018/06/08-14:00:18.452 24756 Generated table #1577@1: 9926 keys, 2148921 bytes
-2018/06/08-14:00:18.532 24756 Generated table #1582@1: 12202 keys, 2165640 bytes
-2018/06/08-14:00:18.540 24756 Generated table #1583@1: 204 keys, 213822 bytes
-2018/06/08-14:00:18.540 24756 Compacted 1@1 + 3@2 files => 4528383 bytes
-2018/06/08-14:00:18.544 24756 compacted to: files[ 1 0 3 0 0 0 0 ]
-2018/06/08-14:00:18.544 24756 Delete type=2 #1572
-2018/06/08-14:00:18.545 24756 Delete type=2 #1573
-2018/06/08-14:00:18.546 24756 Delete type=2 #1574
-2018/06/08-14:00:18.546 24756 Delete type=2 #1576
-2018/06/08-14:00:18.547 24756 Manual compaction at level-0 from ' \x0f\x01\x00\x00\x00' @ 72057594037927935 : 1 .. ' \x10\x01\x00\x00\x00' @ 0 : 0; will stop at ' \x0f\x01\x01\x1f\x03\x00\xc0^\xc7\xb1xvB\x00\x01\x0d\x00c\x00r\x00y\x00p\x00t\x00o\x00a\x00d\x00a\x00p\x00t\x00e\x00r' @ 239029 : 0
-2018/06/08-14:00:18.547 24756 Compacting 1@0 + 0@1 files
-2018/06/08-14:00:18.556 24756 Generated table #1584@0: 309 keys, 142236 bytes
-2018/06/08-14:00:18.556 24756 Compacted 1@0 + 0@1 files => 142236 bytes
-2018/06/08-14:00:18.560 24756 compacted to: files[ 0 1 3 0 0 0 0 ]
-2018/06/08-14:00:18.561 24756 Delete type=2 #1579
-2018/06/08-14:00:18.562 24756 Manual compaction at level-0 from ' \x0f\x01\x01\x1f\x03\x00\xc0^\xc7\xb1xvB\x00\x01\x0d\x00c\x00r\x00y\x00p\x00t\x00o\x00a\x00d\x00a\x00p\x00t\x00e\x00r' @ 239029 : 0 .. ' \x10\x01\x00\x00\x00' @ 0 : 0; will stop at (end)
-2018/06/08-14:00:18.562 24756 Manual compaction at level-1 from ' \x0f\x01\x00\x00\x00' @ 72057594037927935 : 1 .. ' \x10\x01\x00\x00\x00' @ 0 : 0; will stop at ' \x0f\x01\x01\x1f\x03\x00\xc0^\xc7\xb1xvB\x00\x01\x0d\x00c\x00r\x00y\x00p\x00t\x00o\x00a\x00d\x00a\x00p\x00t\x00e\x00r' @ 239029 : 0
-2018/06/08-14:00:18.562 24756 Compacting 1@1 + 3@2 files
-2018/06/08-14:00:18.629 24756 Generated table #1585@1: 9926 keys, 2149929 bytes
-2018/06/08-14:00:18.672 24756 Generated table #1586@1: 12212 keys, 758945 bytes
-2018/06/08-14:00:18.672 24756 Compacted 1@1 + 3@2 files => 2908874 bytes
-2018/06/08-14:00:18.676 24756 compacted to: files[ 0 0 2 0 0 0 0 ]
-2018/06/08-14:00:18.676 24756 Delete type=2 #1577
-2018/06/08-14:00:18.677 24756 Delete type=2 #1582
-2018/06/08-14:00:18.678 24756 Delete type=2 #1583
-2018/06/08-14:00:18.678 24756 Delete type=2 #1584
-2018/06/08-14:00:18.679 24756 Manual compaction at level-1 from ' \x0f\x01\x01\x1f\x03\x00\xc0^\xc7\xb1xvB\x00\x01\x0d\x00c\x00r\x00y\x00p\x00t\x00o\x00a\x00d\x00a\x00p\x00t\x00e\x00r' @ 239029 : 0 .. ' \x10\x01\x00\x00\x00' @ 0 : 0; will stop at (end)
+2018/06/11-10:47:25.676 9348 Reusing MANIFEST C:\Users\sylvain.tropee\eclipse-workspace\NRT_Starter_Pack\resources\GoogleChromePortable\Data\profile\Default\IndexedDB\https_curious-goat-340090-dev-ed.lightning.force.com_0.indexeddb.leveldb/MANIFEST-000001
+2018/06/11-10:47:25.682 9348 Recovering log #1659
+2018/06/11-10:47:25.687 9348 Reusing old log C:\Users\sylvain.tropee\eclipse-workspace\NRT_Starter_Pack\resources\GoogleChromePortable\Data\profile\Default\IndexedDB\https_curious-goat-340090-dev-ed.lightning.force.com_0.indexeddb.leveldb/001659.log 
+2018/06/11-10:47:26.082 13676 Compacting 1@1 + 2@2 files
+2018/06/11-10:47:26.134 13676 Generated table #1662@1: 6588 keys, 2148338 bytes
+2018/06/11-10:47:26.148 13676 Generated table #1663@1: 180 keys, 808920 bytes
+2018/06/11-10:47:26.148 13676 Compacted 1@1 + 2@2 files => 2957258 bytes
+2018/06/11-10:47:26.151 13676 compacted to: files[ 0 0 2 0 0 0 0 ]
+2018/06/11-10:47:26.152 13676 Delete type=2 #1657
+2018/06/11-10:47:26.153 13676 Delete type=2 #1658
+2018/06/11-10:47:26.154 13676 Delete type=2 #1660
+2018/06/11-10:47:59.835 13676 Level-0 table #1665: started
+2018/06/11-10:47:59.891 13676 Level-0 table #1665: 3527259 bytes OK
+2018/06/11-10:47:59.897 13676 Delete type=0 #1659
+2018/06/11-10:48:47.863 13676 Compacting 1@1 + 2@2 files
+2018/06/11-10:48:47.915 13676 Generated table #1666@1: 6933 keys, 2156660 bytes
+2018/06/11-10:48:47.926 13676 Generated table #1667@1: 274 keys, 704874 bytes
+2018/06/11-10:48:47.926 13676 Compacted 1@1 + 2@2 files => 2861534 bytes
+2018/06/11-10:48:47.930 13676 compacted to: files[ 0 0 2 0 0 0 0 ]
+2018/06/11-10:48:47.931 13676 Delete type=2 #1662
+2018/06/11-10:48:47.931 13676 Delete type=2 #1663
+2018/06/11-10:48:47.932 13676 Delete type=2 #1665
+2018/06/11-10:48:49.244 13676 Level-0 table #1669: started
+2018/06/11-10:48:49.324 13676 Level-0 table #1669: 3648170 bytes OK
+2018/06/11-10:48:49.338 13676 Delete type=0 #1664
+2018/06/11-10:49:00.694 13676 Compacting 1@1 + 2@2 files
+2018/06/11-10:49:00.713 24356 Current memtable full; waiting...
+2018/06/11-10:49:00.713 13676 Level-0 table #1672: started
+2018/06/11-10:49:00.731 13676 Level-0 table #1672: 1168696 bytes OK
+2018/06/11-10:49:00.736 13676 Delete type=0 #1668
+2018/06/11-10:49:00.756 13676 Level-0 table #1674: started
+2018/06/11-10:49:00.756 13676 Level-0 table #1674: 0 bytes OK
+2018/06/11-10:49:00.764 13676 Delete type=0 #1671
+2018/06/11-10:49:00.814 13676 Generated table #1670@1: 7356 keys, 2232738 bytes
+2018/06/11-10:49:00.843 13676 Generated table #1675@1: 360 keys, 1649399 bytes
+2018/06/11-10:49:00.843 13676 Compacted 1@1 + 2@2 files => 3882137 bytes
+2018/06/11-10:49:00.855 13676 compacted to: files[ 1 0 2 0 0 0 0 ]
+2018/06/11-10:49:00.857 13676 Delete type=2 #1666
+2018/06/11-10:49:00.859 13676 Delete type=2 #1667
+2018/06/11-10:49:00.860 13676 Delete type=2 #1669
+2018/06/11-10:49:00.861 13676 Manual compaction at level-0 from ' \x16\x01\x00\x00\x00' @ 72057594037927935 : 1 .. ' \x17\x01\x00\x00\x00' @ 0 : 0; will stop at ' \x16\x01\x01\x1f\x03\x00\xd0\x08\x06\x9eyvB\x00\x01\x0d\x00c\x00r\x00y\x00p\x00t\x00o\x00a\x00d\x00a\x00p\x00t\x00e\x00r' @ 267387 : 0
+2018/06/11-10:49:00.861 13676 Compacting 1@0 + 0@1 files
+2018/06/11-10:49:00.875 13676 Generated table #1676@0: 425 keys, 253747 bytes
+2018/06/11-10:49:00.875 13676 Compacted 1@0 + 0@1 files => 253747 bytes
+2018/06/11-10:49:00.879 13676 compacted to: files[ 0 1 2 0 0 0 0 ]
+2018/06/11-10:49:00.879 13676 Delete type=2 #1672
+2018/06/11-10:49:00.880 13676 Manual compaction at level-0 from ' \x16\x01\x01\x1f\x03\x00\xd0\x08\x06\x9eyvB\x00\x01\x0d\x00c\x00r\x00y\x00p\x00t\x00o\x00a\x00d\x00a\x00p\x00t\x00e\x00r' @ 267387 : 0 .. ' \x17\x01\x00\x00\x00' @ 0 : 0; will stop at (end)
+2018/06/11-10:49:00.880 13676 Manual compaction at level-1 from ' \x16\x01\x00\x00\x00' @ 72057594037927935 : 1 .. ' \x17\x01\x00\x00\x00' @ 0 : 0; will stop at ' \x16\x01\x01\x1f\x03\x00\xd0\x08\x06\x9eyvB\x00\x01\x0d\x00c\x00r\x00y\x00p\x00t\x00o\x00a\x00d\x00a\x00p\x00t\x00e\x00r' @ 267387 : 0
+2018/06/11-10:49:00.880 13676 Compacting 1@1 + 2@2 files
+2018/06/11-10:49:00.951 13676 Generated table #1677@1: 7406 keys, 2099982 bytes
+2018/06/11-10:49:00.951 13676 Compacted 1@1 + 2@2 files => 2099982 bytes
+2018/06/11-10:49:00.955 13676 compacted to: files[ 0 0 1 0 0 0 0 ]
+2018/06/11-10:49:00.956 13676 Delete type=2 #1670
+2018/06/11-10:49:00.957 13676 Delete type=2 #1675
+2018/06/11-10:49:00.959 13676 Delete type=2 #1676
+2018/06/11-10:49:00.960 13676 Manual compaction at level-1 from ' \x16\x01\x01\x1f\x03\x00\xd0\x08\x06\x9eyvB\x00\x01\x0d\x00c\x00r\x00y\x00p\x00t\x00o\x00a\x00d\x00a\x00p\x00t\x00e\x00r' @ 267387 : 0 .. ' \x17\x01\x00\x00\x00' @ 0 : 0; will stop at (end)

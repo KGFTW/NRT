@@ -1,35 +1,28 @@
-[0608/143758.700:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
-[0608/143802.397:INFO:CONSOLE(0)] "The SSL certificate used to load resources from https://c.salesforce.com will be distrusted in the future. Once distrusted, users will be prevented from loading these resources. See https://g.co/chrome/symantecpkicerts for more information.", source: https://curious-goat-340090-dev-ed.my.salesforce.com/s.gif (0)
-[0608/143802.401:INFO:CONSOLE(0)] "The SSL certificate used to load resources from https://c.salesforce.com will be distrusted in the future. Once distrusted, users will be prevented from loading these resources. See https://g.co/chrome/symantecpkicerts for more information.", source: https://c.salesforce.com/login-messages/promos.html (0)
-[0608/143802.858:INFO:CONSOLE(0)] "The SSL certificate used to load resources from https://c1.sfdcstatic.com will be distrusted in the future. Once distrusted, users will be prevented from loading these resources. See https://g.co/chrome/symantecpkicerts for more information.", source: https://c.salesforce.com/login-messages/promos.html (0)
-[0608/143803.104:WARNING:spdy_session.cc(2991)] Received HEADERS for invalid stream 9
-[0608/143803.135:WARNING:spdy_session.cc(2991)] Received HEADERS for invalid stream 11
-[0608/143803.254:WARNING:spdy_session.cc(2991)] Received HEADERS for invalid stream 13
-[0608/143803.257:WARNING:spdy_session.cc(2991)] Received HEADERS for invalid stream 15
-[0608/143803.272:WARNING:spdy_session.cc(2991)] Received HEADERS for invalid stream 17
-[0608/143803.273:WARNING:spdy_session.cc(2991)] Received HEADERS for invalid stream 19
-[0608/143803.431:WARNING:spdy_session.cc(2991)] Received HEADERS for invalid stream 21
-[0608/143803.431:WARNING:spdy_session.cc(2991)] Received HEADERS for invalid stream 23
-[0608/143803.431:WARNING:spdy_session.cc(2991)] Received HEADERS for invalid stream 25
-[0608/143803.436:WARNING:spdy_session.cc(2991)] Received HEADERS for invalid stream 27
-[0608/143803.461:WARNING:spdy_session.cc(2991)] Received HEADERS for invalid stream 29
-[0608/143803.464:WARNING:spdy_session.cc(2991)] Received HEADERS for invalid stream 31
-[0608/143811.507:INFO:CONSOLE(16)] "[object Object]", source: https://curious-goat-340090-dev-ed.lightning.force.com/libraries/instrumentation/beaconLib/BeaconLibrary.js (16)
-[0608/143812.332:INFO:CONSOLE(0)] "Using unescaped '#' characters in a data URI body is deprecated and will be removed in M67, around May 2018. Please use '%23' instead. See https://www.chromestatus.com/features/5656049583390720 for more details.", source:  (0)
-[0608/143812.333:INFO:CONSOLE(0)] "Unsafe attempt to load URL data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='.3333 .3333 .3333 0 0 .3333 .3333 .3333 0 0 .3333 .3333 .3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale from frame with URL https://curious-goat-340090-dev-ed.my.salesforce.com/home/home.jsp?source=lex. Domains, protocols and ports must match.
-", source: https://curious-goat-340090-dev-ed.my.salesforce.com/home/home.jsp?source=lex (0)
-[0608/143812.444:INFO:CONSOLE(255)] "publisher core wiring started", source: https://curious-goat-340090-dev-ed.my.salesforce.com/jslibrary/1519472080000/sfdc/Chatter.js (255)
-[0608/143812.457:INFO:CONSOLE(255)] "publisher core wiring finished in 13ms", source: https://curious-goat-340090-dev-ed.my.salesforce.com/jslibrary/1519472080000/sfdc/Chatter.js (255)
-[0608/143813.404:INFO:CONSOLE(255)] "CEB EVENT! ns<chatter:publisher> en<onAfterFeedLoad> pld<[object Object]> exec-time<0>", source: https://curious-goat-340090-dev-ed.my.salesforce.com/jslibrary/1519472080000/sfdc/Chatter.js (255)
-[0608/143813.878:INFO:CONSOLE(0)] "The SSL certificate used to load resources from https://help.salesforce.com will be distrusted in the future. Once distrusted, users will be prevented from loading these resources. See https://g.co/chrome/symantecpkicerts for more information.", source: about:blank (0)
-[0608/143813.880:INFO:CONSOLE(0)] "The SSL certificate used to load resources from https://help.salesforce.com will be distrusted in the future. Once distrusted, users will be prevented from loading these resources. See https://g.co/chrome/symantecpkicerts for more information.", source: https://help.salesforce.com/setSFXCookie?value=aloha (0)
-[0608/143815.112:INFO:CONSOLE(0)] "The SSL certificate used to load resources from https://help.salesforce.com will be distrusted in the future. Once distrusted, users will be prevented from loading these resources. See https://g.co/chrome/symantecpkicerts for more information.", source: about:blank (0)
-[0608/143815.114:INFO:CONSOLE(0)] "The SSL certificate used to load resources from https://help.salesforce.com will be distrusted in the future. Once distrusted, users will be prevented from loading these resources. See https://g.co/chrome/symantecpkicerts for more information.", source: https://help.salesforce.com/setSFXCookie?value=aloha (0)
-[0608/143816.750:ERROR:web_contents_delegate.cc(179)] WebContentsDelegate::CheckMediaAccessPermission: Not supported.
-[0608/143816.750:ERROR:web_contents_delegate.cc(179)] WebContentsDelegate::CheckMediaAccessPermission: Not supported.
-[0608/143840.137:INFO:CONSOLE(255)] "publisher core wiring started", source: https://curious-goat-340090-dev-ed.my.salesforce.com/jslibrary/1519472080000/sfdc/Chatter.js (255)
-[0608/143840.153:INFO:CONSOLE(413)] "Using unescaped '#' characters in a data URI body is deprecated and will be removed in M67, around May 2018. Please use '%23' instead. See https://www.chromestatus.com/features/5656049583390720 for more details.", source: https://curious-goat-340090-dev-ed.my.salesforce.com/jslibrary/1524076052000/sfdc/main.js (413)
-[0608/143840.154:INFO:CONSOLE(413)] "Unsafe attempt to load URL data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='.3333 .3333 .3333 0 0 .3333 .3333 .3333 0 0 .3333 .3333 .3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale from frame with URL https://curious-goat-340090-dev-ed.my.salesforce.com/0011r00001prQjP. Domains, protocols and ports must match.
-", source: https://curious-goat-340090-dev-ed.my.salesforce.com/jslibrary/1524076052000/sfdc/main.js (413)
-[0608/143840.161:INFO:CONSOLE(255)] "publisher core wiring finished in 23ms", source: https://curious-goat-340090-dev-ed.my.salesforce.com/jslibrary/1519472080000/sfdc/Chatter.js (255)
-[0608/143840.275:INFO:CONSOLE(255)] "CEB EVENT! ns<chatter:publisher> en<onAfterFeedLoad> pld<[object Object]> exec-time<0>", source: https://curious-goat-340090-dev-ed.my.salesforce.com/jslibrary/1519472080000/sfdc/Chatter.js (255)
+[0611/133110.077:ERROR:gpu_process_transport_factory.cc(1007)] Lost UI shared context.
+[0611/133114.323:INFO:CONSOLE(0)] "The SSL certificate used to load resources from https://c.salesforce.com will be distrusted in the future. Once distrusted, users will be prevented from loading these resources. See https://g.co/chrome/symantecpkicerts for more information.", source: https://curious-goat-340090-dev-ed.my.salesforce.com/s.gif (0)
+[0611/133114.324:INFO:CONSOLE(0)] "The SSL certificate used to load resources from https://c.salesforce.com will be distrusted in the future. Once distrusted, users will be prevented from loading these resources. See https://g.co/chrome/symantecpkicerts for more information.", source: https://c.salesforce.com/login-messages/promos.html (0)
+[0611/133114.867:INFO:CONSOLE(0)] "The SSL certificate used to load resources from https://c1.sfdcstatic.com will be distrusted in the future. Once distrusted, users will be prevented from loading these resources. See https://g.co/chrome/symantecpkicerts for more information.", source: https://c.salesforce.com/login-messages/promos.html (0)
+[0611/133115.116:WARNING:spdy_session.cc(2991)] Received HEADERS for invalid stream 7
+[0611/133115.149:WARNING:spdy_session.cc(2991)] Received HEADERS for invalid stream 9
+[0611/133115.149:WARNING:spdy_session.cc(2991)] Received HEADERS for invalid stream 11
+[0611/133115.249:WARNING:spdy_session.cc(2991)] Received HEADERS for invalid stream 13
+[0611/133115.357:WARNING:spdy_session.cc(2991)] Received HEADERS for invalid stream 15
+[0611/133115.357:WARNING:spdy_session.cc(2991)] Received HEADERS for invalid stream 17
+[0611/133115.371:WARNING:spdy_session.cc(2991)] Received HEADERS for invalid stream 19
+[0611/133115.373:WARNING:spdy_session.cc(2991)] Received HEADERS for invalid stream 21
+[0611/133115.375:WARNING:spdy_session.cc(2991)] Received HEADERS for invalid stream 23
+[0611/133115.379:WARNING:spdy_session.cc(2991)] Received HEADERS for invalid stream 25
+[0611/133115.380:WARNING:spdy_session.cc(2991)] Received HEADERS for invalid stream 27
+[0611/133115.381:WARNING:spdy_session.cc(2991)] Received HEADERS for invalid stream 29
+[0611/133117.901:INFO:CONSOLE(0)] "The SSL certificate used to load resources from https://appexchange.salesforce.com will be distrusted in the future. Once distrusted, users will be prevented from loading these resources. See https://g.co/chrome/symantecpkicerts for more information.", source: https://curious-goat-340090-dev-ed.my.salesforce.com/setup/forcecomHomepage.apexp?setupid=ForceCom (0)
+[0611/133117.904:INFO:CONSOLE(0)] "The SSL certificate used to load resources from https://appexchange.salesforce.com will be distrusted in the future. Once distrusted, users will be prevented from loading these resources. See https://g.co/chrome/symantecpkicerts for more information.", source: https://appexchange.salesforce.com/setupModule (0)
+[0611/133118.015:INFO:CONSOLE(0)] "The SSL certificate used to load resources from https://success.salesforce.com will be distrusted in the future. Once distrusted, users will be prevented from loading these resources. See https://g.co/chrome/symantecpkicerts for more information.", source: https://curious-goat-340090-dev-ed.my.salesforce.com/setup/forcecomHomepage.apexp?setupid=ForceCom (0)
+[0611/133118.019:INFO:CONSOLE(0)] "The SSL certificate used to load resources from https://success.salesforce.com will be distrusted in the future. Once distrusted, users will be prevented from loading these resources. See https://g.co/chrome/symantecpkicerts for more information.", source: https://success.salesforce.com/communitySetupModule (0)
+[0611/133121.730:INFO:CONSOLE(0)] "The SSL certificate used to load resources from https://help.salesforce.com will be distrusted in the future. Once distrusted, users will be prevented from loading these resources. See https://g.co/chrome/symantecpkicerts for more information.", source: about:blank (0)
+[0611/133121.732:INFO:CONSOLE(0)] "The SSL certificate used to load resources from https://help.salesforce.com will be distrusted in the future. Once distrusted, users will be prevented from loading these resources. See https://g.co/chrome/symantecpkicerts for more information.", source: https://help.salesforce.com/setSFXCookie?value=aloha (0)
+[0611/133123.010:ERROR:web_contents_delegate.cc(179)] WebContentsDelegate::CheckMediaAccessPermission: Not supported.
+[0611/133123.011:ERROR:web_contents_delegate.cc(179)] WebContentsDelegate::CheckMediaAccessPermission: Not supported.
+[0611/133135.189:INFO:CONSOLE(15)] "[object Object]", source: https://curious-goat-340090-dev-ed.lightning.force.com/libraries/instrumentation/beaconLib/BeaconLibrary.js (15)
+[0611/133142.028:ERROR:web_contents_delegate.cc(179)] WebContentsDelegate::CheckMediaAccessPermission: Not supported.
+[0611/133142.029:ERROR:web_contents_delegate.cc(179)] WebContentsDelegate::CheckMediaAccessPermission: Not supported.
+[0611/133225.290:INFO:CONSOLE(2)] "<lightning-icon> Invalid icon name utility:", source: https://curious-goat-340090-dev-ed.lightning.force.com/components/lightning-icon.js (2)

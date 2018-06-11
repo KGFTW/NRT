@@ -10,12 +10,11 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class DriverLightning extends Driver {
 
-	
 	/**
 	 * isRecordPageButtonVisible Methodes pour verifier que les boutons sont bien
 	 * visibles Boutons specifiques aux "pages de record" dans Salesforce
 	 */
-	public boolean isRecordPageButtonVisible(String location, String button) {		
+	public boolean isRecordPageButtonVisible(String location, String button) {
 		String xpath = Selectors.RECORD_BUTTON + button + Selectors.EQ_END;
 		try {
 			WebElement element = driver.findElement(By.xpath(xpath));
@@ -24,7 +23,7 @@ public class DriverLightning extends Driver {
 			return false;
 		}
 		return true;
-	} 
+	}
 
 	/**
 	 * clickButton Methode permettant de cliquer sur un bouton
@@ -73,7 +72,7 @@ public class DriverLightning extends Driver {
 		// Declaration de la variable "element" qu'on initie e "null"
 		WebElement labelElement = null;
 		// On declare le webElement "preXpath" du label e verifier
-		String preXpath = "";		
+		String preXpath = "";
 		try {
 			// Si la "sectionName" est different de null
 			if (sectionName != "") {
@@ -91,15 +90,6 @@ public class DriverLightning extends Driver {
 			case LABELVIEW:
 				labelElement = driver.findElement(By.xpath(Selectors.SPAN_CTN_START + label + Selectors.SPAN_CTN_END));
 				break;
-			// cases non utilisés pour l'account	
-			// case LINK:
-			// labelElement = block.findElement(By.xpath(Selectors.SPAN_EQ_START + "label" +
-			// Selectors.SPAN_EQ_END));
-			// break;
-			// case OPTION:
-			// labelElement = block.findElement(By.xpath(Selectors.SPAN_EQ_START + "label" +
-			// Selectors.SPAN_EQ_END));
-			// break;
 			case RELATEDLIST:
 				labelElement = driver
 						.findElement(By.xpath(Selectors.RELATED_LIGHT_START + label + Selectors.RELATED_LIGHT_END));
@@ -134,7 +124,7 @@ public class DriverLightning extends Driver {
 		WebElement element = null;
 		// On declare le webElement "preXpath" contenant la valeur du debut du chemin
 		// d'acces xpath du champ e remplir
-		String preXpath = "";	
+		String preXpath = "";
 		try {
 			if (sectionName != "") {
 				preXpath += Selectors.SPAN_EQ_START + sectionName + Selectors.SPAN_EQ_END;
@@ -218,43 +208,30 @@ public class DriverLightning extends Driver {
 				element = block.findElement(By.xpath(Selectors.SEARCH_PATH));
 				element.clear();
 				element.sendKeys(values[0]);
-				waitMs(2000);				
+				waitMs(2000);
 				break;
-				//spécifique à lightning et au parent account d'un account permet de choisir le premier
-				//parent account de la liste
+			// spécifique à lightning et au parent account d'un account permet de choisir le
+			// premier
+			// parent account de la liste
 			case SELECT_SEARCHFIELD:
 				element = block.findElement(By.xpath(Selectors.SEARCH_PATH));
 				element.clear();
-				element.sendKeys(values[0]);	
+				element.sendKeys(values[0]);
 				waitMs(2000);
-				WebElement parentAccount = driver.findElement(By.xpath(Selectors.PARENT_ACCOUNT_SELECT));						
+				WebElement parentAccount = driver.findElement(By.xpath(Selectors.PARENT_ACCOUNT_SELECT));
 				parentAccount.click();
 				break;
-				// cases non utilisées pour account
-				// case MULTISELECT:
-				// element = block.findElement(By.xpath(preXpath + Selectors.MULTISELECT));
-				// WebElement addBtn = block.findElement(By.xpath(preXpath +
-				// Selectors.MULTISELECT + Selectors.ADD_BTN));
-				// for (String value : values) {
-				// selectElementInMultipleSelect(element, value);
-				// addBtn.click();
-				// }
-				// break;
-				// case CHECKBOX:
-				// element = block.findElement(By.xpath(preXpath + Selectors.CHECKBOX));
-				// Boolean value = Boolean.valueOf(values[0]);
-				// if (element.isSelected() && !value) {
-				// element.click();
-				// }
-				// if (!element.isSelected() && value) {
-				// element.click();
-				// }
-				// break;
 			case TEXTAREA:
 				element = block.findElement(By.xpath(preXpath + Selectors.NEXT_TEXT_AREA));
 				element.clear();
 				element.sendKeys(values[0]);
 				break;
+			case DATE:
+				element = block.findElement(By.xpath(
+						Selectors.SPAN_EQ_START + eltName + Selectors.SPAN_EQ_END + Selectors.NEXT_INPUT_ANC_LABEL));
+				element.sendKeys(values[0]);
+				break;
+
 			}
 		} catch (Exception e) {
 			// Si l'insertion de donnes est en echec, on renvoi le message d'erreur
@@ -273,13 +250,14 @@ public class DriverLightning extends Driver {
 	 */
 	public void selectElementInSelect(WebElement elementSelect, String stringToSelect) {
 		// On clique sur la picklist
-		elementSelect.click();	
+		elementSelect.click();
 		// On recupere la liste d'options html (<option>) correspondant e notre valeur
-		// "stringToSelect" dans le WebElement "elementSelect"	on attend qu'elle soit chargée pour selectionner notre option	
+		// "stringToSelect" dans le WebElement "elementSelect" on attend qu'elle soit
+		// chargée pour selectionner notre option
 		WebElement listeOptions = wait.until(ExpectedConditions.presenceOfElementLocated(By.className("positioned")));
 		List<WebElement> options = listeOptions.findElements(By.className("uiMenuItem")).stream()
 				.filter(option -> option.getText().equals(stringToSelect)).collect(Collectors.toList());
-		//waitMs(1000);
+		// waitMs(1000);
 		// S'il n'y a aucune option, la valeur n'existe pas, on renvoie une exception
 		if (null == options || options.isEmpty()) {
 			throw new WebDriverException("Not found: " + stringToSelect);
@@ -355,7 +333,7 @@ public class DriverLightning extends Driver {
 	}
 
 	/**
-	 * @param btnName	
+	 * @param btnName
 	 * 
 	 */
 	@Override

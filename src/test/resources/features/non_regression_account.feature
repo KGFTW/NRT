@@ -178,6 +178,7 @@ Test NRT with cucumber
  			|SLA													|Additional Information					|select					|false		|Platinum											|
  			|SLA													|Additional Information					|select					|false		|Bronze												|
  			|SLA													|Additional Information					|select					|false		|Silver												|
+ 			|SLA Expiration Date					|Additional Information					|Date						|false		|06/06/2066										|
  			|Upsell Opportunity						|Additional Information					|select					|false		|Maybe												|
  			|Upsell Opportunity						|Additional Information					|select					|false		|No														|
  			|Upsell Opportunity						|Additional Information					|select					|false		|Yes													| 			
