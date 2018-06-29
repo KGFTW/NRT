@@ -1,8 +1,0 @@
-pages\HomePageLightning.class
-utils\DriverClassic.class
-utils\Selectors.class
-pages\LoginPage.class
-utils\Driver.class
-utils\FactoryDriver.class
-utils\DriverLightning.class
-pages\HomePageClassic.class

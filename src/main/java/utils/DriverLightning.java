@@ -153,6 +153,9 @@ public class DriverLightning extends Driver {
 				element = block.findElement(
 						By.xpath(Selectors.SPAN_EQ_START + eltName + Selectors.SPAN_EQ_END + Selectors.NEXT_TEXT_AREA));
 				break;
+			case CHECKBOX:
+				element = block.findElement(By.xpath(preXpath + Selectors.CHECKBOX));
+				break;
 
 			}
 		} catch (WebDriverException e) {
@@ -177,7 +180,7 @@ public class DriverLightning extends Driver {
 	 * @param values
 	 *            -> Valeur e renseigner dans le champs
 	 */
-	public void setValue(String eltName, String sectionName, String eltType, boolean required, String... values) {
+	public void setValue(String eltName, String sectionName, String eltType, String... values) {
 		// On determine le webelement "block" grece e son xpath
 		WebElement block = driver.findElement(By.xpath(Selectors.SPAN_EQ_START + sectionName + Selectors.SPAN_EQ_END));
 		// Declaration de la variable "element" qu'on initie e "null"
@@ -230,6 +233,16 @@ public class DriverLightning extends Driver {
 				element = block.findElement(By.xpath(
 						Selectors.SPAN_EQ_START + eltName + Selectors.SPAN_EQ_END + Selectors.NEXT_INPUT_ANC_LABEL));
 				element.sendKeys(values[0]);
+				break;
+			case CHECKBOX:
+				element = block.findElement(By.xpath(preXpath + Selectors.CHECKBOX));
+				Boolean value = Boolean.valueOf(values[0]);
+				if (element.isSelected() && !value) {
+					element.click();
+				}
+				if (!element.isSelected() && value) {
+					element.click();
+				}
 				break;
 
 			}

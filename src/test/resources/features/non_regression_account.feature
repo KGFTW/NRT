@@ -123,78 +123,78 @@ Test NRT with cucumber
       | Cancel     |		
  				
  		Scenario Outline: Remplissage des champs de l'Account
- 			Then je remplis le champ <elementName> de la section <sectionName> de type <elementType> requis <required> avec la valeur <values>
+ 			Then je remplis le champ <elementName> de la section <sectionName> de type <elementType> avec la valeur <values>
  				
  			Examples:
- 			|elementName									|sectionName										|elementType		|required	|values												|
- 			|Account Name									|Account Information						|Input					|true			|															| 		
- 			|Account Number								|Account Information						|Input					|false		|2121212121										|
- 			|Type													|Account Information						|select					|false		|Other												|
- 			|Type													|Account Information						|select					|false		|Prospect											|
- 			|Type													|Account Information						|select					|false		|Customer - Direct						|
- 			|Type													|Account Information						|select					|false		|Customer - Channel						|
- 			|Type													|Account Information						|select					|false		|Channel Partner / Reseller		|
- 			|Type													|Account Information						|select					|false		|Installation Partner					|
- 			|Type													|Account Information						|select					|false		|Technology Partner						|
- 			|Type													|Account Information						|select					|false		|Prospect											|
- 			|Industry											|Account Information						|select					|false		|Agriculture									|
- 			|Industry											|Account Information						|select					|false		|Consulting										|
- 			|Industry											|Account Information						|select					|false		|Energy												|
- 			|Industry											|Account Information						|select					|false		|Finance											|
- 			|Industry											|Account Information						|select					|false		|Media												|
- 			|Industry											|Account Information						|select					|false		|Telecommunications						|
- 			|Annual Revenue								|Account Information						|Input					|false		|50 000												|
- 			|Rating												|Account Information						|select					|false		|Hot													|
- 			|Rating												|Account Information						|select					|false		|Warm													|
- 			|Rating												|Account Information						|select					|false		|Cold													|
- 			|Rating												|Account Information						|select					|false		|Warm													|
- 			|Phone												|Account Information						|Input					|false		|0202020202										|
- 			|Fax													|Account Information						|Input					|false		|0404040404										|
- 			|Website											|Account Information						|Input					|false		|https://www.accenture.com		|
- 			|Ownership										|Account Information						|select					|false		|Public												|
- 			|Ownership										|Account Information						|select					|false		|Private											|
- 			|Ownership										|Account Information						|select					|false		|Subsidiary										|
- 			|Ownership										|Account Information						|select					|false		|Private											|
- 			|Billing Street								|Address Information						|textArea				|false		|500, route de Vannes					|
- 			|Billing Zip/Postal Code			|Address Information						|Input					|false		|44000												|
- 			|Billing City									|Address Information						|Input					|false		|Nantes												|
- 			|Billing State/Province				|Address Information						|Input					|false		|Loire Atlantique							|
- 			|Billing Country							|Address Information						|Input					|false		|France												|
- 			|Shipping Street							|Address Information						|textArea				|false		|500, route de Vannes					|
- 			|Shipping Zip/Postal Code			|Address Information						|Input					|false		|44000												|
- 			|Shipping City								|Address Information						|Input					|false		|Nantes												|
- 			|Shipping State/Province			|Address Information						|Input					|false		|Loire Atlantique							|
- 			|Shipping Country							|Address Information						|Input					|false		|France												|
- 			|Customer Priority						|Additional Information					|select					|false		|High													|
- 			|Customer Priority						|Additional Information					|select					|false		|Low													|
- 			|Customer Priority						|Additional Information					|select					|false		|Medium												|
- 			|Customer Priority						|Additional Information					|select					|false		|High													|
- 			|Number of Locations					|Additional Information					|Input					|false		|123													|
- 			|Active												|Additional Information					|select					|false		|Yes													|
- 			|Active												|Additional Information					|select					|false		|No														|
- 			|Active												|Additional Information					|select					|false		|Yes													|
- 			|SLA													|Additional Information					|select					|false		|Gold													|
- 			|SLA													|Additional Information					|select					|false		|Silver												|
- 			|SLA													|Additional Information					|select					|false		|Platinum											|
- 			|SLA													|Additional Information					|select					|false		|Bronze												|
- 			|SLA													|Additional Information					|select					|false		|Silver												|
- 			|SLA Expiration Date					|Additional Information					|Date						|false		|06/06/2066										|
- 			|Upsell Opportunity						|Additional Information					|select					|false		|Maybe												|
- 			|Upsell Opportunity						|Additional Information					|select					|false		|No														|
- 			|Upsell Opportunity						|Additional Information					|select					|false		|Yes													| 			
- 			|Description									|Description Information				|textArea				|false		|OK														|
-			|Parent Account								|Account Information						|searchField		|false		|Accenture										|
+ 			|elementName									|sectionName										|elementType				|values												|
+ 			|Account Name									|Account Information						|Input							|															| 		
+ 			|Account Number								|Account Information						|Input							|2121212121										|
+ 			|Type													|Account Information						|select							|Other												|
+ 			|Type													|Account Information						|select							|Prospect											|
+ 			|Type													|Account Information						|select							|Customer - Direct						|
+ 			|Type													|Account Information						|select							|Customer - Channel						|
+ 			|Type													|Account Information						|select							|Channel Partner / Reseller		|
+ 			|Type													|Account Information						|select							|Installation Partner					|
+ 			|Type													|Account Information						|select							|Technology Partner						|
+ 			|Type													|Account Information						|select							|Prospect											|
+ 			|Industry											|Account Information						|select							|Agriculture									|
+ 			|Industry											|Account Information						|select							|Consulting										|
+ 			|Industry											|Account Information						|select							|Energy												|
+ 			|Industry											|Account Information						|select							|Finance											|
+ 			|Industry											|Account Information						|select							|Media												|
+ 			|Industry											|Account Information						|select							|Telecommunications						|
+ 			|Annual Revenue								|Account Information						|Input							|50 000												|
+ 			|Rating												|Account Information						|select							|Hot													|
+ 			|Rating												|Account Information						|select							|Warm													|
+ 			|Rating												|Account Information						|select							|Cold													|
+ 			|Rating												|Account Information						|select							|Warm													|
+ 			|Phone												|Account Information						|Input							|0202020202										|
+ 			|Fax													|Account Information						|Input							|0404040404										|
+ 			|Website											|Account Information						|Input							|https://www.accenture.com		|
+ 			|Ownership										|Account Information						|select							|Public												|
+ 			|Ownership										|Account Information						|select							|Private											|
+ 			|Ownership										|Account Information						|select							|Subsidiary										|
+ 			|Ownership										|Account Information						|select							|Private											|
+ 			|Billing Street								|Address Information						|textArea						|500, route de Vannes					|
+ 			|Billing Zip/Postal Code			|Address Information						|Input							|44000												|
+ 			|Billing City									|Address Information						|Input							|Nantes												|
+ 			|Billing State/Province				|Address Information						|Input							|Loire Atlantique							|
+ 			|Billing Country							|Address Information						|Input							|France												|
+ 			|Shipping Street							|Address Information						|textArea						|500, route de Vannes					|
+ 			|Shipping Zip/Postal Code			|Address Information						|Input							|44000												|
+ 			|Shipping City								|Address Information						|Input							|Nantes												|
+ 			|Shipping State/Province			|Address Information						|Input							|Loire Atlantique							|
+ 			|Shipping Country							|Address Information						|Input							|France												|
+ 			|Customer Priority						|Additional Information					|select							|High													|
+ 			|Customer Priority						|Additional Information					|select							|Low													|
+ 			|Customer Priority						|Additional Information					|select							|Medium												|
+ 			|Customer Priority						|Additional Information					|select							|High													|
+ 			|Number of Locations					|Additional Information					|Input							|123													|
+ 			|Active												|Additional Information					|select							|Yes													|
+ 			|Active												|Additional Information					|select							|No														|
+ 			|Active												|Additional Information					|select							|Yes													|
+ 			|SLA													|Additional Information					|select							|Gold													|
+ 			|SLA													|Additional Information					|select							|Silver												|
+ 			|SLA													|Additional Information					|select							|Platinum											|
+ 			|SLA													|Additional Information					|select							|Bronze												|
+ 			|SLA													|Additional Information					|select							|Silver												|
+ 			|SLA Expiration Date					|Additional Information					|Date								|06/06/2066										|
+ 			|Upsell Opportunity						|Additional Information					|select							|Maybe												|
+ 			|Upsell Opportunity						|Additional Information					|select							|No														|
+ 			|Upsell Opportunity						|Additional Information					|select							|Yes													| 			
+ 			|Description									|Description Information				|textArea						|OK														|
+			|Parent Account								|Account Information						|searchField				|Accenture										|
 							
  			
  		
  		Scenario Outline: Enregistrer l'Account
  			When je clique sur le bouton "Save" 		
- 			Then je remplis le champ <elementName> de la section <sectionName> de type <elementType> requis <required> avec la valeur <values>
+ 			Then je remplis le champ <elementName> de la section <sectionName> de type <elementType> avec la valeur <values>
  			When je clique sur le bouton "Save"
  			
  			Examples:
- 			|elementName									|sectionName										|elementType								|required	|values												|
- 			|Parent Account								|Account Information						|select_searchField					|false		|Accenture Nantes							|
+ 			|elementName									|sectionName										|elementType										|values												|
+ 			|Parent Account								|Account Information						|select_searchField							|Accenture Nantes							|
  		
  		
  		Scenario Outline: Verification de la presence des Related Lists	

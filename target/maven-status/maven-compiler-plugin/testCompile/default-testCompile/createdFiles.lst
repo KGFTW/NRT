@@ -1,4 +1,0 @@
-steps\AccountStep.class
-steps\LoginStep.class
-steps\LogoutStep.class
-runner\RunnerTest.class

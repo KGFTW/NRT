@@ -1,9 +1,0 @@
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Test runner" parallel="none">
-	<test name="Run All Tests">
-		<classes>
-			<class name="runner.RunnerTest"></class>				
-		</classes>
-	</test>
-</suite>
-

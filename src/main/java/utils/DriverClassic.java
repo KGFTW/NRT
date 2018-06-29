@@ -78,30 +78,22 @@ public class DriverClassic extends Driver {
 		WebElement labelElement = null;
 		// On declare le webElement "preXpath" contenant la valeur du debut du chemin
 		// d'acces xpath du label e verifier
-		String preXpath = Selectors.MAIN_BODY;
-		
-		try {
-			// Si la "sectionName" est different de null
-			if (sectionName != "") {
-				// Creation de "preXpath" contenant les path + le nom de la section afin
-				// d'indiquer sa position
-				preXpath += Selectors.H_3_EQ_START + sectionName + Selectors.H_3_EQ_END + Selectors.NEXT_DIV;
-			}
-			WebElement block = driver.findElement(By.xpath(preXpath));
+		String preXpath = "";		
+		try {			
 			switch (eltType) {
 			case LABELEDIT:
 				// Si on cherche e verifier un "LABELEDIT ", creation du chemin grece aux
 				// constantes LBL_CTN_START et LBL_CTN_END + valeur du label
-				labelElement = block.findElement(By.xpath(Selectors.LBL_CTN_START + label + Selectors.LBL_CTN_END));
+				labelElement = driver.findElement(By.xpath(Selectors.LBL_CTN_START + label + Selectors.LBL_CTN_END));
 				break;
 			case LABELVIEW:
-				labelElement = block.findElement(By.xpath(Selectors.TD_CTN_START + label + Selectors.TD_CTN_END));
+				labelElement = driver.findElement(By.xpath(Selectors.TD_CTN_START + label + Selectors.TD_CTN_END));
 				break;
 			case LINK:
-				labelElement = block.findElement(By.xpath(Selectors.LINK_CTN_START + label + Selectors.LINK_CTN_END));
+				labelElement = driver.findElement(By.xpath(Selectors.LINK_CTN_START + label + Selectors.LINK_CTN_END));
 				break;
 			case OPTION:
-				labelElement = block.findElement(By.xpath(Selectors.OPTN_CTN_START + label + Selectors.OPTN_CTN_END));
+				labelElement = driver.findElement(By.xpath(Selectors.OPTN_CTN_START + label + Selectors.OPTN_CTN_END));
 				break;
 			case RELATEDLIST:
 				labelElement = driver.findElement(
@@ -137,15 +129,9 @@ public class DriverClassic extends Driver {
 		WebElement element = null;
 		// On declare le webElement "preXpath" contenant la valeur du debut du chemin
 		// d'acces xpath du champ e remplir
-		String preXpath = Selectors.MAIN_BODY;
+		String preXpath = "";
 	
-		try {
-			if (sectionName != "") {
-				preXpath += Selectors.H_3_EQ_START + sectionName + Selectors.H_3_EQ_END + Selectors.NEXT_DIV;
-			}
-			// On determine le webelement "block" grece e son xpath
-			WebElement block = driver.findElement(By.xpath(preXpath));
-			
+		try {	
 			// on détermine ensuite un nouvel xpath pour la recherche de l'élément à partir du block
 			preXpath = Selectors.LBL_CTN_START + eltName + Selectors.LBL_CTN_END + Selectors.NEXT_TD;
 
@@ -153,31 +139,31 @@ public class DriverClassic extends Driver {
 			case INPUT:
 				// Si c'est un type "INPUT", creation du chemin e l'aide du preXpath + valeur
 				// (path) de la constante INPUT_TEXT
-				element = block.findElement(By.xpath(preXpath + Selectors.INPUT_TEXT));
+				element = driver.findElement(By.xpath(preXpath + Selectors.INPUT_TEXT));
 				break;
 			case SEARCHFIELD:
-				element = block.findElement(By.xpath(preXpath + Selectors.INPUT_TEXT));
+				element = driver.findElement(By.xpath(preXpath + Selectors.INPUT_TEXT));
 				break;
 			case DATE:
-				element = block.findElement(By.xpath(preXpath + Selectors.INPUT_TEXT));
+				element = driver.findElement(By.xpath(preXpath + Selectors.INPUT_TEXT));
 				break;
 			case SELECT:
-				element = block.findElement(By.xpath(preXpath + Selectors.SELECT));
+				element = driver.findElement(By.xpath(preXpath + Selectors.SELECT));
 				break;
 			case MULTISELECT:
-				element = block.findElement(By.xpath(preXpath + Selectors.MULTISELECT));
+				element = driver.findElement(By.xpath(preXpath + Selectors.MULTISELECT));
 				break;
 			case CHECKBOX:
-				element = block.findElement(By.xpath(preXpath + Selectors.CHECKBOX));
+				element = driver.findElement(By.xpath(preXpath + Selectors.CHECKBOX));
 				break;
 			case CHECKBOXSPECIAL:
-				element = block.findElement(By.xpath("//*[text()='Assign using active assignment rule']"));
+				element = driver.findElement(By.xpath("//*[text()='Assign using active assignment rule']"));
 				break;
 			case TEXTAREA:
-				element = block.findElement(By.xpath(preXpath + Selectors.TEXTAREA));
+				element = driver.findElement(By.xpath(preXpath + Selectors.TEXTAREA));
 				break;
 			case LINK:
-				element = block.findElement(By.xpath(preXpath + Selectors.LINK + Selectors.CTN_END));
+				element = driver.findElement(By.xpath(preXpath + Selectors.LINK + Selectors.CTN_END));
 				break;
 			}
 		} catch (WebDriverException e) {
@@ -202,34 +188,27 @@ public class DriverClassic extends Driver {
 	 * @param values
 	 *            -> Valeur e renseigner dans le champs
 	 */
-	public void setValue(String eltName, String sectionName, String eltType, boolean required, String... values) {
-		// On determine le webelement "block" grece e son xpath
-		WebElement block = driver.findElement(By.xpath(Selectors.MAIN_BODY + Selectors.H_3_EQ_START + sectionName
-				+ Selectors.H_3_EQ_END + Selectors.NEXT_DIV));
+	public void setValue(String eltName, String sectionName, String eltType, String... values) {
+		
 		// Declaration de la variable "element" qu'on initie e "null"
 		WebElement element = null;
 		// On declare le webElement "preXpath" contenant la valeur du debut du chemin
 		// d'acces xpath du champ e remplir
-		String preXpath = Selectors.LBL_CTN_START + eltName + Selectors.LBL_CTN_END + Selectors.NEXT_TD;
-		if (required) {
-			// Si le champ e remplir est obligatoire un ajoute e preXpath le script contenu
-			// dans la constante REQUIRED
-			preXpath += Selectors.REQUIRED;
-		}
+		String preXpath = Selectors.LBL_CTN_START + eltName + Selectors.LBL_CTN_END + Selectors.NEXT_TD;		
 		try {
 			// On liste les types de champs ainsi que leurs chemins (path)
 			switch (eltType) {
 			case INPUT:
 				// Si c'est un type "INPUT", creation du chemin e l'aide du preXpath + du nom du
 				// block + valeur (path) de la constante INPUT_TEXT
-				element = block.findElement(By.xpath(preXpath + Selectors.INPUT_TEXT));
+				element = driver.findElement(By.xpath(preXpath + Selectors.INPUT_TEXT));
 				// On vide le champ si il y a une valeur de renseigne
 				element.clear();
 				// On rempli le champ avec la valeur
 				element.sendKeys(values[0]);
 				break;
 			case SEARCHFIELD:
-				element = block.findElement(By.xpath(preXpath + Selectors.INPUT_TEXT));
+				element = driver.findElement(By.xpath(preXpath + Selectors.INPUT_TEXT));
 				// On vide le champ si il y a une valeur de renseigne
 				element.clear();
 				// On rempli le champ avec la valeur
@@ -238,26 +217,26 @@ public class DriverClassic extends Driver {
 			case SELECT:
 				// Si c'est un type "INPUT", creation du chemin e l'aide du preXpath + du nom du
 				// block + valeur (path) de la constante SELECT (Pick List)
-				element = block.findElement(By.xpath(preXpath + Selectors.SELECT));
+				element = driver.findElement(By.xpath(preXpath + Selectors.SELECT));
 				// On selectionne la valeur determine
 				selectElementInSelect(element, values[0]);
 				break;
 			// type spécifique pour le champ de recherche du parent account qui diffère de beaucoup entre classic et lightning	
 			case SELECT_SEARCHFIELD:
-				element = block.findElement(By.xpath(preXpath + Selectors.SELECT));
+				element = driver.findElement(By.xpath(preXpath + Selectors.SELECT));
 				// On selectionne la valeur determine
 				selectElementInSelect(element, values[0]);
 				break;
 			case MULTISELECT:
-				element = block.findElement(By.xpath(preXpath + Selectors.MULTISELECT));
-				WebElement addBtn = block.findElement(By.xpath(preXpath + Selectors.MULTISELECT + Selectors.ADD_BTN));
+				element = driver.findElement(By.xpath(preXpath + Selectors.MULTISELECT));
+				WebElement addBtn = driver.findElement(By.xpath(preXpath + Selectors.MULTISELECT + Selectors.ADD_BTN));
 				for (String value : values) {
 					selectElementInMultipleSelect(element, value);
 					addBtn.click();
 				}
 				break;
 			case CHECKBOX:
-				element = block.findElement(By.xpath(preXpath + Selectors.CHECKBOX));
+				element = driver.findElement(By.xpath(preXpath + Selectors.CHECKBOX));
 				Boolean value = Boolean.valueOf(values[0]);
 				if (element.isSelected() && !value) {
 					element.click();
@@ -267,7 +246,7 @@ public class DriverClassic extends Driver {
 				}
 				break;
 			case TEXTAREA:
-				element = block.findElement(By.xpath(preXpath + Selectors.TEXTAREA));
+				element = driver.findElement(By.xpath(preXpath + Selectors.TEXTAREA));
 				element.clear();
 				element.sendKeys(values[0]);
 				break;

@@ -278,8 +278,7 @@ public abstract class Driver {
 	
 	public abstract boolean isElementEditable(String eltName, String sectionName, String eltType);
 	
-	public abstract void setValue(String eltName, String sectionName, String eltType, boolean required,
-			String... values);
+	public abstract void setValue(String eltName, String sectionName, String eltType, String... values);
 	
 	public abstract void selectElementInSelect(WebElement elementSelect, String stringToSelect);
 	
