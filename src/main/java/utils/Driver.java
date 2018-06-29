@@ -157,7 +157,7 @@ public abstract class Driver {
 	 * config.properties contenant la liste des path des web drivers
 	 * (chrome/firefox/etc..)
 	 */
-	public  void loadConfigProperties() {
+	/*public  void loadConfigProperties() {
 		configProperties = new Properties();
 		InputStream input = null;
 		try {
@@ -178,7 +178,7 @@ public abstract class Driver {
 				}
 			}
 		}
-	}
+	}*/
 
 	public  void waitPageLoaded() {
 		// On attend l'affichage de la page, au maximum le temps paramétré dans
