@@ -62,7 +62,7 @@ public abstract class Driver {
 	 {
 		// On charge les properties de config (paths des web drivers)
 		// et on attribut une valeur booléenne pour savoir si l'on va travailler en classic ou en lightning
-		loadConfigProperties();
+		//loadConfigProperties();
 		if (Selectors.CLASSIC.equals(System.getProperty(Selectors.VIEW))) {
 			onSalesClassic = true;
 		}
