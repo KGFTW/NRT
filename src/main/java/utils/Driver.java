@@ -87,7 +87,7 @@ public abstract class Driver {
 	 * defini dans config.properties Phantom -> navigateur sans interface graphique
 	 */
 	public  String getPhantomJsPath() {
-		return "resources\\webdrivers\\phantomjs.exe";
+		return "resources/webdrivers/phantomjs.exe";
 	}
 
 	/**
@@ -95,7 +95,7 @@ public abstract class Driver {
 	 * dans config.properties
 	 */
 	public  String getFirefoxPath() {
-		return "resources\\webdrivers\\geckodriver.exe";
+		return "resources/webdrivers/geckodriver.exe";
 	}
 
 	/**
@@ -103,7 +103,7 @@ public abstract class Driver {
 	 * dans config.properties
 	 */
 	public  String getChromePath() {
-		return "resources\\webdrivers\\chromedriver.exe";
+		return "resources/webdrivers/chromedriver.exe";
 	}
 
 	/**
