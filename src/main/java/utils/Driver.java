@@ -111,7 +111,7 @@ public abstract class Driver {
 	 * configProperties
 	 */
 	public  Integer getTimeout() {
-		return Integer.valueOf(configProperties.getProperty("timeout"));
+		return 10;
 	}
 
 	/**
