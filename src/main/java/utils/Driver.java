@@ -139,7 +139,7 @@ public abstract class Driver {
 			System.setProperty("webdriver.chrome.driver", getChromePath());
 			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 			ChromeOptions options = new ChromeOptions();
-			//options.addArguments("--headless");
+			options.addArguments("--headless");
 			options.addArguments("--no-sandbox");       		
 			options.addArguments("--disable-gpu");
 			options.addArguments("--window-size=1920,1080");
