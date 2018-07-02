@@ -145,7 +145,7 @@ public abstract class Driver {
        		options.addArguments("--disable-dev-shm-usage");
 			options.addArguments("--disable-gpu");
 			options.addArguments("--window-size=1920,1080");
-			//options.setBinary("resources/GoogleChromePortable/GoogleChromePortable.exe");
+			options.setBinary("/usr/bin/google-chrome");
 			capabilities.setCapability(ChromeOptions.CAPABILITY, options);
 			result = new ChromeDriver(capabilities);
 			result.manage().window().maximize();
