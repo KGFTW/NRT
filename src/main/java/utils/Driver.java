@@ -251,12 +251,12 @@ public abstract class Driver {
 		// Reformatage de la date + nom de la methode
 		filename = now.toString().replace(':', '-').replace(' ', '_') + "-" + filename;
 		// Localisation du folder contenant les screenshot
-		File outputFolder = new File("resources\\output\\");
+		File outputFolder = new File("resources/output/");
 		// S'assure que le repertoire est present
 		outputFolder.mkdirs();
 		try {
 			// Construction de l'adresse complete avec l'ajout de l'extension png
-			FileOutputStream out = new FileOutputStream("resources\\output\\scr-" + filename + ".png");
+			FileOutputStream out = new FileOutputStream("resources/output/scr-" + filename + ".png");
 			out.write(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES));
 			out.close();
 		} catch (WebDriverException | IOException e) {
