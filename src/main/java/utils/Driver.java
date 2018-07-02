@@ -140,8 +140,8 @@ public abstract class Driver {
 			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--headless");
-			//options.addArguments("--no-sandbox");
-       		options.addArguments("--disable-dev-shm-usage");
+			options.addArguments("--no-sandbox");
+       		//options.addArguments("--disable-dev-shm-usage");
 			options.addArguments("--disable-gpu");
 			options.addArguments("--window-size=1920,1080");
 			//options.setBinary("resources/GoogleChromePortable/GoogleChromePortable.exe");
