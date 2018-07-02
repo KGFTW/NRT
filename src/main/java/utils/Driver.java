@@ -161,7 +161,7 @@ public abstract class Driver {
 		configProperties = new Properties();
 		InputStream input = null;
 		try {
-			String filename = "/properties/config.properties";
+			String filename = "\\properties\\config.properties";
 			input = Driver.class.getClassLoader().getResourceAsStream(filename);
 			if (input == null) {
 				System.out.println("Unable to find " + filename);
