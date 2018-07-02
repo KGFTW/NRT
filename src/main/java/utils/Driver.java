@@ -139,7 +139,7 @@ public abstract class Driver {
 			System.setProperty("webdriver.chrome.driver", getChromePath());
 			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 			ChromeOptions options = new ChromeOptions();
-			options.setExperimentalOption("useAutomationExtension", false);
+			//options.setExperimentalOption("useAutomationExtension", false);
 			options.addArguments("--headless");
 			options.addArguments("--no-sandbox");
        		options.addArguments("--disable-dev-shm-usage");
