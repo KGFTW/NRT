@@ -62,7 +62,7 @@ public abstract class Driver {
 	 {
 		// On charge les properties de config (paths des web drivers)
 		// et on attribut une valeur booléenne pour savoir si l'on va travailler en classic ou en lightning
-		loadConfigProperties();
+		//loadConfigProperties();
 		if (Selectors.CLASSIC.equals(System.getProperty(Selectors.VIEW))) {
 			onSalesClassic = true;
 		}
@@ -87,7 +87,7 @@ public abstract class Driver {
 	 * defini dans config.properties Phantom -> navigateur sans interface graphique
 	 */
 	public  String getPhantomJsPath() {
-		return configProperties.getProperty("phantomjs_path");
+		return "resources/webdrivers/phantomjs.exe";
 	}
 
 	/**
@@ -95,7 +95,7 @@ public abstract class Driver {
 	 * dans config.properties
 	 */
 	public  String getFirefoxPath() {
-		return configProperties.getProperty("gecko_path");
+		return "resources/webdrivers/geckodriver.exe";
 	}
 
 	/**
@@ -103,7 +103,7 @@ public abstract class Driver {
 	 * dans config.properties
 	 */
 	public  String getChromePath() {
-		return configProperties.getProperty("chrome_path");
+		return "resources/webdrivers/chromedriver.exe";
 	}
 
 	/**
@@ -111,7 +111,7 @@ public abstract class Driver {
 	 * configProperties
 	 */
 	public  Integer getTimeout() {
-		return Integer.valueOf(configProperties.getProperty("timeout"));
+		return 10;
 	}
 
 	/**
@@ -157,11 +157,11 @@ public abstract class Driver {
 	 * config.properties contenant la liste des path des web drivers
 	 * (chrome/firefox/etc..)
 	 */
-	public  void loadConfigProperties() {
+	/*public  void loadConfigProperties() {
 		configProperties = new Properties();
 		InputStream input = null;
 		try {
-			String filename = "src/test/resources/properties/config.properties";
+			String filename = "properties\\config.properties";
 			input = Driver.class.getClassLoader().getResourceAsStream(filename);
 			if (input == null) {
 				System.out.println("Unable to find " + filename);
@@ -178,7 +178,7 @@ public abstract class Driver {
 				}
 			}
 		}
-	}
+	}*/
 
 	public  void waitPageLoaded() {
 		// On attend l'affichage de la page, au maximum le temps paramétré dans
