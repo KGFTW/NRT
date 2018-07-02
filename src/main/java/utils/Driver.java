@@ -131,11 +131,7 @@ public abstract class Driver {
 			System.setProperty("webdriver.chrome.driver", getChromePath());
 			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 			ChromeOptions options = new ChromeOptions();
-			options.setExperimentalOption("useAutomationExtension", false);
-			options.addArguments("--no-sandbox");
-       		options.addArguments("--disable-dev-shm-usage");
-			options.addArguments("--disable-gpu");
-			//options.setBinary("resources/GoogleChromePortable/GoogleChromePortable.exe");
+			options.setBinary("resources/GoogleChromePortable/GoogleChromePortable.exe");
 			capabilities.setCapability(ChromeOptions.CAPABILITY, options);
 			result = new ChromeDriver(capabilities);
 			result.manage().window().maximize();
@@ -144,7 +140,7 @@ public abstract class Driver {
 			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 			ChromeOptions options = new ChromeOptions();
 			options.setExperimentalOption("useAutomationExtension", false);
-			options.addArguments("--headless");
+			//options.addArguments("--headless");
 			options.addArguments("--no-sandbox");
        		options.addArguments("--disable-dev-shm-usage");
 			options.addArguments("--disable-gpu");
