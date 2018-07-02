@@ -103,7 +103,7 @@ public abstract class Driver {
 	 * dans config.properties
 	 */
 	public  String getChromePath() {
-		return "resources/webdrivers/chromedriver.exe";
+		return "resources/webdrivers/chromedriver";
 	}
 
 	/**
